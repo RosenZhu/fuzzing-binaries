@@ -17,7168 +17,7363 @@ int remainder_check(char* parameter_1,int checksum_div,int length)
    else return 0;
 }
 
-float dump_table( char parameter_1,float parameter_2);
-char dump_x( unsigned int parameter_1,double parameter_2,int parameter_3,unsigned int parameter_4,short parameter_5);
-long dump_llx( float parameter_1,unsigned int parameter_2,short parameter_3,short parameter_4,unsigned int parameter_5);
-int dump_indent( long parameter_1,float parameter_2);
-char dump_header( double parameter_1,char parameter_2);
-short dump_bmfs( float parameter_1,short parameter_2);
-char cmd_dump( float parameter_1,int parameter_2,char parameter_3);
-void bmfs_get_status( long parameter_1,long parameter_2);
-void bmfs_status_init( unsigned int parameter_1);
-long cmd_status( float parameter_1,int parameter_2,unsigned int parameter_3);
-int bmfs_delete_dir( long parameter_1,int parameter_2);
-int bmfs_delete_dir_recursively( double parameter_1,double parameter_2);
-int cmd_rmdir( float parameter_1,int parameter_2,int parameter_3);
-double delete_table_entry( float parameter_1,unsigned int parameter_2);
-double delete_entry( short parameter_1,float parameter_2);
-int bmfs_delete_file( float parameter_1,char parameter_2);
-int cmd_rm( double parameter_1,int parameter_2,double parameter_3);
-int cmd_touch( int parameter_1,int parameter_2,double parameter_3);
-void bmfs_entry_set_deleted( unsigned int parameter_1);
-void bmfs_entry_copy( int parameter_1,long parameter_2);
-int bmfs_rename( double parameter_1,short parameter_2,double parameter_3,int uni_para);
-double cmd_mv( short parameter_1,int parameter_2,unsigned int parameter_3,int uni_para);
-int bmfs_create_dir( short parameter_1,int parameter_2);
-void cmd_mkdir( char parameter_1,int parameter_2,int parameter_3);
-int time_print( char parameter_1);
-unsigned int next_without_skipping( double parameter_1);
-unsigned int bmfs_dir_next();
-char find_dir( long parameter_1,int parameter_2,double parameter_3,int parameter_4,double parameter_5);
-int bmfs_entry_is_directory( short parameter_1);
-int bmfs_dir_import( long parameter_1);
-void bmfs_dir_set_disk( unsigned int parameter_1,unsigned int parameter_2);
-void open_dir( unsigned int parameter_1,float parameter_2,short parameter_3,int uni_para);
-int bmfs_open_dir( double parameter_1,long parameter_2,double parameter_3,int uni_para);
-void bmfs_dir_init( unsigned int parameter_1);
-int cmd_ls( float parameter_1,int parameter_2,double parameter_3);
-void bmfs_table_entry_set_deleted( float parameter_1);
-int bmfs_table_free( float parameter_1,unsigned int parameter_2);
-void bmfs_host_free( long parameter_1,float parameter_2);
-void table_free( unsigned int parameter_1);
-long bmfs_host_malloc( char parameter_1,float parameter_2,unsigned int parameter_3);
-short bmfs_host_init();
-float table_host_init( double parameter_1);
-float table_malloc( unsigned int parameter_1,short parameter_2);
-short copy_over_data( double parameter_1,double parameter_2,long parameter_3,long parameter_4);
-int bmfs_table_realloc( long parameter_1,float parameter_2,unsigned int parameter_3);
-double file_resize( char parameter_1,unsigned int parameter_2);
-int bmfs_file_write( float parameter_1,short parameter_2,short parameter_3,double parameter_4);
-void bmfs_file_set_mode( short parameter_1,int parameter_2);
-float bmfs_table_find( float parameter_1,char parameter_2);
-unsigned int can_fit_entry( long parameter_1,long parameter_2);
-void add_entry( long parameter_1,long parameter_2,unsigned int parameter_3);
-float entry_exists( char parameter_1,short parameter_2,char parameter_3,unsigned int parameter_4);
-int create_entry( double parameter_1,float parameter_2,int parameter_3);
-float new_get_block_size();
-int bmfs_create_file( float parameter_1,float parameter_2);
-unsigned int cmd_cp( short parameter_1,int parameter_2,int parameter_3);
-int bmfs_file_seek( float parameter_1,float parameter_2,int parameter_3);
-int bmfs_file_read( char parameter_1,float parameter_3,char parameter_4);
-int bmfs_file_eof();
-int bmfs_get_current_time( float parameter_1);
-int bmfs_entry_save( double parameter_1,char parameter_2);
-unsigned int file_can_write( float parameter_1);
-void bmfs_file_close();
-int bmfs_file_import( short parameter_1);
-int find_file( unsigned int parameter_1,double parameter_2,int parameter_3,int parameter_4,int parameter_5);
-void bmfs_entry_is_deleted( int parameter_1);
-float is_entry( float parameter_1,long parameter_2,double parameter_3);
-float find_entry( double parameter_1,long parameter_2,unsigned int parameter_3,double parameter_4,float parameter_5,int uni_para);
-unsigned int is_separator( char parameter_1);
-int bmfs_path_split_root( unsigned int parameter_1,short parameter_2);
-void bmfs_path_set( float parameter_1,long parameter_2,long parameter_3);
-void bmfs_path_init( short parameter_1);
-int bmfs_entry_read( char parameter_1,long parameter_2,int uni_para);
-void bmfs_file_set_disk( int parameter_1,float parameter_2);
-void open_file( short parameter_1,unsigned int parameter_2,int parameter_3);
-int bmfs_open_file( long parameter_1,short parameter_2,float parameter_3);
-void bmfs_file_init( double parameter_1);
-void cmd_cat( char parameter_1,int parameter_2,short parameter_3);
-void bmfs_table_set_count( long parameter_1,float parameter_2);
+void dump_table( short parameter_1,long parameter_2);
+char dump_x( unsigned int parameter_1,short parameter_2,char parameter_3,unsigned int parameter_4,long parameter_5);
+short dump_llx( char parameter_1,unsigned int parameter_2,long parameter_3,unsigned int parameter_4,int parameter_5);
+long dump_indent( short parameter_1,double parameter_2);
+double dump_header( unsigned int parameter_1,unsigned int parameter_2);
+long dump_bmfs( char parameter_1,unsigned int parameter_2);
+short cmd_dump( unsigned int parameter_1,int parameter_2,short parameter_3);
+void bmfs_get_status( int parameter_1,char parameter_2);
+void bmfs_status_init();
+unsigned int cmd_status( double parameter_1,int parameter_2,double parameter_3);
+int bmfs_delete_dir( unsigned int parameter_1,char parameter_2);
+int bmfs_delete_dir_recursively( unsigned int parameter_1,long parameter_2);
+double cmd_rmdir( float parameter_1,int parameter_2,int parameter_3);
+char delete_table_entry( float parameter_1,short parameter_2);
+double delete_entry( float parameter_1,long parameter_2);
+int bmfs_delete_file( short parameter_1,long parameter_2);
+int cmd_rm( long parameter_1,int parameter_2,float parameter_3);
+short cmd_touch( int parameter_1,int parameter_2,long parameter_3);
+void bmfs_entry_set_deleted( int parameter_1);
+void bmfs_entry_copy( double parameter_1,float parameter_2);
+int bmfs_rename( char parameter_1,float parameter_2,short parameter_3);
+int cmd_mv( int parameter_1,int parameter_2,unsigned int parameter_3);
+int bmfs_create_dir( unsigned int parameter_1,char parameter_2);
+char cmd_mkdir( int parameter_1,int parameter_2,char parameter_3);
+double time_print( unsigned int parameter_1);
+float next_without_skipping( float parameter_1);
+float bmfs_dir_next( double parameter_1);
+long find_dir( unsigned int parameter_1,long parameter_2,short parameter_3,char parameter_4,unsigned int parameter_5,int uni_para);
+int bmfs_entry_is_directory( int parameter_1);
+int bmfs_dir_import( char parameter_1,int uni_para);
+void bmfs_dir_set_disk( int parameter_1,short parameter_2);
+double open_dir( double parameter_1,char parameter_2,double parameter_3,int uni_para);
+int bmfs_open_dir( long parameter_1,char parameter_2,char parameter_3,int uni_para);
+void bmfs_dir_init( int parameter_1);
+double cmd_ls( unsigned int parameter_1,int parameter_2,float parameter_3,int uni_para);
+void bmfs_table_entry_set_deleted();
+int bmfs_table_free( unsigned int parameter_1,float parameter_2);
+void bmfs_host_free( short parameter_1,double parameter_2);
+unsigned int table_free( short parameter_1);
+char bmfs_host_malloc( char parameter_1,unsigned int parameter_2,short parameter_3);
+char bmfs_host_init( long parameter_1);
+void table_host_init( char parameter_1);
+unsigned int table_malloc( double parameter_1,unsigned int parameter_2);
+unsigned int copy_over_data( int parameter_1,double parameter_2,unsigned int parameter_3,float parameter_4);
+int bmfs_table_realloc( double parameter_1,double parameter_2,double parameter_3);
+unsigned int file_resize( short parameter_1,char parameter_2);
+int bmfs_file_write( unsigned int parameter_1,char parameter_2,float parameter_3,double parameter_4);
+void bmfs_file_set_mode( float parameter_1,char parameter_2);
+double bmfs_table_find( double parameter_1,int parameter_2);
+short can_fit_entry( int parameter_1,float parameter_2);
+short add_entry( long parameter_1,unsigned int parameter_2,int parameter_3);
+unsigned int entry_exists( int parameter_1,float parameter_2,unsigned int parameter_3,char parameter_4);
+long create_entry( char parameter_1,int parameter_2,int parameter_3);
+double new_get_block_size( short parameter_1);
+int bmfs_create_file( double parameter_1,int parameter_2);
+void cmd_cp( int parameter_1,int parameter_2,short parameter_3);
+int bmfs_file_seek( short parameter_1,int parameter_2,int parameter_3);
+int bmfs_file_read( int parameter_1,char parameter_3,short parameter_4);
+int bmfs_file_eof( short parameter_1);
+int bmfs_get_current_time( short parameter_1);
+int bmfs_entry_save( int parameter_1,char parameter_2);
+long file_can_write( unsigned int parameter_1);
+void bmfs_file_close( char parameter_1);
+int bmfs_file_import( long parameter_1);
+char find_file( float parameter_1,double parameter_2,short parameter_3,double parameter_4,unsigned int parameter_5);
+int bmfs_entry_is_deleted( char parameter_1);
+float is_entry( long parameter_1,char parameter_2,int parameter_3);
+double find_entry( double parameter_1,int parameter_2,double parameter_3,char parameter_4,unsigned int parameter_5);
+float is_separator( char parameter_1);
+int bmfs_path_split_root( float parameter_1,float parameter_2);
+void bmfs_path_set( short parameter_1,int parameter_2,unsigned int parameter_3);
+void bmfs_path_init( char parameter_1);
+int bmfs_entry_read( int parameter_1,long parameter_2,int uni_para);
+void bmfs_file_set_disk( float parameter_1,float parameter_2);
+float open_file( short parameter_1,double parameter_2,double parameter_3);
+int bmfs_open_file( float parameter_1,float parameter_2,double parameter_3);
+void bmfs_file_init( int parameter_1);
+void cmd_cat( unsigned int parameter_1,int parameter_2,int parameter_3);
+void bmfs_table_set_count( long parameter_1,char parameter_2);
 int bmfs_header_check( char parameter_1);
-int bmfs_import( char parameter_1);
-int bmfs_export( char parameter_1);
-void bmfs_filedisk_done( float parameter_1);
-int bmfs_header_write( long parameter_1,long parameter_2);
-unsigned int next_entry( char parameter_1);
-short bmfs_table_next( unsigned int parameter_1);
+int bmfs_import( long parameter_1);
+int bmfs_export( long parameter_1);
+void bmfs_filedisk_done( unsigned int parameter_1);
+int bmfs_header_write( unsigned int parameter_1,short parameter_2);
+char next_entry( double parameter_1);
+double bmfs_table_next( int parameter_1);
 void bmfs_table_view_deleted( int parameter_1);
-void bmfs_table_begin( short parameter_1);
-int bmfs_table_save_all( unsigned int parameter_1);
-int bmfs_disk_tell( unsigned int parameter_1,unsigned int parameter_2,int uni_para);
-void bmfs_memcpy(double parameter_2,char parameter_3);
-int bmfs_entry_write( double parameter_1,unsigned int parameter_2);
-int bmfs_table_entry_write( float parameter_1,char parameter_2);
+void bmfs_table_begin( char parameter_1);
+int bmfs_table_save_all( long parameter_1);
+int bmfs_disk_tell( double parameter_1,char parameter_2,int uni_para);
+void bmfs_memcpy(double parameter_2,float parameter_3);
+int bmfs_entry_write( unsigned int parameter_1,int parameter_2);
+int bmfs_table_entry_write( double parameter_1,unsigned int parameter_2);
 int bmfs_table_save( long parameter_1);
-void bmfs_table_entry_copy( int parameter_1,unsigned int parameter_2);
-int bmfs_table_push( double parameter_1,short parameter_2);
-void bmfs_table_entry_is_deleted( int parameter_1);
-void bmfs_encode_uint32( int parameter_1);
-void bmfs_encode_uint64( long parameter_1);
-double bmfs_table_entry_checksum( long parameter_1);
-int bmfs_table_entry_read( int parameter_1,double parameter_2);
-short prev_entry( int parameter_1);
-double bmfs_table_previous( double parameter_1);
-void bmfs_table_hide_deleted( int parameter_1);
-void bmfs_table_end( long parameter_1);
-void get_block_size( double parameter_1);
-double to_block_size( short parameter_1,short parameter_2);
-int bmfs_table_alloc( double parameter_1,unsigned int parameter_2,char parameter_3);
-int bmfs_allocate( double parameter_1,short parameter_2,float parameter_3);
-void bmfs_entry_set_type( long parameter_1,long parameter_2);
-void bmfs_entry_init( char parameter_1);
-void bmfs_table_set_max_offset( double parameter_1,float parameter_2);
-void bmfs_table_set_min_offset( char parameter_1,long parameter_2);
-void bmfs_table_set_offset( long parameter_1,char parameter_2);
-int bmfs_format( int parameter_1,long parameter_2);
-void bmfs_table_set_block_size( unsigned int parameter_1,int parameter_2);
-void bmfs_set_block_size( double parameter_1,char parameter_2);
-int bmfs_disk_write( double parameter_1,short parameter_2,int parameter_3,long parameter_4);
-short bmfs_crc32( float parameter_1,long parameter_2,short parameter_3);
-long bmfs_decode_uint32( unsigned int parameter_1);
-unsigned int bmfs_decode_uint64( double parameter_1);
-int bmfs_disk_read( long parameter_1,short parameter_3,int parameter_4);
-int bmfs_header_read( double parameter_1,short parameter_2);
-int bmfs_disk_seek( unsigned int parameter_1,short parameter_2,int parameter_3);
+void bmfs_table_entry_copy( float parameter_1,float parameter_2);
+int bmfs_table_push( short parameter_1,float parameter_2);
+long bmfs_table_entry_is_deleted();
+void bmfs_encode_uint32( unsigned int parameter_1);
+void bmfs_encode_uint64( unsigned int parameter_1);
+float bmfs_table_entry_checksum( int parameter_1);
+int bmfs_table_entry_read( char parameter_1,float parameter_2);
+float prev_entry( char parameter_1);
+int bmfs_table_previous();
+void bmfs_table_hide_deleted();
+void bmfs_table_end( int parameter_1);
+int get_block_size( unsigned int parameter_1);
+float to_block_size( float parameter_1,double parameter_2);
+int bmfs_table_alloc( long parameter_1,long parameter_2,char parameter_3);
+int bmfs_allocate( long parameter_1,unsigned int parameter_2,unsigned int parameter_3);
+void bmfs_entry_set_type( char parameter_1,short parameter_2);
+void bmfs_entry_init( double parameter_1);
+void bmfs_table_set_max_offset( unsigned int parameter_1,int parameter_2);
+void bmfs_table_set_min_offset( short parameter_1,short parameter_2);
+void bmfs_table_set_offset( long parameter_1,short parameter_2);
+int bmfs_format( char parameter_1,long parameter_2);
+void bmfs_table_set_block_size( unsigned int parameter_1,float parameter_2);
+void bmfs_set_block_size( char parameter_1,short parameter_2);
+int bmfs_disk_write( short parameter_1,unsigned int parameter_2,int parameter_3,unsigned int parameter_4);
+short bmfs_crc32( char parameter_1,char parameter_2,double parameter_3);
+unsigned int bmfs_decode_uint32( short parameter_1);
+char bmfs_decode_uint64( int parameter_1);
+int bmfs_disk_read( double parameter_1,long parameter_3,double parameter_4);
+int bmfs_header_read( long parameter_1,double parameter_2);
+int bmfs_disk_seek( long parameter_1,double parameter_2,int parameter_3);
 int bmfs_check_signature( unsigned int parameter_1);
-short cmd_format( int parameter_1,int parameter_2,char parameter_3);
-void bmfs_table_set_disk( unsigned int parameter_1,short parameter_2);
-void bmfs_set_disk( short parameter_1,char parameter_2);
-void bmfs_table_set_host( float parameter_1,double parameter_2);
-void bmfs_host_done( int parameter_1,long parameter_2);
-void bmfs_set_host( long parameter_1,long parameter_2);
-void bmfs_table_entry_init( short parameter_1);
-void bmfs_table_init( int parameter_1);
-void bmfs_header_init( short parameter_1);
-void bmfs_init( double parameter_1);
-void bmfs_filedisk_set_offset( int parameter_1,double parameter_2);
-void bmfs_strerror( int parameter_1);
-int bmfs_filedisk_open( unsigned int parameter_1,long parameter_2,float parameter_3);
-int bmfs_filedisk_write(unsigned int parameter_2,char parameter_3,int parameter_4);
-float bmfs_filedisk_read(unsigned int parameter_3,int parameter_4);
-double bmfs_filedisk_tell(double parameter_2);
-long to_bmfs_errno( int parameter_1);
-float bmfs_filedisk_seek(unsigned int parameter_2,int parameter_3);
-void bmfs_disk_init( int parameter_1);
-void bmfs_filedisk_init( short parameter_1);
-double file_exists( short parameter_1);
-float print_version();
-int print_usage( long parameter_1);
-void print_help( float parameter_1,int parameter_2,float parameter_3);
-long command_parse( long parameter_1);
-int bmfs_size_bytes( short parameter_1,unsigned int parameter_2);
-short to_type( short parameter_1,int parameter_2);
-int bmfs_size_parse( double parameter_1,short parameter_2);
-double is_opt( long parameter_1,char parameter_2,float parameter_3);
-int main(int argc, const char **argv);
-float dump_table( char parameter_1,float parameter_2)
+long cmd_format( long parameter_1,int parameter_2,long parameter_3);
+void bmfs_table_set_disk( double parameter_1,short parameter_2);
+void bmfs_set_disk( char parameter_1,float parameter_2);
+void bmfs_table_set_host( long parameter_1,int parameter_2);
+void bmfs_host_done( float parameter_1,float parameter_2);
+void bmfs_set_host( char parameter_1,long parameter_2);
+void bmfs_table_entry_init( int parameter_1);
+void bmfs_table_init( short parameter_1);
+void bmfs_header_init();
+void bmfs_init();
+void bmfs_filedisk_set_offset( short parameter_1,double parameter_2);
+float bmfs_strerror( int parameter_1);
+int bmfs_filedisk_open( float parameter_1,char parameter_2,short parameter_3);
+short bmfs_filedisk_write(int parameter_2,long parameter_3,float parameter_4);
+long bmfs_filedisk_read(char parameter_3,int parameter_4);
+char bmfs_filedisk_tell(char parameter_2);
+char to_bmfs_errno( int parameter_1);
+long bmfs_filedisk_seek(long parameter_2,int parameter_3);
+void bmfs_disk_init( unsigned int parameter_1);
+void bmfs_filedisk_init( double parameter_1);
+char file_exists( unsigned int parameter_1);
+double print_version();
+unsigned int print_usage( unsigned int parameter_1);
+long print_help( char parameter_1,int parameter_2,short parameter_3);
+int command_parse( unsigned int parameter_1);
+int bmfs_size_bytes( char parameter_1,float parameter_2);
+void to_type( char parameter_1,float parameter_2);
+int bmfs_size_parse( char parameter_1,int parameter_2);
+char is_opt( unsigned int parameter_1,char parameter_2,short parameter_3);
+void dump_table( short parameter_1,long parameter_2)
 {
-	double double_a = 0;
-	double double_b = 0;
-	int int_a = 0;
-	long long_a = 0;
-	float float_a = 0;
-	int int_b = 0;
-	long long_b = 0;
-	float float_b = 0;
-	unsigned int unsigned_int_a = 0;
-	short short_a = 0;
-	short short_b = 0;
-	double double_c = 0;
-	unsigned int unsigned_int_b = 0;
-	char char_a = 0;
-	double double_e = 0;
-	unsigned int unsigned_int_c = 0;
-	double double_f = 0;
-	double double_g = 0;
-	double double_h = 0;
-	unsigned int unsigned_int_d = 0;
-	unsigned int unsigned_int_e = 0;
-	double double_i = 0;
-	double double_d = 0;
-	char char_b = 0;
-	char char_c = 0;
-	double_a = floor ( double_b ) ;
-	int_a = dump_indent(long_a,float_a);
-
-	double_a = ldexp ( double_b , int_b ) ;
-	long_b = dump_llx(float_b,unsigned_int_a,short_a,short_b,unsigned_int_a);
-
-	double_a = fmod ( double_c , double_b ) ;
-	unsigned_int_b = unsigned_int_a - unsigned_int_a;
-	for(int looper_a=0; looper_a<5;looper_a++)
+	double double_1 = 0;
+	double double_2 = 0;
+	char char_1 = 0;
+	char char_2 = 0;
+	unsigned int unsigned_int_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	unsigned int unsigned_int_3 = 0;
+	double double_3 = 0;
+	char char_3 = 0;
+	int int_1 = 0;
+	int int_2 = 0;
+	int int_3 = 0;
+	double double_4 = 0;
+	short short_1 = 0;
+	long long_1 = 0;
+	short short_2 = 0;
+	short short_3 = 0;
+	float float_2 = 0;
+	float float_3 = 0;
+	unsigned int unsigned_int_4 = 0;
+	char char_4 = 0;
+	long long_2 = 0;
+	char char_5 = 0;
+	float float_1 = 0;
+	double_1 = ceil ( double_2 ) ;
+	char_2 = char_1 - char_1;
+	unsigned_int_3 = unsigned_int_1 / unsigned_int_2;
+	double_2 = double_3 * double_3;
+	for(int looper_1=0; looper_1<5;looper_1++)
 	{
-		double double_a = 0;
-		double double_b = 0;
-		int int_a = 0;
-		long long_a = 0;
-		float float_a = 0;
-		int int_b = 0;
-		long long_b = 0;
-		float float_b = 0;
-		unsigned int unsigned_int_a = 0;
-		short short_a = 0;
-		short short_b = 0;
-		double double_c = 0;
-		unsigned int unsigned_int_b = 0;
-		char char_a = 0;
-		double double_e = 0;
-		unsigned int unsigned_int_c = 0;
-		double double_f = 0;
-		double double_g = 0;
-		double double_h = 0;
-		unsigned int unsigned_int_d = 0;
-		unsigned int unsigned_int_e = 0;
-		double double_i = 0;
-		double double_d = 0;
-		char char_b = 0;
-		char char_c = 0;
-		bmfs_table_view_deleted(int_a);
+		double double_1 = 0;
+		double double_2 = 0;
+		char char_1 = 0;
+		char char_2 = 0;
+		unsigned int unsigned_int_1 = 0;
+		unsigned int unsigned_int_2 = 0;
+		unsigned int unsigned_int_3 = 0;
+		double double_3 = 0;
+		char char_3 = 0;
+		int int_1 = 0;
+		int int_2 = 0;
+		int int_3 = 0;
+		double double_4 = 0;
+		short short_1 = 0;
+		long long_1 = 0;
+		short short_2 = 0;
+		short short_3 = 0;
+		float float_2 = 0;
+		float float_3 = 0;
+		unsigned int unsigned_int_4 = 0;
+		char char_4 = 0;
+		long long_2 = 0;
+		char char_5 = 0;
+		float float_1 = 0;
+		bmfs_table_begin(char_3);
 
-		double_b = double_a;
-		if(1)
+		float_1 = float_1;
+		char controller_1[5];
+		scanf("%5s", controller_1);
+		if( strcmp( controller_1, "T}Xy4") < 0)
 		{
 		}
-		double_a = pow ( double_d , double_d ) ;
-		bmfs_table_begin(short_a);
+		bmfs_table_view_deleted(int_1);
 
-		double_b = sqrt ( double_c ) ;
-		char_a = dump_x(unsigned_int_b,double_e,int_a,unsigned_int_c,short_a);
+		double_2 = ldexp ( double_1 , int_2 ) ;
+		double_3 = exp ( double_3 ) ;
+		unsigned_int_3 = unsigned_int_3;
+		int_2 = int_1 / int_3;
+		double_4 = tan ( double_4 ) ;
+		double_2 = ldexp ( double_4 , int_1 ) ;
+		short_1 = short_1;
+		short_1 = dump_llx(char_2,unsigned_int_2,long_1,unsigned_int_1,int_2);
 
-		double_a = atan ( double_e ) ;
-		double_d = tan ( double_f ) ;
-		short_b = bmfs_table_next(unsigned_int_c);
+		short_2 = short_2 - short_3;
+	}
+	long_1 = dump_indent(short_2,double_1);
 
-		char_a = char_b + char_c;
-		double_g = acos ( double_b ) ;
-		double_f = atan ( double_c ) ;
-		double_g = double_h;
-	}
-	double_f = cosh ( double_c ) ;
-	double_f = double_c + double_h;
-	double_f = double_e;
-	unsigned_int_d = unsigned_int_e;
-	double_c = atan ( double_h ) ;
-	double_g = cos ( double_g ) ;
-	double_i = acos ( double_h ) ;
-	return float_b;
-}
-char dump_x( unsigned int parameter_1,double parameter_2,int parameter_3,unsigned int parameter_4,short parameter_5)
-{
-	unsigned int unsigned_int_a = 0;
-	unsigned int unsigned_int_b = 0;
-	char char_b = 0;
-	int int_a = 0;
-	long long_a = 0;
-	float float_a = 0;
-	double double_a = 0;
-	char char_a = 0;
-	unsigned_int_a = unsigned_int_b;
-	char controller_a[3];
-	scanf("%3s", controller_a);
-	if( controller_a >"0Yg" )
-	{
-		unsigned int unsigned_int_a = 0;
-		unsigned int unsigned_int_b = 0;
-		char char_b = 0;
-		int int_a = 0;
-		long long_a = 0;
-		float float_a = 0;
-		double double_a = 0;
-		char char_a = 0;
-		double_a = tanh ( double_a ) ;
-	}
-	else
-	{
-		unsigned int unsigned_int_a = 0;
-		unsigned int unsigned_int_b = 0;
-		char char_b = 0;
-		int int_a = 0;
-		long long_a = 0;
-		float float_a = 0;
-		double double_a = 0;
-		char char_a = 0;
-		char_a = char_b;
-	}
-	return char_b;
-	int_a = dump_indent(long_a,float_a);
+	float_3 = float_2 * float_2;
+	unsigned_int_2 = unsigned_int_1 / unsigned_int_4;
+	char_2 = dump_x(unsigned_int_1,short_3,char_4,unsigned_int_4,long_2);
+
+	unsigned_int_2 = unsigned_int_3;
+	double_2 = ldexp ( double_2 , int_3 ) ;
+	double_4 = cos ( double_4 ) ;
+	unsigned_int_4 = unsigned_int_3 + unsigned_int_2;
+	char_3 = char_4 / char_5;
+	double_1 = bmfs_table_next(int_2);
 
 }
-long dump_llx( float parameter_1,unsigned int parameter_2,short parameter_3,short parameter_4,unsigned int parameter_5)
+char dump_x( unsigned int parameter_1,short parameter_2,char parameter_3,unsigned int parameter_4,long parameter_5)
 {
-	double double_a = 0;
-	int int_a = 0;
-	long long_a = 0;
-	float float_a = 0;
-	long long_b = 0;
-	int int_b = 0;
-	double_a = exp ( double_a ) ;
-	char controller_a[3];
-	scanf("%3s", controller_a);
-	if( controller_a >"4tI" )
+	double double_1 = 0;
+	char char_1 = 0;
+	long long_1 = 0;
+	short short_1 = 0;
+	double double_2 = 0;
+	double double_3 = 0;
+	double double_4 = 0;
+	double_1 = log10 ( double_1 ) ;
+	char controller_1[2];
+	scanf("%2s", controller_1);
+	if( strcmp( controller_1, "l2") > 0)
 	{
-		double_a = atan ( double_a ) ;
+		double double_1 = 0;
+		char char_1 = 0;
+		long long_1 = 0;
+		short short_1 = 0;
+		double double_2 = 0;
+		double double_3 = 0;
+		double double_4 = 0;
+		double_2 = floor ( double_2 ) ;
 	}
 	else
 	{
-		double double_a = 0;
-		int int_a = 0;
-		long long_a = 0;
-		float float_a = 0;
-		long long_b = 0;
-		int int_b = 0;
-		int_a = dump_indent(long_a,float_a);
-
-		int_b = int_b;
+		double double_1 = 0;
+		char char_1 = 0;
+		long long_1 = 0;
+		short short_1 = 0;
+		double double_2 = 0;
+		double double_3 = 0;
+		double double_4 = 0;
+		double_1 = fmod ( double_3 , double_4 ) ;
 	}
-	return long_b;
+	return char_1;
+	long_1 = dump_indent(short_1,double_1);
+
 }
-int dump_indent( long parameter_1,float parameter_2)
+short dump_llx( char parameter_1,unsigned int parameter_2,long parameter_3,unsigned int parameter_4,int parameter_5)
 {
-	int int_a = 0;
-	double double_a = 0;
-	for(int looper_a=0; looper_a<4;looper_a++)
+	long long_1 = 0;
+	short short_1 = 0;
+	double double_1 = 0;
+	long long_2 = 0;
+	long long_3 = 0;
+	double double_2 = 0;
+	long_1 = dump_indent(short_1,double_1);
+
+	long_2 = long_2 + long_3;
+	char controller_1[1];
+	scanf("%1s", controller_1);
+	if( strcmp( controller_1, ")") > 0)
 	{
-		int int_a = 0;
-		double double_a = 0;
-		double_a = exp ( double_a ) ;
+		double_1 = sinh ( double_2 ) ;
 	}
-	return int_a;
-}
-char dump_header( double parameter_1,char parameter_2)
-{
-	double double_a = 0;
-	double double_b = 0;
-	int int_a = 0;
-	long long_a = 0;
-	float float_a = 0;
-	char char_a = 0;
-	unsigned int unsigned_int_a = 0;
-	short short_a = 0;
-	double double_c = 0;
-	double double_d = 0;
-	double double_e = 0;
-	double double_f = 0;
-	int int_b = 0;
-	short short_b = 0;
-	unsigned int unsigned_int_b = 0;
-	char char_b = 0;
-	double_a = sinh ( double_a ) ;
-	double_b = sqrt ( double_b ) ;
-	double_a = cos ( double_a ) ;
-	int_a = dump_indent(long_a,float_a);
-
-	char_a = dump_x(unsigned_int_a,double_b,int_a,unsigned_int_a,short_a);
-
-	double_c = atan ( double_c ) ;
-	double_c = log ( double_d ) ;
-	double_c = sinh ( double_e ) ;
-	double_b = log ( double_f ) ;
-	int_a = int_b * int_b;
-	double_c = cos ( double_b ) ;
-	long_a = dump_llx(float_a,unsigned_int_a,short_a,short_b,unsigned_int_b);
-
-	double_f = cosh ( double_f ) ;
-	return char_b;
-}
-short dump_bmfs( float parameter_1,short parameter_2)
-{
-	char char_a = 0;
-	double double_a = 0;
-	unsigned int unsigned_int_a = 0;
-	unsigned int unsigned_int_b = 0;
-	double double_b = 0;
-	int int_a = 0;
-	float float_a = 0;
-	float float_b = 0;
-	float float_c = 0;
-	short short_a = 0;
-	char char_b = 0;
-	float float_d = 0;
-	char_a = dump_header(double_a,char_a);
-
-	unsigned_int_a = unsigned_int_b;
-	double_b = ldexp ( double_b , int_a ) ;
-	float_c = float_a / float_b;
-	return short_a;
-	float_c = dump_table(char_b,float_d);
-
-}
-char cmd_dump( float parameter_1,int parameter_2,char parameter_3)
-{
-	double double_a = 0;
-	long long_a = 0;
-	unsigned int unsigned_int_a = 0;
-	short short_a = 0;
-	float float_a = 0;
-	short short_b = 0;
-	char char_a = 0;
-	double double_b = 0;
-	long long_b = 0;
-	float float_b = 0;
-	char char_b = 0;
-	double double_c = 0;
-	double double_d = 0;
-	double double_e = 0;
-	short short_d = 0;
-	unsigned int unsigned_int_b = 0;
-	short short_c = 0;
-	int int_a = 0;
-	int int_b = 0;
-	double_a = ceil ( double_a ) ;
-	long_a = long_a;
-	int looper_a = 0;
-	while(looper_a < 9)
+	else
 	{
-		double double_a = 0;
-		long long_a = 0;
-		unsigned int unsigned_int_a = 0;
-		short short_a = 0;
-		float float_a = 0;
-		short short_b = 0;
-		char char_a = 0;
-		double double_b = 0;
-		long long_b = 0;
-		float float_b = 0;
-		char char_b = 0;
-		double double_c = 0;
-		double double_d = 0;
-		double double_e = 0;
-		short short_d = 0;
-		unsigned int unsigned_int_b = 0;
-		short short_c = 0;
-		int int_a = 0;
-		int int_b = 0;
-		looper_a += 1;
+		double_1 = tan ( double_2 ) ;
+	}
+	return short_1;
+}
+long dump_indent( short parameter_1,double parameter_2)
+{
+	long long_1 = 0;
+	double double_1 = 0;
+	double double_2 = 0;
+	for(int looper_1=0; looper_1<8;looper_1++)
+	{
+		long long_1 = 0;
+		double double_1 = 0;
+		double double_2 = 0;
+		double_1 = fabs ( double_2 ) ;
+	}
+	return long_1;
+}
+double dump_header( unsigned int parameter_1,unsigned int parameter_2)
+{
+	double double_1 = 0;
+	double double_2 = 0;
+	double double_3 = 0;
+	int int_1 = 0;
+	char char_1 = 0;
+	unsigned int unsigned_int_1 = 0;
+	short short_1 = 0;
+	long long_1 = 0;
+	long long_2 = 0;
+	long long_3 = 0;
+	long long_4 = 0;
+	double double_4 = 0;
+	unsigned int unsigned_int_2 = 0;
+	int int_2 = 0;
+	short short_2 = 0;
+	short short_3 = 0;
+	double double_5 = 0;
+	double_1 = asin ( double_1 ) ;
+	double_1 = log ( double_2 ) ;
+	double_2 = atan ( double_3 ) ;
+	int_1 = int_1;
+	double_3 = double_2 + double_1;
+	char_1 = dump_x(unsigned_int_1,short_1,char_1,unsigned_int_1,long_1);
+
+	long_4 = long_2 - long_3;
+	double_4 = pow ( double_4 , double_1 ) ;
+	short_1 = dump_llx(char_1,unsigned_int_1,long_3,unsigned_int_2,int_2);
+
+	unsigned_int_2 = unsigned_int_1;
+	long_1 = long_1 * long_4;
+	short_3 = short_2 * short_1;
+	return double_5;
+	long_1 = dump_indent(short_2,double_5);
+
+}
+long dump_bmfs( char parameter_1,unsigned int parameter_2)
+{
+	double double_1 = 0;
+	unsigned int unsigned_int_1 = 0;
+	double double_2 = 0;
+	double double_3 = 0;
+	short short_1 = 0;
+	long long_1 = 0;
+	double double_4 = 0;
+	double_1 = dump_header(unsigned_int_1,unsigned_int_1);
+
+	double_1 = exp ( double_1 ) ;
+	double_2 = sinh ( double_3 ) ;
+	dump_table(short_1,long_1);
+
+	double_4 = asin ( double_4 ) ;
+	return long_1;
+}
+short cmd_dump( unsigned int parameter_1,int parameter_2,short parameter_3)
+{
+	float float_1 = 0;
+	long long_1 = 0;
+	char char_1 = 0;
+	unsigned int unsigned_int_1 = 0;
+	double double_1 = 0;
+	double double_2 = 0;
+	char char_2 = 0;
+	unsigned int unsigned_int_2 = 0;
+	short short_1 = 0;
+	unsigned int unsigned_int_3 = 0;
+	short short_2 = 0;
+	short short_3 = 0;
+	double double_4 = 0;
+	double double_3 = 0;
+	float_1 = float_1;
+	long_1 = dump_bmfs(char_1,unsigned_int_1);
+
+	double_1 = ceil ( double_2 ) ;
+	int looper_1 = 0;
+	while(looper_1 < 1)
+	{
+		looper_1 += 1;
 		if(1)
 		{
-			double double_a = 0;
-			long long_a = 0;
-			unsigned int unsigned_int_a = 0;
-			short short_a = 0;
-			float float_a = 0;
-			short short_b = 0;
-			char char_a = 0;
-			double double_b = 0;
-			long long_b = 0;
-			float float_b = 0;
-			char char_b = 0;
-			double double_c = 0;
-			double double_d = 0;
-			double double_e = 0;
-			short short_d = 0;
-			unsigned int unsigned_int_b = 0;
-			short short_c = 0;
-			int int_a = 0;
-			int int_b = 0;
-			unsigned_int_b = unsigned_int_a - unsigned_int_b;
+			double_1 = tan ( double_1 ) ;
 			if(1)
 			{
-				double double_a = 0;
-				long long_a = 0;
-				unsigned int unsigned_int_a = 0;
-				short short_a = 0;
-				float float_a = 0;
-				short short_b = 0;
-				char char_a = 0;
-				double double_b = 0;
-				long long_b = 0;
-				float float_b = 0;
-				char char_b = 0;
-				double double_c = 0;
-				double double_d = 0;
-				double double_e = 0;
-				short short_d = 0;
-				unsigned int unsigned_int_b = 0;
-				short short_c = 0;
-				int int_a = 0;
-				int int_b = 0;
-				short_a = dump_bmfs(float_a,short_b);
+				char_2 = is_opt(unsigned_int_2,char_2,short_1);
 
-				short_c = short_a;
-				return char_a;
+				unsigned_int_3 = unsigned_int_1 * unsigned_int_2;
+				return short_2;
 			}
 		}
-		short_d = short_b / short_d;
+		unsigned_int_3 = unsigned_int_1 / unsigned_int_3;
 	}
-	unsigned_int_a = unsigned_int_a;
+	unsigned_int_2 = unsigned_int_3;
 	if(1)
 	{
-		double double_a = 0;
-		long long_a = 0;
-		unsigned int unsigned_int_a = 0;
-		short short_a = 0;
-		float float_a = 0;
-		short short_b = 0;
-		char char_a = 0;
-		double double_b = 0;
-		long long_b = 0;
-		float float_b = 0;
-		char char_b = 0;
-		double double_c = 0;
-		double double_d = 0;
-		double double_e = 0;
-		short short_d = 0;
-		unsigned int unsigned_int_b = 0;
-		short short_c = 0;
-		int int_a = 0;
-		int int_b = 0;
-		double_b = is_opt(long_b,char_a,float_b);
-
-		int_a = int_a / int_b;
-		return char_b;
+		float float_1 = 0;
+		long long_1 = 0;
+		char char_1 = 0;
+		unsigned int unsigned_int_1 = 0;
+		double double_1 = 0;
+		double double_2 = 0;
+		char char_2 = 0;
+		unsigned int unsigned_int_2 = 0;
+		short short_1 = 0;
+		unsigned int unsigned_int_3 = 0;
+		short short_2 = 0;
+		short short_3 = 0;
+		double double_4 = 0;
+		double double_3 = 0;
+		double_3 = fabs ( double_3 ) ;
+		return short_3;
 	}
-	double_c = tan ( double_d ) ;
-	double_b = atan2 ( double_e , double_e ) ;
-	return char_b;
+	double_2 = asin ( double_4 ) ;
+	unsigned_int_1 = unsigned_int_2;
+	return short_1;
 }
-void bmfs_get_status( long parameter_1,long parameter_2)
+void bmfs_get_status( int parameter_1,char parameter_2)
 {
-	long long_a = 0;
-	long long_b = 0;
-	char char_a = 0;
-	char char_b = 0;
-	double double_a = 0;
-	int int_a = 0;
-	short short_a = 0;
-	unsigned int unsigned_int_a = 0;
-	double double_b = 0;
-	short short_b = 0;
-	double double_c = 0;
-	unsigned int unsigned_int_b = 0;
-	unsigned int unsigned_int_c = 0;
-	long_a = long_a / long_b;
-	char_b = char_a * char_a;
-	double_a = tan ( double_a ) ;
-	bmfs_table_hide_deleted(int_a);
+	float float_1 = 0;
+	float float_2 = 0;
+	double double_1 = 0;
+	double double_2 = 0;
+	char char_1 = 0;
+	double double_3 = 0;
+	int int_1 = 0;
+	int int_2 = 0;
+	int int_3 = 0;
+	unsigned int unsigned_int_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	float_2 = float_1 - float_2;
+	double_1 = atan2 ( double_2 , double_1 ) ;
+	bmfs_table_begin(char_1);
 
-	short_a = bmfs_table_next(unsigned_int_a);
-
-	double_b = cos ( double_b ) ;
-	for(int looper_a=0; looper_a<8;looper_a++)
+	double_2 = atan ( double_3 ) ;
+	int_2 = int_1 + int_1;
+	for(int looper_1=0; looper_1<5;looper_1++)
 	{
-		long long_a = 0;
-		long long_b = 0;
-		char char_a = 0;
-		char char_b = 0;
-		double double_a = 0;
-		int int_a = 0;
-		short short_a = 0;
-		unsigned int unsigned_int_a = 0;
-		double double_b = 0;
-		short short_b = 0;
-		double double_c = 0;
-		unsigned int unsigned_int_b = 0;
-		unsigned int unsigned_int_c = 0;
-		double_c = tanh ( double_c ) ;
-		char controller_a[3];
-		scanf("%3s", controller_a);
-		if( controller_a >"]ap" )
+		float float_1 = 0;
+		float float_2 = 0;
+		double double_1 = 0;
+		double double_2 = 0;
+		char char_1 = 0;
+		double double_3 = 0;
+		int int_1 = 0;
+		int int_2 = 0;
+		int int_3 = 0;
+		unsigned int unsigned_int_1 = 0;
+		unsigned int unsigned_int_2 = 0;
+		double_2 = double_2;
+		char controller_1[1];
+		scanf("%1s", controller_1);
+		if( strcmp( controller_1, "f") < 0)
 		{
 		}
-		unsigned_int_b = unsigned_int_c;
+		bmfs_table_hide_deleted();
+
+		double_1 = bmfs_table_next(int_3);
+
+		unsigned_int_2 = unsigned_int_1 + unsigned_int_1;
 	}
-	bmfs_table_begin(short_b);
-
 }
-void bmfs_status_init( unsigned int parameter_1)
+void bmfs_status_init()
 {
-	float float_a = 0;
-	float float_b = 0;
-	double double_a = 0;
-	double double_b = 0;
-	double double_c = 0;
-	double double_d = 0;
-	short short_a = 0;
-	short short_b = 0;
-	double double_e = 0;
-	float_a = float_b;
-	double_a = acos ( double_b ) ;
-	double_c = sinh ( double_c ) ;
-	double_d = asin ( double_b ) ;
-	short_a = short_b;
-	double_a = log ( double_e ) ;
+	unsigned int unsigned_int_1 = 0;
+	double double_1 = 0;
+	short short_1 = 0;
+	int int_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	double double_2 = 0;
+	unsigned_int_1 = unsigned_int_1;
+	double_1 = ceil ( double_1 ) ;
+	short_1 = short_1;
+	int_1 = int_1 - int_1;
+	unsigned_int_2 = unsigned_int_1 + unsigned_int_1;
+	double_1 = fabs ( double_2 ) ;
 }
-long cmd_status( float parameter_1,int parameter_2,unsigned int parameter_3)
+unsigned int cmd_status( double parameter_1,int parameter_2,double parameter_3)
 {
-	unsigned int unsigned_int_a = 0;
-	long long_a = 0;
-	unsigned int unsigned_int_b = 0;
-	unsigned int unsigned_int_c = 0;
-	double double_a = 0;
-	double double_b = 0;
-	long long_b = 0;
-	long long_c = 0;
-	double double_c = 0;
-	double double_d = 0;
-	double double_e = 0;
-	char char_a = 0;
-	char char_b = 0;
-	bmfs_status_init(unsigned_int_a);
+	int int_1 = 0;
+	char char_1 = 0;
+	unsigned int unsigned_int_1 = 0;
+	float float_1 = 0;
+	float float_2 = 0;
+	double double_1 = 0;
+	long long_1 = 0;
+	long long_2 = 0;
+	unsigned int unsigned_int_2 = 0;
+	unsigned int unsigned_int_3 = 0;
+	unsigned int unsigned_int_4 = 0;
+	short short_1 = 0;
+	short short_2 = 0;
+	bmfs_get_status(int_1,char_1);
 
-	bmfs_get_status(long_a,long_a);
+	unsigned_int_1 = unsigned_int_1;
+	float_1 = float_2;
+	double_1 = cos ( double_1 ) ;
+	double_1 = fmod ( double_1 , double_1 ) ;
+	long_1 = long_2;
+	unsigned_int_4 = unsigned_int_2 / unsigned_int_3;
+	long_1 = long_1;
+	double_1 = double_1 - double_1;
+	bmfs_status_init();
 
-	unsigned_int_c = unsigned_int_a / unsigned_int_b;
-	double_a = asin ( double_a ) ;
-	double_a = tanh ( double_b ) ;
-	long_c = long_b + long_a;
-	double_b = tanh ( double_c ) ;
-	double_d = tanh ( double_e ) ;
-	char_a = char_a;
-	char_a = char_a * char_b;
-	double_e = cosh ( double_b ) ;
-	double_c = double_b * double_a;
-	return long_a;
+	short_1 = short_2;
+	double_1 = log10 ( double_1 ) ;
+	return unsigned_int_4;
 }
-int bmfs_delete_dir( long parameter_1,int parameter_2)
+int bmfs_delete_dir( unsigned int parameter_1,char parameter_2)
 {
-	double double_a = 0;
-	unsigned int unsigned_int_a = 0;
-	unsigned int unsigned_int_b = 0;
-	int int_a = 0;
-	int int_b = 0;
-	unsigned int unsigned_int_c = 0;
-	unsigned int unsigned_int_d = 0;
-	int int_c = 0;
-	double double_b = 0;
-	long long_a = 0;
-	short short_a = 0;
-	float float_a = 0;
-	double_a = double_a * double_a;
-	unsigned_int_a = unsigned_int_b;
-	unsigned_int_a = bmfs_dir_next();
+	unsigned int unsigned_int_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	int int_1 = 0;
+	double double_1 = 0;
+	double double_2 = 0;
+	int int_2 = 0;
+	long long_1 = 0;
+	char char_1 = 0;
+	float float_1 = 0;
+	unsigned int unsigned_int_3 = 0;
+	int int_3 = 0;
+	int int_4 = 0;
+	double double_3 = 0;
+	int int_5 = 0;
+	unsigned_int_2 = unsigned_int_1 + unsigned_int_1;
+	bmfs_dir_init(int_1);
 
-	int_a = int_b;
+	double_1 = fmod ( double_2 , double_1 ) ;
+	int_2 = bmfs_open_dir(long_1,char_1,char_1,230);
+
+	float_1 = bmfs_dir_next(double_1);
+
+	unsigned_int_3 = unsigned_int_2;
 	if(1)
 	{
-		return int_a;
+		return int_3;
 	}
-	if(1)
+	char controller_2[3];
+	scanf("%3s", controller_2);
+	if( strcmp( controller_2, "R`_") < 0)
 	{
-		return int_a;
+		return int_4;
 	}
-	unsigned_int_c = unsigned_int_b * unsigned_int_c;
-	if(1)
+	double_1 = delete_entry(float_1,long_1);
+
+	double_3 = acos ( double_2 ) ;
+	char controller_3[5];
+	scanf("%5s", controller_3);
+	if( strcmp( controller_3, "A9/&$") > 0)
 	{
-		return int_a;
+		return int_5;
 	}
-	return int_b;
-	bmfs_dir_init(unsigned_int_d);
-
-	int_c = bmfs_open_dir(double_b,long_a,double_b,755);
-
-	double_a = delete_entry(short_a,float_a);
-
+	return int_4;
 }
-int bmfs_delete_dir_recursively( double parameter_1,double parameter_2)
+int bmfs_delete_dir_recursively( unsigned int parameter_1,long parameter_2)
 {
-	long long_a = 0;
-	long long_b = 0;
-	double double_a = 0;
-	short short_a = 0;
-	float float_a = 0;
-	double double_b = 0;
-	unsigned int unsigned_int_a = 0;
-	unsigned int unsigned_int_b = 0;
-	int int_a = 0;
-	unsigned int unsigned_int_c = 0;
-	double double_c = 0;
-	double double_d = 0;
-	int int_b = 0;
-	long_b = long_a + long_b;
-	double_a = delete_entry(short_a,float_a);
+	int int_1 = 0;
+	int int_2 = 0;
+	long long_1 = 0;
+	char char_1 = 0;
+	char char_2 = 0;
+	double double_1 = 0;
+	double double_2 = 0;
+	double double_3 = 0;
+	short short_1 = 0;
+	short short_2 = 0;
+	float float_1 = 0;
+	float float_2 = 0;
+	int int_3 = 0;
+	unsigned int unsigned_int_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	unsigned int unsigned_int_3 = 0;
+	int int_4 = 0;
+	int int_5 = 0;
+	double double_4 = 0;
+	bmfs_dir_init(int_1);
 
-	double_b = double_b / double_a;
-	unsigned_int_a = unsigned_int_a - unsigned_int_b;
+	int_2 = bmfs_open_dir(long_1,char_1,char_2,694);
+
+	double_3 = double_1 - double_2;
+	double_1 = atan ( double_3 ) ;
+	short_2 = short_1 + short_1;
 	if(1)
 	{
-		return int_a;
+		return int_2;
 	}
-	for(int looper_a=0; looper_a<1;looper_a++)
+	for(int looper_1=0; looper_1<3;looper_1++)
 	{
-		unsigned_int_c = bmfs_dir_next();
+		int int_1 = 0;
+		int int_2 = 0;
+		long long_1 = 0;
+		char char_1 = 0;
+		char char_2 = 0;
+		double double_1 = 0;
+		double double_2 = 0;
+		double double_3 = 0;
+		short short_1 = 0;
+		short short_2 = 0;
+		float float_1 = 0;
+		float float_2 = 0;
+		int int_3 = 0;
+		unsigned int unsigned_int_1 = 0;
+		unsigned int unsigned_int_2 = 0;
+		unsigned int unsigned_int_3 = 0;
+		int int_4 = 0;
+		int int_5 = 0;
+		double double_4 = 0;
+		double_1 = delete_entry(float_1,long_1);
 
-		double_b = fabs ( double_b ) ;
+		double_2 = tan ( double_2 ) ;
 		if(1)
 		{
 		}
-		double_a = double_c;
-		char controller_c[1];
-		scanf("%1s", controller_c);
-		if( controller_c <"]" )
+		float_2 = bmfs_dir_next(double_1);
+
+		double_4 = double_4 * double_1;
+		char controller_3[2];
+		scanf("%2s", controller_3);
+		if( strcmp( controller_3, "F3") < 0)
 		{
-			return int_a;
+			return int_3;
 		}
 	}
-	bmfs_dir_init(unsigned_int_c);
-
-	double_d = double_c + double_c;
-	char controller_d[1];
-	scanf("%1s", controller_d);
-	if( controller_d <"D" )
+	unsigned_int_3 = unsigned_int_1 * unsigned_int_2;
+	if(1)
 	{
-		return int_a;
+		return int_4;
 	}
-	return int_b;
-	int_b = bmfs_open_dir(double_a,long_a,double_c,369);
-
+	return int_5;
 }
-int cmd_rmdir( float parameter_1,int parameter_2,int parameter_3)
+double cmd_rmdir( float parameter_1,int parameter_2,int parameter_3)
 {
-	char char_a = 0;
-	char char_b = 0;
-	double double_a = 0;
-	double double_b = 0;
-	double double_c = 0;
-	long long_a = 0;
-	float float_a = 0;
-	double double_d = 0;
-	int int_a = 0;
-	int int_b = 0;
-	int int_d = 0;
-	double double_e = 0;
-	int int_c = 0;
-	short short_a = 0;
-	short short_c = 0;
-	short short_b = 0;
-	char char_c = 0;
-	char_a = char_b;
-	double_a = tan ( double_b ) ;
-	double_c = is_opt(long_a,char_a,float_a);
+	char char_1 = 0;
+	unsigned int unsigned_int_1 = 0;
+	char char_2 = 0;
+	short short_1 = 0;
+	double double_1 = 0;
+	float float_1 = 0;
+	int int_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	unsigned int unsigned_int_3 = 0;
+	unsigned int unsigned_int_4 = 0;
+	double double_2 = 0;
+	double double_3 = 0;
+	long long_1 = 0;
+	double double_5 = 0;
+	int int_2 = 0;
+	double double_4 = 0;
+	unsigned int unsigned_int_5 = 0;
+	char_1 = is_opt(unsigned_int_1,char_2,short_1);
 
-	double_c = tan ( double_b ) ;
-	int looper_a = 0;
-	while(looper_a < 5)
+	double_1 = cosh ( double_1 ) ;
+	float_1 = bmfs_strerror(int_1);
+
+	float_1 = float_1 * float_1;
+	unsigned_int_2 = unsigned_int_2;
+	int looper_1 = 0;
+	while(looper_1 < 2)
 	{
-		looper_a += 1;
-		char controller_a[4];
-		scanf("%4s", controller_a);
-		if( controller_a <"GCgZ" )
+		looper_1 += 1;
+		if(1)
 		{
+		}
+		char controller_2[3];
+		scanf("%3s", controller_2);
+		if( strcmp( controller_2, "u;3") > 0)
+		{
+			int_1 = bmfs_delete_dir(unsigned_int_1,char_1);
+
+			double_1 = cosh ( double_1 ) ;
 		}
 		if(1)
 		{
-			double_d = cosh ( double_d ) ;
-		}
-		char controller_c[4];
-		scanf("%4s", controller_c);
-		if( controller_c >"*,M+" )
-		{
-			char char_a = 0;
-			char char_b = 0;
-			double double_a = 0;
-			double double_b = 0;
-			double double_c = 0;
-			long long_a = 0;
-			float float_a = 0;
-			double double_d = 0;
-			int int_a = 0;
-			int int_b = 0;
-			int int_d = 0;
-			double double_e = 0;
-			int int_c = 0;
-			short short_a = 0;
-			short short_c = 0;
-			short short_b = 0;
-			char char_c = 0;
-			int_a = bmfs_delete_dir(long_a,int_b);
-
-			int_c = int_b / int_a;
+			unsigned_int_3 = unsigned_int_4;
 		}
 		else
 		{
-			double_b = exp ( double_d ) ;
-			return int_d;
+			double_2 = sinh ( double_1 ) ;
+			return double_1;
 		}
-		double_b = double_e / double_e;
+		unsigned_int_3 = unsigned_int_2 * unsigned_int_1;
 	}
-	int looper_b = 0;
-	while(looper_b < 10)
+	int looper_2 = 0;
+	while(looper_2 < 7)
 	{
-		char char_a = 0;
-		char char_b = 0;
-		double double_a = 0;
-		double double_b = 0;
-		double double_c = 0;
-		long long_a = 0;
-		float float_a = 0;
-		double double_d = 0;
-		int int_a = 0;
-		int int_b = 0;
-		int int_d = 0;
-		double double_e = 0;
-		int int_c = 0;
-		short short_a = 0;
-		short short_c = 0;
-		short short_b = 0;
-		char char_c = 0;
-		looper_b += 1;
+		char char_1 = 0;
+		unsigned int unsigned_int_1 = 0;
+		char char_2 = 0;
+		short short_1 = 0;
+		double double_1 = 0;
+		float float_1 = 0;
+		int int_1 = 0;
+		unsigned int unsigned_int_2 = 0;
+		unsigned int unsigned_int_3 = 0;
+		unsigned int unsigned_int_4 = 0;
+		double double_2 = 0;
+		double double_3 = 0;
+		long long_1 = 0;
+		double double_5 = 0;
+		int int_2 = 0;
+		double double_4 = 0;
+		unsigned int unsigned_int_5 = 0;
+		looper_2 += 1;
 		if(1)
 		{
-			char char_a = 0;
-			char char_b = 0;
-			double double_a = 0;
-			double double_b = 0;
-			double double_c = 0;
-			long long_a = 0;
-			float float_a = 0;
-			double double_d = 0;
-			int int_a = 0;
-			int int_b = 0;
-			int int_d = 0;
-			double double_e = 0;
-			int int_c = 0;
-			short short_a = 0;
-			short short_c = 0;
-			short short_b = 0;
-			char char_c = 0;
-			bmfs_strerror(int_d);
-
-			short_a = short_b;
-			return int_a;
+			char char_1 = 0;
+			unsigned int unsigned_int_1 = 0;
+			char char_2 = 0;
+			short short_1 = 0;
+			double double_1 = 0;
+			float float_1 = 0;
+			int int_1 = 0;
+			unsigned int unsigned_int_2 = 0;
+			unsigned int unsigned_int_3 = 0;
+			unsigned int unsigned_int_4 = 0;
+			double double_2 = 0;
+			double double_3 = 0;
+			long long_1 = 0;
+			double double_5 = 0;
+			int int_2 = 0;
+			double double_4 = 0;
+			unsigned int unsigned_int_5 = 0;
+			unsigned_int_3 = unsigned_int_5;
+			return double_1;
 		}
-		double_a = atan ( double_a ) ;
-		if(1)
+		int_2 = int_2 + int_2;
+		char controller_5[4];
+		scanf("%4s", controller_5);
+		if( strcmp( controller_5, "VHrW") < 0)
 		{
-			double_d = atan2 ( double_c , double_b ) ;
+			unsigned_int_2 = unsigned_int_2 / unsigned_int_4;
 		}
 		else
 		{
-			char_a = char_a - char_a;
+			double_1 = double_3 - double_1;
 		}
 		if(1)
 		{
-			char char_a = 0;
-			char char_b = 0;
-			double double_a = 0;
-			double double_b = 0;
-			double double_c = 0;
-			long long_a = 0;
-			float float_a = 0;
-			double double_d = 0;
-			int int_a = 0;
-			int int_b = 0;
-			int int_d = 0;
-			double double_e = 0;
-			int int_c = 0;
-			short short_a = 0;
-			short short_c = 0;
-			short short_b = 0;
-			char char_c = 0;
-			char_c = char_c;
-			int_b = bmfs_delete_dir_recursively(double_e,double_a);
+			int_1 = bmfs_delete_dir_recursively(unsigned_int_1,long_1);
 
-			double_e = acos ( double_b ) ;
-			return int_a;
+			double_1 = ldexp ( double_3 , int_2 ) ;
+			double_2 = cos ( double_3 ) ;
+			return double_3;
 		}
-		short_c = short_a;
+		double_2 = cos ( double_4 ) ;
 	}
-	return int_b;
+	return double_5;
 }
-double delete_table_entry( float parameter_1,unsigned int parameter_2)
+char delete_table_entry( float parameter_1,short parameter_2)
 {
-	double double_a = 0;
-	int int_a = 0;
-	float float_a = 0;
-	unsigned int unsigned_int_a = 0;
-	return double_a;
-	int_a = bmfs_table_free(float_a,unsigned_int_a);
+	char char_1 = 0;
+	int int_1 = 0;
+	unsigned int unsigned_int_1 = 0;
+	float float_1 = 0;
+	return char_1;
+	int_1 = bmfs_table_free(unsigned_int_1,float_1);
 
 }
-double delete_entry( short parameter_1,float parameter_2)
+double delete_entry( float parameter_1,long parameter_2)
 {
-	double double_a = 0;
-	float float_a = 0;
-	unsigned int unsigned_int_a = 0;
-	unsigned int unsigned_int_b = 0;
-	int int_a = 0;
-	int int_b = 0;
-	double double_b = 0;
-	double double_c = 0;
-	double double_d = 0;
-	char char_a = 0;
-	unsigned int unsigned_int_c = 0;
-	double_a = delete_table_entry(float_a,unsigned_int_a);
+	int int_1 = 0;
+	unsigned int unsigned_int_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	double double_1 = 0;
+	int int_2 = 0;
+	int int_3 = 0;
+	char char_1 = 0;
+	float float_1 = 0;
+	double double_2 = 0;
+	double double_3 = 0;
+	char char_2 = 0;
+	short short_1 = 0;
+	bmfs_entry_set_deleted(int_1);
 
-	bmfs_entry_set_deleted(unsigned_int_b);
-
-	int_a = int_a - int_b;
-	char controller_a[3];
-	scanf("%3s", controller_a);
-	if( controller_a <"#%*" )
-	{
-		return double_b;
-	}
-	double_c = sinh ( double_d ) ;
-	int_b = bmfs_entry_save(double_b,char_a);
-
-	unsigned_int_c = unsigned_int_c;
-	char controller_b[5];
-	scanf("%5s", controller_b);
-	if( controller_b >"+bYBy" )
-	{
-		return double_a;
-	}
-	return double_b;
-}
-int bmfs_delete_file( float parameter_1,char parameter_2)
-{
-	int int_a = 0;
-	int int_b = 0;
-	long long_a = 0;
-	short short_a = 0;
-	float float_a = 0;
-	double double_a = 0;
-	double double_b = 0;
-	double double_c = 0;
-	double double_d = 0;
-	int int_c = 0;
-	int int_d = 0;
-	int int_e = 0;
-	short short_b = 0;
-	int_a = int_b;
-	int_b = bmfs_open_file(long_a,short_a,float_a);
-
-	double_a = pow ( double_a , double_a ) ;
-	double_b = atan2 ( double_a , double_b ) ;
-	bmfs_file_init(double_b);
-
-	double_c = fabs ( double_d ) ;
+	unsigned_int_2 = unsigned_int_1 - unsigned_int_1;
 	if(1)
 	{
-		return int_c;
+		return double_1;
 	}
-	double_c = exp ( double_a ) ;
-	if(1)
+	int_2 = bmfs_entry_save(int_3,char_1);
+
+	float_1 = float_1;
+	double_2 = exp ( double_3 ) ;
+	char controller_2[1];
+	scanf("%1s", controller_2);
+	if( strcmp( controller_2, "N") > 0)
 	{
-		return int_d;
+		return double_1;
 	}
-	return int_e;
-	double_b = delete_entry(short_b,float_a);
+	return double_3;
+	char_2 = delete_table_entry(float_1,short_1);
 
 }
-int cmd_rm( double parameter_1,int parameter_2,double parameter_3)
+int bmfs_delete_file( short parameter_1,long parameter_2)
 {
-	int int_a = 0;
-	float float_a = 0;
-	char char_a = 0;
-	double double_a = 0;
-	float float_b = 0;
-	double double_b = 0;
-	double double_c = 0;
-	int int_b = 0;
-	int int_d = 0;
-	int int_e = 0;
-	long long_a = 0;
-	short short_a = 0;
-	short short_b = 0;
-	int int_c = 0;
-	int_a = bmfs_delete_file(float_a,char_a);
-
-	bmfs_strerror(int_a);
-
-	double_a = tanh ( double_a ) ;
-	float_b = float_a + float_a;
-	int looper_a = 0;
-	while(looper_a < 10)
+	short short_1 = 0;
+	int int_1 = 0;
+	unsigned int unsigned_int_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	double double_1 = 0;
+	float float_1 = 0;
+	long long_1 = 0;
+	double double_2 = 0;
+	double double_3 = 0;
+	int int_2 = 0;
+	float float_2 = 0;
+	short_1 = short_1 / short_1;
+	int_1 = int_1 / int_1;
+	unsigned_int_1 = unsigned_int_1 - unsigned_int_2;
+	int_1 = int_1 - int_1;
+	char controller_1[4];
+	scanf("%4s", controller_1);
+	if( strcmp( controller_1, "([sM") < 0)
 	{
-		looper_a += 1;
-		char controller_a[5];
-		scanf("%5s", controller_a);
-		if( controller_a <".B1.~" )
+		return int_1;
+	}
+	double_1 = delete_entry(float_1,long_1);
+
+	double_2 = double_3;
+	char controller_2[3];
+	scanf("%3s", controller_2);
+	if( strcmp( controller_2, ";8R") > 0)
+	{
+		return int_1;
+	}
+	return int_1;
+	bmfs_file_init(int_2);
+
+	int_1 = bmfs_open_file(float_2,float_2,double_3);
+
+}
+int cmd_rm( long parameter_1,int parameter_2,float parameter_3)
+{
+	double double_1 = 0;
+	double double_2 = 0;
+	float float_1 = 0;
+	int int_1 = 0;
+	long long_1 = 0;
+	long long_2 = 0;
+	char char_1 = 0;
+	unsigned int unsigned_int_1 = 0;
+	short short_1 = 0;
+	double double_3 = 0;
+	int int_2 = 0;
+	long long_4 = 0;
+	int int_3 = 0;
+	long long_3 = 0;
+	double double_4 = 0;
+	double double_5 = 0;
+	double double_6 = 0;
+	double_1 = double_1 * double_2;
+	float_1 = bmfs_strerror(int_1);
+
+	long_1 = long_2;
+	int looper_1 = 0;
+	while(looper_1 < 2)
+	{
+		looper_1 += 1;
+		if(1)
 		{
 		}
 		if(1)
 		{
-			double_b = atan2 ( double_a , double_b ) ;
+			char_1 = is_opt(unsigned_int_1,char_1,short_1);
+
+			double_3 = cos ( double_3 ) ;
 		}
 		else
 		{
-			double_a = atan2 ( double_a , double_c ) ;
-			return int_b;
+			double double_1 = 0;
+			double double_2 = 0;
+			float float_1 = 0;
+			int int_1 = 0;
+			long long_1 = 0;
+			long long_2 = 0;
+			char char_1 = 0;
+			unsigned int unsigned_int_1 = 0;
+			short short_1 = 0;
+			double double_3 = 0;
+			int int_2 = 0;
+			long long_4 = 0;
+			int int_3 = 0;
+			long long_3 = 0;
+			double double_4 = 0;
+			double double_5 = 0;
+			double double_6 = 0;
+			long_2 = long_2 - long_3;
+			return int_2;
 		}
-		double_a = sqrt ( double_a ) ;
+		double_1 = ceil ( double_2 ) ;
 	}
-	int looper_b = 0;
-	while(looper_b < 4)
+	int looper_2 = 0;
+	while(looper_2 < 7)
 	{
-		int int_a = 0;
-		float float_a = 0;
-		char char_a = 0;
-		double double_a = 0;
-		float float_b = 0;
-		double double_b = 0;
-		double double_c = 0;
-		int int_b = 0;
-		int int_d = 0;
-		int int_e = 0;
-		long long_a = 0;
-		short short_a = 0;
-		short short_b = 0;
-		int int_c = 0;
-		looper_b += 1;
-		char controller_c[3];
-		scanf("%3s", controller_c);
-		if( controller_c <"H#K" )
+		double double_1 = 0;
+		double double_2 = 0;
+		float float_1 = 0;
+		int int_1 = 0;
+		long long_1 = 0;
+		long long_2 = 0;
+		char char_1 = 0;
+		unsigned int unsigned_int_1 = 0;
+		short short_1 = 0;
+		double double_3 = 0;
+		int int_2 = 0;
+		long long_4 = 0;
+		int int_3 = 0;
+		long long_3 = 0;
+		double double_4 = 0;
+		double double_5 = 0;
+		double double_6 = 0;
+		looper_2 += 1;
+		if(1)
 		{
-			short_b = short_a / short_a;
-			return int_b;
+			double_1 = ceil ( double_1 ) ;
+			return int_1;
 		}
-		int_a = int_c - int_d;
-		char controller_d[5];
-		scanf("%5s", controller_d);
-		if( controller_d <"r-e>^" )
+		double_2 = ceil ( double_4 ) ;
+		if(1)
 		{
-			short_a = short_b - short_b;
-			double_b = double_c + double_b;
-			return int_d;
-		}
-		float_b = float_a;
-	}
-	return int_e;
-	double_a = is_opt(long_a,char_a,float_a);
+			double_1 = asin ( double_2 ) ;
+			int_2 = bmfs_delete_file(short_1,long_4);
 
+			double_4 = sqrt ( double_5 ) ;
+			return int_3;
+		}
+		double_6 = atan2 ( double_3 , double_5 ) ;
+	}
+	return int_3;
 }
-int cmd_touch( int parameter_1,int parameter_2,double parameter_3)
+short cmd_touch( int parameter_1,int parameter_2,long parameter_3)
 {
-	float float_a = 0;
-	float float_b = 0;
-	float float_c = 0;
-	int int_a = 0;
-	int int_b = 0;
-	double double_a = 0;
-	double double_b = 0;
-	float float_d = 0;
-	int int_d = 0;
-	long long_a = 0;
-	long long_b = 0;
-	long long_c = 0;
-	int int_c = 0;
-	double double_c = 0;
-	float_c = float_a * float_b;
-	int looper_a = 0;
-	while(looper_a < 5)
+	unsigned int unsigned_int_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	short short_1 = 0;
+	short short_3 = 0;
+	float float_1 = 0;
+	int int_1 = 0;
+	short short_4 = 0;
+	double double_2 = 0;
+	int int_2 = 0;
+	unsigned int unsigned_int_3 = 0;
+	short short_2 = 0;
+	long long_1 = 0;
+	long long_2 = 0;
+	double double_1 = 0;
+	float float_2 = 0;
+	unsigned_int_1 = unsigned_int_2;
+	int looper_1 = 0;
+	while(looper_1 < 8)
 	{
-		looper_a += 1;
-		char controller_a[3];
-		scanf("%3s", controller_a);
-		if( controller_a <"7Io" )
+		unsigned int unsigned_int_1 = 0;
+		unsigned int unsigned_int_2 = 0;
+		short short_1 = 0;
+		short short_3 = 0;
+		float float_1 = 0;
+		int int_1 = 0;
+		short short_4 = 0;
+		double double_2 = 0;
+		int int_2 = 0;
+		unsigned int unsigned_int_3 = 0;
+		short short_2 = 0;
+		long long_1 = 0;
+		long long_2 = 0;
+		double double_1 = 0;
+		float float_2 = 0;
+		looper_1 += 1;
+		if(1)
 		{
 		}
 		else
 		{
-			int_b = int_a * int_b;
-			return int_a;
+			unsigned_int_3 = unsigned_int_1 / unsigned_int_2;
+			return short_1;
 		}
-		double_a = cos ( double_b ) ;
+		unsigned_int_3 = unsigned_int_3;
 	}
-	int looper_b = 0;
-	while(looper_b < 7)
+	int looper_2 = 0;
+	while(looper_2 < 8)
 	{
-		float float_a = 0;
-		float float_b = 0;
-		float float_c = 0;
-		int int_a = 0;
-		int int_b = 0;
-		double double_a = 0;
-		double double_b = 0;
-		float float_d = 0;
-		int int_d = 0;
-		long long_a = 0;
-		long long_b = 0;
-		long long_c = 0;
-		int int_c = 0;
-		double double_c = 0;
-		looper_b += 1;
-		char controller_b[3];
-		scanf("%3s", controller_b);
-		if( controller_b <",.e" )
+		unsigned int unsigned_int_1 = 0;
+		unsigned int unsigned_int_2 = 0;
+		short short_1 = 0;
+		short short_3 = 0;
+		float float_1 = 0;
+		int int_1 = 0;
+		short short_4 = 0;
+		double double_2 = 0;
+		int int_2 = 0;
+		unsigned int unsigned_int_3 = 0;
+		short short_2 = 0;
+		long long_1 = 0;
+		long long_2 = 0;
+		double double_1 = 0;
+		float float_2 = 0;
+		looper_2 += 1;
+		if(1)
 		{
-			int_a = int_b;
-			return int_b;
+			unsigned int unsigned_int_1 = 0;
+			unsigned int unsigned_int_2 = 0;
+			short short_1 = 0;
+			short short_3 = 0;
+			float float_1 = 0;
+			int int_1 = 0;
+			short short_4 = 0;
+			double double_2 = 0;
+			int int_2 = 0;
+			unsigned int unsigned_int_3 = 0;
+			short short_2 = 0;
+			long long_1 = 0;
+			long long_2 = 0;
+			double double_1 = 0;
+			float float_2 = 0;
+			double_1 = tan ( double_1 ) ;
+			return short_1;
 		}
-		long_c = long_a + long_b;
-		char controller_c[2];
-		scanf("%2s", controller_c);
-		if( controller_c >"5@" )
+		short_3 = short_2 + short_1;
+		if(1)
 		{
-			float float_a = 0;
-			float float_b = 0;
-			float float_c = 0;
-			int int_a = 0;
-			int int_b = 0;
-			double double_a = 0;
-			double double_b = 0;
-			float float_d = 0;
-			int int_d = 0;
-			long long_a = 0;
-			long long_b = 0;
-			long long_c = 0;
-			int int_c = 0;
-			double double_c = 0;
-			double_a = fmod ( double_a , double_b ) ;
-			int_a = bmfs_create_file(float_a,float_d);
-
-			double_a = fabs ( double_c ) ;
-			return int_a;
+			unsigned int unsigned_int_1 = 0;
+			unsigned int unsigned_int_2 = 0;
+			short short_1 = 0;
+			short short_3 = 0;
+			float float_1 = 0;
+			int int_1 = 0;
+			short short_4 = 0;
+			double double_2 = 0;
+			int int_2 = 0;
+			unsigned int unsigned_int_3 = 0;
+			short short_2 = 0;
+			long long_1 = 0;
+			long long_2 = 0;
+			double double_1 = 0;
+			float float_2 = 0;
+			float_2 = float_1 + float_1;
+			int_1 = int_1 - int_1;
+			return short_4;
 		}
-		bmfs_strerror(int_a);
+		int_1 = bmfs_create_file(double_2,int_1);
 
-		int_c = int_c + int_c;
+		long_1 = long_2;
 	}
-	return int_d;
-}
-void bmfs_entry_set_deleted( unsigned int parameter_1)
-{
-	double double_a = 0;
-	double double_b = 0;
-	double_a = cos ( double_b ) ;
-}
-void bmfs_entry_copy( int parameter_1,long parameter_2)
-{
-	int int_a = 0;
-	int int_b = 0;
-	int_a = int_b;
-}
-int bmfs_rename( double parameter_1,short parameter_2,double parameter_3,int uni_para)
-{
-	double double_a = 0;
-	double double_b = 0;
-	float float_a = 0;
-	int int_a = 0;
-	int int_b = 0;
-	double double_c = 0;
-	double double_d = 0;
-	double double_e = 0;
-	long long_a = 0;
-	double double_f = 0;
-	int int_c = 0;
-	long long_b = 0;
-	double double_g = 0;
-	int int_d = 0;
-	int int_e = 0;
-	unsigned int unsigned_int_a = 0;
-	unsigned int unsigned_int_b = 0;
-	short short_a = 0;
-	short short_b = 0;
-	double_a = double_a - double_b;
-	float_a = float_a;
-	int_a = int_b;
-	double_c = double_b;
-	double_b = sqrt ( double_a ) ;
-	double_c = atan2 ( double_d , double_e ) ;
-	char controller4vul_c[3];
-	scanf("%3s", controller4vul_c);
-	if( controller4vul_c >"EI&" )
-	{
-		double double_a = 0;
-		double double_b = 0;
-		float float_a = 0;
-		int int_a = 0;
-		int int_b = 0;
-		double double_c = 0;
-		double double_d = 0;
-		double double_e = 0;
-		long long_a = 0;
-		double double_f = 0;
-		int int_c = 0;
-		long long_b = 0;
-		double double_g = 0;
-		int int_d = 0;
-		int int_e = 0;
-		unsigned int unsigned_int_a = 0;
-		unsigned int unsigned_int_b = 0;
-		short short_a = 0;
-		short short_b = 0;
-		unsigned_int_b = unsigned_int_a - unsigned_int_b;
-		short_a = short_b;
-		double_b = acos ( double_d ) ;
-		char controller4vul_d[1];
-		scanf("%1s", controller4vul_d);
-		if( strcmp( controller4vul_d, "<")==0)
-		{
-			int_b = bmfs_open_dir(double_c,long_a,double_b,uni_para);
+	return short_3;
+	float_1 = bmfs_strerror(int_2);
 
-			return int_a;
+}
+void bmfs_entry_set_deleted( int parameter_1)
+{
+	double double_1 = 0;
+	double_1 = tan ( double_1 ) ;
+}
+void bmfs_entry_copy( double parameter_1,float parameter_2)
+{
+	double double_1 = 0;
+	double_1 = tanh ( double_1 ) ;
+}
+int bmfs_rename( char parameter_1,float parameter_2,short parameter_3)
+{
+	double double_1 = 0;
+	double double_2 = 0;
+	unsigned int unsigned_int_1 = 0;
+	long long_1 = 0;
+	char char_1 = 0;
+	int int_1 = 0;
+	int int_2 = 0;
+	float float_1 = 0;
+	float float_2 = 0;
+	float float_4 = 0;
+	double double_3 = 0;
+	long long_2 = 0;
+	char char_2 = 0;
+	char char_3 = 0;
+	int int_3 = 0;
+	long long_3 = 0;
+	unsigned int unsigned_int_2 = 0;
+	unsigned int unsigned_int_3 = 0;
+	float float_3 = 0;
+	double_1 = tanh ( double_1 ) ;
+	double_2 = asin ( double_2 ) ;
+	unsigned_int_1 = unsigned_int_1;
+	long_1 = create_entry(char_1,int_1,int_2);
+
+	double_2 = atan ( double_2 ) ;
+	bmfs_file_init(int_2);
+
+	float_1 = float_1 + float_2;
+	double_1 = ceil ( double_1 ) ;
+	if(1)
+	{
+		double double_1 = 0;
+		double double_2 = 0;
+		unsigned int unsigned_int_1 = 0;
+		long long_1 = 0;
+		char char_1 = 0;
+		int int_1 = 0;
+		int int_2 = 0;
+		float float_1 = 0;
+		float float_2 = 0;
+		float float_4 = 0;
+		double double_3 = 0;
+		long long_2 = 0;
+		char char_2 = 0;
+		char char_3 = 0;
+		int int_3 = 0;
+		long long_3 = 0;
+		unsigned int unsigned_int_2 = 0;
+		unsigned int unsigned_int_3 = 0;
+		float float_3 = 0;
+		float_3 = float_3;
+		bmfs_entry_copy(double_1,float_4);
+
+		double_1 = double_3 + double_1;
+		int_1 = bmfs_open_dir(long_2,char_2,char_3,265);
+
+		int_2 = int_3 + int_1;
+		if(1)
+		{
+			return int_2;
 		}
-		double_f = cos ( double_b ) ;
+		double_2 = cosh ( double_3 ) ;
 	}
 	if(1)
 	{
-		return int_c;
+		return int_3;
 	}
 	else
 	{
-		double_b = acos ( double_d ) ;
+		bmfs_entry_init(double_3);
+
+		double_3 = fabs ( double_2 ) ;
 	}
-	long_b = long_b + long_a;
-	double_a = double_b / double_f;
-	double_e = atan2 ( double_c , double_g ) ;
-	double_e = ldexp ( double_e , int_d ) ;
-	int_d = int_d;
+	double_2 = double_3;
+	long_3 = long_1;
+	double_1 = sqrt ( double_2 ) ;
+	bmfs_entry_set_deleted(int_3);
+
+	float_2 = float_1;
+	double_2 = exp ( double_3 ) ;
 	if(1)
 	{
-		return int_d;
+		return int_3;
 	}
-	int_e = int_e;
-	if(1)
-	{
-		return int_a;
-	}
-	return int_b;
-}
-double cmd_mv( short parameter_1,int parameter_2,unsigned int parameter_3,int uni_para)
-{
-	int int_a = 0;
-	double double_a = 0;
-	short short_a = 0;
-	double double_b = 0;
-	double double_c = 0;
-	double double_d = 0;
-	int int_b = 0;
-	double double_e = 0;
-	int int_c = 0;
-	short short_b = 0;
-	short short_c = 0;
-	double double_h = 0;
-	unsigned int unsigned_int_a = 0;
-	unsigned int unsigned_int_b = 0;
-	unsigned int unsigned_int_c = 0;
-	double double_f = 0;
-	int int_d = 0;
-	double double_g = 0;
-	int_a = bmfs_rename(double_a,short_a,double_b,uni_para);
+	int_2 = bmfs_entry_save(int_1,char_1);
 
-	double_a = ceil ( double_c ) ;
-	int looper_a = 0;
-	while(looper_a < 4)
+	unsigned_int_3 = unsigned_int_2 - unsigned_int_3;
+	char controller_5[4];
+	scanf("%4s", controller_5);
+	if( strcmp( controller_5, "KfT*") < 0)
 	{
-		looper_a += 1;
-		if(1)
-		{
-		}
-		if(1)
-		{
-			double_b = double_a;
-			return double_c;
-		}
+		return int_1;
 	}
-	double_d = double_b + double_b;
-	int_b = int_b;
-	int looper_b = 0;
-	while(looper_b < 3)
-	{
-		int int_a = 0;
-		double double_a = 0;
-		short short_a = 0;
-		double double_b = 0;
-		double double_c = 0;
-		double double_d = 0;
-		int int_b = 0;
-		double double_e = 0;
-		int int_c = 0;
-		short short_b = 0;
-		short short_c = 0;
-		double double_h = 0;
-		unsigned int unsigned_int_a = 0;
-		unsigned int unsigned_int_b = 0;
-		unsigned int unsigned_int_c = 0;
-		double double_f = 0;
-		int int_d = 0;
-		double double_g = 0;
-		looper_b += 1;
-		if(1)
-		{
-			int_b = int_a;
-			return double_e;
-		}
-		if(1)
-		{
-			int_b = int_a;
-		}
-		if(1)
-		{
-			int_b = int_c;
-		}
-		if(1)
-		{
-			int int_a = 0;
-			double double_a = 0;
-			short short_a = 0;
-			double double_b = 0;
-			double double_c = 0;
-			double double_d = 0;
-			int int_b = 0;
-			double double_e = 0;
-			int int_c = 0;
-			short short_b = 0;
-			short short_c = 0;
-			double double_h = 0;
-			unsigned int unsigned_int_a = 0;
-			unsigned int unsigned_int_b = 0;
-			unsigned int unsigned_int_c = 0;
-			double double_f = 0;
-			int int_d = 0;
-			double double_g = 0;
-			double_a = fmod ( double_f , double_a ) ;
-			return double_b;
-		}
-		unsigned_int_c = unsigned_int_a + unsigned_int_b;
-	}
-	short_b = short_c;
-	if(1)
-	{
-		int int_a = 0;
-		double double_a = 0;
-		short short_a = 0;
-		double double_b = 0;
-		double double_c = 0;
-		double double_d = 0;
-		int int_b = 0;
-		double double_e = 0;
-		int int_c = 0;
-		short short_b = 0;
-		short short_c = 0;
-		double double_h = 0;
-		unsigned int unsigned_int_a = 0;
-		unsigned int unsigned_int_b = 0;
-		unsigned int unsigned_int_c = 0;
-		double double_f = 0;
-		int int_d = 0;
-		double double_g = 0;
-		int_d = int_a * int_c;
-		double_g = fabs ( double_d ) ;
-		return double_h;
-	}
-	return double_b;
-}
-int bmfs_create_dir( short parameter_1,int parameter_2)
-{
-	int int_a = 0;
-	int int_b = 0;
-	double double_a = 0;
-	short short_a = 0;
-	float float_a = 0;
-	double double_b = 0;
-	double double_c = 0;
-	double double_d = 0;
-	long long_a = 0;
-	long long_b = 0;
-	char char_a = 0;
-	double double_e = 0;
-	int int_c = 0;
-	int int_d = 0;
-	int int_e = 0;
-	int int_f = 0;
-	double double_f = 0;
-	char controller_a[3];
-	scanf("%3s", controller_a);
-	if( controller_a <"8<a" )
-	{
-		return int_a;
-	}
-	int_b = bmfs_allocate(double_a,short_a,float_a);
+	return int_2;
+	int_2 = bmfs_open_file(float_1,float_4,double_2);
 
-	double_a = fmod ( double_a , double_b ) ;
-	double_b = ceil ( double_a ) ;
-	if(1)
-	{
-		return int_a;
-	}
-	double_c = double_c - double_d;
-	bmfs_entry_set_type(long_a,long_b);
-
-	double_d = pow ( double_b , double_d ) ;
-	double_c = cosh ( double_a ) ;
-	bmfs_entry_init(char_a);
-
-	double_c = asin ( double_b ) ;
-	float_a = new_get_block_size();
-
-	double_e = double_d / double_a;
-	int_c = bmfs_get_current_time(float_a);
-
-	double_b = atan2 ( double_b , double_c ) ;
-	int_e = int_a / int_d;
-	if(1)
-	{
-		return int_c;
-	}
-	return int_b;
-	int_f = create_entry(double_f,float_a,int_d);
+	bmfs_dir_init(int_2);
 
 }
-void cmd_mkdir( char parameter_1,int parameter_2,int parameter_3)
+int cmd_mv( int parameter_1,int parameter_2,unsigned int parameter_3)
 {
-	int int_a = 0;
-	char char_a = 0;
-	char char_b = 0;
-	short short_a = 0;
-	int int_b = 0;
-	double double_a = 0;
-	double double_b = 0;
-	double double_c = 0;
-	double double_d = 0;
-	bmfs_strerror(int_a);
-
-	char_b = char_a * char_a;
-	int looper_a = 0;
-	while(looper_a < 7)
+	int int_1 = 0;
+	double double_1 = 0;
+	double double_2 = 0;
+	int int_2 = 0;
+	double double_3 = 0;
+	float float_1 = 0;
+	int int_4 = 0;
+	double double_5 = 0;
+	int int_5 = 0;
+	char char_1 = 0;
+	float float_2 = 0;
+	short short_1 = 0;
+	int int_6 = 0;
+	double double_4 = 0;
+	unsigned int unsigned_int_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	int int_3 = 0;
+	char char_2 = 0;
+	int_1 = int_1;
+	int looper_1 = 0;
+	while(looper_1 < 3)
 	{
-		int int_a = 0;
-		char char_a = 0;
-		char char_b = 0;
-		short short_a = 0;
-		int int_b = 0;
-		double double_a = 0;
-		double double_b = 0;
-		double double_c = 0;
-		double double_d = 0;
-		looper_a += 1;
+		looper_1 += 1;
+		char controller_1[2];
+		scanf("%2s", controller_1);
+		if( strcmp( controller_1, "b0") < 0)
+		{
+		}
+		else
+		{
+			double_1 = fmod ( double_1 , double_2 ) ;
+			return int_2;
+		}
+	}
+	double_2 = double_1 / double_2;
+	double_2 = fmod ( double_2 , double_3 ) ;
+	int looper_2 = 0;
+	while(looper_2 < 3)
+	{
+		int int_1 = 0;
+		double double_1 = 0;
+		double double_2 = 0;
+		int int_2 = 0;
+		double double_3 = 0;
+		float float_1 = 0;
+		int int_4 = 0;
+		double double_5 = 0;
+		int int_5 = 0;
+		char char_1 = 0;
+		float float_2 = 0;
+		short short_1 = 0;
+		int int_6 = 0;
+		double double_4 = 0;
+		unsigned int unsigned_int_1 = 0;
+		unsigned int unsigned_int_2 = 0;
+		int int_3 = 0;
+		char char_2 = 0;
+		looper_2 += 1;
 		if(1)
 		{
-			double_a = fabs ( double_a ) ;
+			int int_1 = 0;
+			double double_1 = 0;
+			double double_2 = 0;
+			int int_2 = 0;
+			double double_3 = 0;
+			float float_1 = 0;
+			int int_4 = 0;
+			double double_5 = 0;
+			int int_5 = 0;
+			char char_1 = 0;
+			float float_2 = 0;
+			short short_1 = 0;
+			int int_6 = 0;
+			double double_4 = 0;
+			unsigned int unsigned_int_1 = 0;
+			unsigned int unsigned_int_2 = 0;
+			int int_3 = 0;
+			char char_2 = 0;
+			float_1 = bmfs_strerror(int_2);
+
+			unsigned_int_1 = unsigned_int_1 / unsigned_int_2;
+			return int_1;
 		}
-		double_b = double_b + double_b;
-		double_c = double_a * double_c;
-		char controller_b[4];
-		scanf("%4s", controller_b);
-		if( controller_b <"}U5X" )
+		if(1)
 		{
-			double_b = asin ( double_a ) ;
-			int_a = bmfs_create_dir(short_a,int_b);
-
-			double_a = cosh ( double_b ) ;
+			int int_1 = 0;
+			double double_1 = 0;
+			double double_2 = 0;
+			int int_2 = 0;
+			double double_3 = 0;
+			float float_1 = 0;
+			int int_4 = 0;
+			double double_5 = 0;
+			int int_5 = 0;
+			char char_1 = 0;
+			float float_2 = 0;
+			short short_1 = 0;
+			int int_6 = 0;
+			double double_4 = 0;
+			unsigned int unsigned_int_1 = 0;
+			unsigned int unsigned_int_2 = 0;
+			int int_3 = 0;
+			char char_2 = 0;
+			int_2 = int_3;
 		}
-		double_d = double_c / double_b;
+		if(1)
+		{
+			double_2 = double_3;
+		}
+		else
+		{
+			double_2 = tanh ( double_4 ) ;
+			return int_4;
+		}
+		double_4 = sqrt ( double_1 ) ;
 	}
-}
-int time_print( char parameter_1)
-{
-	double double_a = 0;
-	char char_a = 0;
-	char char_b = 0;
-	int int_a = 0;
-	char char_c = 0;
-	int int_b = 0;
-	double_a = sinh ( double_a ) ;
-	char_a = char_b;
-	int_a = int_a;
-	char_b = char_c;
-	int_b = int_a * int_a;
-}
-unsigned int next_without_skipping( double parameter_1)
-{
-	double double_a = 0;
-	char char_a = 0;
-	int int_a = 0;
-	unsigned int unsigned_int_a = 0;
-	short short_a = 0;
-	int int_b = 0;
-	char char_b = 0;
-	double double_b = 0;
-	int int_c = 0;
-	double double_c = 0;
-	unsigned int unsigned_int_b = 0;
-	unsigned int unsigned_int_c = 0;
-	long long_a = 0;
-	double_a = ceil ( double_a ) ;
-	char_a = char_a * char_a;
-	int_a = bmfs_disk_seek(unsigned_int_a,short_a,int_b);
-
-	char_a = char_a * char_b;
-	double_b = log ( double_a ) ;
+	double_2 = fmod ( double_3 , double_5 ) ;
 	if(1)
 	{
-		return unsigned_int_a;
+		int int_1 = 0;
+		double double_1 = 0;
+		double double_2 = 0;
+		int int_2 = 0;
+		double double_3 = 0;
+		float float_1 = 0;
+		int int_4 = 0;
+		double double_5 = 0;
+		int int_5 = 0;
+		char char_1 = 0;
+		float float_2 = 0;
+		short short_1 = 0;
+		int int_6 = 0;
+		double double_4 = 0;
+		unsigned int unsigned_int_1 = 0;
+		unsigned int unsigned_int_2 = 0;
+		int int_3 = 0;
+		char char_2 = 0;
+		double_5 = fabs ( double_5 ) ;
+		int_5 = bmfs_rename(char_1,float_2,short_1);
+
+		char_2 = char_2;
+		return int_6;
 	}
-	int_c = int_b + int_c;
+	return int_1;
+}
+int bmfs_create_dir( unsigned int parameter_1,char parameter_2)
+{
+	int int_1 = 0;
+	int int_2 = 0;
+	int int_3 = 0;
+	double double_1 = 0;
+	short short_1 = 0;
+	unsigned int unsigned_int_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	long long_1 = 0;
+	char char_1 = 0;
+	int int_4 = 0;
+	double double_2 = 0;
+	double double_3 = 0;
+	int int_5 = 0;
+	short short_2 = 0;
+	unsigned int unsigned_int_3 = 0;
+	char char_2 = 0;
+	short short_3 = 0;
+	double double_4 = 0;
+	char char_3 = 0;
+	char controller_1[1];
+	scanf("%1s", controller_1);
+	if( strcmp( controller_1, "Q") < 0)
+	{
+		return int_1;
+	}
+	int_2 = int_3;
+	double_1 = new_get_block_size(short_1);
+
+	unsigned_int_2 = unsigned_int_1 / unsigned_int_2;
 	if(1)
 	{
-		return unsigned_int_a;
+		return int_3;
 	}
-	double_a = atan2 ( double_b , double_c ) ;
+	long_1 = create_entry(char_1,int_4,int_3);
+
+	double_1 = pow ( double_2 , double_3 ) ;
+	bmfs_entry_init(double_3);
+
+	int_5 = bmfs_get_current_time(short_2);
+
+	unsigned_int_1 = unsigned_int_1 + unsigned_int_3;
+	long_1 = long_1 - long_1;
+	bmfs_entry_set_type(char_2,short_3);
+
+	double_1 = acos ( double_1 ) ;
+	double_4 = acos ( double_3 ) ;
+	double_4 = fabs ( double_4 ) ;
+	int_5 = bmfs_allocate(long_1,unsigned_int_2,unsigned_int_1);
+
+	char_3 = char_3;
 	if(1)
 	{
-		return unsigned_int_b;
+		return int_1;
 	}
-	double_c = log10 ( double_a ) ;
-	return unsigned_int_c;
-	int_a = bmfs_entry_read(char_a,long_a,670);
-
+	return int_1;
 }
-unsigned int bmfs_dir_next()
+char cmd_mkdir( int parameter_1,int parameter_2,char parameter_3)
 {
-	unsigned int unsigned_int_a = 0;
-	double double_a = 0;
-	long long_a = 0;
-	int int_a = 0;
-	unsigned int unsigned_int_b = 0;
-	double double_b = 0;
-	unsigned_int_a = next_without_skipping(double_a);
-
-	long_a = long_a - long_a;
-	for(int looper_a=0; looper_a<1;looper_a++)
+	double double_1 = 0;
+	double double_2 = 0;
+	int int_1 = 0;
+	char char_1 = 0;
+	float float_1 = 0;
+	int int_2 = 0;
+	unsigned int unsigned_int_1 = 0;
+	char char_2 = 0;
+	char char_4 = 0;
+	char char_5 = 0;
+	double double_4 = 0;
+	unsigned int unsigned_int_2 = 0;
+	double double_3 = 0;
+	long long_1 = 0;
+	long long_2 = 0;
+	char char_3 = 0;
+	double_1 = asin ( double_2 ) ;
+	int looper_1 = 0;
+	while(looper_1 < 1)
 	{
-		unsigned int unsigned_int_a = 0;
-		double double_a = 0;
-		long long_a = 0;
-		int int_a = 0;
-		unsigned int unsigned_int_b = 0;
-		double double_b = 0;
-		bmfs_entry_is_deleted(int_a);
+		double double_1 = 0;
+		double double_2 = 0;
+		int int_1 = 0;
+		char char_1 = 0;
+		float float_1 = 0;
+		int int_2 = 0;
+		unsigned int unsigned_int_1 = 0;
+		char char_2 = 0;
+		char char_4 = 0;
+		char char_5 = 0;
+		double double_4 = 0;
+		unsigned int unsigned_int_2 = 0;
+		double double_3 = 0;
+		long long_1 = 0;
+		long long_2 = 0;
+		char char_3 = 0;
+		looper_1 += 1;
+		char controller_1[2];
+		scanf("%2s", controller_1);
+		if( strcmp( controller_1, "9p") < 0)
+		{
+			double double_1 = 0;
+			double double_2 = 0;
+			int int_1 = 0;
+			char char_1 = 0;
+			float float_1 = 0;
+			int int_2 = 0;
+			unsigned int unsigned_int_1 = 0;
+			char char_2 = 0;
+			char char_4 = 0;
+			char char_5 = 0;
+			double double_4 = 0;
+			unsigned int unsigned_int_2 = 0;
+			double double_3 = 0;
+			long long_1 = 0;
+			long long_2 = 0;
+			char char_3 = 0;
+			double_2 = ldexp ( double_3 , int_1 ) ;
+			return char_1;
+		}
+		double_4 = sinh ( double_1 ) ;
+		float_1 = bmfs_strerror(int_2);
 
-		double_b = floor ( double_b ) ;
-		if(1)
+		char_1 = char_1 + char_1;
+		char controller_2[1];
+		scanf("%1s", controller_2);
+		if( strcmp( controller_2, "^") < 0)
 		{
-			return unsigned_int_a;
+			double double_1 = 0;
+			double double_2 = 0;
+			int int_1 = 0;
+			char char_1 = 0;
+			float float_1 = 0;
+			int int_2 = 0;
+			unsigned int unsigned_int_1 = 0;
+			char char_2 = 0;
+			char char_4 = 0;
+			char char_5 = 0;
+			double double_4 = 0;
+			unsigned int unsigned_int_2 = 0;
+			double double_3 = 0;
+			long long_1 = 0;
+			long long_2 = 0;
+			char char_3 = 0;
+			long_2 = long_1 / long_2;
+			int_1 = bmfs_create_dir(unsigned_int_1,char_2);
+
+			char_3 = char_3;
+			return char_4;
 		}
-		if(1)
-		{
-			return unsigned_int_a;
-		}
-		char controller_c[4];
-		scanf("%4s", controller_c);
-		if( controller_c >"x?sv" )
-		{
-			return unsigned_int_a;
-		}
+		unsigned_int_1 = unsigned_int_2;
 	}
-	return unsigned_int_b;
+	return char_5;
 }
-char find_dir( long parameter_1,int parameter_2,double parameter_3,int parameter_4,double parameter_5)
+double time_print( unsigned int parameter_1)
 {
-	double double_a = 0;
-	double double_b = 0;
-	double double_c = 0;
-	int int_a = 0;
-	unsigned int unsigned_int_a = 0;
-	int int_b = 0;
-	int int_c = 0;
-	int int_d = 0;
-	double double_d = 0;
-	unsigned int unsigned_int_b = 0;
-	int int_e = 0;
-	long long_a = 0;
-	float float_a = 0;
-	float float_b = 0;
-	char char_a = 0;
-	short short_a = 0;
-	char char_b = 0;
-	char char_c = 0;
-	double double_e = 0;
-	double_a = atan2 ( double_a , double_b ) ;
-	double_c = atan ( double_a ) ;
-	int_a = int_a;
-	bmfs_dir_init(unsigned_int_a);
-
-	int_d = int_b / int_c;
-	int looper_a = 0;
-	while(looper_a < 9)
+	double double_1 = 0;
+	double double_2 = 0;
+	double double_3 = 0;
+	int int_1 = 0;
+	int int_2 = 0;
+	float float_1 = 0;
+	float float_2 = 0;
+	double_1 = pow ( double_2 , double_2 ) ;
+	double_2 = double_3;
+	int_2 = int_1 * int_1;
+	float_1 = float_1 + float_2;
+	double_3 = tanh ( double_3 ) ;
+}
+float next_without_skipping( float parameter_1)
+{
+	float float_1 = 0;
+	float float_2 = 0;
+	float float_3 = 0;
+	double double_1 = 0;
+	double double_2 = 0;
+	float float_4 = 0;
+	float float_5 = 0;
+	int int_1 = 0;
+	int int_2 = 0;
+	long long_1 = 0;
+	double double_3 = 0;
+	double double_4 = 0;
+	int int_3 = 0;
+	float_3 = float_1 + float_2;
+	double_1 = sqrt ( double_1 ) ;
+	double_1 = log ( double_1 ) ;
+	double_2 = double_2;
+	char controller_1[4];
+	scanf("%4s", controller_1);
+	if( strcmp( controller_1, ")|nk") < 0)
 	{
-		double double_a = 0;
-		double double_b = 0;
-		double double_c = 0;
-		int int_a = 0;
-		unsigned int unsigned_int_a = 0;
-		int int_b = 0;
-		int int_c = 0;
-		int int_d = 0;
-		double double_d = 0;
-		unsigned int unsigned_int_b = 0;
-		int int_e = 0;
-		long long_a = 0;
-		float float_a = 0;
-		float float_b = 0;
-		char char_a = 0;
-		short short_a = 0;
-		char char_b = 0;
-		char char_c = 0;
-		double double_e = 0;
-		looper_a += 1;
-		double_d = exp ( double_a ) ;
-		bmfs_dir_set_disk(unsigned_int_b,unsigned_int_b);
-
-		int_e = bmfs_dir_import(long_a);
-
-		double_d = tanh ( double_c ) ;
-		double_e = tan ( double_a ) ;
-		float_a = is_entry(float_b,long_a,double_d);
-
-		double_d = double_c;
-		char controller_a[1];
-		scanf("%1s", controller_a);
-		if( strcmp( controller_a, "n")==0)
-		{
-			return char_a;
-		}
-		int_b = bmfs_disk_seek(unsigned_int_a,short_a,int_c);
-
-		long_a = long_a - long_a;
-		if(1)
-		{
-			return char_b;
-		}
-		char controller_c[4];
-		scanf("%4s", controller_c);
-		if( controller_c >"9ibA" )
-		{
-			return char_b;
-		}
-		if(1)
-		{
-			return char_c;
-		}
-		int_c = int_c + int_e;
+		return float_4;
 	}
-	return char_b;
-}
-int bmfs_entry_is_directory( short parameter_1)
-{
-	int int_a = 0;
-	int int_b = 0;
+	float_1 = float_2 + float_2;
+	char controller_2[1];
+	scanf("%1s", controller_2);
+	if( strcmp( controller_2, ":") > 0)
+	{
+		return float_5;
+	}
+	int_1 = int_1;
 	if(1)
 	{
-		return int_a;
+		return float_4;
+	}
+	int_1 = bmfs_entry_read(int_2,long_1,790);
+
+	double_3 = tanh ( double_3 ) ;
+	return float_2;
+	int_2 = bmfs_disk_seek(long_1,double_4,int_3);
+
+}
+float bmfs_dir_next( double parameter_1)
+{
+	float float_1 = 0;
+	double double_1 = 0;
+	float float_2 = 0;
+	int int_1 = 0;
+	char char_1 = 0;
+	double double_2 = 0;
+	float_1 = next_without_skipping(float_1);
+
+	double_1 = tan ( double_1 ) ;
+	for(int looper_1=0; looper_1<9;looper_1++)
+	{
+		float float_1 = 0;
+		double double_1 = 0;
+		float float_2 = 0;
+		int int_1 = 0;
+		char char_1 = 0;
+		double double_2 = 0;
+		double_1 = ceil ( double_2 ) ;
+		if(1)
+		{
+			return float_1;
+		}
+		char controller_2[4];
+		scanf("%4s", controller_2);
+		if( strcmp( controller_2, ">AyU") < 0)
+		{
+			return float_1;
+		}
+		if(1)
+		{
+			return float_2;
+		}
+	}
+	return float_2;
+	int_1 = bmfs_entry_is_deleted(char_1);
+
+}
+long find_dir( unsigned int parameter_1,long parameter_2,short parameter_3,char parameter_4,unsigned int parameter_5,int uni_para)
+{
+	double double_1 = 0;
+	double double_2 = 0;
+	double double_3 = 0;
+	double double_4 = 0;
+	int int_1 = 0;
+	char char_1 = 0;
+	long long_1 = 0;
+	long long_2 = 0;
+	long long_3 = 0;
+	double double_5 = 0;
+	unsigned int unsigned_int_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	unsigned int unsigned_int_3 = 0;
+	double double_6 = 0;
+	double double_7 = 0;
+	double_1 = pow ( double_2 , double_1 ) ;
+	double_1 = log10 ( double_3 ) ;
+	double_1 = log ( double_4 ) ;
+	double_2 = sinh ( double_3 ) ;
+	int looper_1 = 0;
+	while(looper_1 < 1)
+	{
+		double double_1 = 0;
+		double double_2 = 0;
+		double double_3 = 0;
+		double double_4 = 0;
+		int int_1 = 0;
+		char char_1 = 0;
+		long long_1 = 0;
+		long long_2 = 0;
+		long long_3 = 0;
+		double double_5 = 0;
+		unsigned int unsigned_int_1 = 0;
+		unsigned int unsigned_int_2 = 0;
+		unsigned int unsigned_int_3 = 0;
+		double double_6 = 0;
+		double double_7 = 0;
+		looper_1 += 1;
+		double_3 = atan2 ( double_2 , double_4 ) ;
+		double_4 = atan2 ( double_4 , double_1 ) ;
+		double_2 = tanh ( double_3 ) ;
+		double_5 = fabs ( double_4 ) ;
+		char controller4vul_7[5];
+		scanf("%5s", controller4vul_7);
+		if( strcmp( controller4vul_7, "-fZ/=") < 0)
+		{
+			int_1 = bmfs_dir_import(char_1,uni_para);
+
+			return long_1;
+		}
+		unsigned_int_3 = unsigned_int_1 + unsigned_int_2;
+		char controller_1[5];
+		scanf("%5s", controller_1);
+		if( strcmp( controller_1, "<fmcq") > 0)
+		{
+			return long_1;
+		}
+		if(1)
+		{
+			return long_1;
+		}
+		if(1)
+		{
+			return long_2;
+		}
+		double_6 = exp ( double_7 ) ;
+	}
+	return long_3;
+}
+int bmfs_entry_is_directory( int parameter_1)
+{
+	int int_1 = 0;
+	char controller_1[5];
+	scanf("%5s", controller_1);
+	if( strcmp( controller_1, "/n!T(") > 0)
+	{
+		return int_1;
 	}
 	else
 	{
-		return int_b;
+		return int_1;
 	}
 }
-int bmfs_dir_import( long parameter_1)
+int bmfs_dir_import( char parameter_1,int uni_para)
 {
-	int int_a = 0;
-	short short_a = 0;
-	double double_a = 0;
-	double double_b = 0;
-	int int_b = 0;
-	char char_a = 0;
-	char char_b = 0;
-	double double_c = 0;
-	double double_d = 0;
-	long long_a = 0;
-	unsigned int unsigned_int_a = 0;
-	int_a = bmfs_entry_is_directory(short_a);
-
-	double_a = atan ( double_b ) ;
-	int_a = int_b;
-	if(1)
+	unsigned int unsigned_int_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	unsigned int unsigned_int_3 = 0;
+	double double_1 = 0;
+	int int_1 = 0;
+	long long_1 = 0;
+	long long_2 = 0;
+	long long_3 = 0;
+	long long_4 = 0;
+	double double_2 = 0;
+	char char_1 = 0;
+	char char_2 = 0;
+	int int_2 = 0;
+	int int_3 = 0;
+	double double_3 = 0;
+	double double_4 = 0;
+	unsigned_int_3 = unsigned_int_1 - unsigned_int_2;
+	double_1 = atan ( double_1 ) ;
+	char controller4vul_8[5];
+	scanf("%5s", controller4vul_8);
+	if( strcmp( controller4vul_8, "5[_S8") > 0)
 	{
-		return int_b;
-	}
-	bmfs_entry_init(char_a);
+		int_1 = bmfs_entry_read(int_1,long_1,uni_para);
 
-	double_a = asin ( double_b ) ;
-	char_a = char_b;
-	double_c = atan ( double_a ) ;
-	if(1)
+		return int_1;
+	}
+	long_4 = long_2 * long_3;
+	double_2 = double_2;
+	char_2 = char_1 - char_1;
+	char controller_1[3];
+	scanf("%3s", controller_1);
+	if( strcmp( controller_1, "wlp") < 0)
 	{
-		return int_a;
+		return int_2;
 	}
-	if(1)
+	char controller_2[2];
+	scanf("%2s", controller_2);
+	if( strcmp( controller_2, "q4") > 0)
 	{
-		return int_a;
+		return int_3;
 	}
-	double_a = pow ( double_d , double_c ) ;
-	int_a = bmfs_entry_read(char_a,long_a,798);
-
-	double_d = double_c;
-	double_b = atan2 ( double_b , double_d ) ;
-	return int_a;
-	int_b = bmfs_disk_tell(unsigned_int_a,unsigned_int_a,19);
-
+	long_3 = long_2;
+	double_3 = double_1 - double_1;
+	double_4 = ceil ( double_4 ) ;
+	return int_2;
 }
-void bmfs_dir_set_disk( unsigned int parameter_1,unsigned int parameter_2)
+void bmfs_dir_set_disk( int parameter_1,short parameter_2)
 {
-	char controller_a[3];
-	scanf("%3s", controller_a);
-	if( controller_a <"_]f" )
+	if(1)
 	{
-		double double_a = 0;
-		double_a = exp ( double_a ) ;
+		double double_1 = 0;
+		double double_2 = 0;
+		double_1 = tanh ( double_2 ) ;
 	}
 }
-void open_dir( unsigned int parameter_1,float parameter_2,short parameter_3,int uni_para)
+double open_dir( double parameter_1,char parameter_2,double parameter_3,int uni_para)
 {
-	long long_a = 0;
-	long long_b = 0;
-	double double_a = 0;
-	unsigned int unsigned_int_a = 0;
-	unsigned int unsigned_int_b = 0;
-	double double_b = 0;
-	double double_c = 0;
-	float float_a = 0;
-	float float_b = 0;
-	double double_d = 0;
-	int int_a = 0;
-	double double_e = 0;
-	unsigned int unsigned_int_c = 0;
-	double double_f = 0;
-	unsigned int unsigned_int_d = 0;
-	unsigned int unsigned_int_e = 0;
-	unsigned int unsigned_int_f = 0;
-	float float_c = 0;
-	double double_h = 0;
-	double double_i = 0;
-	float float_d = 0;
-	double double_j = 0;
-	int int_c = 0;
-	int int_b = 0;
-	double double_g = 0;
-	long_b = long_a + long_a;
-	int looper_a = 0;
-	while(looper_a < 8)
+	long long_1 = 0;
+	long long_2 = 0;
+	int int_1 = 0;
+	int int_2 = 0;
+	double double_1 = 0;
+	double double_2 = 0;
+	unsigned int unsigned_int_1 = 0;
+	long long_3 = 0;
+	short short_1 = 0;
+	char char_1 = 0;
+	double double_3 = 0;
+	int int_3 = 0;
+	double double_4 = 0;
+	double double_5 = 0;
+	double double_6 = 0;
+	float float_1 = 0;
+	long long_4 = 0;
+	double double_7 = 0;
+	char char_2 = 0;
+	char char_3 = 0;
+	int int_4 = 0;
+	double double_8 = 0;
+	float float_2 = 0;
+	unsigned int unsigned_int_2 = 0;
+	long_2 = long_1 + long_2;
+	int looper_1 = 0;
+	while(looper_1 < 1)
 	{
-		looper_a += 1;
-		double_a = tan ( double_a ) ;
+		looper_1 += 1;
+		int_2 = int_1 - int_1;
 	}
-	unsigned_int_a = unsigned_int_a * unsigned_int_a;
+	double_1 = fmod ( double_2 , double_1 ) ;
+	char controller4vul_6[5];
+	scanf("%5s", controller4vul_6);
+	if( strcmp( controller4vul_6, ",F-7d") < 0)
+	{
+		long_2 = find_dir(unsigned_int_1,long_3,short_1,char_1,unsigned_int_1,uni_para);
+
+		return double_3;
+	}
+	double_1 = sinh ( double_2 ) ;
+	double_2 = fabs ( double_3 ) ;
+	double_2 = ldexp ( double_3 , int_3 ) ;
 	if(1)
 	{
-		unsigned_int_b = unsigned_int_a - unsigned_int_a;
+		return double_1;
 	}
-	double_b = atan2 ( double_b , double_c ) ;
-	double_b = acos ( double_a ) ;
-	double_b = sinh ( double_c ) ;
+	long_3 = long_3;
 	if(1)
 	{
-		double_b = fmod ( double_a , double_a ) ;
+		return double_4;
 	}
-	float_a = float_b;
+	double_1 = double_1 + double_3;
+	double_1 = exp ( double_3 ) ;
+	double_2 = double_3 * double_1;
 	if(1)
 	{
-		double_c = ceil ( double_b ) ;
+		return double_5;
 	}
-	double_d = ldexp ( double_c , int_a ) ;
-	double_b = fmod ( double_b , double_e ) ;
-	unsigned_int_c = unsigned_int_b + unsigned_int_b;
-	if(1)
+	double_3 = floor ( double_6 ) ;
+	float_1 = float_1;
+	long_4 = long_1;
+	double_4 = asin ( double_7 ) ;
+	char_3 = char_2 / char_2;
+	int looper_2 = 0;
+	while(looper_2 < 10)
 	{
-		long long_a = 0;
-		long long_b = 0;
-		double double_a = 0;
-		unsigned int unsigned_int_a = 0;
-		unsigned int unsigned_int_b = 0;
-		double double_b = 0;
-		double double_c = 0;
-		float float_a = 0;
-		float float_b = 0;
-		double double_d = 0;
-		int int_a = 0;
-		double double_e = 0;
-		unsigned int unsigned_int_c = 0;
-		double double_f = 0;
-		unsigned int unsigned_int_d = 0;
-		unsigned int unsigned_int_e = 0;
-		unsigned int unsigned_int_f = 0;
-		float float_c = 0;
-		double double_h = 0;
-		double double_i = 0;
-		float float_d = 0;
-		double double_j = 0;
-		int int_c = 0;
-		int int_b = 0;
-		double double_g = 0;
-		int_a = int_b;
-	}
-	double_e = fmod ( double_f , double_c ) ;
-	double_d = double_c;
-	unsigned_int_e = unsigned_int_d * unsigned_int_c;
-	unsigned_int_f = unsigned_int_c;
-	float_c = float_a;
-	int looper_b = 0;
-	while(looper_b < 5)
-	{
-		long long_a = 0;
-		long long_b = 0;
-		double double_a = 0;
-		unsigned int unsigned_int_a = 0;
-		unsigned int unsigned_int_b = 0;
-		double double_b = 0;
-		double double_c = 0;
-		float float_a = 0;
-		float float_b = 0;
-		double double_d = 0;
-		int int_a = 0;
-		double double_e = 0;
-		unsigned int unsigned_int_c = 0;
-		double double_f = 0;
-		unsigned int unsigned_int_d = 0;
-		unsigned int unsigned_int_e = 0;
-		unsigned int unsigned_int_f = 0;
-		float float_c = 0;
-		double double_h = 0;
-		double double_i = 0;
-		float float_d = 0;
-		double double_j = 0;
-		int int_c = 0;
-		int int_b = 0;
-		double double_g = 0;
-		looper_b += 1;
-		int_a = int_a;
+		long long_1 = 0;
+		long long_2 = 0;
+		int int_1 = 0;
+		int int_2 = 0;
+		double double_1 = 0;
+		double double_2 = 0;
+		unsigned int unsigned_int_1 = 0;
+		long long_3 = 0;
+		short short_1 = 0;
+		char char_1 = 0;
+		double double_3 = 0;
+		int int_3 = 0;
+		double double_4 = 0;
+		double double_5 = 0;
+		double double_6 = 0;
+		float float_1 = 0;
+		long long_4 = 0;
+		double double_7 = 0;
+		char char_2 = 0;
+		char char_3 = 0;
+		int int_4 = 0;
+		double double_8 = 0;
+		float float_2 = 0;
+		unsigned int unsigned_int_2 = 0;
+		looper_2 += 1;
+		int_4 = int_2 * int_1;
 		if(1)
 		{
 		}
-		double_d = acos ( double_e ) ;
-		double_f = ceil ( double_d ) ;
+		float_2 = float_1;
+		char_1 = char_2 - char_2;
 		if(1)
 		{
-			unsigned_int_b = unsigned_int_e + unsigned_int_b;
+			return double_5;
 		}
-		double_c = atan2 ( double_g , double_f ) ;
-		if(1)
+		unsigned_int_2 = unsigned_int_2;
+		char controller_6[4];
+		scanf("%4s", controller_6);
+		if( strcmp( controller_6, ":7V`") < 0)
 		{
-			double_c = atan2 ( double_e , double_d ) ;
+			return double_8;
 		}
 	}
-	double_h = ceil ( double_i ) ;
+	double_1 = cos ( double_3 ) ;
 	if(1)
 	{
-		unsigned_int_f = unsigned_int_b;
+		return double_1;
 	}
-	char controller4vul_f[2];
-	scanf("%2s", controller4vul_f);
-	if(remainder_check(controller4vul_f,100,2))
+	if(1)
 	{
-		double_e = atan2 ( double_h , double_b ) ;
-		int_a = int_a;
-		double_e = exp ( double_f ) ;
-		char controller4vul_g[3];
-		scanf("%3s", controller4vul_g);
-		if( controller4vul_g >"GL}" )
+		double_4 = floor ( double_6 ) ;
+		double_3 = ceil ( double_2 ) ;
+		int_3 = int_4;
+		if(1)
 		{
-			float_d = find_entry(double_h,long_b,unsigned_int_c,double_j,float_b,uni_para);
-
+			return double_5;
 		}
+		return double_1;
 	}
-	int_c = int_c;
-	double_a = tanh ( double_c ) ;
-	char controller_a[4];
-	scanf("%4s", controller_a);
-	if( controller_a >"z?g:" )
+	double_6 = log ( double_5 ) ;
+	short_1 = short_1 + short_1;
+	if(1)
 	{
+		return double_2;
 	}
+	return double_5;
 }
-int bmfs_open_dir( double parameter_1,long parameter_2,double parameter_3,int uni_para)
+int bmfs_open_dir( long parameter_1,char parameter_2,char parameter_3,int uni_para)
 {
-	unsigned int unsigned_int_a = 0;
-	float float_a = 0;
-	short short_a = 0;
-	int int_a = 0;
-	double double_a = 0;
-	int int_b = 0;
-	char controller4vul_e[4];
-	scanf("%4s", controller4vul_e);
-	if( strcmp( controller4vul_e, "=0Z%")==0)
+	double double_1 = 0;
+	char char_1 = 0;
+	double double_2 = 0;
+	int int_1 = 0;
+	double double_3 = 0;
+	double double_4 = 0;
+	double double_5 = 0;
+	int int_2 = 0;
+	char controller4vul_5[2];
+	scanf("%2s", controller4vul_5);
+	if( strcmp( controller4vul_5, "2k") > 0)
 	{
-		open_dir(unsigned_int_a,float_a,short_a,uni_para);
+		double_1 = open_dir(double_1,char_1,double_2,uni_para);
 
-		return int_a;
+		return int_1;
 	}
-	double_a = log10 ( double_a ) ;
-	char controller_a[1];
-	scanf("%1s", controller_a);
-	if( strcmp( controller_a, "X")==0)
+	double_3 = pow ( double_4 , double_5 ) ;
+	if(1)
 	{
-		return int_b;
+		return int_2;
 	}
-	return int_b;
+	return int_1;
 }
-void bmfs_dir_init( unsigned int parameter_1)
+void bmfs_dir_init( int parameter_1)
 {
-	double double_a = 0;
-	double double_b = 0;
-	char char_a = 0;
-	double double_c = 0;
-	int int_a = 0;
-	double double_d = 0;
-	double double_e = 0;
-	double double_f = 0;
-	double_a = exp ( double_b ) ;
-	bmfs_entry_init(char_a);
+	double double_1 = 0;
+	double double_2 = 0;
+	double double_3 = 0;
+	int int_1 = 0;
+	int int_2 = 0;
+	double double_4 = 0;
+	long long_1 = 0;
+	long long_2 = 0;
+	double_1 = ceil ( double_2 ) ;
+	double_3 = double_1;
+	int_2 = int_1 + int_1;
+	double_2 = tan ( double_2 ) ;
+	double_1 = double_4;
+	long_1 = long_2;
+	bmfs_entry_init(double_1);
 
-	double_b = cos ( double_c ) ;
-	double_b = ldexp ( double_b , int_a ) ;
-	double_d = cosh ( double_e ) ;
-	double_e = atan2 ( double_c , double_d ) ;
-	double_f = log10 ( double_d ) ;
 }
-int cmd_ls( float parameter_1,int parameter_2,double parameter_3)
+double cmd_ls( unsigned int parameter_1,int parameter_2,float parameter_3,int uni_para)
 {
-	int int_a = 0;
-	long long_a = 0;
-	double double_a = 0;
-	double double_b = 0;
-	double double_c = 0;
-	int int_b = 0;
-	short short_a = 0;
-	unsigned int unsigned_int_a = 0;
-	int int_c = 0;
-	int int_d = 0;
-	double double_d = 0;
-	long long_b = 0;
-	long long_c = 0;
-	char char_a = 0;
-	double double_e = 0;
-	double double_f = 0;
-	float float_b = 0;
-	double double_g = 0;
-	double double_h = 0;
-	char char_b = 0;
-	int int_e = 0;
-	int int_f = 0;
-	float float_a = 0;
-	char char_c = 0;
-	char char_d = 0;
-	bmfs_strerror(int_a);
-
-	long_a = long_a;
-	double_a = asin ( double_b ) ;
-	double_c = double_a * double_c;
-	double_c = sqrt ( double_c ) ;
-	int_b = bmfs_entry_is_directory(short_a);
-
-	double_b = fabs ( double_c ) ;
-	unsigned_int_a = bmfs_dir_next();
-
-	int_b = int_b;
-	int_c = int_a;
-	double_c = double_b * double_a;
-	int_b = int_d;
-	int_d = bmfs_open_dir(double_d,long_b,double_c,210);
-
-	long_a = long_c + long_a;
-	int_a = time_print(char_a);
-
-	double_d = acos ( double_e ) ;
-	int looper_a = 0;
-	while(looper_a < 9)
+	double double_1 = 0;
+	double double_2 = 0;
+	int int_1 = 0;
+	int int_2 = 0;
+	double double_3 = 0;
+	float float_1 = 0;
+	float float_2 = 0;
+	double double_4 = 0;
+	double double_5 = 0;
+	long long_1 = 0;
+	long long_2 = 0;
+	short short_1 = 0;
+	char char_1 = 0;
+	char char_2 = 0;
+	short short_2 = 0;
+	int int_3 = 0;
+	unsigned int unsigned_int_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	long long_3 = 0;
+	short short_3 = 0;
+	double double_6 = 0;
+	int int_4 = 0;
+	double_1 = double_2;
+	int_1 = int_2;
+	double_2 = exp ( double_3 ) ;
+	float_1 = float_2;
+	double_3 = double_4;
+	double_1 = sqrt ( double_5 ) ;
+	long_1 = long_2;
+	double_2 = ldexp ( double_3 , int_2 ) ;
+	short_1 = short_1;
+	int_2 = int_2 + int_1;
+	double_2 = double_1;
+	int looper_1 = 0;
+	while(looper_1 < 1)
 	{
-		looper_a += 1;
+		looper_1 += 1;
 		if(1)
 		{
 		}
 		if(1)
 		{
-			double_d = tanh ( double_f ) ;
+			double_4 = cosh ( double_2 ) ;
 		}
-		if(1)
+		char controller4vul_3[4];
+		scanf("%4s", controller4vul_3);
+		if( strcmp( controller4vul_3, "Xa-/") < 0)
 		{
-			if(1)
+			double double_1 = 0;
+			double double_2 = 0;
+			int int_1 = 0;
+			int int_2 = 0;
+			double double_3 = 0;
+			float float_1 = 0;
+			float float_2 = 0;
+			double double_4 = 0;
+			double double_5 = 0;
+			long long_1 = 0;
+			long long_2 = 0;
+			short short_1 = 0;
+			char char_1 = 0;
+			char char_2 = 0;
+			short short_2 = 0;
+			int int_3 = 0;
+			unsigned int unsigned_int_1 = 0;
+			unsigned int unsigned_int_2 = 0;
+			long long_3 = 0;
+			short short_3 = 0;
+			double double_6 = 0;
+			int int_4 = 0;
+			char controller4vul_4[2];
+			scanf("%2s", controller4vul_4);
+			if( strcmp( controller4vul_4, "F{") < 0)
 			{
-				int int_a = 0;
-				long long_a = 0;
-				double double_a = 0;
-				double double_b = 0;
-				double double_c = 0;
-				int int_b = 0;
-				short short_a = 0;
-				unsigned int unsigned_int_a = 0;
-				int int_c = 0;
-				int int_d = 0;
-				double double_d = 0;
-				long long_b = 0;
-				long long_c = 0;
-				char char_a = 0;
-				double double_e = 0;
-				double double_f = 0;
-				float float_b = 0;
-				double double_g = 0;
-				double double_h = 0;
-				char char_b = 0;
-				int int_e = 0;
-				int int_f = 0;
-				float float_a = 0;
-				char char_c = 0;
-				char char_d = 0;
-				bmfs_dir_init(unsigned_int_a);
+				int_2 = bmfs_open_dir(long_2,char_1,char_2,uni_para);
 
-				float_a = float_b;
-				return int_b;
+				unsigned_int_1 = unsigned_int_1 / unsigned_int_1;
+				return double_1;
+			}
+			char controller_1[2];
+			scanf("%2s", controller_1);
+			if( strcmp( controller_1, "wY") < 0)
+			{
+				short_1 = short_1 * short_1;
 			}
 			if(1)
 			{
-				double_d = double_g - double_h;
+				unsigned_int_1 = unsigned_int_2;
 			}
 			if(1)
 			{
-				double_b = tanh ( double_d ) ;
-			}
-			char controller_g[4];
-			scanf("%4s", controller_g);
-			if( controller_g <"ur$_" )
-			{
-				char_a = char_b / char_a;
-				return int_e;
+				unsigned_int_2 = unsigned_int_2;
+				return double_1;
 			}
 			else
 			{
-				double_b = atan ( double_d ) ;
-				return int_b;
+				double_1 = sqrt ( double_4 ) ;
+				return double_2;
 			}
-			double_h = double_c * double_f;
+			short_2 = short_2;
 		}
 		else
 		{
-			double_f = asin ( double_f ) ;
-			return int_e;
+			double double_1 = 0;
+			double double_2 = 0;
+			int int_1 = 0;
+			int int_2 = 0;
+			double double_3 = 0;
+			float float_1 = 0;
+			float float_2 = 0;
+			double double_4 = 0;
+			double double_5 = 0;
+			long long_1 = 0;
+			long long_2 = 0;
+			short short_1 = 0;
+			char char_1 = 0;
+			char char_2 = 0;
+			short short_2 = 0;
+			int int_3 = 0;
+			unsigned int unsigned_int_1 = 0;
+			unsigned int unsigned_int_2 = 0;
+			long long_3 = 0;
+			short short_3 = 0;
+			double double_6 = 0;
+			int int_4 = 0;
+			long_1 = long_3;
+			return double_2;
 		}
-		double_b = acos ( double_h ) ;
+		double_2 = acos ( double_5 ) ;
 	}
-	long_a = long_a;
+	int_3 = int_1 - int_2;
 	if(1)
 	{
-		long_a = long_a * long_b;
+		int_1 = int_3 / int_1;
 	}
-	double_c = atan2 ( double_b , double_d ) ;
+	double_2 = fabs ( double_4 ) ;
 	if(1)
 	{
-		double_e = cosh ( double_e ) ;
-		int_f = int_a;
-		return int_b;
+		double double_1 = 0;
+		double double_2 = 0;
+		int int_1 = 0;
+		int int_2 = 0;
+		double double_3 = 0;
+		float float_1 = 0;
+		float float_2 = 0;
+		double double_4 = 0;
+		double double_5 = 0;
+		long long_1 = 0;
+		long long_2 = 0;
+		short short_1 = 0;
+		char char_1 = 0;
+		char char_2 = 0;
+		short short_2 = 0;
+		int int_3 = 0;
+		unsigned int unsigned_int_1 = 0;
+		unsigned int unsigned_int_2 = 0;
+		long long_3 = 0;
+		short short_3 = 0;
+		double double_6 = 0;
+		int int_4 = 0;
+		short_1 = short_2 / short_3;
+		double_4 = log ( double_1 ) ;
+		return double_4;
 	}
-	for(int looper_b=0; looper_b<10;looper_b++)
+	for(int looper_2=0; looper_2<9;looper_2++)
 	{
-		double_f = is_opt(long_b,char_b,float_b);
-
-		double_g = exp ( double_e ) ;
+		char_1 = char_2 * char_1;
 		if(1)
 		{
 		}
 		if(1)
 		{
-			double_a = double_h;
+			char_2 = char_2 / char_1;
 		}
 		if(1)
 		{
-			double_g = atan ( double_f ) ;
+			int_3 = int_1 + int_1;
 		}
 		if(1)
 		{
-			double_a = log ( double_a ) ;
+			double double_1 = 0;
+			double double_2 = 0;
+			int int_1 = 0;
+			int int_2 = 0;
+			double double_3 = 0;
+			float float_1 = 0;
+			float float_2 = 0;
+			double double_4 = 0;
+			double double_5 = 0;
+			long long_1 = 0;
+			long long_2 = 0;
+			short short_1 = 0;
+			char char_1 = 0;
+			char char_2 = 0;
+			short short_2 = 0;
+			int int_3 = 0;
+			unsigned int unsigned_int_1 = 0;
+			unsigned int unsigned_int_2 = 0;
+			long long_3 = 0;
+			short short_3 = 0;
+			double double_6 = 0;
+			int int_4 = 0;
+			double_6 = floor ( double_1 ) ;
 		}
 		else
 		{
-			int int_a = 0;
-			long long_a = 0;
-			double double_a = 0;
-			double double_b = 0;
-			double double_c = 0;
-			int int_b = 0;
-			short short_a = 0;
-			unsigned int unsigned_int_a = 0;
-			int int_c = 0;
-			int int_d = 0;
-			double double_d = 0;
-			long long_b = 0;
-			long long_c = 0;
-			char char_a = 0;
-			double double_e = 0;
-			double double_f = 0;
-			float float_b = 0;
-			double double_g = 0;
-			double double_h = 0;
-			char char_b = 0;
-			int int_e = 0;
-			int int_f = 0;
-			float float_a = 0;
-			char char_c = 0;
-			char char_d = 0;
-			char_b = char_c + char_d;
+			double double_1 = 0;
+			double double_2 = 0;
+			int int_1 = 0;
+			int int_2 = 0;
+			double double_3 = 0;
+			float float_1 = 0;
+			float float_2 = 0;
+			double double_4 = 0;
+			double double_5 = 0;
+			long long_1 = 0;
+			long long_2 = 0;
+			short short_1 = 0;
+			char char_1 = 0;
+			char char_2 = 0;
+			short short_2 = 0;
+			int int_3 = 0;
+			unsigned int unsigned_int_1 = 0;
+			unsigned int unsigned_int_2 = 0;
+			long long_3 = 0;
+			short short_3 = 0;
+			double double_6 = 0;
+			int int_4 = 0;
+			int_4 = int_4;
 		}
 	}
-	return int_f;
+	return double_3;
 }
-void bmfs_table_entry_set_deleted( float parameter_1)
+void bmfs_table_entry_set_deleted()
 {
-	double double_a = 0;
-	double double_b = 0;
-	double_b = double_a / double_b;
+	long long_1 = 0;
+	long long_2 = 0;
+	long_1 = long_1 * long_2;
 }
-int bmfs_table_free( float parameter_1,unsigned int parameter_2)
+int bmfs_table_free( unsigned int parameter_1,float parameter_2)
 {
-	short short_a = 0;
-	int int_a = 0;
-	long long_a = 0;
-	double double_a = 0;
-	double double_b = 0;
-	short short_b = 0;
-	unsigned int unsigned_int_a = 0;
-	int int_b = 0;
-	int int_c = 0;
-	int int_d = 0;
-	float float_a = 0;
-	long long_b = 0;
-	bmfs_table_begin(short_a);
+	int int_1 = 0;
+	long long_1 = 0;
+	double double_1 = 0;
+	double double_2 = 0;
+	int int_2 = 0;
+	char char_1 = 0;
+	int_1 = bmfs_table_save(long_1);
 
-	int_a = bmfs_table_save(long_a);
-
-	double_a = fabs ( double_b ) ;
-	for(int looper_a=0; looper_a<6;looper_a++)
+	double_2 = double_1 * double_2;
+	for(int looper_1=0; looper_1<9;looper_1++)
 	{
-		short short_a = 0;
-		int int_a = 0;
-		long long_a = 0;
-		double double_a = 0;
-		double double_b = 0;
-		short short_b = 0;
-		unsigned int unsigned_int_a = 0;
-		int int_b = 0;
-		int int_c = 0;
-		int int_d = 0;
-		float float_a = 0;
-		long long_b = 0;
-		short_b = bmfs_table_next(unsigned_int_a);
+		double_1 = pow ( double_1 , double_2 ) ;
+		char controller_1[1];
+		scanf("%1s", controller_1);
+		if( strcmp( controller_1, "#") > 0)
+		{
+			return int_1;
+		}
+		char controller_2[4];
+		scanf("%4s", controller_2);
+		if( strcmp( controller_2, "`l96") > 0)
+		{
+		}
+		double_1 = bmfs_table_next(int_2);
 
-		long_a = long_a - long_a;
-		char controller_a[3];
-		scanf("%3s", controller_a);
-		if( controller_a <"n;h" )
+		bmfs_table_entry_set_deleted();
+
+		double_1 = double_2 + double_2;
+		bmfs_table_begin(char_1);
+
+		double_1 = atan ( double_2 ) ;
+		char controller_3[4];
+		scanf("%4s", controller_3);
+		if( strcmp( controller_3, "FkQQ") < 0)
 		{
-			return int_b;
+			return int_2;
 		}
-		if(1)
-		{
-		}
-		long_a = long_b;
-		short_a = short_a;
-		char controller_c[2];
-		scanf("%2s", controller_c);
-		if( controller_c <"fQ" )
-		{
-			return int_a;
-		}
-		return int_c;
+		return int_2;
 	}
-	return int_d;
-	bmfs_table_entry_set_deleted(float_a);
-
+	return int_1;
 }
-void bmfs_host_free( long parameter_1,float parameter_2)
+void bmfs_host_free( short parameter_1,double parameter_2)
 {
-	char controller_a[4];
-	scanf("%4s", controller_a);
-	if( strcmp( controller_a, "SmOi")==0)
+	char controller_1[1];
+	scanf("%1s", controller_1);
+	if( strcmp( controller_1, "I") > 0)
 	{
-		double double_a = 0;
-		double_a = acos ( double_a ) ;
+		double double_1 = 0;
+		double double_2 = 0;
+		double_1 = pow ( double_1 , double_2 ) ;
 	}
 }
-void table_free( unsigned int parameter_1)
+unsigned int table_free( short parameter_1)
 {
-	long long_a = 0;
-	float float_a = 0;
-	double double_a = 0;
-	double double_b = 0;
-	double double_c = 0;
-	bmfs_host_free(long_a,float_a);
-
-	double_a = floor ( double_a ) ;
+	double double_1 = 0;
+	unsigned int unsigned_int_1 = 0;
+	char char_1 = 0;
+	short short_1 = 0;
+	double double_2 = 0;
+	double_1 = exp ( double_1 ) ;
 	if(1)
 	{
+		return unsigned_int_1;
 	}
-	float_a = table_host_init(double_b);
+	double_1 = fmod ( double_1 , double_1 ) ;
+	table_host_init(char_1);
 
-	double_c = pow ( double_c , double_a ) ;
+	bmfs_host_free(short_1,double_2);
+
 }
-long bmfs_host_malloc( char parameter_1,float parameter_2,unsigned int parameter_3)
+char bmfs_host_malloc( char parameter_1,unsigned int parameter_2,short parameter_3)
 {
-	long long_a = 0;
-	long long_b = 0;
-	char controller_a[1];
-	scanf("%1s", controller_a);
-	if( controller_a >"~" )
+	char char_1 = 0;
+	char controller_1[1];
+	scanf("%1s", controller_1);
+	if( strcmp( controller_1, "g") < 0)
 	{
-		return long_a;
+		return char_1;
 	}
 	else
 	{
-		return long_b;
+		return char_1;
 	}
 }
-short bmfs_host_init()
+char bmfs_host_init( long parameter_1)
 {
-	short short_a = 0;
-	char controller_a[3];
-	scanf("%3s", controller_a);
-	if( controller_a >"udp" )
+	char char_1 = 0;
+	char char_2 = 0;
+	char controller_1[3];
+	scanf("%3s", controller_1);
+	if( strcmp( controller_1, ".(A") > 0)
 	{
-		return short_a;
+		return char_1;
 	}
 	else
 	{
-		return short_a;
+		return char_2;
 	}
 }
-float table_host_init( double parameter_1)
+void table_host_init( char parameter_1)
 {
-	float float_a = 0;
-	float float_b = 0;
-	short short_a = 0;
-	double double_a = 0;
-	double double_b = 0;
-	char controller_a[2];
-	scanf("%2s", controller_a);
-	if( controller_a <"cU" )
+	char char_1 = 0;
+	long long_1 = 0;
+	int int_1 = 0;
+	int int_2 = 0;
+	if(1)
 	{
-		return float_a;
 	}
 	if(1)
 	{
-		float float_a = 0;
-		float float_b = 0;
-		short short_a = 0;
-		double double_a = 0;
-		double double_b = 0;
-		double_a = cos ( double_b ) ;
-		if(1)
+		char char_1 = 0;
+		long long_1 = 0;
+		int int_1 = 0;
+		int int_2 = 0;
+		int_2 = int_1 / int_1;
+		char controller_3[3];
+		scanf("%3s", controller_3);
+		if( strcmp( controller_3, "ljT") > 0)
 		{
-			return float_a;
 		}
 	}
-	return float_b;
-	short_a = bmfs_host_init();
+	char_1 = bmfs_host_init(long_1);
 
 }
-float table_malloc( unsigned int parameter_1,short parameter_2)
+unsigned int table_malloc( double parameter_1,unsigned int parameter_2)
 {
-	float float_a = 0;
-	double double_a = 0;
-	float float_b = 0;
-	float float_c = 0;
-	float float_d = 0;
-	long long_a = 0;
-	char char_a = 0;
-	float float_e = 0;
-	unsigned int unsigned_int_a = 0;
-	float_a = table_host_init(double_a);
+	char char_1 = 0;
+	char char_2 = 0;
+	unsigned int unsigned_int_1 = 0;
+	short short_1 = 0;
+	long long_1 = 0;
+	long long_2 = 0;
+	table_host_init(char_1);
 
-	float_b = float_c;
-	char controller_a[5];
-	scanf("%5s", controller_a);
-	if( controller_a >".A+q[" )
+	char_1 = bmfs_host_malloc(char_2,unsigned_int_1,short_1);
+
+	long_1 = long_1 / long_2;
+	char controller_1[3];
+	scanf("%3s", controller_1);
+	if( strcmp( controller_1, "TI}") < 0)
 	{
-		return float_b;
+		return unsigned_int_1;
 	}
-	return float_d;
-	long_a = bmfs_host_malloc(char_a,float_e,unsigned_int_a);
-
+	return unsigned_int_1;
 }
-short copy_over_data( double parameter_1,double parameter_2,long parameter_3,long parameter_4)
+unsigned int copy_over_data( int parameter_1,double parameter_2,unsigned int parameter_3,float parameter_4)
 {
-	double double_a = 0;
-	double double_b = 0;
-	int int_a = 0;
-	long long_a = 0;
-	short short_a = 0;
-	int int_b = 0;
-	double double_c = 0;
-	short short_b = 0;
-	short short_c = 0;
-	short short_d = 0;
-	double double_d = 0;
-	long long_c = 0;
-	unsigned int unsigned_int_a = 0;
-	unsigned int unsigned_int_b = 0;
-	float float_a = 0;
-	short short_e = 0;
-	int int_c = 0;
-	double double_h = 0;
-	short short_f = 0;
-	double double_i = 0;
-	short short_g = 0;
-	char char_a = 0;
-	char char_b = 0;
-	double double_f = 0;
-	long long_b = 0;
-	double double_e = 0;
-	double double_g = 0;
-	double_a = double_b;
+	double double_1 = 0;
+	unsigned int unsigned_int_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	int int_2 = 0;
+	long long_1 = 0;
+	double double_2 = 0;
+	double double_3 = 0;
+	double double_4 = 0;
+	short short_1 = 0;
+	unsigned int unsigned_int_3 = 0;
+	int int_3 = 0;
+	long long_2 = 0;
+	double double_5 = 0;
+	double double_6 = 0;
+	unsigned int unsigned_int_4 = 0;
+	unsigned int unsigned_int_5 = 0;
+	int int_4 = 0;
+	double double_7 = 0;
+	double double_8 = 0;
+	int int_1 = 0;
+	char char_1 = 0;
+	char char_2 = 0;
+	double_1 = ceil ( double_1 ) ;
 	if(1)
 	{
-		int_a = bmfs_disk_read(long_a,short_a,int_b);
-
-		double_b = sinh ( double_c ) ;
+		double_1 = tanh ( double_1 ) ;
 	}
-	short_c = short_b * short_a;
+	double_1 = atan2 ( double_1 , double_1 ) ;
 	if(1)
 	{
-		return short_d;
+		return unsigned_int_1;
 	}
-	double_a = pow ( double_b , double_d ) ;
-	int looper_a = 0;
-	while(looper_a < 7)
+	unsigned_int_2 = unsigned_int_1;
+	int looper_1 = 0;
+	while(looper_1 < 8)
 	{
-		double double_a = 0;
-		double double_b = 0;
-		int int_a = 0;
-		long long_a = 0;
-		short short_a = 0;
-		int int_b = 0;
-		double double_c = 0;
-		short short_b = 0;
-		short short_c = 0;
-		short short_d = 0;
-		double double_d = 0;
-		long long_c = 0;
-		unsigned int unsigned_int_a = 0;
-		unsigned int unsigned_int_b = 0;
-		float float_a = 0;
-		short short_e = 0;
-		int int_c = 0;
-		double double_h = 0;
-		short short_f = 0;
-		double double_i = 0;
-		short short_g = 0;
-		char char_a = 0;
-		char char_b = 0;
-		double double_f = 0;
-		long long_b = 0;
-		double double_e = 0;
-		double double_g = 0;
-		looper_a += 1;
+		double double_1 = 0;
+		unsigned int unsigned_int_1 = 0;
+		unsigned int unsigned_int_2 = 0;
+		int int_2 = 0;
+		long long_1 = 0;
+		double double_2 = 0;
+		double double_3 = 0;
+		double double_4 = 0;
+		short short_1 = 0;
+		unsigned int unsigned_int_3 = 0;
+		int int_3 = 0;
+		long long_2 = 0;
+		double double_5 = 0;
+		double double_6 = 0;
+		unsigned int unsigned_int_4 = 0;
+		unsigned int unsigned_int_5 = 0;
+		int int_4 = 0;
+		double double_7 = 0;
+		double double_8 = 0;
+		int int_1 = 0;
+		char char_1 = 0;
+		char char_2 = 0;
+		looper_1 += 1;
 		if(1)
 		{
-			double double_a = 0;
-			double double_b = 0;
-			int int_a = 0;
-			long long_a = 0;
-			short short_a = 0;
-			int int_b = 0;
-			double double_c = 0;
-			short short_b = 0;
-			short short_c = 0;
-			short short_d = 0;
-			double double_d = 0;
-			long long_c = 0;
-			unsigned int unsigned_int_a = 0;
-			unsigned int unsigned_int_b = 0;
-			float float_a = 0;
-			short short_e = 0;
-			int int_c = 0;
-			double double_h = 0;
-			short short_f = 0;
-			double double_i = 0;
-			short short_g = 0;
-			char char_a = 0;
-			char char_b = 0;
-			double double_f = 0;
-			long long_b = 0;
-			double double_e = 0;
-			double double_g = 0;
-			long_c = long_b * long_a;
+			int_2 = int_1 * int_1;
 		}
-		double_b = double_c;
-		unsigned_int_a = unsigned_int_b;
+		long_1 = long_1;
+		double_2 = atan2 ( double_3 , double_4 ) ;
 		if(1)
 		{
-			double_d = tanh ( double_a ) ;
-			return short_d;
+			unsigned_int_2 = table_free(short_1);
+
+			double_3 = ceil ( double_3 ) ;
+			return unsigned_int_1;
 		}
-		table_free(unsigned_int_a);
-
-		double_c = atan ( double_a ) ;
-		char controller_e[1];
-		scanf("%1s", controller_e);
-		if( controller_e <"U" )
+		double_3 = double_2;
+		if(1)
 		{
-			float_a = table_malloc(unsigned_int_b,short_b);
+			unsigned_int_3 = table_malloc(double_3,unsigned_int_2);
 
-			double_d = asin ( double_a ) ;
-			return short_a;
+			int_3 = bmfs_disk_read(double_2,long_2,double_5);
+
+			double_3 = sqrt ( double_6 ) ;
+			return unsigned_int_4;
 		}
 		if(1)
 		{
-			long_c = long_c / long_a;
-			return short_e;
+			long_2 = long_1;
+			return unsigned_int_5;
 		}
-		char_b = char_a + char_b;
+		char_2 = char_1 - char_1;
+		char controller_7[5];
+		scanf("%5s", controller_7);
+		if( strcmp( controller_7, "dHs#_") < 0)
+		{
+			double_1 = ldexp ( double_3 , int_1 ) ;
+			return unsigned_int_2;
+		}
+		int_4 = bmfs_disk_seek(long_1,double_7,int_4);
+
+		double_1 = acos ( double_7 ) ;
+		double_4 = cosh ( double_6 ) ;
 		if(1)
 		{
-			double double_a = 0;
-			double double_b = 0;
-			int int_a = 0;
-			long long_a = 0;
-			short short_a = 0;
-			int int_b = 0;
-			double double_c = 0;
-			short short_b = 0;
-			short short_c = 0;
-			short short_d = 0;
-			double double_d = 0;
-			long long_c = 0;
-			unsigned int unsigned_int_a = 0;
-			unsigned int unsigned_int_b = 0;
-			float float_a = 0;
-			short short_e = 0;
-			int int_c = 0;
-			double double_h = 0;
-			short short_f = 0;
-			double double_i = 0;
-			short short_g = 0;
-			char char_a = 0;
-			char char_b = 0;
-			double double_f = 0;
-			long long_b = 0;
-			double double_e = 0;
-			double double_g = 0;
-			double_e = fmod ( double_f , double_g ) ;
-			return short_d;
-		}
-		int_c = int_a * int_b;
-		double_b = sinh ( double_f ) ;
-		if(1)
-		{
-			double_h = sinh ( double_f ) ;
-			return short_e;
+			double_2 = log ( double_5 ) ;
+			return unsigned_int_4;
 		}
 		if(1)
 		{
-			unsigned_int_b = unsigned_int_b - unsigned_int_a;
-			return short_d;
+			int_4 = int_4 / int_3;
+			return unsigned_int_4;
 		}
-		int_c = bmfs_disk_write(double_c,short_f,int_c,long_c);
-
-		double_a = tanh ( double_i ) ;
+		double_7 = tanh ( double_4 ) ;
 	}
-	double_d = fmod ( double_h , double_i ) ;
-	return short_g;
-	int_c = bmfs_disk_seek(unsigned_int_a,short_g,int_b);
+	double_4 = atan2 ( double_6 , double_8 ) ;
+	return unsigned_int_2;
+	int_4 = bmfs_disk_write(short_1,unsigned_int_3,int_2,unsigned_int_1);
 
 }
-int bmfs_table_realloc( long parameter_1,float parameter_2,unsigned int parameter_3)
+int bmfs_table_realloc( double parameter_1,double parameter_2,double parameter_3)
 {
-	int int_a = 0;
-	float float_a = 0;
-	unsigned int unsigned_int_a = 0;
-	double double_a = 0;
-	double double_b = 0;
-	unsigned int unsigned_int_b = 0;
-	short short_a = 0;
-	double double_c = 0;
-	long long_a = 0;
-	double double_d = 0;
-	unsigned int unsigned_int_c = 0;
-	long long_b = 0;
-	double double_e = 0;
-	float float_b = 0;
-	char char_a = 0;
-	double double_f = 0;
-	short short_b = 0;
-	short short_c = 0;
-	double double_g = 0;
-	int int_b = 0;
+	int int_1 = 0;
+	int int_2 = 0;
+	unsigned int unsigned_int_1 = 0;
+	double double_1 = 0;
+	int int_3 = 0;
+	unsigned int unsigned_int_2 = 0;
+	int int_4 = 0;
+	unsigned int unsigned_int_3 = 0;
+	float float_1 = 0;
+	double double_2 = 0;
+	double double_3 = 0;
+	double double_4 = 0;
+	int int_5 = 0;
+	long long_1 = 0;
+	double double_5 = 0;
+	double double_6 = 0;
+	double double_7 = 0;
+	double double_8 = 0;
+	double double_9 = 0;
+	int int_6 = 0;
+	short short_1 = 0;
+	float float_2 = 0;
+	char char_1 = 0;
+	unsigned int unsigned_int_4 = 0;
+	double double_10 = 0;
+	double double_11 = 0;
+	char controller_1[2];
+	scanf("%2s", controller_1);
+	if( strcmp( controller_1, "hj") > 0)
+	{
+		return int_1;
+	}
+	bmfs_table_end(int_2);
+
+	int_1 = get_block_size(unsigned_int_1);
+
+	double_1 = atan ( double_1 ) ;
 	if(1)
 	{
-		return int_a;
+		return int_2;
 	}
-	int_a = bmfs_table_free(float_a,unsigned_int_a);
+	char controller_3[1];
+	scanf("%1s", controller_3);
+	if( strcmp( controller_3, "U") < 0)
+	{
+		return int_3;
+	}
+	unsigned_int_2 = unsigned_int_1 + unsigned_int_1;
+	int_4 = bmfs_table_free(unsigned_int_3,float_1);
 
-	double_b = double_a * double_a;
+	double_1 = atan ( double_2 ) ;
+	bmfs_table_entry_init(int_3);
+
+	double_3 = double_4;
+	int_5 = bmfs_table_previous();
+
+	long_1 = long_1 - long_1;
+	double_1 = tanh ( double_5 ) ;
 	if(1)
 	{
-		return int_a;
+		return int_2;
 	}
+	double_2 = double_6 - double_7;
+	double_4 = asin ( double_8 ) ;
+	double_9 = double_1;
+	double_2 = atan ( double_6 ) ;
+	double_1 = tanh ( double_8 ) ;
+	int_6 = bmfs_table_push(short_1,float_2);
+
+	char_1 = char_1;
 	if(1)
 	{
-		return int_a;
+		return int_4;
 	}
-	get_block_size(double_b);
-
-	unsigned_int_a = unsigned_int_a / unsigned_int_b;
-	short_a = copy_over_data(double_c,double_c,long_a,long_a);
-
-	double_c = fabs ( double_d ) ;
-	int_a = bmfs_table_push(double_b,short_a);
-
-	float_a = float_a / float_a;
-	unsigned_int_c = unsigned_int_a;
-	bmfs_table_end(long_b);
-
-	double_a = bmfs_table_previous(double_a);
-
-	double_b = tan ( double_c ) ;
-	char controller_d[3];
-	scanf("%3s", controller_d);
-	if( controller_d <"q[0" )
-	{
-		return int_a;
-	}
-	double_d = cosh ( double_c ) ;
-	double_e = floor ( double_c ) ;
-	float_b = bmfs_table_find(float_a,char_a);
-
-	double_c = acos ( double_b ) ;
-	bmfs_table_entry_init(short_a);
-
-	double_f = double_b;
-	short_a = short_b * short_c;
-	double_a = ceil ( double_d ) ;
+	double_8 = ceil ( double_4 ) ;
 	if(1)
 	{
-		return int_a;
+		return int_2;
 	}
-	double_b = cosh ( double_g ) ;
-	if(1)
-	{
-		return int_a;
-	}
-	bmfs_table_hide_deleted(int_a);
+	unsigned_int_4 = copy_over_data(int_5,double_10,unsigned_int_3,float_1);
 
-	int_b = int_a - int_b;
+	double_7 = tanh ( double_4 ) ;
 	if(1)
 	{
-		return int_b;
+		return int_4;
 	}
-	double_a = fabs ( double_b ) ;
-	return int_b;
+	double_3 = bmfs_table_find(double_2,int_1);
+
+	bmfs_table_hide_deleted();
+
+	double_11 = acos ( double_8 ) ;
+	return int_3;
 }
-double file_resize( char parameter_1,unsigned int parameter_2)
+unsigned int file_resize( short parameter_1,char parameter_2)
 {
-	double double_a = 0;
-	double double_b = 0;
-	double double_c = 0;
-	int int_a = 0;
-	long long_a = 0;
-	float float_a = 0;
-	unsigned int unsigned_int_a = 0;
-	double double_d = 0;
+	unsigned int unsigned_int_1 = 0;
+	double double_1 = 0;
+	double double_2 = 0;
+	double double_3 = 0;
+	double double_4 = 0;
+	int int_1 = 0;
+	char controller_1[5];
+	scanf("%5s", controller_1);
+	if( strcmp( controller_1, "Kzi%`") > 0)
+	{
+		return unsigned_int_1;
+	}
+	double_1 = pow ( double_2 , double_3 ) ;
+	double_1 = double_1 * double_4;
 	if(1)
 	{
-		return double_a;
+		return unsigned_int_1;
 	}
-	double_a = cosh ( double_a ) ;
-	double_b = floor ( double_c ) ;
-	if(1)
-	{
-		return double_b;
-	}
-	int_a = bmfs_table_realloc(long_a,float_a,unsigned_int_a);
+	double_3 = ceil ( double_2 ) ;
+	double_4 = fmod ( double_4 , double_3 ) ;
+	return unsigned_int_1;
+	int_1 = bmfs_table_realloc(double_4,double_3,double_3);
 
-	int_a = int_a;
-	double_d = sinh ( double_a ) ;
-	return double_d;
 }
-int bmfs_file_write( float parameter_1,short parameter_2,short parameter_3,double parameter_4)
+int bmfs_file_write( unsigned int parameter_1,char parameter_2,float parameter_3,double parameter_4)
 {
-	int int_a = 0;
-	double double_a = 0;
-	char char_a = 0;
-	unsigned int unsigned_int_a = 0;
-	int int_b = 0;
-	short short_a = 0;
-	int int_c = 0;
-	long long_a = 0;
-	int int_d = 0;
-	double double_b = 0;
-	float float_a = 0;
-	double double_c = 0;
+	int int_1 = 0;
+	int int_2 = 0;
+	short short_1 = 0;
+	int int_3 = 0;
+	double double_1 = 0;
+	double double_2 = 0;
+	double double_3 = 0;
+	int int_4 = 0;
+	unsigned int unsigned_int_1 = 0;
+	short short_2 = 0;
+	char char_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	double double_4 = 0;
+	unsigned int unsigned_int_3 = 0;
+	double double_5 = 0;
+	double double_6 = 0;
 	if(1)
 	{
-		return int_a;
+		return int_1;
 	}
-	double_a = file_resize(char_a,unsigned_int_a);
+	int_2 = bmfs_file_seek(short_1,int_3,int_3);
 
-	int_b = bmfs_disk_write(double_a,short_a,int_c,long_a);
-
-	double_a = asin ( double_a ) ;
+	double_1 = double_1;
 	if(1)
 	{
-		double_a = exp ( double_a ) ;
+		double_2 = ceil ( double_3 ) ;
 		if(1)
 		{
-			return int_d;
+			return int_4;
 		}
 	}
-	double_a = acos ( double_a ) ;
-	if(1)
-	{
-		return int_b;
-	}
-	unsigned_int_a = unsigned_int_a;
-	short_a = short_a;
-	if(1)
-	{
-		return int_a;
-	}
-	double_b = asin ( double_b ) ;
-	if(1)
-	{
-		double_a = floor ( double_b ) ;
-	}
-	if(1)
-	{
-		int int_a = 0;
-		double double_a = 0;
-		char char_a = 0;
-		unsigned int unsigned_int_a = 0;
-		int int_b = 0;
-		short short_a = 0;
-		int int_c = 0;
-		long long_a = 0;
-		int int_d = 0;
-		double double_b = 0;
-		float float_a = 0;
-		double double_c = 0;
-		int_d = bmfs_file_seek(float_a,float_a,int_d);
+	unsigned_int_1 = file_resize(short_2,char_1);
 
-		double_b = tanh ( double_c ) ;
-	}
-	return int_b;
-}
-void bmfs_file_set_mode( short parameter_1,int parameter_2)
-{
-	char controller_a[1];
-	scanf("%1s", controller_a);
-	if( controller_a <"/" )
+	unsigned_int_2 = unsigned_int_1 + unsigned_int_1;
+	if(1)
 	{
-		double double_a = 0;
-		double_a = ceil ( double_a ) ;
+		return int_3;
+	}
+	double_1 = ceil ( double_4 ) ;
+	int_3 = bmfs_disk_write(short_1,unsigned_int_1,int_1,unsigned_int_3);
+
+	double_4 = ceil ( double_2 ) ;
+	if(1)
+	{
+		return int_4;
+	}
+	double_3 = pow ( double_3 , double_4 ) ;
+	if(1)
+	{
+		int int_1 = 0;
+		int int_2 = 0;
+		short short_1 = 0;
+		int int_3 = 0;
+		double double_1 = 0;
+		double double_2 = 0;
+		double double_3 = 0;
+		int int_4 = 0;
+		unsigned int unsigned_int_1 = 0;
+		short short_2 = 0;
+		char char_1 = 0;
+		unsigned int unsigned_int_2 = 0;
+		double double_4 = 0;
+		unsigned int unsigned_int_3 = 0;
+		double double_5 = 0;
+		double double_6 = 0;
+		double_5 = floor ( double_6 ) ;
+	}
+	if(1)
+	{
+		double_1 = acos ( double_5 ) ;
+	}
+	return int_4;
+}
+void bmfs_file_set_mode( float parameter_1,char parameter_2)
+{
+	char controller_1[1];
+	scanf("%1s", controller_1);
+	if( strcmp( controller_1, "F") > 0)
+	{
+		double double_1 = 0;
+		double_1 = atan ( double_1 ) ;
 	}
 }
-float bmfs_table_find( float parameter_1,char parameter_2)
+double bmfs_table_find( double parameter_1,int parameter_2)
 {
-	double double_a = 0;
-	double double_b = 0;
-	float float_a = 0;
-	float float_b = 0;
-	short short_a = 0;
-	int int_a = 0;
-	unsigned int unsigned_int_a = 0;
-	double double_c = 0;
-	double double_d = 0;
-	double_b = double_a / double_b;
-	double_b = sinh ( double_b ) ;
-	for(int looper_a=0; looper_a<2;looper_a++)
+	unsigned int unsigned_int_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	char char_1 = 0;
+	double double_1 = 0;
+	int int_1 = 0;
+	long long_1 = 0;
+	double double_2 = 0;
+	float float_1 = 0;
+	float float_2 = 0;
+	unsigned_int_1 = unsigned_int_1 - unsigned_int_2;
+	bmfs_table_begin(char_1);
+
+	double_1 = bmfs_table_next(int_1);
+
+	long_1 = long_1 * long_1;
+	for(int looper_1=0; looper_1<10;looper_1++)
 	{
-		double double_a = 0;
-		double double_b = 0;
-		float float_a = 0;
-		float float_b = 0;
-		short short_a = 0;
-		int int_a = 0;
-		unsigned int unsigned_int_a = 0;
-		double double_c = 0;
-		double double_d = 0;
-		double_c = log10 ( double_d ) ;
-		if(1)
+		unsigned int unsigned_int_1 = 0;
+		unsigned int unsigned_int_2 = 0;
+		char char_1 = 0;
+		double double_1 = 0;
+		int int_1 = 0;
+		long long_1 = 0;
+		double double_2 = 0;
+		float float_1 = 0;
+		float float_2 = 0;
+		float_2 = float_1 * float_1;
+		char controller_1[5];
+		scanf("%5s", controller_1);
+		if( strcmp( controller_1, "?A5dC") > 0)
 		{
 		}
-		if(1)
+		char controller_2[3];
+		scanf("%3s", controller_2);
+		if( strcmp( controller_2, "VC_") < 0)
 		{
-			return float_a;
+			return double_2;
 		}
 	}
-	return float_b;
-	bmfs_table_begin(short_a);
-
-	bmfs_table_hide_deleted(int_a);
-
-	short_a = bmfs_table_next(unsigned_int_a);
+	return double_2;
+	bmfs_table_hide_deleted();
 
 }
-unsigned int can_fit_entry( long parameter_1,long parameter_2)
+short can_fit_entry( int parameter_1,float parameter_2)
 {
-	float float_a = 0;
-	char char_a = 0;
-	int int_a = 0;
-	unsigned int unsigned_int_a = 0;
-	float_a = bmfs_table_find(float_a,char_a);
+	double double_1 = 0;
+	int int_1 = 0;
+	int int_2 = 0;
+	short short_1 = 0;
+	short short_2 = 0;
+	double_1 = bmfs_table_find(double_1,int_1);
 
-	int_a = int_a;
-	if(1)
+	int_1 = int_2 + int_1;
+	char controller_1[1];
+	scanf("%1s", controller_1);
+	if( strcmp( controller_1, "B") < 0)
 	{
-		return unsigned_int_a;
+		return short_1;
 	}
-	char controller_b[2];
-	scanf("%2s", controller_b);
-	if( controller_b <":h" )
+	char controller_2[2];
+	scanf("%2s", controller_2);
+	if( strcmp( controller_2, "6&") < 0)
 	{
-		return unsigned_int_a;
+		return short_2;
 	}
-	return unsigned_int_a;
+	return short_2;
 }
-void add_entry( long parameter_1,long parameter_2,unsigned int parameter_3)
+short add_entry( long parameter_1,unsigned int parameter_2,int parameter_3)
 {
-	double double_a = 0;
-	double double_b = 0;
-	int int_a = 0;
-	int int_b = 0;
-	double double_c = 0;
-	char char_a = 0;
-	char char_b = 0;
-	unsigned int unsigned_int_a = 0;
-	short short_a = 0;
-	unsigned int unsigned_int_b = 0;
-	long long_a = 0;
-	long long_b = 0;
+	short short_1 = 0;
+	int int_1 = 0;
+	unsigned int unsigned_int_1 = 0;
+	int int_2 = 0;
+	char char_1 = 0;
+	char char_2 = 0;
+	double double_1 = 0;
+	short short_2 = 0;
+	float float_1 = 0;
+	int int_3 = 0;
+	short short_3 = 0;
+	long long_1 = 0;
+	double double_2 = 0;
+	long long_2 = 0;
+	short short_4 = 0;
+	double double_3 = 0;
+	double double_4 = 0;
+	int int_4 = 0;
+	short short_5 = 0;
 	if(1)
 	{
+		return short_1;
 	}
-	double_a = floor ( double_b ) ;
-	int_a = int_b;
-	if(1)
-	{
-	}
-	double_b = sinh ( double_c ) ;
-	if(1)
-	{
-	}
-	char_a = char_b;
-	if(1)
-	{
-	}
-	double_b = tan ( double_a ) ;
-	int_b = bmfs_disk_seek(unsigned_int_a,short_a,int_b);
+	int_1 = bmfs_entry_write(unsigned_int_1,int_2);
 
-	double_c = tan ( double_b ) ;
-	char controller_e[3];
-	scanf("%3s", controller_e);
-	if( controller_e >"hn," )
+	char_2 = char_1 / char_2;
+	double_1 = floor ( double_1 ) ;
+	if(1)
 	{
+		return short_1;
 	}
-	unsigned_int_b = can_fit_entry(long_a,long_b);
+	short_2 = can_fit_entry(int_2,float_1);
 
-	int_a = bmfs_entry_write(double_c,unsigned_int_a);
+	int_3 = int_1;
+	if(1)
+	{
+		return short_3;
+	}
+	int_2 = bmfs_disk_seek(long_1,double_2,int_2);
 
+	long_2 = long_2 / long_2;
+	char controller_4[3];
+	scanf("%3s", controller_4);
+	if( strcmp( controller_4, "^|H") > 0)
+	{
+		return short_4;
+	}
+	double_3 = sinh ( double_4 ) ;
+	int_2 = int_4;
+	if(1)
+	{
+		return short_2;
+	}
+	return short_5;
 }
-float entry_exists( char parameter_1,short parameter_2,char parameter_3,unsigned int parameter_4)
+unsigned int entry_exists( int parameter_1,float parameter_2,unsigned int parameter_3,char parameter_4)
 {
-	double double_a = 0;
-	double double_b = 0;
-	float float_a = 0;
-	long long_a = 0;
-	unsigned int unsigned_int_a = 0;
-	float float_b = 0;
-	char char_a = 0;
-	char char_b = 0;
-	float float_c = 0;
-	double_a = pow ( double_a , double_a ) ;
-	double_a = log10 ( double_b ) ;
-	float_a = find_entry(double_a,long_a,unsigned_int_a,double_a,float_b,668);
+	long long_1 = 0;
+	double double_1 = 0;
+	double double_2 = 0;
+	double double_3 = 0;
+	int int_1 = 0;
+	int int_2 = 0;
+	unsigned int unsigned_int_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	double double_4 = 0;
+	char char_1 = 0;
+	long_1 = long_1 - long_1;
+	bmfs_entry_init(double_1);
 
-	char_b = char_a - char_b;
-	char controller_a[5];
-	scanf("%5s", controller_a);
-	if( controller_a >"31I09" )
+	double_2 = acos ( double_3 ) ;
+	int_1 = int_2;
+	if(1)
 	{
-		return float_a;
+		return unsigned_int_1;
 	}
 	else
 	{
-		return float_c;
+		return unsigned_int_2;
 	}
-	bmfs_entry_init(char_a);
+	double_2 = find_entry(double_1,int_1,double_4,char_1,unsigned_int_1);
 
 }
-int create_entry( double parameter_1,float parameter_2,int parameter_3)
+long create_entry( char parameter_1,int parameter_2,int parameter_3)
 {
-	double double_a = 0;
-	char char_b = 0;
-	long long_a = 0;
-	long long_b = 0;
-	int int_a = 0;
-	short short_a = 0;
-	float float_a = 0;
-	short short_b = 0;
-	short short_c = 0;
-	double double_b = 0;
-	int int_b = 0;
-	int int_c = 0;
-	double double_c = 0;
-	short short_d = 0;
-	double double_d = 0;
-	double double_e = 0;
-	float float_b = 0;
-	int int_d = 0;
-	unsigned int unsigned_int_a = 0;
-	int int_e = 0;
-	int int_f = 0;
-	unsigned int unsigned_int_b = 0;
-	char char_c = 0;
-	double double_f = 0;
-	unsigned int unsigned_int_c = 0;
-	char char_d = 0;
-	unsigned int unsigned_int_d = 0;
-	float float_c = 0;
-	double double_h = 0;
-	char char_a = 0;
-	double double_g = 0;
-	double_a = log ( double_a ) ;
-	int looper_a = 0;
-	while(looper_a < 5)
+	double double_1 = 0;
+	int int_1 = 0;
+	short short_1 = 0;
+	long long_1 = 0;
+	unsigned int unsigned_int_1 = 0;
+	double double_2 = 0;
+	long long_2 = 0;
+	char char_1 = 0;
+	long long_3 = 0;
+	long long_4 = 0;
+	float float_1 = 0;
+	double double_3 = 0;
+	double double_4 = 0;
+	double double_5 = 0;
+	int int_2 = 0;
+	float float_2 = 0;
+	double double_6 = 0;
+	unsigned int unsigned_int_2 = 0;
+	unsigned int unsigned_int_3 = 0;
+	double double_7 = 0;
+	int int_3 = 0;
+	short short_2 = 0;
+	double double_8 = 0;
+	char char_2 = 0;
+	long long_5 = 0;
+	bmfs_header_init();
+
+	double_1 = ldexp ( double_1 , int_1 ) ;
+	int looper_1 = 0;
+	while(looper_1 < 2)
 	{
-		double double_a = 0;
-		char char_b = 0;
-		long long_a = 0;
-		long long_b = 0;
-		int int_a = 0;
-		short short_a = 0;
-		float float_a = 0;
-		short short_b = 0;
-		short short_c = 0;
-		double double_b = 0;
-		int int_b = 0;
-		int int_c = 0;
-		double double_c = 0;
-		short short_d = 0;
-		double double_d = 0;
-		double double_e = 0;
-		float float_b = 0;
-		int int_d = 0;
-		unsigned int unsigned_int_a = 0;
-		int int_e = 0;
-		int int_f = 0;
-		unsigned int unsigned_int_b = 0;
-		char char_c = 0;
-		double double_f = 0;
-		unsigned int unsigned_int_c = 0;
-		char char_d = 0;
-		unsigned int unsigned_int_d = 0;
-		float float_c = 0;
-		double double_h = 0;
-		char char_a = 0;
-		double double_g = 0;
-		looper_a += 1;
-		char_b = char_a + char_b;
+		looper_1 += 1;
+		short_1 = add_entry(long_1,unsigned_int_1,int_1);
+
+		unsigned_int_1 = unsigned_int_1;
 	}
-	long_a = long_b;
+	double_2 = atan2 ( double_2 , double_2 ) ;
 	if(1)
 	{
-		return int_a;
+		return long_2;
 	}
-	short_a = short_a - short_a;
-	bmfs_path_set(float_a,long_b,long_b);
+	bmfs_path_init(char_1);
 
-	short_c = short_b * short_b;
-	bmfs_path_init(short_a);
+	long_4 = long_3 - long_4;
+	float_1 = float_1 + float_1;
+	bmfs_entry_init(double_1);
 
-	double_b = fmod ( double_a , double_a ) ;
+	double_3 = exp ( double_4 ) ;
 	if(1)
 	{
-		return int_a;
+		return long_1;
 	}
-	int_b = int_c;
-	char controller_c[3];
-	scanf("%3s", controller_c);
-	if( controller_c >"l=(" )
+	char_1 = char_1;
+	char controller_3[5];
+	scanf("%5s", controller_3);
+	if( strcmp( controller_3, "_[i%_") > 0)
 	{
-		return int_c;
+		return long_1;
 	}
-	double_c = ldexp ( double_c , int_b ) ;
-	double_b = fabs ( double_a ) ;
-	bmfs_header_init(short_d);
-
-	double_d = fabs ( double_e ) ;
-	char controller_d[4];
-	scanf("%4s", controller_d);
-	if( controller_d >"p-F`" )
+	double_2 = tanh ( double_2 ) ;
+	double_4 = fmod ( double_1 , double_1 ) ;
+	double_3 = log ( double_3 ) ;
+	if(1)
 	{
-		return int_b;
+		return long_2;
 	}
-	float_b = float_a;
-	int_d = bmfs_path_split_root(unsigned_int_a,short_c);
+	double_4 = sqrt ( double_3 ) ;
+	double_3 = sinh ( double_3 ) ;
+	int_1 = bmfs_disk_seek(long_1,double_5,int_2);
 
-	int_c = int_e;
-	int_e = bmfs_header_read(double_b,short_c);
+	int_2 = int_1 * int_2;
+	int_1 = bmfs_path_split_root(float_2,float_2);
 
-	int_f = bmfs_entry_read(char_b,long_b,503);
-
-	double_c = fabs ( double_a ) ;
-	unsigned_int_b = unsigned_int_a;
-	float_b = entry_exists(char_b,short_d,char_c,unsigned_int_a);
-
-	double_b = cos ( double_e ) ;
-	int looper_b = 0;
-	while(looper_b < 6)
+	double_3 = tan ( double_6 ) ;
+	double_4 = atan ( double_1 ) ;
+	int looper_2 = 0;
+	while(looper_2 < 4)
 	{
-		looper_b += 1;
-		double_f = fmod ( double_a , double_b ) ;
+		looper_2 += 1;
+		unsigned_int_2 = entry_exists(int_2,float_2,unsigned_int_3,char_1);
+
+		double_4 = exp ( double_4 ) ;
 		if(1)
 		{
 		}
-		add_entry(long_a,long_b,unsigned_int_c);
-
-		double_e = atan ( double_b ) ;
-		double_c = cos ( double_b ) ;
+		double_7 = sqrt ( double_7 ) ;
+		int_2 = int_2 + int_2;
 		if(1)
 		{
-			return int_a;
+			return long_4;
 		}
-		long_b = long_a * long_a;
+		int_3 = bmfs_entry_read(int_3,long_3,474);
+
+		double_1 = double_2;
 		if(1)
 		{
-			return int_d;
+			return long_3;
 		}
 	}
-	bmfs_entry_init(char_d);
-
-	unsigned_int_c = unsigned_int_b;
+	double_7 = tanh ( double_2 ) ;
 	if(1)
 	{
-		return int_c;
+		return long_2;
 	}
-	double_f = tanh ( double_e ) ;
-	for(int looper_c=0; looper_c<9;looper_c++)
-	{
-		double double_a = 0;
-		char char_b = 0;
-		long long_a = 0;
-		long long_b = 0;
-		int int_a = 0;
-		short short_a = 0;
-		float float_a = 0;
-		short short_b = 0;
-		short short_c = 0;
-		double double_b = 0;
-		int int_b = 0;
-		int int_c = 0;
-		double double_c = 0;
-		short short_d = 0;
-		double double_d = 0;
-		double double_e = 0;
-		float float_b = 0;
-		int int_d = 0;
-		unsigned int unsigned_int_a = 0;
-		int int_e = 0;
-		int int_f = 0;
-		unsigned int unsigned_int_b = 0;
-		char char_c = 0;
-		double double_f = 0;
-		unsigned int unsigned_int_c = 0;
-		char char_d = 0;
-		unsigned int unsigned_int_d = 0;
-		float float_c = 0;
-		double double_h = 0;
-		char char_a = 0;
-		double double_g = 0;
-		float_b = find_entry(double_b,long_a,unsigned_int_d,double_a,float_c,618);
+	int_3 = bmfs_header_read(long_3,double_2);
 
-		double_g = sqrt ( double_f ) ;
+	double_6 = ldexp ( double_7 , int_1 ) ;
+	for(int looper_3=0; looper_3<3;looper_3++)
+	{
+		int_2 = int_2 / int_2;
 	}
-	double_e = floor ( double_h ) ;
+	bmfs_path_set(short_2,int_2,unsigned_int_1);
+
+	double_7 = sinh ( double_2 ) ;
 	if(1)
 	{
-		return int_a;
+		return long_1;
 	}
-	int_a = bmfs_disk_seek(unsigned_int_c,short_a,int_a);
+	double_6 = find_entry(double_8,int_3,double_7,char_1,unsigned_int_1);
 
-	double_h = acos ( double_f ) ;
+	char_2 = char_1 + char_2;
 	if(1)
 	{
-		return int_a;
+		return long_1;
 	}
-	return int_a;
+	return long_5;
 }
-float new_get_block_size()
+double new_get_block_size( short parameter_1)
 {
-	float float_a = 0;
-	float float_b = 0;
-	if(1)
+	double double_1 = 0;
+	double double_2 = 0;
+	char controller_1[5];
+	scanf("%5s", controller_1);
+	if( strcmp( controller_1, "?f15V") < 0)
 	{
-		return float_a;
+		return double_1;
 	}
 	else
 	{
-		return float_b;
+		return double_2;
 	}
 }
-int bmfs_create_file( float parameter_1,float parameter_2)
+int bmfs_create_file( double parameter_1,int parameter_2)
 {
-	int int_a = 0;
-	double double_a = 0;
-	char char_a = 0;
-	char char_b = 0;
-	int int_b = 0;
-	double double_b = 0;
-	double double_c = 0;
-	char char_c = 0;
-	int int_c = 0;
-	float float_a = 0;
-	double double_d = 0;
-	long long_a = 0;
-	long long_b = 0;
-	float float_b = 0;
-	int int_d = 0;
-	short short_a = 0;
-	float float_c = 0;
-	double double_e = 0;
-	int int_e = 0;
-	long long_c = 0;
-	int int_f = 0;
-	long long_d = 0;
-	char controller_a[3];
-	scanf("%3s", controller_a);
-	if( controller_a <"/Y4" )
-	{
-		return int_a;
-	}
-	double_a = double_a * double_a;
-	char_b = char_a * char_a;
-	char controller_b[5];
-	scanf("%5s", controller_b);
-	if( controller_b <"$jv08" )
-	{
-		return int_b;
-	}
-	double_c = double_b * double_b;
-	bmfs_entry_init(char_c);
-
-	int_c = bmfs_get_current_time(float_a);
-
-	double_d = sqrt ( double_c ) ;
-	float_a = new_get_block_size();
-
-	long_b = long_a + long_a;
-	float_a = float_a + float_b;
-	int_d = bmfs_allocate(double_b,short_a,float_c);
-
-	double_a = sinh ( double_e ) ;
-	int_e = create_entry(double_e,float_c,int_a);
-
-	long_a = long_c;
-	double_e = ceil ( double_e ) ;
+	int int_1 = 0;
+	double double_1 = 0;
+	double double_2 = 0;
+	double double_3 = 0;
+	double double_4 = 0;
+	int int_2 = 0;
+	long long_1 = 0;
+	int int_3 = 0;
+	long long_2 = 0;
+	unsigned int unsigned_int_1 = 0;
+	short short_1 = 0;
+	char char_1 = 0;
+	long long_3 = 0;
+	char char_2 = 0;
+	char char_3 = 0;
+	short short_2 = 0;
+	int int_4 = 0;
+	long long_4 = 0;
 	if(1)
 	{
-		return int_f;
+		return int_1;
 	}
-	return int_c;
-	bmfs_entry_set_type(long_b,long_d);
+	double_1 = acos ( double_2 ) ;
+	bmfs_entry_init(double_2);
 
+	double_1 = atan2 ( double_3 , double_4 ) ;
+	if(1)
+	{
+		return int_2;
+	}
+	long_1 = long_1 * long_1;
+	int_3 = bmfs_allocate(long_2,unsigned_int_1,unsigned_int_1);
+
+	double_3 = new_get_block_size(short_1);
+
+	char_1 = char_1;
+	long_3 = create_entry(char_2,int_1,int_2);
+
+	double_4 = sqrt ( double_4 ) ;
+	char_1 = char_3;
+	bmfs_entry_set_type(char_3,short_1);
+
+	int_2 = bmfs_get_current_time(short_2);
+
+	double_4 = ldexp ( double_4 , int_4 ) ;
+	long_4 = long_1 + long_4;
+	double_1 = sinh ( double_1 ) ;
+	if(1)
+	{
+		return int_4;
+	}
+	return int_4;
 }
-unsigned int cmd_cp( short parameter_1,int parameter_2,int parameter_3)
+void cmd_cp( int parameter_1,int parameter_2,short parameter_3)
 {
-	double double_a = 0;
-	double double_b = 0;
-	unsigned int unsigned_int_a = 0;
-	short short_a = 0;
-	int int_a = 0;
-	double double_c = 0;
-	char char_a = 0;
-	double double_d = 0;
-	double double_e = 0;
-	double double_f = 0;
-	int int_b = 0;
-	int int_c = 0;
-	int int_d = 0;
-	short short_b = 0;
-	float float_a = 0;
-	float float_b = 0;
-	double double_g = 0;
-	double double_h = 0;
-	long long_a = 0;
-	int int_e = 0;
-	unsigned int unsigned_int_d = 0;
-	float float_d = 0;
-	float float_e = 0;
-	double double_i = 0;
-	float float_c = 0;
-	unsigned int unsigned_int_b = 0;
-	unsigned int unsigned_int_c = 0;
-	long long_b = 0;
-	long long_c = 0;
-	long long_d = 0;
+	int int_1 = 0;
+	double double_1 = 0;
+	double double_2 = 0;
+	double double_3 = 0;
+	char char_1 = 0;
+	double double_4 = 0;
+	double double_5 = 0;
+	double double_6 = 0;
+	double double_7 = 0;
+	double double_8 = 0;
+	int int_2 = 0;
+	float float_1 = 0;
+	float float_2 = 0;
+	double double_9 = 0;
+	float float_3 = 0;
+	double double_10 = 0;
+	long long_1 = 0;
+	long long_3 = 0;
+	unsigned int unsigned_int_2 = 0;
+	int int_3 = 0;
+	float float_6 = 0;
+	double double_13 = 0;
+	double double_14 = 0;
+	float float_4 = 0;
+	float float_5 = 0;
+	long long_2 = 0;
+	unsigned int unsigned_int_1 = 0;
+	unsigned int unsigned_int_3 = 0;
+	unsigned int unsigned_int_4 = 0;
+	double double_12 = 0;
+	double double_11 = 0;
+	double double_15 = 0;
+	int int_4 = 0;
 	if(1)
 	{
-		double_a = floor ( double_b ) ;
-		return unsigned_int_a;
-	}
-	if(1)
-	{
-		bmfs_file_set_mode(short_a,int_a);
+		int_1 = bmfs_create_file(double_1,int_1);
 
-		double_a = fabs ( double_a ) ;
-		return unsigned_int_a;
+		double_2 = double_3;
 	}
 	if(1)
 	{
-		double_c = double_c;
-		return unsigned_int_a;
+		char_1 = char_1;
 	}
-	char_a = char_a;
-	double_b = exp ( double_a ) ;
 	if(1)
 	{
-		double_a = atan ( double_a ) ;
-		double_a = double_d;
-		double_a = atan ( double_e ) ;
-		return unsigned_int_a;
+		double_1 = double_3 * double_3;
 	}
-	unsigned_int_a = unsigned_int_a;
-	double_f = double_a + double_e;
-	int_b = int_b + int_a;
-	double_a = cosh ( double_a ) ;
+	double_3 = asin ( double_4 ) ;
+	double_4 = sinh ( double_1 ) ;
 	if(1)
 	{
-		int_c = int_b * int_b;
-		double_d = ldexp ( double_d , int_d ) ;
-		double_e = double_f;
-		return unsigned_int_a;
+		double_3 = double_5;
+		double_4 = tan ( double_6 ) ;
+		double_7 = atan2 ( double_8 , double_2 ) ;
 	}
-	double_b = fabs ( double_e ) ;
-	if(1)
-	{
-		int_c = int_b;
-		bmfs_file_init(double_a);
+	bmfs_file_init(int_1);
 
-		short_b = short_b;
-		int_c = bmfs_file_write(float_a,short_a,short_b,double_e);
+	int_2 = bmfs_open_file(float_1,float_2,double_3);
 
-		float_a = float_a;
-		return unsigned_int_a;
-	}
-	float_a = float_a + float_b;
-	double_f = ldexp ( double_g , int_c ) ;
-	double_c = log10 ( double_h ) ;
-	char controller_g[2];
-	scanf("%2s", controller_g);
-	if( controller_g >"&W" )
+	bmfs_file_set_mode(float_1,char_1);
+
+	double_5 = cos ( double_9 ) ;
+	double_8 = exp ( double_8 ) ;
+	bmfs_file_close(char_1);
+
+	float_3 = float_2 + float_2;
+	double_8 = fmod ( double_6 , double_6 ) ;
+	if(1)
 	{
-		double double_a = 0;
-		double double_b = 0;
-		unsigned int unsigned_int_a = 0;
-		short short_a = 0;
-		int int_a = 0;
-		double double_c = 0;
-		char char_a = 0;
-		double double_d = 0;
-		double double_e = 0;
-		double double_f = 0;
-		int int_b = 0;
-		int int_c = 0;
-		int int_d = 0;
-		short short_b = 0;
-		float float_a = 0;
-		float float_b = 0;
-		double double_g = 0;
-		double double_h = 0;
-		long long_a = 0;
-		int int_e = 0;
-		unsigned int unsigned_int_d = 0;
-		float float_d = 0;
-		float float_e = 0;
-		double double_i = 0;
-		float float_c = 0;
-		unsigned int unsigned_int_b = 0;
-		unsigned int unsigned_int_c = 0;
-		long long_b = 0;
-		long long_c = 0;
-		long long_d = 0;
-		double_i = log10 ( double_g ) ;
-		double_h = double_d / double_d;
-		float_a = float_a * float_c;
-		return unsigned_int_a;
+		int int_1 = 0;
+		double double_1 = 0;
+		double double_2 = 0;
+		double double_3 = 0;
+		char char_1 = 0;
+		double double_4 = 0;
+		double double_5 = 0;
+		double double_6 = 0;
+		double double_7 = 0;
+		double double_8 = 0;
+		int int_2 = 0;
+		float float_1 = 0;
+		float float_2 = 0;
+		double double_9 = 0;
+		float float_3 = 0;
+		double double_10 = 0;
+		long long_1 = 0;
+		long long_3 = 0;
+		unsigned int unsigned_int_2 = 0;
+		int int_3 = 0;
+		float float_6 = 0;
+		double double_13 = 0;
+		double double_14 = 0;
+		float float_4 = 0;
+		float float_5 = 0;
+		long long_2 = 0;
+		unsigned int unsigned_int_1 = 0;
+		unsigned int unsigned_int_3 = 0;
+		unsigned int unsigned_int_4 = 0;
+		double double_12 = 0;
+		double double_11 = 0;
+		double double_15 = 0;
+		int int_4 = 0;
+		double_10 = log10 ( double_5 ) ;
+		float_5 = float_3 - float_4;
+		long_1 = long_2;
 	}
-	int looper_a = 0;
-	while(looper_a < 3)
+	double_9 = double_3 + double_7;
+	if(1)
 	{
-		looper_a += 1;
-		double_g = atan ( double_g ) ;
+		double_5 = double_7;
+		double_3 = log10 ( double_6 ) ;
+		double_6 = double_4;
+	}
+	double_3 = ceil ( double_8 ) ;
+	long_3 = long_3;
+	double_7 = log10 ( double_10 ) ;
+	if(1)
+	{
+		int int_1 = 0;
+		double double_1 = 0;
+		double double_2 = 0;
+		double double_3 = 0;
+		char char_1 = 0;
+		double double_4 = 0;
+		double double_5 = 0;
+		double double_6 = 0;
+		double double_7 = 0;
+		double double_8 = 0;
+		int int_2 = 0;
+		float float_1 = 0;
+		float float_2 = 0;
+		double double_9 = 0;
+		float float_3 = 0;
+		double double_10 = 0;
+		long long_1 = 0;
+		long long_3 = 0;
+		unsigned int unsigned_int_2 = 0;
+		int int_3 = 0;
+		float float_6 = 0;
+		double double_13 = 0;
+		double double_14 = 0;
+		float float_4 = 0;
+		float float_5 = 0;
+		long long_2 = 0;
+		unsigned int unsigned_int_1 = 0;
+		unsigned int unsigned_int_3 = 0;
+		unsigned int unsigned_int_4 = 0;
+		double double_12 = 0;
+		double double_11 = 0;
+		double double_15 = 0;
+		int int_4 = 0;
+		double_2 = double_2;
+		unsigned_int_1 = unsigned_int_2;
+		int_3 = bmfs_file_write(unsigned_int_2,char_1,float_2,double_1);
+
+		unsigned_int_4 = unsigned_int_3 / unsigned_int_3;
+	}
+	int looper_1 = 0;
+	while(looper_1 < 4)
+	{
+		int int_1 = 0;
+		double double_1 = 0;
+		double double_2 = 0;
+		double double_3 = 0;
+		char char_1 = 0;
+		double double_4 = 0;
+		double double_5 = 0;
+		double double_6 = 0;
+		double double_7 = 0;
+		double double_8 = 0;
+		int int_2 = 0;
+		float float_1 = 0;
+		float float_2 = 0;
+		double double_9 = 0;
+		float float_3 = 0;
+		double double_10 = 0;
+		long long_1 = 0;
+		long long_3 = 0;
+		unsigned int unsigned_int_2 = 0;
+		int int_3 = 0;
+		float float_6 = 0;
+		double double_13 = 0;
+		double double_14 = 0;
+		float float_4 = 0;
+		float float_5 = 0;
+		long long_2 = 0;
+		unsigned int unsigned_int_1 = 0;
+		unsigned int unsigned_int_3 = 0;
+		unsigned int unsigned_int_4 = 0;
+		double double_12 = 0;
+		double double_11 = 0;
+		double double_15 = 0;
+		int int_4 = 0;
+		looper_1 += 1;
+		double_6 = floor ( double_3 ) ;
 		if(1)
 		{
-			double double_a = 0;
-			double double_b = 0;
-			unsigned int unsigned_int_a = 0;
-			short short_a = 0;
-			int int_a = 0;
-			double double_c = 0;
-			char char_a = 0;
-			double double_d = 0;
-			double double_e = 0;
-			double double_f = 0;
-			int int_b = 0;
-			int int_c = 0;
-			int int_d = 0;
-			short short_b = 0;
-			float float_a = 0;
-			float float_b = 0;
-			double double_g = 0;
-			double double_h = 0;
-			long long_a = 0;
-			int int_e = 0;
-			unsigned int unsigned_int_d = 0;
-			float float_d = 0;
-			float float_e = 0;
-			double double_i = 0;
-			float float_c = 0;
-			unsigned int unsigned_int_b = 0;
-			unsigned int unsigned_int_c = 0;
-			long long_b = 0;
-			long long_c = 0;
-			long long_d = 0;
-			double_f = acos ( double_h ) ;
-			short_a = short_b;
-			short_b = short_a;
-			int_b = bmfs_open_file(long_a,short_b,float_b);
+			int int_1 = 0;
+			double double_1 = 0;
+			double double_2 = 0;
+			double double_3 = 0;
+			char char_1 = 0;
+			double double_4 = 0;
+			double double_5 = 0;
+			double double_6 = 0;
+			double double_7 = 0;
+			double double_8 = 0;
+			int int_2 = 0;
+			float float_1 = 0;
+			float float_2 = 0;
+			double double_9 = 0;
+			float float_3 = 0;
+			double double_10 = 0;
+			long long_1 = 0;
+			long long_3 = 0;
+			unsigned int unsigned_int_2 = 0;
+			int int_3 = 0;
+			float float_6 = 0;
+			double double_13 = 0;
+			double double_14 = 0;
+			float float_4 = 0;
+			float float_5 = 0;
+			long long_2 = 0;
+			unsigned int unsigned_int_1 = 0;
+			unsigned int unsigned_int_3 = 0;
+			unsigned int unsigned_int_4 = 0;
+			double double_12 = 0;
+			double double_11 = 0;
+			double double_15 = 0;
+			int int_4 = 0;
+			double_3 = asin ( double_3 ) ;
+			double_7 = double_11;
+			char_1 = char_1;
+			double_12 = fmod ( double_11 , double_6 ) ;
+			double_5 = fabs ( double_3 ) ;
+			float_6 = bmfs_strerror(int_1);
 
-			double_h = log ( double_a ) ;
-			unsigned_int_c = unsigned_int_b - unsigned_int_a;
-			int_e = int_d;
-			return unsigned_int_d;
+			long_3 = long_3 / long_1;
 		}
-		bmfs_strerror(int_e);
-
-		double_b = asin ( double_b ) ;
-		int_e = int_d;
+		double_8 = pow ( double_4 , double_13 ) ;
+		double_13 = cosh ( double_3 ) ;
 		if(1)
 		{
-			double double_a = 0;
-			double double_b = 0;
-			unsigned int unsigned_int_a = 0;
-			short short_a = 0;
-			int int_a = 0;
-			double double_c = 0;
-			char char_a = 0;
-			double double_d = 0;
-			double double_e = 0;
-			double double_f = 0;
-			int int_b = 0;
-			int int_c = 0;
-			int int_d = 0;
-			short short_b = 0;
-			float float_a = 0;
-			float float_b = 0;
-			double double_g = 0;
-			double double_h = 0;
-			long long_a = 0;
-			int int_e = 0;
-			unsigned int unsigned_int_d = 0;
-			float float_d = 0;
-			float float_e = 0;
-			double double_i = 0;
-			float float_c = 0;
-			unsigned int unsigned_int_b = 0;
-			unsigned int unsigned_int_c = 0;
-			long long_b = 0;
-			long long_c = 0;
-			long long_d = 0;
+			int int_1 = 0;
+			double double_1 = 0;
+			double double_2 = 0;
+			double double_3 = 0;
+			char char_1 = 0;
+			double double_4 = 0;
+			double double_5 = 0;
+			double double_6 = 0;
+			double double_7 = 0;
+			double double_8 = 0;
+			int int_2 = 0;
+			float float_1 = 0;
+			float float_2 = 0;
+			double double_9 = 0;
+			float float_3 = 0;
+			double double_10 = 0;
+			long long_1 = 0;
+			long long_3 = 0;
+			unsigned int unsigned_int_2 = 0;
+			int int_3 = 0;
+			float float_6 = 0;
+			double double_13 = 0;
+			double double_14 = 0;
+			float float_4 = 0;
+			float float_5 = 0;
+			long long_2 = 0;
+			unsigned int unsigned_int_1 = 0;
+			unsigned int unsigned_int_3 = 0;
+			unsigned int unsigned_int_4 = 0;
+			double double_12 = 0;
+			double double_11 = 0;
+			double double_15 = 0;
+			int int_4 = 0;
 			if(1)
 			{
-				long_b = long_a * long_b;
+				double_10 = cos ( double_6 ) ;
 			}
-			double_h = atan ( double_c ) ;
-			long_d = long_c + long_c;
-			short_a = short_a;
-			double_a = cosh ( double_c ) ;
-			bmfs_file_close();
-
-			long_b = long_d * long_c;
-			return unsigned_int_a;
+			double_8 = tan ( double_14 ) ;
+			double_7 = ceil ( double_15 ) ;
+			double_13 = floor ( double_12 ) ;
+			double_12 = fmod ( double_9 , double_7 ) ;
+			int_1 = int_4 + int_3;
 		}
 	}
-	double_g = fabs ( double_c ) ;
-	int_a = bmfs_create_file(float_d,float_e);
-
-	double_e = atan2 ( double_b , double_e ) ;
-	double_g = tan ( double_d ) ;
-	return unsigned_int_d;
+	char_1 = char_1;
+	double_14 = exp ( double_5 ) ;
+	double_9 = exp ( double_13 ) ;
 }
-int bmfs_file_seek( float parameter_1,float parameter_2,int parameter_3)
+int bmfs_file_seek( short parameter_1,int parameter_2,int parameter_3)
 {
-	double double_a = 0;
-	double double_b = 0;
-	double double_c = 0;
-	int int_a = 0;
-	int int_b = 0;
-	unsigned int unsigned_int_a = 0;
-	short short_a = 0;
-	int int_c = 0;
-	int int_d = 0;
-	double_a = fmod ( double_b , double_c ) ;
+	double double_1 = 0;
+	int int_1 = 0;
+	double double_2 = 0;
+	long long_1 = 0;
+	int int_2 = 0;
+	int int_3 = 0;
+	double double_4 = 0;
+	int int_4 = 0;
+	double double_3 = 0;
+	double_1 = cosh ( double_1 ) ;
 	if(1)
 	{
 		if(1)
 		{
-			return int_a;
+			return int_1;
 		}
-		int_b = bmfs_disk_seek(unsigned_int_a,short_a,int_c);
-
-		double_c = acos ( double_a ) ;
+		double_1 = sqrt ( double_2 ) ;
 	}
 	if(1)
 	{
+		double double_1 = 0;
+		int int_1 = 0;
+		double double_2 = 0;
+		long long_1 = 0;
+		int int_2 = 0;
+		int int_3 = 0;
+		double double_4 = 0;
+		int int_4 = 0;
+		double double_3 = 0;
 		if(1)
 		{
-			return int_a;
+			return int_1;
 		}
-		unsigned_int_a = unsigned_int_a;
+		int_1 = bmfs_disk_seek(long_1,double_1,int_2);
+
+		double_3 = log ( double_1 ) ;
 	}
 	else
 	{
-		return int_a;
+		return int_2;
 	}
-	double_a = ceil ( double_c ) ;
-	int_b = int_c;
+	int_3 = int_1 * int_1;
+	double_2 = tanh ( double_4 ) ;
 	if(1)
 	{
-		return int_d;
+		return int_4;
 	}
-	return int_a;
+	return int_1;
 }
-int bmfs_file_read( char parameter_1,float parameter_3,char parameter_4)
+int bmfs_file_read( int parameter_1,char parameter_3,short parameter_4)
 {
-	int int_a = 0;
-	double double_a = 0;
-	int int_c = 0;
-	short short_a = 0;
-	short short_b = 0;
-	char char_a = 0;
-	char char_b = 0;
-	char char_c = 0;
-	int int_d = 0;
-	float float_a = 0;
-	float float_b = 0;
-	int int_e = 0;
-	long long_a = 0;
-	short short_c = 0;
-	int int_f = 0;
-	int int_b = 0;
-	long long_b = 0;
+	int int_1 = 0;
+	double double_1 = 0;
+	int int_2 = 0;
+	double double_2 = 0;
+	short short_1 = 0;
+	char char_1 = 0;
+	long long_1 = 0;
+	long long_2 = 0;
+	long long_3 = 0;
+	int int_3 = 0;
+	double double_3 = 0;
+	int int_4 = 0;
+	float float_1 = 0;
+	double double_4 = 0;
 	if(1)
 	{
-		return int_a;
+		return int_1;
 	}
-	double_a = sinh ( double_a ) ;
+	double_1 = double_1;
 	if(1)
 	{
-		return int_a;
+		return int_2;
 	}
-	if(1)
+	char controller_3[1];
+	scanf("%1s", controller_3);
+	if( strcmp( controller_3, "[") < 0)
 	{
-		int int_a = 0;
-		double double_a = 0;
-		int int_c = 0;
-		short short_a = 0;
-		short short_b = 0;
-		char char_a = 0;
-		char char_b = 0;
-		char char_c = 0;
-		int int_d = 0;
-		float float_a = 0;
-		float float_b = 0;
-		int int_e = 0;
-		long long_a = 0;
-		short short_c = 0;
-		int int_f = 0;
-		int int_b = 0;
-		long long_b = 0;
-		int_c = int_b + int_a;
+		int int_1 = 0;
+		double double_1 = 0;
+		int int_2 = 0;
+		double double_2 = 0;
+		short short_1 = 0;
+		char char_1 = 0;
+		long long_1 = 0;
+		long long_2 = 0;
+		long long_3 = 0;
+		int int_3 = 0;
+		double double_3 = 0;
+		int int_4 = 0;
+		float float_1 = 0;
+		double double_4 = 0;
+		float_1 = float_1 * float_1;
 	}
-	short_b = short_a + short_b;
-	char_c = char_a * char_b;
-	if(1)
-	{
-		return int_d;
-	}
-	int_d = bmfs_file_seek(float_a,float_b,int_d);
+	double_2 = pow ( double_1 , double_1 ) ;
+	int_1 = bmfs_file_seek(short_1,int_2,int_2);
 
-	char_b = char_a;
-	char controller_e[2];
-	scanf("%2s", controller_e);
-	if( controller_e >"Bk" )
+	char_1 = char_1;
+	if(1)
 	{
-		int int_a = 0;
-		double double_a = 0;
-		int int_c = 0;
-		short short_a = 0;
-		short short_b = 0;
-		char char_a = 0;
-		char char_b = 0;
-		char char_c = 0;
-		int int_d = 0;
-		float float_a = 0;
-		float float_b = 0;
-		int int_e = 0;
-		long long_a = 0;
-		short short_c = 0;
-		int int_f = 0;
-		int int_b = 0;
-		long long_b = 0;
-		int_e = bmfs_disk_read(long_a,short_c,int_f);
-
-		long_b = long_a;
+		return int_1;
 	}
-	return int_c;
+	long_3 = long_1 - long_2;
+	if(1)
+	{
+		int int_1 = 0;
+		double double_1 = 0;
+		int int_2 = 0;
+		double double_2 = 0;
+		short short_1 = 0;
+		char char_1 = 0;
+		long long_1 = 0;
+		long long_2 = 0;
+		long long_3 = 0;
+		int int_3 = 0;
+		double double_3 = 0;
+		int int_4 = 0;
+		float float_1 = 0;
+		double double_4 = 0;
+		int_3 = bmfs_disk_read(double_3,long_3,double_2);
+
+		double_4 = cosh ( double_2 ) ;
+	}
+	return int_4;
 }
-int bmfs_file_eof()
+int bmfs_file_eof( short parameter_1)
 {
-	int int_a = 0;
-	if(1)
+	int int_1 = 0;
+	char controller_1[5];
+	scanf("%5s", controller_1);
+	if( strcmp( controller_1, "a4rUX") > 0)
 	{
-		return int_a;
+		return int_1;
 	}
 	else
 	{
-		return int_a;
+		return int_1;
 	}
 }
-int bmfs_get_current_time( float parameter_1)
+int bmfs_get_current_time( short parameter_1)
 {
-	double double_a = 0;
-	double double_b = 0;
-	int int_a = 0;
-	double_a = sinh ( double_b ) ;
-	return int_a;
+	float float_1 = 0;
+	int int_1 = 0;
+	float_1 = float_1 + float_1;
+	return int_1;
 }
-int bmfs_entry_save( double parameter_1,char parameter_2)
+int bmfs_entry_save( int parameter_1,char parameter_2)
 {
-	double double_a = 0;
-	double double_b = 0;
-	int int_a = 0;
-	int int_b = 0;
-	unsigned int unsigned_int_a = 0;
-	double double_c = 0;
-	int int_c = 0;
-	float float_a = 0;
-	short short_a = 0;
-	double_a = tan ( double_b ) ;
-	char controller_a[4];
-	scanf("%4s", controller_a);
-	if( controller_a <"X<QR" )
-	{
-		return int_a;
-	}
-	int_b = bmfs_entry_write(double_b,unsigned_int_a);
+	int int_1 = 0;
+	unsigned int unsigned_int_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	unsigned int unsigned_int_3 = 0;
+	double double_1 = 0;
+	double double_2 = 0;
+	int int_2 = 0;
+	short short_1 = 0;
+	int int_3 = 0;
+	long long_1 = 0;
+	double double_3 = 0;
+	int int_4 = 0;
+	int int_5 = 0;
+	int_1 = bmfs_entry_write(unsigned_int_1,int_1);
 
-	double_c = sinh ( double_b ) ;
-	char controller_b[4];
-	scanf("%4s", controller_b);
-	if( controller_b <"sZPA" )
-	{
-		return int_c;
-	}
-	int_c = bmfs_get_current_time(float_a);
-
-	int_c = bmfs_disk_seek(unsigned_int_a,short_a,int_c);
-
-	double_b = double_c * double_b;
-	char controller_c[5];
-	scanf("%5s", controller_c);
-	if(remainder_check(controller_c,100,5))
-	{
-		return int_c;
-	}
-	return int_c;
-}
-unsigned int file_can_write( float parameter_1)
-{
-	unsigned int unsigned_int_a = 0;
-	char controller_a[5];
-	scanf("%5s", controller_a);
-	if( controller_a <"oPHrP" )
-	{
-		return unsigned_int_a;
-	}
-	return unsigned_int_a;
-}
-void bmfs_file_close()
-{
-	double double_a = 0;
-	double double_b = 0;
-	unsigned int unsigned_int_a = 0;
-	float float_a = 0;
-	int int_a = 0;
-	double double_c = 0;
-	char char_a = 0;
+	unsigned_int_1 = unsigned_int_2 / unsigned_int_3;
 	if(1)
 	{
+		return int_1;
 	}
-	double_a = double_b;
-	unsigned_int_a = file_can_write(float_a);
+	double_1 = cos ( double_2 ) ;
+	if(1)
+	{
+		return int_1;
+	}
+	int_2 = bmfs_get_current_time(short_1);
 
-	int_a = bmfs_entry_save(double_c,char_a);
+	int_3 = bmfs_disk_seek(long_1,double_3,int_1);
+
+	long_1 = long_1;
+	if(1)
+	{
+		return int_4;
+	}
+	return int_5;
+}
+long file_can_write( unsigned int parameter_1)
+{
+	long long_1 = 0;
+	char controller_1[5];
+	scanf("%5s", controller_1);
+	if( strcmp( controller_1, "sj{;)") > 0)
+	{
+		return long_1;
+	}
+	return long_1;
+}
+void bmfs_file_close( char parameter_1)
+{
+	long long_1 = 0;
+	unsigned int unsigned_int_1 = 0;
+	int int_1 = 0;
+	int int_2 = 0;
+	int int_3 = 0;
+	char char_1 = 0;
+	char controller_1[5];
+	scanf("%5s", controller_1);
+	if( strcmp( controller_1, "7yWWX") < 0)
+	{
+	}
+	long_1 = file_can_write(unsigned_int_1);
+
+	int_2 = int_1 * int_1;
+	int_1 = bmfs_entry_save(int_3,char_1);
 
 }
-int bmfs_file_import( short parameter_1)
+int bmfs_file_import( long parameter_1)
 {
-	double double_a = 0;
-	double double_b = 0;
-	int int_a = 0;
-	int int_b = 0;
-	char char_a = 0;
-	long long_a = 0;
-	double double_c = 0;
-	double_a = log ( double_b ) ;
-	char controller_a[2];
-	scanf("%2s", controller_a);
-	if( controller_a >"EZ" )
+	double double_1 = 0;
+	int int_1 = 0;
+	int int_2 = 0;
+	int int_3 = 0;
+	long long_1 = 0;
+	float float_1 = 0;
+	float float_2 = 0;
+	double_1 = ceil ( double_1 ) ;
+	char controller_1[4];
+	scanf("%4s", controller_1);
+	if( strcmp( controller_1, "fD]m") > 0)
 	{
-		return int_a;
+		return int_1;
 	}
-	int_b = bmfs_entry_read(char_a,long_a,94);
+	int_2 = bmfs_entry_read(int_3,long_1,500);
 
-	double_c = double_a;
-	return int_b;
+	float_1 = float_1 - float_2;
+	return int_3;
 }
-int find_file( unsigned int parameter_1,double parameter_2,int parameter_3,int parameter_4,int parameter_5)
+char find_file( float parameter_1,double parameter_2,short parameter_3,double parameter_4,unsigned int parameter_5)
 {
-	double double_a = 0;
-	long long_a = 0;
-	long long_b = 0;
-	long long_c = 0;
-	int int_a = 0;
-	unsigned int unsigned_int_a = 0;
-	short short_a = 0;
-	int int_b = 0;
-	int int_c = 0;
-	float float_a = 0;
-	float float_b = 0;
-	int int_d = 0;
-	char char_a = 0;
-	char char_b = 0;
-	double double_b = 0;
-	double double_c = 0;
-	double_a = tan ( double_a ) ;
-	long_c = long_a * long_b;
-	int looper_a = 0;
-	while(looper_a < 3)
+	short short_1 = 0;
+	double double_1 = 0;
+	float float_1 = 0;
+	long long_1 = 0;
+	char char_1 = 0;
+	int int_1 = 0;
+	double double_2 = 0;
+	int int_2 = 0;
+	long long_2 = 0;
+	char char_2 = 0;
+	char char_3 = 0;
+	double double_3 = 0;
+	double double_4 = 0;
+	double double_5 = 0;
+	short_1 = short_1;
+	double_1 = atan ( double_1 ) ;
+	int looper_1 = 0;
+	while(looper_1 < 8)
 	{
-		double double_a = 0;
-		long long_a = 0;
-		long long_b = 0;
-		long long_c = 0;
-		int int_a = 0;
-		unsigned int unsigned_int_a = 0;
-		short short_a = 0;
-		int int_b = 0;
-		int int_c = 0;
-		float float_a = 0;
-		float float_b = 0;
-		int int_d = 0;
-		char char_a = 0;
-		char char_b = 0;
-		double double_b = 0;
-		double double_c = 0;
-		looper_a += 1;
-		int_a = bmfs_disk_seek(unsigned_int_a,short_a,int_b);
+		short short_1 = 0;
+		double double_1 = 0;
+		float float_1 = 0;
+		long long_1 = 0;
+		char char_1 = 0;
+		int int_1 = 0;
+		double double_2 = 0;
+		int int_2 = 0;
+		long long_2 = 0;
+		char char_2 = 0;
+		char char_3 = 0;
+		double double_3 = 0;
+		double double_4 = 0;
+		double double_5 = 0;
+		looper_1 += 1;
+		float_1 = is_entry(long_1,char_1,int_1);
 
-		char_a = char_a * char_b;
-		int_b = int_a / int_c;
-		double_b = ceil ( double_a ) ;
-		double_b = cos ( double_a ) ;
+		double_1 = cosh ( double_2 ) ;
+		int_1 = int_1 / int_2;
+		int_2 = bmfs_disk_seek(long_1,double_2,int_1);
+
+		long_1 = long_2;
+		double_2 = atan ( double_2 ) ;
 		if(1)
 		{
-			return int_c;
+			return char_1;
 		}
-		float_a = is_entry(float_b,long_b,double_a);
-
-		double_a = tan ( double_a ) ;
-		if(1)
+		double_3 = double_4;
+		char controller_2[3];
+		scanf("%3s", controller_2);
+		if( strcmp( controller_2, "ol.") > 0)
 		{
 			if(1)
 			{
-				return int_c;
+				return char_2;
 			}
 		}
 		if(1)
 		{
-			return int_a;
+			return char_2;
 		}
-		int_d = bmfs_file_import(short_a);
+		double_5 = double_5 + double_1;
+	}
+	return char_3;
+	int_1 = bmfs_file_import(long_2);
 
-		double_c = tan ( double_a ) ;
-	}
-	return int_a;
 }
-void bmfs_entry_is_deleted( int parameter_1)
+int bmfs_entry_is_deleted( char parameter_1)
 {
-	unsigned int unsigned_int_a = 0;
-	unsigned_int_a = unsigned_int_a;
-	char controller_a[4];
-	scanf("%4s", controller_a);
-	if( controller_a >"%$nX" )
+	int int_1 = 0;
+	int int_2 = 0;
+	int_1 = int_1;
+	char controller_1[2];
+	scanf("%2s", controller_1);
+	if( strcmp( controller_1, "t[") < 0)
 	{
+		return int_1;
 	}
+	return int_2;
 }
-float is_entry( float parameter_1,long parameter_2,double parameter_3)
+float is_entry( long parameter_1,char parameter_2,int parameter_3)
 {
-	float float_a = 0;
-	float float_b = 0;
-	double double_a = 0;
-	double double_b = 0;
-	int int_a = 0;
-	long long_a = 0;
-	long long_b = 0;
+	float float_1 = 0;
+	double double_1 = 0;
+	float float_2 = 0;
+	int int_1 = 0;
+	char char_1 = 0;
+	double double_2 = 0;
+	double double_3 = 0;
 	if(1)
 	{
-		return float_a;
-	}
-	char controller_b[1];
-	scanf("%1s", controller_b);
-	if( controller_b >"L" )
-	{
-		return float_b;
-	}
-	double_a = tanh ( double_b ) ;
-	int looper_a = 0;
-	while(looper_a < 3)
-	{
-		float float_a = 0;
-		float float_b = 0;
-		double double_a = 0;
-		double double_b = 0;
-		int int_a = 0;
-		long long_a = 0;
-		long long_b = 0;
-		looper_a += 1;
-		if(1)
-		{
-			return float_b;
-		}
-		bmfs_entry_is_deleted(int_a);
-
-		long_a = long_b;
+		return float_1;
 	}
 	if(1)
 	{
-		return float_b;
+		return float_1;
 	}
-	return float_a;
-}
-float find_entry( double parameter_1,long parameter_2,unsigned int parameter_3,double parameter_4,float parameter_5,int uni_para)
-{
-	int int_a = 0;
-	int int_b = 0;
-	char char_a = 0;
-	long long_a = 0;
-	float float_a = 0;
-	double double_a = 0;
-	char char_b = 0;
-	char char_c = 0;
-	double double_b = 0;
-	short short_a = 0;
-	short short_b = 0;
-	double double_c = 0;
-	int_a = int_a;
-	char controller4vul_h[4];
-	scanf("%4s", controller4vul_h);
-	if( strcmp( controller4vul_h, "NMu-")==0)
+	double_1 = log10 ( double_1 ) ;
+	int looper_1 = 0;
+	while(looper_1 < 9)
 	{
-		int_b = bmfs_entry_read(char_a,long_a,uni_para);
+		float float_1 = 0;
+		double double_1 = 0;
+		float float_2 = 0;
+		int int_1 = 0;
+		char char_1 = 0;
+		double double_2 = 0;
+		double double_3 = 0;
+		looper_1 += 1;
+		if(1)
+		{
+			return float_1;
+		}
+		double_2 = exp ( double_3 ) ;
+	}
+	if(1)
+	{
+		return float_1;
+	}
+	return float_2;
+	int_1 = bmfs_entry_is_deleted(char_1);
 
-		return float_a;
-	}
-	double_a = acos ( double_a ) ;
-	char_c = char_a - char_b;
-	int looper_a = 0;
-	while(looper_a < 7)
-	{
-		int int_a = 0;
-		int int_b = 0;
-		char char_a = 0;
-		long long_a = 0;
-		float float_a = 0;
-		double double_a = 0;
-		char char_b = 0;
-		char char_c = 0;
-		double double_b = 0;
-		short short_a = 0;
-		short short_b = 0;
-		double double_c = 0;
-		looper_a += 1;
-		double_b = double_b - double_b;
-		short_a = short_b;
-		if(1)
-		{
-			return float_a;
-		}
-		if(1)
-		{
-			return float_a;
-		}
-		double_c = sinh ( double_a ) ;
-	}
-	return float_a;
 }
-unsigned int is_separator( char parameter_1)
+double find_entry( double parameter_1,int parameter_2,double parameter_3,char parameter_4,unsigned int parameter_5)
 {
-	unsigned int unsigned_int_a = 0;
-	char controller_a[4];
-	scanf("%4s", controller_a);
-	if( controller_a >"V;-n" )
+	float float_1 = 0;
+	long long_1 = 0;
+	char char_1 = 0;
+	int int_1 = 0;
+	double double_1 = 0;
+	double double_2 = 0;
+	float float_2 = 0;
+	float float_3 = 0;
+	int int_2 = 0;
+	long long_2 = 0;
+	int int_3 = 0;
+	long long_3 = 0;
+	double double_4 = 0;
+	double double_3 = 0;
+	float_1 = is_entry(long_1,char_1,int_1);
+
+	double_1 = pow ( double_2 , double_1 ) ;
+	char controller_1[3];
+	scanf("%3s", controller_1);
+	if( strcmp( controller_1, "N!_") < 0)
 	{
-		return unsigned_int_a;
+		return double_1;
+	}
+	bmfs_entry_init(double_1);
+
+	float_2 = float_3;
+	int_2 = bmfs_entry_read(int_2,long_2,41);
+
+	int_1 = int_1 - int_3;
+	int looper_1 = 0;
+	while(looper_1 < 9)
+	{
+		float float_1 = 0;
+		long long_1 = 0;
+		char char_1 = 0;
+		int int_1 = 0;
+		double double_1 = 0;
+		double double_2 = 0;
+		float float_2 = 0;
+		float float_3 = 0;
+		int int_2 = 0;
+		long long_2 = 0;
+		int int_3 = 0;
+		long long_3 = 0;
+		double double_4 = 0;
+		double double_3 = 0;
+		looper_1 += 1;
+		int_2 = bmfs_disk_seek(long_3,double_2,int_1);
+
+		double_2 = sqrt ( double_1 ) ;
+		double_2 = floor ( double_3 ) ;
+		if(1)
+		{
+			return double_1;
+		}
+		if(1)
+		{
+			return double_4;
+		}
+		double_1 = atan ( double_2 ) ;
+	}
+	return double_4;
+}
+float is_separator( char parameter_1)
+{
+	float float_1 = 0;
+	float float_2 = 0;
+	if(1)
+	{
+		return float_1;
 	}
 	else
 	{
-		return unsigned_int_a;
+		return float_2;
 	}
 }
-int bmfs_path_split_root( unsigned int parameter_1,short parameter_2)
+int bmfs_path_split_root( float parameter_1,float parameter_2)
 {
-	double double_a = 0;
-	double double_b = 0;
-	char char_a = 0;
-	char char_b = 0;
-	short short_a = 0;
-	short short_b = 0;
-	short short_c = 0;
-	int int_a = 0;
-	double double_c = 0;
-	char char_c = 0;
-	int int_b = 0;
-	int int_d = 0;
-	unsigned int unsigned_int_a = 0;
-	float float_a = 0;
-	float float_b = 0;
-	float float_c = 0;
-	unsigned int unsigned_int_b = 0;
-	unsigned int unsigned_int_c = 0;
-	double double_f = 0;
-	int int_c = 0;
-	double double_d = 0;
-	double double_e = 0;
-	long long_a = 0;
-	long long_b = 0;
-	double_a = cosh ( double_b ) ;
-	char_a = char_b;
-	short_c = short_a * short_b;
-	double_a = double_b;
-	int_a = int_a;
-	if(1)
+	double double_1 = 0;
+	double double_2 = 0;
+	double double_3 = 0;
+	long long_1 = 0;
+	char char_1 = 0;
+	int int_1 = 0;
+	char char_2 = 0;
+	char char_3 = 0;
+	float float_1 = 0;
+	double double_4 = 0;
+	unsigned int unsigned_int_1 = 0;
+	int int_2 = 0;
+	int int_3 = 0;
+	char char_4 = 0;
+	double double_5 = 0;
+	long long_2 = 0;
+	unsigned int unsigned_int_2 = 0;
+	int int_4 = 0;
+	double_1 = cosh ( double_2 ) ;
+	double_3 = ceil ( double_1 ) ;
+	long_1 = long_1 * long_1;
+	double_2 = cosh ( double_3 ) ;
+	double_1 = sqrt ( double_3 ) ;
+	char controller_1[5];
+	scanf("%5s", controller_1);
+	if( strcmp( controller_1, ")v$4B") > 0)
 	{
-		double_a = log10 ( double_c ) ;
-		double_b = double_b + double_a;
+		char_1 = char_1;
+		double_1 = sinh ( double_3 ) ;
 	}
-	char_b = char_a + char_a;
-	double_b = exp ( double_a ) ;
-	char_c = char_b;
-	int looper_a = 0;
-	while(looper_a < 6)
+	double_3 = ldexp ( double_2 , int_1 ) ;
+	char_1 = char_2 + char_3;
+	float_1 = is_separator(char_2);
+
+	double_4 = floor ( double_2 ) ;
+	int looper_1 = 0;
+	while(looper_1 < 6)
 	{
-		double double_a = 0;
-		double double_b = 0;
-		char char_a = 0;
-		char char_b = 0;
-		short short_a = 0;
-		short short_b = 0;
-		short short_c = 0;
-		int int_a = 0;
-		double double_c = 0;
-		char char_c = 0;
-		int int_b = 0;
-		int int_d = 0;
-		unsigned int unsigned_int_a = 0;
-		float float_a = 0;
-		float float_b = 0;
-		float float_c = 0;
-		unsigned int unsigned_int_b = 0;
-		unsigned int unsigned_int_c = 0;
-		double double_f = 0;
-		int int_c = 0;
-		double double_d = 0;
-		double double_e = 0;
-		long long_a = 0;
-		long long_b = 0;
-		looper_a += 1;
-		char controller_b[3];
-		scanf("%3s", controller_b);
-		if( strcmp( controller_b, "*c:")==0)
+		double double_1 = 0;
+		double double_2 = 0;
+		double double_3 = 0;
+		long long_1 = 0;
+		char char_1 = 0;
+		int int_1 = 0;
+		char char_2 = 0;
+		char char_3 = 0;
+		float float_1 = 0;
+		double double_4 = 0;
+		unsigned int unsigned_int_1 = 0;
+		int int_2 = 0;
+		int int_3 = 0;
+		char char_4 = 0;
+		double double_5 = 0;
+		long long_2 = 0;
+		unsigned int unsigned_int_2 = 0;
+		int int_4 = 0;
+		looper_1 += 1;
+		char controller_2[3];
+		scanf("%3s", controller_2);
+		if( strcmp( controller_2, "c.C") < 0)
 		{
-			char controller_c[2];
-			scanf("%2s", controller_c);
-			if( controller_c >"ce" )
+			double double_1 = 0;
+			double double_2 = 0;
+			double double_3 = 0;
+			long long_1 = 0;
+			char char_1 = 0;
+			int int_1 = 0;
+			char char_2 = 0;
+			char char_3 = 0;
+			float float_1 = 0;
+			double double_4 = 0;
+			unsigned int unsigned_int_1 = 0;
+			int int_2 = 0;
+			int int_3 = 0;
+			char char_4 = 0;
+			double double_5 = 0;
+			long long_2 = 0;
+			unsigned int unsigned_int_2 = 0;
+			int int_4 = 0;
+			char controller_3[3];
+			scanf("%3s", controller_3);
+			if( strcmp( controller_3, "A0L") > 0)
 			{
-				double double_a = 0;
-				double double_b = 0;
-				char char_a = 0;
-				char char_b = 0;
-				short short_a = 0;
-				short short_b = 0;
-				short short_c = 0;
-				int int_a = 0;
-				double double_c = 0;
-				char char_c = 0;
-				int int_b = 0;
-				int int_d = 0;
-				unsigned int unsigned_int_a = 0;
-				float float_a = 0;
-				float float_b = 0;
-				float float_c = 0;
-				unsigned int unsigned_int_b = 0;
-				unsigned int unsigned_int_c = 0;
-				double double_f = 0;
-				int int_c = 0;
-				double double_d = 0;
-				double double_e = 0;
-				long long_a = 0;
-				long long_b = 0;
-				int_d = int_b + int_c;
-				double_d = double_e;
+				long_2 = long_1 - long_2;
+				int_1 = int_1;
 			}
 			else
 			{
-				double double_a = 0;
-				double double_b = 0;
-				char char_a = 0;
-				char char_b = 0;
-				short short_a = 0;
-				short short_b = 0;
-				short short_c = 0;
-				int int_a = 0;
-				double double_c = 0;
-				char char_c = 0;
-				int int_b = 0;
-				int int_d = 0;
-				unsigned int unsigned_int_a = 0;
-				float float_a = 0;
-				float float_b = 0;
-				float float_c = 0;
-				unsigned int unsigned_int_b = 0;
-				unsigned int unsigned_int_c = 0;
-				double double_f = 0;
-				int int_c = 0;
-				double double_d = 0;
-				double double_e = 0;
-				long long_a = 0;
-				long long_b = 0;
-				int_a = int_a / int_b;
-				long_a = long_a / long_b;
-				return int_d;
+				double double_1 = 0;
+				double double_2 = 0;
+				double double_3 = 0;
+				long long_1 = 0;
+				char char_1 = 0;
+				int int_1 = 0;
+				char char_2 = 0;
+				char char_3 = 0;
+				float float_1 = 0;
+				double double_4 = 0;
+				unsigned int unsigned_int_1 = 0;
+				int int_2 = 0;
+				int int_3 = 0;
+				char char_4 = 0;
+				double double_5 = 0;
+				long long_2 = 0;
+				unsigned int unsigned_int_2 = 0;
+				int int_4 = 0;
+				unsigned_int_1 = unsigned_int_2;
+				long_2 = long_1;
+				return int_2;
 			}
 		}
 		else
 		{
-			unsigned_int_a = is_separator(char_c);
-
-			double_c = double_a - double_c;
+			double double_1 = 0;
+			double double_2 = 0;
+			double double_3 = 0;
+			long long_1 = 0;
+			char char_1 = 0;
+			int int_1 = 0;
+			char char_2 = 0;
+			char char_3 = 0;
+			float float_1 = 0;
+			double double_4 = 0;
+			unsigned int unsigned_int_1 = 0;
+			int int_2 = 0;
+			int int_3 = 0;
+			char char_4 = 0;
+			double double_5 = 0;
+			long long_2 = 0;
+			unsigned int unsigned_int_2 = 0;
+			int int_4 = 0;
+			int_4 = int_3 / int_4;
 		}
-		double_a = double_f;
+		double_3 = double_5;
 	}
-	float_c = float_a - float_b;
-	unsigned_int_c = unsigned_int_b * unsigned_int_a;
-	return int_b;
+	char_4 = char_1;
+	unsigned_int_1 = unsigned_int_1;
+	return int_3;
 }
-void bmfs_path_set( float parameter_1,long parameter_2,long parameter_3)
+void bmfs_path_set( short parameter_1,int parameter_2,unsigned int parameter_3)
 {
-	double double_a = 0;
-	double double_b = 0;
-	float float_a = 0;
-	float float_b = 0;
-	double_a = sqrt ( double_b ) ;
-	float_b = float_a * float_a;
+	unsigned int unsigned_int_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	unsigned int unsigned_int_3 = 0;
+	double double_1 = 0;
+	unsigned_int_3 = unsigned_int_1 - unsigned_int_2;
+	double_1 = double_1 + double_1;
 }
-void bmfs_path_init( short parameter_1)
+void bmfs_path_init( char parameter_1)
 {
-	short short_a = 0;
-	short short_b = 0;
-	int int_a = 0;
-	int int_b = 0;
-	short_a = short_b;
-	int_a = int_a - int_b;
+	short short_1 = 0;
+	double double_1 = 0;
+	double double_2 = 0;
+	short_1 = short_1;
+	double_1 = double_2;
 }
-int bmfs_entry_read( char parameter_1,long parameter_2,int uni_para)
+int bmfs_entry_read( int parameter_1,long parameter_2,int uni_para)
 {
-	double double_a = 0;
-	double double_b = 0;
-	double double_c = 0;
-	double double_d = 0;
-	short short_a = 0;
-	short short_b = 0;
-	int int_a = 0;
-	unsigned int unsigned_int_a = 0;
-	int int_b = 0;
-	float float_a = 0;
-	float float_b = 0;
-	int int_c = 0;
-	unsigned int unsigned_int_b = 0;
-	unsigned int unsigned_int_c = 0;
-	short short_c = 0;
-	short short_d = 0;
-	double double_e = 0;
-	double double_f = 0;
-	double double_g = 0;
-	double double_h = 0;
-	double_a = tanh ( double_b ) ;
-	double_c = acos ( double_d ) ;
-	short_b = short_a + short_a;
-	char controller4vul_i[4];
-	scanf("%4s", controller4vul_i);
-	if( strcmp( controller4vul_i, "mMYx")==0)
+	double double_1 = 0;
+	short short_1 = 0;
+	int int_1 = 0;
+	double double_2 = 0;
+	char char_1 = 0;
+	int int_2 = 0;
+	int int_3 = 0;
+	double double_3 = 0;
+	short short_2 = 0;
+	char char_2 = 0;
+	double double_4 = 0;
+	short short_3 = 0;
+	short short_4 = 0;
+	long long_1 = 0;
+	long long_2 = 0;
+	long long_3 = 0;
+	double double_5 = 0;
+	char char_3 = 0;
+	double_1 = cos ( double_1 ) ;
+	short_1 = short_1 * short_1;
+	double_1 = fabs ( double_1 ) ;
+	char controller4vul_9[3];
+	scanf("%3s", controller4vul_9);
+	if( strcmp( controller4vul_9, "zej") < 0)
 	{
-		int_a = bmfs_disk_tell(unsigned_int_a,unsigned_int_a,uni_para);
+		int_1 = bmfs_disk_tell(double_2,char_1,uni_para);
 
-		return int_b;
+		return int_2;
 	}
-	float_b = float_a * float_b;
-	double_a = log10 ( double_b ) ;
+	double_1 = acos ( double_1 ) ;
+	short_1 = short_1 * short_1;
 	if(1)
 	{
-		return int_c;
+		return int_3;
 	}
 	if(1)
 	{
-		return int_a;
+		return int_3;
 	}
-	double_b = acos ( double_b ) ;
-	double_b = asin ( double_b ) ;
-	int_b = int_a + int_b;
-	double_d = tanh ( double_b ) ;
-	unsigned_int_c = unsigned_int_b * unsigned_int_a;
-	short_c = short_d;
-	double_a = fmod ( double_a , double_c ) ;
-	short_c = short_a;
-	int_b = int_c;
-	double_e = ceil ( double_f ) ;
-	double_g = double_f;
+	double_2 = double_3;
+	short_2 = short_1;
+	double_2 = exp ( double_2 ) ;
+	char_1 = char_2;
+	double_4 = log ( double_4 ) ;
+	short_4 = short_3 / short_4;
+	long_3 = long_1 * long_2;
+	double_3 = atan ( double_5 ) ;
+	double_1 = asin ( double_1 ) ;
+	double_3 = floor ( double_2 ) ;
+	char_3 = char_3;
 	if(1)
 	{
-		return int_b;
+		return int_3;
 	}
-	double_a = asin ( double_h ) ;
-	return int_a;
+	double_5 = floor ( double_2 ) ;
+	return int_1;
 }
-void bmfs_file_set_disk( int parameter_1,float parameter_2)
+void bmfs_file_set_disk( float parameter_1,float parameter_2)
 {
-	char controller_a[3];
-	scanf("%3s", controller_a);
-	if( controller_a <"G]O" )
+	char controller_1[4];
+	scanf("%4s", controller_1);
+	if( strcmp( controller_1, "yE.3") < 0)
 	{
-		double double_a = 0;
-		double double_b = 0;
-		double_a = ceil ( double_b ) ;
+		short short_1 = 0;
+		short short_2 = 0;
+		short short_3 = 0;
+		short_3 = short_1 / short_2;
 	}
 }
-void open_file( short parameter_1,unsigned int parameter_2,int parameter_3)
+float open_file( short parameter_1,double parameter_2,double parameter_3)
 {
-	double double_a = 0;
-	double double_b = 0;
-	int int_a = 0;
-	unsigned int unsigned_int_a = 0;
-	short short_a = 0;
-	int int_b = 0;
-	char char_a = 0;
-	double double_c = 0;
-	double double_d = 0;
-	double double_e = 0;
-	unsigned int unsigned_int_b = 0;
-	unsigned int unsigned_int_c = 0;
-	short short_b = 0;
-	double double_f = 0;
-	int int_c = 0;
-	float float_a = 0;
-	double double_g = 0;
-	long long_a = 0;
-	long long_b = 0;
-	float float_b = 0;
-	float float_c = 0;
-	double double_h = 0;
-	int int_d = 0;
-	unsigned int unsigned_int_d = 0;
-	unsigned int unsigned_int_e = 0;
-	short short_c = 0;
-	char char_b = 0;
-	long long_c = 0;
-	int int_e = 0;
-	int int_f = 0;
-	double double_i = 0;
-	double_a = double_b;
-	int_a = bmfs_disk_seek(unsigned_int_a,short_a,int_b);
+	int int_1 = 0;
+	long long_1 = 0;
+	double double_1 = 0;
+	double double_2 = 0;
+	double double_3 = 0;
+	char char_1 = 0;
+	unsigned int unsigned_int_1 = 0;
+	double double_4 = 0;
+	float float_1 = 0;
+	float float_2 = 0;
+	short short_1 = 0;
+	char char_2 = 0;
+	char char_3 = 0;
+	double double_5 = 0;
+	short short_2 = 0;
+	int int_2 = 0;
+	char char_4 = 0;
+	long long_2 = 0;
+	int int_3 = 0;
+	long long_3 = 0;
+	unsigned int unsigned_int_2 = 0;
+	unsigned int unsigned_int_3 = 0;
+	float float_3 = 0;
+	float float_4 = 0;
+	int int_4 = 0;
+	int int_5 = 0;
+	double double_7 = 0;
+	float float_5 = 0;
+	double double_6 = 0;
+	int_1 = bmfs_entry_read(int_1,long_1,979);
 
-	bmfs_entry_init(char_a);
+	double_1 = atan ( double_1 ) ;
+	double_1 = find_entry(double_2,int_1,double_3,char_1,unsigned_int_1);
 
-	double_c = atan2 ( double_d , double_d ) ;
-	int looper_a = 0;
-	while(looper_a < 5)
+	double_2 = double_4;
+	int looper_1 = 0;
+	while(looper_1 < 10)
 	{
-		looper_a += 1;
-		double_d = atan ( double_b ) ;
-	}
-	double_b = acos ( double_c ) ;
-	char controller_a[1];
-	scanf("%1s", controller_a);
-	if( controller_a <"`" )
-	{
-	}
-	bmfs_path_init(short_a);
+		looper_1 += 1;
+		bmfs_file_set_disk(float_1,float_2);
 
-	double_e = double_c;
-	unsigned_int_c = unsigned_int_b / unsigned_int_a;
-	double_a = atan2 ( double_a , double_e ) ;
+		double_4 = double_1;
+	}
+	short_1 = short_1;
 	if(1)
 	{
+		return float_1;
 	}
-	int_b = bmfs_header_read(double_c,short_b);
+	char_2 = char_1;
+	char_3 = find_file(float_1,double_2,short_1,double_1,unsigned_int_1);
 
-	double_c = ceil ( double_f ) ;
+	double_5 = acos ( double_2 ) ;
+	double_5 = log ( double_2 ) ;
 	if(1)
 	{
+		return float_1;
 	}
-	bmfs_file_set_disk(int_c,float_a);
-
-	double_a = floor ( double_c ) ;
-	double_g = sqrt ( double_c ) ;
-	bmfs_path_set(float_a,long_a,long_b);
-
-	double_a = atan2 ( double_e , double_a ) ;
+	double_1 = atan2 ( double_1 , double_3 ) ;
 	if(1)
 	{
+		return float_2;
 	}
-	float_b = float_c;
-	double_c = fabs ( double_a ) ;
-	float_b = find_entry(double_b,long_a,unsigned_int_c,double_e,float_c,682);
+	bmfs_path_set(short_2,int_2,unsigned_int_1);
 
-	float_a = float_c;
-	double_h = sinh ( double_c ) ;
-	double_g = sqrt ( double_c ) ;
-	int looper_b = 0;
-	while(looper_b < 1)
+	char_4 = char_4 + char_4;
+	double_1 = pow ( double_5 , double_1 ) ;
+	double_1 = double_2;
+	if(1)
 	{
-		double double_a = 0;
-		double double_b = 0;
-		int int_a = 0;
-		unsigned int unsigned_int_a = 0;
-		short short_a = 0;
-		int int_b = 0;
-		char char_a = 0;
-		double double_c = 0;
-		double double_d = 0;
-		double double_e = 0;
-		unsigned int unsigned_int_b = 0;
-		unsigned int unsigned_int_c = 0;
-		short short_b = 0;
-		double double_f = 0;
-		int int_c = 0;
-		float float_a = 0;
-		double double_g = 0;
-		long long_a = 0;
-		long long_b = 0;
-		float float_b = 0;
-		float float_c = 0;
-		double double_h = 0;
-		int int_d = 0;
-		unsigned int unsigned_int_d = 0;
-		unsigned int unsigned_int_e = 0;
-		short short_c = 0;
-		char char_b = 0;
-		long long_c = 0;
-		int int_e = 0;
-		int int_f = 0;
-		double double_i = 0;
-		looper_b += 1;
-		int_d = bmfs_path_split_root(unsigned_int_a,short_b);
+		return float_1;
+	}
+	int_2 = bmfs_header_read(long_2,double_3);
 
-		double_h = pow ( double_i , double_a ) ;
-		char controller_e[2];
-		scanf("%2s", controller_e);
-		if( controller_e >"e~" )
-		{
-		}
-		double_g = atan ( double_h ) ;
-		unsigned_int_c = unsigned_int_a + unsigned_int_b;
+	int_2 = int_3;
+	double_1 = acos ( double_4 ) ;
+	bmfs_path_init(char_4);
+
+	long_3 = long_2;
+	unsigned_int_2 = unsigned_int_3;
+	float_2 = float_3 * float_4;
+	int looper_2 = 0;
+	while(looper_2 < 10)
+	{
+		int int_1 = 0;
+		long long_1 = 0;
+		double double_1 = 0;
+		double double_2 = 0;
+		double double_3 = 0;
+		char char_1 = 0;
+		unsigned int unsigned_int_1 = 0;
+		double double_4 = 0;
+		float float_1 = 0;
+		float float_2 = 0;
+		short short_1 = 0;
+		char char_2 = 0;
+		char char_3 = 0;
+		double double_5 = 0;
+		short short_2 = 0;
+		int int_2 = 0;
+		char char_4 = 0;
+		long long_2 = 0;
+		int int_3 = 0;
+		long long_3 = 0;
+		unsigned int unsigned_int_2 = 0;
+		unsigned int unsigned_int_3 = 0;
+		float float_3 = 0;
+		float float_4 = 0;
+		int int_4 = 0;
+		int int_5 = 0;
+		double double_7 = 0;
+		float float_5 = 0;
+		double double_6 = 0;
+		looper_2 += 1;
+		int_1 = bmfs_path_split_root(float_1,float_1);
+
+		double_4 = fabs ( double_6 ) ;
 		if(1)
 		{
 		}
-		double_c = floor ( double_d ) ;
-		char controller_g[4];
-		scanf("%4s", controller_g);
-		if( controller_g <"#8~F" )
-		{
-		}
-	}
-	double_g = fmod ( double_d , double_e ) ;
-	if(1)
-	{
-	}
-	if(1)
-	{
-	}
-	unsigned_int_d = unsigned_int_b * unsigned_int_b;
-	unsigned_int_d = unsigned_int_e * unsigned_int_d;
-	if(1)
-	{
-	}
-	bmfs_header_init(short_c);
+		bmfs_entry_init(double_5);
 
-	int_c = bmfs_entry_read(char_b,long_c,822);
-
-	int_e = find_file(unsigned_int_a,double_b,int_e,int_c,int_a);
-
-	double_e = ldexp ( double_a , int_f ) ;
-}
-int bmfs_open_file( long parameter_1,short parameter_2,float parameter_3)
-{
-	int int_a = 0;
-	short short_a = 0;
-	unsigned int unsigned_int_a = 0;
-	int int_b = 0;
-	char controller_a[4];
-	scanf("%4s", controller_a);
-	if( controller_a <"/<M@" )
-	{
-		return int_a;
-	}
-	return int_a;
-	open_file(short_a,unsigned_int_a,int_b);
-
-}
-void bmfs_file_init( double parameter_1)
-{
-	double double_a = 0;
-	char char_a = 0;
-	unsigned int unsigned_int_a = 0;
-	unsigned int unsigned_int_b = 0;
-	float float_a = 0;
-	double double_b = 0;
-	double double_c = 0;
-	short short_a = 0;
-	short short_b = 0;
-	double_a = ceil ( double_a ) ;
-	bmfs_entry_init(char_a);
-
-	unsigned_int_b = unsigned_int_a - unsigned_int_b;
-	double_a = tanh ( double_a ) ;
-	float_a = float_a - float_a;
-	double_a = fmod ( double_b , double_c ) ;
-	short_a = short_b;
-}
-void cmd_cat( char parameter_1,int parameter_2,short parameter_3)
-{
-	double double_a = 0;
-	long long_a = 0;
-	long long_b = 0;
-	double double_b = 0;
-	float float_a = 0;
-	short short_a = 0;
-	int int_a = 0;
-	long long_d = 0;
-	char char_a = 0;
-	long long_c = 0;
-	short short_b = 0;
-	unsigned int unsigned_int_a = 0;
-	unsigned int unsigned_int_b = 0;
-	unsigned int unsigned_int_c = 0;
-	float float_b = 0;
-	double double_c = 0;
-	double_a = atan2 ( double_a , double_a ) ;
-	long_b = long_a - long_a;
-	int looper_a = 0;
-	while(looper_a < 4)
-	{
-		double double_a = 0;
-		long long_a = 0;
-		long long_b = 0;
-		double double_b = 0;
-		float float_a = 0;
-		short short_a = 0;
-		int int_a = 0;
-		long long_d = 0;
-		char char_a = 0;
-		long long_c = 0;
-		short short_b = 0;
-		unsigned int unsigned_int_a = 0;
-		unsigned int unsigned_int_b = 0;
-		unsigned int unsigned_int_c = 0;
-		float float_b = 0;
-		double double_c = 0;
-		looper_a += 1;
-		double_a = atan ( double_b ) ;
-		float_a = float_a;
-		long_c = long_b;
+		double_2 = acos ( double_3 ) ;
+		double_1 = ldexp ( double_3 , int_2 ) ;
 		if(1)
 		{
-			short_a = short_a / short_a;
-			int_a = bmfs_open_file(long_d,short_a,float_a);
-
-			double_a = ldexp ( double_a , int_a ) ;
-			double_b = double_a;
+			return float_1;
 		}
-		int looper_b = 0;
-		while(looper_b < 8)
+		double_2 = exp ( double_4 ) ;
+		if(1)
 		{
-			double double_a = 0;
-			long long_a = 0;
-			long long_b = 0;
-			double double_b = 0;
-			float float_a = 0;
-			short short_a = 0;
-			int int_a = 0;
-			long long_d = 0;
-			char char_a = 0;
-			long long_c = 0;
-			short short_b = 0;
-			unsigned int unsigned_int_a = 0;
-			unsigned int unsigned_int_b = 0;
-			unsigned int unsigned_int_c = 0;
-			float float_b = 0;
-			double double_c = 0;
-			looper_b += 1;
-			int_a = bmfs_file_eof();
-
-			unsigned_int_b = unsigned_int_a - unsigned_int_a;
-			unsigned_int_a = unsigned_int_c;
-			if(1)
-			{
-				double double_a = 0;
-				long long_a = 0;
-				long long_b = 0;
-				double double_b = 0;
-				float float_a = 0;
-				short short_a = 0;
-				int int_a = 0;
-				long long_d = 0;
-				char char_a = 0;
-				long long_c = 0;
-				short short_b = 0;
-				unsigned int unsigned_int_a = 0;
-				unsigned int unsigned_int_b = 0;
-				unsigned int unsigned_int_c = 0;
-				float float_b = 0;
-				double double_c = 0;
-				double_a = atan2 ( double_c , double_b ) ;
-				bmfs_strerror(int_a);
-
-				bmfs_file_close();
-
-				double_b = double_a;
-				short_a = short_a;
-			}
-			float_a = float_b;
-			if(1)
-			{
-				double_b = cosh ( double_b ) ;
-				float_a = float_a - float_a;
-			}
+			return float_3;
 		}
-		short_b = short_b;
-		double_a = tanh ( double_a ) ;
 	}
-	bmfs_file_init(double_b);
+	int_3 = bmfs_disk_seek(long_2,double_5,int_4);
 
-	int_a = bmfs_file_read(char_a,float_a,char_a);
+	int_5 = int_1;
+	if(1)
+	{
+		return float_2;
+	}
+	if(1)
+	{
+		return float_3;
+	}
+	double_5 = double_2;
+	bmfs_header_init();
+
+	double_5 = atan2 ( double_7 , double_2 ) ;
+	if(1)
+	{
+		return float_3;
+	}
+	double_7 = atan ( double_1 ) ;
+	return float_5;
+}
+int bmfs_open_file( float parameter_1,float parameter_2,double parameter_3)
+{
+	int int_1 = 0;
+	int int_2 = 0;
+	float float_1 = 0;
+	short short_1 = 0;
+	double double_1 = 0;
+	double double_2 = 0;
+	char controller_1[2];
+	scanf("%2s", controller_1);
+	if( strcmp( controller_1, "}V") > 0)
+	{
+		return int_1;
+	}
+	return int_2;
+	float_1 = open_file(short_1,double_1,double_2);
 
 }
-void bmfs_table_set_count( long parameter_1,float parameter_2)
+void bmfs_file_init( int parameter_1)
 {
-	double double_a = 0;
-	int int_a = 0;
-	double_a = ldexp ( double_a , int_a ) ;
+	double double_1 = 0;
+	double double_2 = 0;
+	double double_3 = 0;
+	int int_1 = 0;
+	int int_2 = 0;
+	double double_4 = 0;
+	double double_5 = 0;
+	double_1 = atan2 ( double_1 , double_2 ) ;
+	bmfs_entry_init(double_3);
+
+	int_1 = int_1 / int_2;
+	double_4 = ldexp ( double_4 , int_1 ) ;
+	double_4 = exp ( double_3 ) ;
+	double_4 = floor ( double_2 ) ;
+	double_3 = double_5 / double_5;
+}
+void cmd_cat( unsigned int parameter_1,int parameter_2,int parameter_3)
+{
+	double double_1 = 0;
+	double double_2 = 0;
+	short short_1 = 0;
+	float float_1 = 0;
+	int int_1 = 0;
+	int int_2 = 0;
+	float float_2 = 0;
+	float float_3 = 0;
+	short short_2 = 0;
+	char char_2 = 0;
+	double double_3 = 0;
+	double double_4 = 0;
+	double double_6 = 0;
+	double double_7 = 0;
+	double double_5 = 0;
+	char char_1 = 0;
+	double double_8 = 0;
+	unsigned int unsigned_int_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	int int_3 = 0;
+	double double_9 = 0;
+	double_1 = log10 ( double_2 ) ;
+	double_2 = log10 ( double_1 ) ;
+	int looper_1 = 0;
+	while(looper_1 < 2)
+	{
+		double double_1 = 0;
+		double double_2 = 0;
+		short short_1 = 0;
+		float float_1 = 0;
+		int int_1 = 0;
+		int int_2 = 0;
+		float float_2 = 0;
+		float float_3 = 0;
+		short short_2 = 0;
+		char char_2 = 0;
+		double double_3 = 0;
+		double double_4 = 0;
+		double double_6 = 0;
+		double double_7 = 0;
+		double double_5 = 0;
+		char char_1 = 0;
+		double double_8 = 0;
+		unsigned int unsigned_int_1 = 0;
+		unsigned int unsigned_int_2 = 0;
+		int int_3 = 0;
+		double double_9 = 0;
+		looper_1 += 1;
+		short_1 = short_1 / short_1;
+		double_2 = log10 ( double_2 ) ;
+		float_1 = bmfs_strerror(int_1);
+
+		double_1 = ldexp ( double_2 , int_2 ) ;
+		if(1)
+		{
+			double double_1 = 0;
+			double double_2 = 0;
+			short short_1 = 0;
+			float float_1 = 0;
+			int int_1 = 0;
+			int int_2 = 0;
+			float float_2 = 0;
+			float float_3 = 0;
+			short short_2 = 0;
+			char char_2 = 0;
+			double double_3 = 0;
+			double double_4 = 0;
+			double double_6 = 0;
+			double double_7 = 0;
+			double double_5 = 0;
+			char char_1 = 0;
+			double double_8 = 0;
+			unsigned int unsigned_int_1 = 0;
+			unsigned int unsigned_int_2 = 0;
+			int int_3 = 0;
+			double double_9 = 0;
+			double_3 = pow ( double_4 , double_5 ) ;
+			int_1 = bmfs_open_file(float_2,float_3,double_1);
+
+			double_1 = ceil ( double_2 ) ;
+			char_1 = char_1;
+		}
+		int looper_2 = 0;
+		while(looper_2 < 1)
+		{
+			double double_1 = 0;
+			double double_2 = 0;
+			short short_1 = 0;
+			float float_1 = 0;
+			int int_1 = 0;
+			int int_2 = 0;
+			float float_2 = 0;
+			float float_3 = 0;
+			short short_2 = 0;
+			char char_2 = 0;
+			double double_3 = 0;
+			double double_4 = 0;
+			double double_6 = 0;
+			double double_7 = 0;
+			double double_5 = 0;
+			char char_1 = 0;
+			double double_8 = 0;
+			unsigned int unsigned_int_1 = 0;
+			unsigned int unsigned_int_2 = 0;
+			int int_3 = 0;
+			double double_9 = 0;
+			looper_2 += 1;
+			int_2 = bmfs_file_eof(short_2);
+
+			double_6 = double_1 - double_2;
+			double_7 = fabs ( double_8 ) ;
+			char controller_2[2];
+			scanf("%2s", controller_2);
+			if( strcmp( controller_2, "m?") > 0)
+			{
+				double double_1 = 0;
+				double double_2 = 0;
+				short short_1 = 0;
+				float float_1 = 0;
+				int int_1 = 0;
+				int int_2 = 0;
+				float float_2 = 0;
+				float float_3 = 0;
+				short short_2 = 0;
+				char char_2 = 0;
+				double double_3 = 0;
+				double double_4 = 0;
+				double double_6 = 0;
+				double double_7 = 0;
+				double double_5 = 0;
+				char char_1 = 0;
+				double double_8 = 0;
+				unsigned int unsigned_int_1 = 0;
+				unsigned int unsigned_int_2 = 0;
+				int int_3 = 0;
+				double double_9 = 0;
+				int_2 = int_1;
+				unsigned_int_1 = unsigned_int_2;
+				double_3 = floor ( double_7 ) ;
+			}
+			int_1 = bmfs_file_read(int_2,char_2,short_1);
+
+			short_1 = short_1;
+			if(1)
+			{
+				double double_1 = 0;
+				double double_2 = 0;
+				short short_1 = 0;
+				float float_1 = 0;
+				int int_1 = 0;
+				int int_2 = 0;
+				float float_2 = 0;
+				float float_3 = 0;
+				short short_2 = 0;
+				char char_2 = 0;
+				double double_3 = 0;
+				double double_4 = 0;
+				double double_6 = 0;
+				double double_7 = 0;
+				double double_5 = 0;
+				char char_1 = 0;
+				double double_8 = 0;
+				unsigned int unsigned_int_1 = 0;
+				unsigned int unsigned_int_2 = 0;
+				int int_3 = 0;
+				double double_9 = 0;
+				int_3 = int_3;
+				double_9 = floor ( double_2 ) ;
+			}
+		}
+		double_7 = asin ( double_4 ) ;
+		bmfs_file_init(int_1);
+
+		bmfs_file_close(char_2);
+
+		double_2 = fmod ( double_2 , double_6 ) ;
+	}
+}
+void bmfs_table_set_count( long parameter_1,char parameter_2)
+{
+	short short_1 = 0;
+	short short_2 = 0;
+	short_1 = short_2;
 }
 int bmfs_header_check( char parameter_1)
 {
-	int int_a = 0;
-	char controller_a[1];
-	scanf("%1s", controller_a);
-	if( controller_a <"&" )
+	int int_1 = 0;
+	int int_2 = 0;
+	if(1)
 	{
-		return int_a;
+		return int_1;
 	}
-	return int_a;
+	return int_2;
 }
-int bmfs_import( char parameter_1)
+int bmfs_import( long parameter_1)
 {
-	int int_a = 0;
-	double double_a = 0;
-	float float_a = 0;
-	double double_b = 0;
-	double double_c = 0;
-	int int_b = 0;
-	int int_c = 0;
-	double double_d = 0;
-	char char_a = 0;
-	unsigned int unsigned_int_a = 0;
-	unsigned int unsigned_int_b = 0;
-	int int_d = 0;
-	long long_a = 0;
-	char char_b = 0;
-	short short_a = 0;
-	long long_b = 0;
-	int int_e = 0;
-	int int_f = 0;
-	double double_e = 0;
-	long long_c = 0;
+	int int_1 = 0;
+	long long_1 = 0;
+	short short_1 = 0;
+	double double_1 = 0;
+	double double_2 = 0;
+	int int_2 = 0;
+	int int_3 = 0;
+	unsigned int unsigned_int_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	int int_4 = 0;
+	unsigned int unsigned_int_3 = 0;
+	unsigned int unsigned_int_4 = 0;
+	int int_5 = 0;
+	long long_2 = 0;
+	double double_3 = 0;
+	char char_1 = 0;
+	double double_4 = 0;
+	double double_5 = 0;
+	int int_6 = 0;
+	int int_7 = 0;
+	long long_3 = 0;
 	if(1)
 	{
-		return int_a;
+		return int_1;
 	}
-	bmfs_table_set_max_offset(double_a,float_a);
+	bmfs_table_set_offset(long_1,short_1);
 
-	double_a = atan2 ( double_b , double_a ) ;
+	double_1 = sqrt ( double_2 ) ;
+	char controller_2[5];
+	scanf("%5s", controller_2);
+	if( strcmp( controller_2, "or{VV") > 0)
+	{
+		return int_2;
+	}
+	int_2 = int_2;
 	if(1)
 	{
-		return int_a;
+		return int_3;
 	}
-	double_b = atan2 ( double_c , double_a ) ;
-	char controller_c[5];
-	scanf("%5s", controller_c);
-	if( controller_c >"zx(@d" )
+	unsigned_int_2 = unsigned_int_1 - unsigned_int_1;
+	char controller_4[1];
+	scanf("%1s", controller_4);
+	if( strcmp( controller_4, "+") > 0)
 	{
-		return int_b;
+		return int_4;
 	}
-	double_a = acos ( double_a ) ;
-	if(1)
-	{
-		return int_c;
-	}
-	double_d = cos ( double_a ) ;
-	double_c = pow ( double_a , double_d ) ;
-	int_a = bmfs_header_check(char_a);
+	bmfs_table_set_min_offset(short_1,short_1);
 
-	double_c = pow ( double_b , double_b ) ;
-	unsigned_int_a = unsigned_int_b;
-	int_d = int_a;
-	bmfs_table_set_offset(long_a,char_b);
+	double_1 = asin ( double_2 ) ;
+	bmfs_table_set_max_offset(unsigned_int_3,int_1);
 
-	unsigned_int_b = unsigned_int_a * unsigned_int_a;
-	int_a = bmfs_header_read(double_a,short_a);
+	unsigned_int_4 = unsigned_int_3;
+	int_5 = bmfs_disk_seek(long_2,double_2,int_3);
 
-	bmfs_table_set_count(long_b,float_a);
+	double_3 = log10 ( double_2 ) ;
+	double_1 = atan2 ( double_3 , double_2 ) ;
+	int_4 = bmfs_header_check(char_1);
 
-	int_e = int_a + int_c;
-	int_f = bmfs_disk_seek(unsigned_int_a,short_a,int_a);
+	double_3 = atan ( double_1 ) ;
+	double_1 = ldexp ( double_2 , int_3 ) ;
+	bmfs_table_set_count(long_2,char_1);
 
-	double_e = ldexp ( double_d , int_d ) ;
-	return int_b;
-	bmfs_table_set_min_offset(char_b,long_c);
+	double_4 = ldexp ( double_5 , int_6 ) ;
+	double_4 = ldexp ( double_4 , int_3 ) ;
+	return int_7;
+	int_3 = bmfs_header_read(long_3,double_5);
 
 }
-int bmfs_export( char parameter_1)
+int bmfs_export( long parameter_1)
 {
-	int int_a = 0;
-	float float_a = 0;
-	int int_b = 0;
-	unsigned int unsigned_int_a = 0;
-	double double_a = 0;
-	int int_c = 0;
-	long long_a = 0;
-	long long_b = 0;
-	int int_d = 0;
-	unsigned int unsigned_int_b = 0;
-	short short_a = 0;
-	double double_b = 0;
+	int int_1 = 0;
+	long long_1 = 0;
+	double double_1 = 0;
+	int int_2 = 0;
+	char char_1 = 0;
+	char char_2 = 0;
+	int int_3 = 0;
+	double double_2 = 0;
+	int int_4 = 0;
+	int int_5 = 0;
+	unsigned int unsigned_int_1 = 0;
+	short short_1 = 0;
 	if(1)
 	{
-		return int_a;
+		return int_1;
 	}
-	float_a = float_a;
-	int_b = bmfs_table_save_all(unsigned_int_a);
+	int_1 = bmfs_disk_seek(long_1,double_1,int_1);
 
-	double_a = asin ( double_a ) ;
+	int_1 = int_2 / int_1;
+	double_1 = cos ( double_1 ) ;
 	if(1)
 	{
-		return int_c;
+		return int_1;
 	}
-	int_a = bmfs_header_write(long_a,long_b);
+	char_1 = char_2;
+	char controller_3[3];
+	scanf("%3s", controller_3);
+	if( strcmp( controller_3, ".^b") > 0)
+	{
+		return int_3;
+	}
+	int_1 = bmfs_table_save_all(long_1);
 
-	double_a = cos ( double_a ) ;
+	double_1 = atan ( double_2 ) ;
 	if(1)
 	{
-		return int_b;
+		return int_4;
 	}
-	int_d = bmfs_disk_seek(unsigned_int_b,short_a,int_c);
+	return int_2;
+	int_5 = bmfs_header_write(unsigned_int_1,short_1);
 
-	double_a = atan2 ( double_a , double_b ) ;
-	char controller_d[5];
-	scanf("%5s", controller_d);
-	if( controller_d <"40!Wv" )
-	{
-		return int_b;
-	}
-	return int_a;
 }
-void bmfs_filedisk_done( float parameter_1)
+void bmfs_filedisk_done( unsigned int parameter_1)
 {
-	char controller_a[2];
-	scanf("%2s", controller_a);
-	if( controller_a <"BL" )
+	char controller_1[2];
+	scanf("%2s", controller_1);
+	if( strcmp( controller_1, ")N") > 0)
 	{
-		float float_a = 0;
-		double double_a = 0;
-		float_a = float_a;
-		double_a = floor ( double_a ) ;
+		unsigned int unsigned_int_1 = 0;
+		double double_1 = 0;
+		double double_2 = 0;
+		unsigned_int_1 = unsigned_int_1;
+		double_1 = double_1 + double_2;
 	}
 }
-int bmfs_header_write( long parameter_1,long parameter_2)
+int bmfs_header_write( unsigned int parameter_1,short parameter_2)
 {
-	unsigned int unsigned_int_a = 0;
-	unsigned int unsigned_int_b = 0;
-	unsigned int unsigned_int_c = 0;
-	double double_a = 0;
-	double double_b = 0;
-	int int_a = 0;
-	double double_c = 0;
-	double double_d = 0;
-	short short_a = 0;
-	long long_a = 0;
-	char char_a = 0;
-	short short_b = 0;
-	short short_c = 0;
-	float float_a = 0;
-	long long_b = 0;
-	int int_b = 0;
-	int int_c = 0;
-	double double_e = 0;
-	double double_f = 0;
-	float float_b = 0;
-	float float_c = 0;
-	unsigned_int_c = unsigned_int_a + unsigned_int_b;
-	double_a = sqrt ( double_b ) ;
-	bmfs_encode_uint32(int_a);
+	double double_1 = 0;
+	double double_2 = 0;
+	float float_1 = 0;
+	float float_2 = 0;
+	double double_3 = 0;
+	unsigned int unsigned_int_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	short short_1 = 0;
+	short short_2 = 0;
+	double double_4 = 0;
+	int int_1 = 0;
+	short short_3 = 0;
+	char char_1 = 0;
+	char char_2 = 0;
+	short short_4 = 0;
+	char char_3 = 0;
+	int int_2 = 0;
+	double double_5 = 0;
+	double double_6 = 0;
+	double double_7 = 0;
+	unsigned int unsigned_int_3 = 0;
+	unsigned int unsigned_int_4 = 0;
+	long long_1 = 0;
+	long long_2 = 0;
+	double double_8 = 0;
+	int int_3 = 0;
+	int int_4 = 0;
+	double_1 = cos ( double_2 ) ;
+	float_1 = float_2;
+	double_3 = floor ( double_2 ) ;
+	unsigned_int_1 = unsigned_int_1 - unsigned_int_2;
+	bmfs_encode_uint64(unsigned_int_2);
 
-	double_c = sqrt ( double_c ) ;
-	double_d = fmod ( double_c , double_b ) ;
-	double_a = ceil ( double_c ) ;
-	double_a = exp ( double_d ) ;
-	int_a = bmfs_disk_write(double_b,short_a,int_a,long_a);
+	bmfs_encode_uint32(unsigned_int_2);
 
-	double_a = asin ( double_d ) ;
-	char_a = char_a;
-	short_b = short_b;
-	bmfs_encode_uint64(long_a);
+	short_2 = short_1 * short_1;
+	double_2 = acos ( double_4 ) ;
+	int_1 = int_1;
+	short_1 = short_1 / short_3;
+	char_1 = char_1 / char_2;
+	double_4 = acos ( double_3 ) ;
+	short_4 = bmfs_crc32(char_1,char_3,double_1);
 
-	short_c = bmfs_crc32(float_a,long_b,short_a);
+	int_1 = int_1 * int_2;
+	double_6 = double_3 * double_5;
+	int_1 = int_1;
+	int_1 = bmfs_disk_write(short_4,unsigned_int_1,int_2,unsigned_int_1);
 
-	short_a = short_b;
-	int_c = int_a * int_b;
-	double_d = asin ( double_e ) ;
-	double_c = ceil ( double_e ) ;
-	double_a = ceil ( double_d ) ;
-	double_f = double_e;
-	double_f = fabs ( double_a ) ;
-	double_b = log ( double_b ) ;
-	double_c = double_f + double_d;
-	float_b = float_c;
-	double_d = log10 ( double_e ) ;
+	double_6 = acos ( double_7 ) ;
+	double_6 = double_6 * double_5;
+	unsigned_int_3 = unsigned_int_4;
+	double_4 = asin ( double_4 ) ;
+	long_1 = long_2;
+	double_1 = log10 ( double_5 ) ;
+	double_2 = double_8;
 	if(1)
 	{
-		return int_b;
+		return int_3;
 	}
-	char controller_b[5];
-	scanf("%5s", controller_b);
-	if( controller_b >"y.diK" )
+	char controller_2[2];
+	scanf("%2s", controller_2);
+	if( strcmp( controller_2, "u-") < 0)
 	{
-		return int_a;
+		return int_3;
 	}
-	return int_a;
+	return int_4;
 }
-unsigned int next_entry( char parameter_1)
+char next_entry( double parameter_1)
 {
-	unsigned int unsigned_int_a = 0;
-	unsigned int unsigned_int_b = 0;
-	int int_a = 0;
-	double double_a = 0;
-	unsigned int unsigned_int_c = 0;
-	double double_b = 0;
-	unsigned int unsigned_int_d = 0;
-	short short_a = 0;
-	unsigned int unsigned_int_e = 0;
-	unsigned int unsigned_int_f = 0;
-	double double_c = 0;
-	double double_d = 0;
+	char char_1 = 0;
+	char char_2 = 0;
+	short short_1 = 0;
+	int int_1 = 0;
+	float float_1 = 0;
+	float float_2 = 0;
+	float float_3 = 0;
+	double double_1 = 0;
+	long long_1 = 0;
+	long long_2 = 0;
+	long long_3 = 0;
+	int int_2 = 0;
 	if(1)
 	{
-		return unsigned_int_a;
+		return char_1;
 	}
 	if(1)
 	{
-		return unsigned_int_b;
+		return char_2;
 	}
-	int_a = bmfs_table_entry_read(int_a,double_a);
+	char_2 = char_2;
+	short_1 = short_1 + short_1;
+	int_1 = bmfs_table_entry_read(char_2,float_1);
 
-	unsigned_int_c = unsigned_int_c;
-	double_a = cos ( double_b ) ;
-	int_a = bmfs_disk_seek(unsigned_int_d,short_a,int_a);
-
-	unsigned_int_c = unsigned_int_e * unsigned_int_f;
-	double_b = ceil ( double_c ) ;
-	char controller_c[3];
-	scanf("%3s", controller_c);
-	if( controller_c <"6f," )
-	{
-		return unsigned_int_f;
-	}
-	double_c = log10 ( double_c ) ;
+	float_3 = float_1 / float_2;
+	double_1 = asin ( double_1 ) ;
 	if(1)
 	{
-		return unsigned_int_b;
+		return char_1;
 	}
-	double_c = atan2 ( double_c , double_d ) ;
-	return unsigned_int_e;
+	long_2 = long_1 - long_1;
+	if(1)
+	{
+		return char_2;
+	}
+	short_1 = short_1;
+	return char_1;
+	int_1 = bmfs_disk_seek(long_3,double_1,int_2);
+
 }
-short bmfs_table_next( unsigned int parameter_1)
+double bmfs_table_next( int parameter_1)
 {
-	unsigned int unsigned_int_a = 0;
-	char char_a = 0;
-	short short_a = 0;
-	short short_b = 0;
-	int int_a = 0;
-	for(int looper_a=0; looper_a<4;looper_a++)
+	char char_1 = 0;
+	double double_1 = 0;
+	long long_1 = 0;
+	char char_2 = 0;
+	for(int looper_1=0; looper_1<6;looper_1++)
 	{
-		unsigned_int_a = next_entry(char_a);
+		char char_1 = 0;
+		double double_1 = 0;
+		long long_1 = 0;
+		char char_2 = 0;
+		char_1 = next_entry(double_1);
 
-		short_a = short_a - short_a;
-		char controller_a[3];
-		scanf("%3s", controller_a);
-		if( controller_a <"2ZM" )
+		char_1 = char_2;
+		char controller_1[3];
+		scanf("%3s", controller_1);
+		if( strcmp( controller_1, "Q~~") > 0)
 		{
-			return short_a;
+			return double_1;
 		}
-		char controller_b[5];
-		scanf("%5s", controller_b);
-		if( controller_b <"{bc~u" )
+		char controller_2[1];
+		scanf("%1s", controller_2);
+		if( strcmp( controller_2, "-") > 0)
 		{
-			return short_b;
+			return double_1;
 		}
 	}
-	return short_a;
-	bmfs_table_entry_is_deleted(int_a);
+	return double_1;
+	long_1 = bmfs_table_entry_is_deleted();
 
 }
 void bmfs_table_view_deleted( int parameter_1)
 {
-	int int_a = 0;
-	int_a = int_a + int_a;
+	float float_1 = 0;
+	float float_2 = 0;
+	float float_3 = 0;
+	float_3 = float_1 - float_2;
 }
-void bmfs_table_begin( short parameter_1)
+void bmfs_table_begin( char parameter_1)
 {
-	double double_a = 0;
-	double double_b = 0;
-	double_a = exp ( double_b ) ;
+	double double_1 = 0;
+	double double_2 = 0;
+	double_1 = cosh ( double_2 ) ;
 }
-int bmfs_table_save_all( unsigned int parameter_1)
+int bmfs_table_save_all( long parameter_1)
 {
-	int int_a = 0;
-	double double_a = 0;
-	double double_b = 0;
-	double double_c = 0;
-	int int_b = 0;
-	long long_a = 0;
-	short short_a = 0;
-	unsigned int unsigned_int_a = 0;
-	short short_b = 0;
-	int int_c = 0;
-	int int_d = 0;
-	double double_e = 0;
-	double double_d = 0;
-	char controller_a[3];
-	scanf("%3s", controller_a);
-	if( controller_a >"@,c" )
+	int int_1 = 0;
+	double double_1 = 0;
+	double double_2 = 0;
+	char char_1 = 0;
+	int int_2 = 0;
+	int int_3 = 0;
+	long long_3 = 0;
+	int int_4 = 0;
+	char char_2 = 0;
+	long long_1 = 0;
+	long long_2 = 0;
+	double double_3 = 0;
+	unsigned int unsigned_int_1 = 0;
+	char controller_1[3];
+	scanf("%3s", controller_1);
+	if( strcmp( controller_1, "cFk") > 0)
 	{
-		return int_a;
+		return int_1;
 	}
-	double_a = asin ( double_b ) ;
-	double_b = pow ( double_c , double_b ) ;
-	for(int looper_a=0; looper_a<5;looper_a++)
-	{
-		int int_a = 0;
-		double double_a = 0;
-		double double_b = 0;
-		double double_c = 0;
-		int int_b = 0;
-		long long_a = 0;
-		short short_a = 0;
-		unsigned int unsigned_int_a = 0;
-		short short_b = 0;
-		int int_c = 0;
-		int int_d = 0;
-		double double_e = 0;
-		double double_d = 0;
-		bmfs_table_view_deleted(int_b);
+	double_1 = asin ( double_2 ) ;
+	bmfs_table_begin(char_1);
 
-		double_c = pow ( double_c , double_d ) ;
-		char controller_b[4];
-		scanf("%4s", controller_b);
-		if( controller_b <"NWej" )
+	int_1 = int_2;
+	for(int looper_1=0; looper_1<8;looper_1++)
+	{
+		int int_1 = 0;
+		double double_1 = 0;
+		double double_2 = 0;
+		char char_1 = 0;
+		int int_2 = 0;
+		int int_3 = 0;
+		long long_3 = 0;
+		int int_4 = 0;
+		char char_2 = 0;
+		long long_1 = 0;
+		long long_2 = 0;
+		double double_3 = 0;
+		unsigned int unsigned_int_1 = 0;
+		int_1 = int_3;
+		if(1)
 		{
 		}
-		int_a = bmfs_table_save(long_a);
+		long_2 = long_1 + long_1;
+		int_3 = bmfs_table_save(long_3);
 
-		double_d = pow ( double_d , double_a ) ;
-		short_a = bmfs_table_next(unsigned_int_a);
-
-		double_a = ceil ( double_c ) ;
-		char controller_c[2];
-		scanf("%2s", controller_c);
-		if( controller_c <"s)" )
+		double_3 = cosh ( double_2 ) ;
+		char controller_3[1];
+		scanf("%1s", controller_3);
+		if( strcmp( controller_3, "Y") < 0)
 		{
-			bmfs_table_begin(short_b);
+			int int_1 = 0;
+			double double_1 = 0;
+			double double_2 = 0;
+			char char_1 = 0;
+			int int_2 = 0;
+			int int_3 = 0;
+			long long_3 = 0;
+			int int_4 = 0;
+			char char_2 = 0;
+			long long_1 = 0;
+			long long_2 = 0;
+			double double_3 = 0;
+			unsigned int unsigned_int_1 = 0;
+			bmfs_table_view_deleted(int_4);
 
-			bmfs_table_hide_deleted(int_c);
+			double_1 = bmfs_table_next(int_2);
 
-			double_c = ceil ( double_a ) ;
-			return int_d;
+			unsigned_int_1 = unsigned_int_1;
+			return int_4;
 		}
-		double_c = log10 ( double_e ) ;
+		char_1 = char_1;
 	}
-	double_b = fmod ( double_e , double_a ) ;
-	return int_b;
+	char_2 = char_1 - char_1;
+	return int_2;
+	bmfs_table_hide_deleted();
+
 }
-int bmfs_disk_tell( unsigned int parameter_1,unsigned int parameter_2,int uni_para)
+int bmfs_disk_tell( double parameter_1,char parameter_2,int uni_para)
 {
-	float float_a = 0;
-	float float_b = 0;
-	char char_a = 0;
-	char char_b = 0;
+	unsigned int unsigned_int_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	double double_1 = 0;
 	char * vul_var;
+	vul_var=(char*)malloc(20*sizeof(char));
 	if(1)
 	{
-		float float_a = 0;
-		float float_b = 0;
-		char char_a = 0;
-		char char_b = 0;
-		vul_var=(char*)malloc(20*sizeof(char));
+		unsigned int unsigned_int_1 = 0;
+		unsigned int unsigned_int_2 = 0;
+		double double_1 = 0;
 		strcpy(vul_var, "CWE-761");
-		if(uni_para == 334)
+		if(uni_para == 232)
 		{
 			vul_var = vul_var + 1;
 		}
 		free(vul_var);
-		char_a = char_a + char_b;
+		double_1 = atan ( double_1 ) ;
 	}
-	float_b = float_a - float_b;
+	unsigned_int_2 = unsigned_int_1 * unsigned_int_1;
 }
-void bmfs_memcpy(double parameter_2,char parameter_3)
+void bmfs_memcpy(double parameter_2,float parameter_3)
 {
-	int int_a = 0;
-	double double_a = 0;
-	double double_b = 0;
-	int_a = int_a;
-	double_a = sinh ( double_a ) ;
-	for(int looper_a=0; looper_a<7;looper_a++)
+	double double_1 = 0;
+	double double_2 = 0;
+	short short_1 = 0;
+	short short_2 = 0;
+	double double_3 = 0;
+	double_1 = double_2;
+	short_1 = short_2;
+	for(int looper_1=0; looper_1<4;looper_1++)
 	{
-		int int_a = 0;
-		double double_a = 0;
-		double double_b = 0;
-		double_a = double_b;
+		double double_1 = 0;
+		double double_2 = 0;
+		short short_1 = 0;
+		short short_2 = 0;
+		double double_3 = 0;
+		double_1 = floor ( double_3 ) ;
 	}
 }
-int bmfs_entry_write( double parameter_1,unsigned int parameter_2)
+int bmfs_entry_write( unsigned int parameter_1,int parameter_2)
 {
-	double double_a = 0;
-	double double_b = 0;
-	double double_c = 0;
-	double double_d = 0;
-	char char_a = 0;
-	long long_a = 0;
-	int int_a = 0;
-	unsigned int unsigned_int_a = 0;
-	unsigned int unsigned_int_b = 0;
-	unsigned int unsigned_int_c = 0;
-	unsigned int unsigned_int_d = 0;
-	short short_a = 0;
-	float float_a = 0;
-	long long_b = 0;
-	short short_b = 0;
-	int int_b = 0;
-	char char_b = 0;
-	char char_c = 0;
-	unsigned int unsigned_int_e = 0;
-	float float_b = 0;
-	float float_c = 0;
-	double double_e = 0;
-	short short_c = 0;
-	double double_f = 0;
-	double double_g = 0;
-	int int_c = 0;
-	float float_d = 0;
-	int int_d = 0;
-	double_a = atan2 ( double_a , double_b ) ;
-	double_c = double_d;
-	bmfs_memcpy(double_a,char_a);
+	short short_1 = 0;
+	char char_1 = 0;
+	double double_1 = 0;
+	double double_2 = 0;
+	int int_1 = 0;
+	unsigned int unsigned_int_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	short short_2 = 0;
+	double double_3 = 0;
+	unsigned int unsigned_int_3 = 0;
+	int int_2 = 0;
+	float float_1 = 0;
+	unsigned int unsigned_int_4 = 0;
+	char char_2 = 0;
+	unsigned int unsigned_int_5 = 0;
+	short short_3 = 0;
+	int int_3 = 0;
+	int int_4 = 0;
+	char char_3 = 0;
+	double double_4 = 0;
+	short_1 = bmfs_crc32(char_1,char_1,double_1);
 
-	bmfs_encode_uint64(long_a);
+	double_1 = cos ( double_2 ) ;
+	int_1 = int_1 - int_1;
+	int_1 = bmfs_disk_write(short_1,unsigned_int_1,int_1,unsigned_int_1);
 
-	int_a = bmfs_disk_tell(unsigned_int_a,unsigned_int_b,507);
+	double_1 = ldexp ( double_1 , int_1 ) ;
+	unsigned_int_2 = unsigned_int_1;
+	double_1 = fabs ( double_1 ) ;
+	short_1 = short_2;
+	double_3 = tan ( double_1 ) ;
+	bmfs_encode_uint64(unsigned_int_3);
 
-	unsigned_int_d = unsigned_int_c - unsigned_int_a;
-	short_a = bmfs_crc32(float_a,long_b,short_b);
+	double_2 = exp ( double_1 ) ;
+	int_2 = int_1;
+	bmfs_memcpy(double_2,float_1);
 
-	unsigned_int_b = unsigned_int_b / unsigned_int_a;
-	int_a = int_a + int_b;
-	double_d = cos ( double_a ) ;
-	char_b = char_c;
-	unsigned_int_e = unsigned_int_a;
-	bmfs_encode_uint32(int_a);
-
-	float_c = float_b - float_c;
-	double_e = fmod ( double_d , double_b ) ;
-	short_a = short_c;
-	double_f = exp ( double_g ) ;
-	float_b = float_b;
-	int_a = int_a;
-	double_c = log10 ( double_b ) ;
+	short_2 = short_1;
+	double_2 = log10 ( double_2 ) ;
+	float_1 = float_1 / float_1;
+	int_1 = int_2 / int_1;
+	unsigned_int_4 = unsigned_int_2 - unsigned_int_1;
+	char_2 = char_2;
 	if(1)
 	{
-		return int_a;
+		return int_2;
 	}
-	int_a = int_b + int_c;
-	int_b = bmfs_disk_write(double_b,short_b,int_b,long_a);
-
-	float_a = float_d;
+	unsigned_int_5 = unsigned_int_2 / unsigned_int_2;
+	short_1 = short_2 - short_3;
 	if(1)
 	{
-		return int_c;
+		return int_3;
 	}
 	if(1)
 	{
-		return int_d;
+		return int_4;
 	}
-	unsigned_int_c = unsigned_int_d;
-	return int_c;
+	int_4 = bmfs_disk_tell(double_3,char_3,452);
+
+	double_4 = tan ( double_2 ) ;
+	return int_2;
+	bmfs_encode_uint32(unsigned_int_5);
+
 }
-int bmfs_table_entry_write( float parameter_1,char parameter_2)
+int bmfs_table_entry_write( double parameter_1,unsigned int parameter_2)
 {
-	int int_a = 0;
-	double double_a = 0;
-	short short_a = 0;
-	long long_a = 0;
-	double double_b = 0;
-	long long_b = 0;
-	double double_c = 0;
-	double double_d = 0;
-	float float_a = 0;
-	int int_b = 0;
-	int int_c = 0;
-	int_a = bmfs_disk_write(double_a,short_a,int_a,long_a);
+	double double_1 = 0;
+	double double_2 = 0;
+	short short_1 = 0;
+	short short_2 = 0;
+	unsigned int unsigned_int_1 = 0;
+	long long_1 = 0;
+	long long_2 = 0;
+	float float_1 = 0;
+	int int_1 = 0;
+	int int_2 = 0;
+	unsigned int unsigned_int_2 = 0;
+	double double_3 = 0;
+	int int_3 = 0;
+	int int_4 = 0;
+	double_1 = cosh ( double_2 ) ;
+	double_1 = double_2 / double_2;
+	short_2 = short_1 + short_1;
+	bmfs_encode_uint64(unsigned_int_1);
 
-	double_a = log10 ( double_b ) ;
-	bmfs_encode_uint32(int_a);
+	long_2 = long_1 * long_1;
+	bmfs_encode_uint32(unsigned_int_1);
 
-	double_b = cosh ( double_a ) ;
-	bmfs_encode_uint64(long_b);
+	float_1 = bmfs_table_entry_checksum(int_1);
 
-	double_a = bmfs_table_entry_checksum(long_b);
+	int_2 = bmfs_disk_write(short_1,unsigned_int_1,int_2,unsigned_int_2);
 
-	double_b = double_c * double_c;
-	double_d = double_b;
-	float_a = float_a * float_a;
-	double_b = ceil ( double_b ) ;
-	double_b = tanh ( double_c ) ;
+	double_2 = ldexp ( double_3 , int_2 ) ;
+	unsigned_int_2 = unsigned_int_1 / unsigned_int_2;
+	double_3 = floor ( double_1 ) ;
 	if(1)
 	{
-		return int_b;
+		return int_3;
 	}
 	if(1)
 	{
-		return int_c;
+		return int_4;
 	}
-	return int_b;
+	return int_3;
 }
 int bmfs_table_save( long parameter_1)
 {
-	int int_a = 0;
-	double double_a = 0;
-	double double_b = 0;
-	char char_a = 0;
-	char char_b = 0;
-	short short_a = 0;
-	short short_b = 0;
-	double double_c = 0;
-	double double_d = 0;
-	int int_b = 0;
-	unsigned int unsigned_int_a = 0;
-	float float_a = 0;
-	int int_c = 0;
+	int int_1 = 0;
+	int int_2 = 0;
+	long long_1 = 0;
+	double double_1 = 0;
+	int int_3 = 0;
+	unsigned int unsigned_int_1 = 0;
+	short short_1 = 0;
+	short short_2 = 0;
+	short short_3 = 0;
+	double double_2 = 0;
+	double double_3 = 0;
+	char controller_1[5];
+	scanf("%5s", controller_1);
+	if( strcmp( controller_1, "?-R.#") < 0)
+	{
+		return int_1;
+	}
+	int_2 = bmfs_disk_seek(long_1,double_1,int_3);
+
+	int_2 = bmfs_table_entry_write(double_1,unsigned_int_1);
+
+	double_1 = tan ( double_1 ) ;
+	short_1 = short_1 + short_1;
+	short_1 = short_2 / short_3;
+	double_3 = double_2 / double_3;
 	if(1)
 	{
-		return int_a;
+		return int_1;
 	}
-	double_b = double_a / double_a;
-	char_a = char_b;
-	short_a = short_b;
-	double_c = cosh ( double_d ) ;
+	double_2 = sqrt ( double_3 ) ;
 	if(1)
 	{
-		return int_b;
+		return int_2;
 	}
-	int_a = bmfs_disk_seek(unsigned_int_a,short_b,int_a);
+	return int_3;
+}
+void bmfs_table_entry_copy( float parameter_1,float parameter_2)
+{
+	double double_1 = 0;
+	double double_2 = 0;
+	int int_1 = 0;
+	short short_1 = 0;
+	double double_3 = 0;
+	double double_4 = 0;
+	double_1 = ldexp ( double_2 , int_1 ) ;
+	short_1 = short_1 + short_1;
+	double_1 = atan2 ( double_3 , double_2 ) ;
+	double_4 = sinh ( double_4 ) ;
+}
+int bmfs_table_push( short parameter_1,float parameter_2)
+{
+	char char_1 = 0;
+	char char_2 = 0;
+	float float_1 = 0;
+	float float_2 = 0;
+	int int_1 = 0;
+	long long_1 = 0;
+	unsigned int unsigned_int_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	int int_2 = 0;
+	char_1 = char_1 / char_2;
+	bmfs_table_entry_copy(float_1,float_1);
 
-	int_a = bmfs_table_entry_write(float_a,char_a);
+	float_2 = float_2;
+	bmfs_table_end(int_1);
 
-	double_a = sinh ( double_c ) ;
+	int_1 = bmfs_table_save(long_1);
+
+	unsigned_int_1 = unsigned_int_2;
+	char controller_1[4];
+	scanf("%4s", controller_1);
+	if( strcmp( controller_1, "${}f") > 0)
+	{
+		return int_1;
+	}
+	int_2 = int_1 - int_2;
+	return int_2;
+}
+long bmfs_table_entry_is_deleted()
+{
+	long long_1 = 0;
+	long long_2 = 0;
+	char controller_1[4];
+	scanf("%4s", controller_1);
+	if( strcmp( controller_1, ")KWC") > 0)
+	{
+		return long_1;
+	}
+	return long_2;
+}
+void bmfs_encode_uint32( unsigned int parameter_1)
+{
+	double double_1 = 0;
+	double double_2 = 0;
+	long long_1 = 0;
+	long long_2 = 0;
+	double_1 = atan2 ( double_2 , double_2 ) ;
+	double_2 = ceil ( double_2 ) ;
+	double_2 = tan ( double_1 ) ;
+	long_1 = long_2;
+	double_1 = floor ( double_1 ) ;
+}
+void bmfs_encode_uint64( unsigned int parameter_1)
+{
+	double double_1 = 0;
+	int int_1 = 0;
+	short short_1 = 0;
+	short short_2 = 0;
+	double double_2 = 0;
+	double double_3 = 0;
+	unsigned int unsigned_int_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	unsigned int unsigned_int_3 = 0;
+	double_1 = double_1 + double_1;
+	int_1 = int_1;
+	short_1 = short_2;
+	double_2 = double_2;
+	double_2 = cos ( double_1 ) ;
+	double_2 = cosh ( double_1 ) ;
+	double_2 = pow ( double_2 , double_2 ) ;
+	double_1 = fmod ( double_3 , double_2 ) ;
+	unsigned_int_3 = unsigned_int_1 * unsigned_int_2;
+}
+float bmfs_table_entry_checksum( int parameter_1)
+{
+	double double_1 = 0;
+	double double_2 = 0;
+	short short_1 = 0;
+	char char_1 = 0;
+	unsigned int unsigned_int_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	short short_2 = 0;
+	float float_1 = 0;
+	double_1 = exp ( double_2 ) ;
+	double_2 = double_1;
+	short_1 = bmfs_crc32(char_1,char_1,double_2);
+
+	double_2 = cos ( double_1 ) ;
+	bmfs_encode_uint64(unsigned_int_1);
+
+	unsigned_int_2 = unsigned_int_1;
+	short_2 = short_1 * short_2;
+	return float_1;
+	bmfs_encode_uint32(unsigned_int_2);
+
+}
+int bmfs_table_entry_read( char parameter_1,float parameter_2)
+{
+	int int_1 = 0;
+	int int_2 = 0;
+	unsigned int unsigned_int_1 = 0;
+	short short_1 = 0;
+	float float_1 = 0;
+	double double_1 = 0;
+	double double_2 = 0;
+	double double_3 = 0;
+	int int_3 = 0;
+	double double_4 = 0;
+	char char_1 = 0;
+	int int_4 = 0;
+	char char_2 = 0;
+	int int_5 = 0;
+	long long_1 = 0;
+	int_1 = int_2;
+	unsigned_int_1 = bmfs_decode_uint32(short_1);
+
+	float_1 = bmfs_table_entry_checksum(int_2);
+
+	double_1 = log10 ( double_2 ) ;
+	double_1 = sinh ( double_3 ) ;
 	if(1)
 	{
-		return int_c;
+		return int_3;
 	}
-	return int_b;
-}
-void bmfs_table_entry_copy( int parameter_1,unsigned int parameter_2)
-{
-	double double_a = 0;
-	double double_b = 0;
-	float float_a = 0;
-	double double_c = 0;
-	double double_d = 0;
-	double_a = tan ( double_b ) ;
-	float_a = float_a;
-	double_a = tan ( double_c ) ;
-	double_b = pow ( double_d , double_b ) ;
-}
-int bmfs_table_push( double parameter_1,short parameter_2)
-{
-	long long_a = 0;
-	double double_a = 0;
-	double double_b = 0;
-	int int_a = 0;
-	unsigned int unsigned_int_a = 0;
-	short short_a = 0;
-	short short_b = 0;
-	long long_b = 0;
-	char char_a = 0;
-	char char_b = 0;
-	bmfs_table_end(long_a);
-
-	double_a = double_b;
-	double_b = exp ( double_b ) ;
-	bmfs_table_entry_copy(int_a,unsigned_int_a);
-
-	short_a = short_b;
 	if(1)
 	{
-		return int_a;
+		return int_2;
 	}
-	int_a = bmfs_table_save(long_b);
+	double_4 = double_4;
+	char_1 = bmfs_decode_uint64(int_4);
 
-	char_a = char_a + char_b;
-	return int_a;
-}
-void bmfs_table_entry_is_deleted( int parameter_1)
-{
-	char controller_a[3];
-	scanf("%3s", controller_a);
-	if( controller_a >"+wt" )
+	double_3 = atan ( double_2 ) ;
+	int_3 = int_3;
+	char_2 = char_2 + char_2;
+	char controller_3[1];
+	scanf("%1s", controller_3);
+	if( strcmp( controller_3, "i") < 0)
 	{
+		return int_3;
 	}
-}
-void bmfs_encode_uint32( int parameter_1)
-{
-	double double_a = 0;
-	double double_b = 0;
-	double double_c = 0;
-	int int_a = 0;
-	double double_d = 0;
-	double double_e = 0;
-	double_a = atan2 ( double_b , double_b ) ;
-	double_b = tanh ( double_b ) ;
-	double_a = ldexp ( double_c , int_a ) ;
-	double_d = cosh ( double_b ) ;
-	double_e = asin ( double_c ) ;
-}
-void bmfs_encode_uint64( long parameter_1)
-{
-	double double_a = 0;
-	double double_b = 0;
-	int int_a = 0;
-	long long_a = 0;
-	long long_b = 0;
-	float float_a = 0;
-	float float_b = 0;
-	double double_c = 0;
-	double double_d = 0;
-	double double_e = 0;
-	double_b = double_a + double_b;
-	int_a = int_a;
-	double_a = fabs ( double_a ) ;
-	long_a = long_b;
-	float_a = float_b;
-	double_a = tanh ( double_c ) ;
-	double_b = double_b * double_d;
-	double_c = ceil ( double_d ) ;
-	double_e = double_b;
-}
-double bmfs_table_entry_checksum( long parameter_1)
-{
-	double double_a = 0;
-	double double_b = 0;
-	unsigned int unsigned_int_a = 0;
-	unsigned int unsigned_int_b = 0;
-	unsigned int unsigned_int_c = 0;
-	double double_c = 0;
-	long long_a = 0;
-	short short_a = 0;
-	float float_a = 0;
-	int int_a = 0;
-	int int_b = 0;
-	double_a = double_b;
-	unsigned_int_c = unsigned_int_a + unsigned_int_b;
-	double_b = exp ( double_c ) ;
-	bmfs_encode_uint64(long_a);
-
-	double_a = acos ( double_b ) ;
-	short_a = bmfs_crc32(float_a,long_a,short_a);
-
-	int_a = int_b;
-	return double_c;
-	bmfs_encode_uint32(int_b);
+	return int_1;
+	int_5 = bmfs_disk_read(double_3,long_1,double_3);
 
 }
-int bmfs_table_entry_read( int parameter_1,double parameter_2)
+float prev_entry( char parameter_1)
 {
-	double double_a = 0;
-	int int_a = 0;
-	char char_a = 0;
-	char char_b = 0;
-	double double_b = 0;
-	unsigned int unsigned_int_a = 0;
-	unsigned int unsigned_int_b = 0;
-	int int_b = 0;
-	long long_a = 0;
-	short short_a = 0;
-	long long_b = 0;
-	int int_c = 0;
-	double double_c = 0;
-	double double_d = 0;
-	long long_c = 0;
-	unsigned int unsigned_int_c = 0;
-	double_a = ldexp ( double_a , int_a ) ;
-	char_a = char_a - char_b;
-	double_b = pow ( double_a , double_a ) ;
+	float float_1 = 0;
+	double double_1 = 0;
+	int int_1 = 0;
+	char char_1 = 0;
+	float float_2 = 0;
+	long long_1 = 0;
+	long long_2 = 0;
+	double double_2 = 0;
+	float float_3 = 0;
+	int int_2 = 0;
 	if(1)
 	{
-		return int_a;
+		return float_1;
 	}
-	char controller_b[1];
-	scanf("%1s", controller_b);
-	if( controller_b >"=" )
-	{
-		return int_a;
-	}
-	unsigned_int_a = unsigned_int_b;
-	double_b = floor ( double_a ) ;
-	int_b = bmfs_disk_read(long_a,short_a,int_a);
+	double_1 = atan ( double_1 ) ;
+	int_1 = bmfs_table_entry_read(char_1,float_2);
 
-	double_b = bmfs_table_entry_checksum(long_b);
-
-	int_c = int_b;
-	double_c = tanh ( double_b ) ;
+	long_1 = long_2;
+	double_1 = tanh ( double_1 ) ;
+	double_1 = cos ( double_1 ) ;
+	double_1 = double_2;
 	if(1)
 	{
-		return int_c;
+		return float_3;
 	}
-	return int_b;
-	unsigned_int_a = bmfs_decode_uint64(double_d);
-
-	long_c = bmfs_decode_uint32(unsigned_int_c);
+	int_2 = int_1 + int_1;
+	char controller_3[3];
+	scanf("%3s", controller_3);
+	if( strcmp( controller_3, "qI~") < 0)
+	{
+		return float_1;
+	}
+	return float_1;
+	int_2 = bmfs_disk_seek(long_2,double_2,int_2);
 
 }
-short prev_entry( int parameter_1)
+int bmfs_table_previous()
 {
-	short short_a = 0;
-	int int_a = 0;
-	unsigned int unsigned_int_a = 0;
-	short short_b = 0;
-	long long_a = 0;
-	long long_b = 0;
-	long long_c = 0;
-	double double_a = 0;
-	double double_b = 0;
-	long long_d = 0;
-	double double_c = 0;
-	short short_c = 0;
-	int int_b = 0;
-	double double_d = 0;
-	short short_d = 0;
-	char controller_a[5];
-	scanf("%5s", controller_a);
-	if( controller_a >"D]nNG" )
+	long long_1 = 0;
+	int int_1 = 0;
+	int int_2 = 0;
+	float float_1 = 0;
+	char char_1 = 0;
+	long long_2 = 0;
+	long long_3 = 0;
+	for(int looper_1=0; looper_1<4;looper_1++)
 	{
-		return short_a;
-	}
-	int_a = bmfs_disk_seek(unsigned_int_a,short_b,int_a);
+		long long_1 = 0;
+		int int_1 = 0;
+		int int_2 = 0;
+		float float_1 = 0;
+		char char_1 = 0;
+		long long_2 = 0;
+		long long_3 = 0;
+		long_1 = bmfs_table_entry_is_deleted();
 
-	long_c = long_a + long_b;
-	double_a = fmod ( double_a , double_a ) ;
-	double_b = fabs ( double_a ) ;
-	long_d = long_c / long_c;
-	double_c = sqrt ( double_b ) ;
-	if(1)
-	{
-		return short_c;
-	}
-	int_b = bmfs_table_entry_read(int_a,double_a);
-
-	double_b = sqrt ( double_d ) ;
-	if(1)
-	{
-		return short_d;
-	}
-	return short_b;
-}
-double bmfs_table_previous( double parameter_1)
-{
-	double double_a = 0;
-	double double_b = 0;
-	short short_a = 0;
-	int int_a = 0;
-	int int_b = 0;
-	for(int looper_a=0; looper_a<4;looper_a++)
-	{
-		double_a = exp ( double_a ) ;
-		if(1)
+		long_2 = long_3;
+		char controller_1[2];
+		scanf("%2s", controller_1);
+		if( strcmp( controller_1, "zC") < 0)
 		{
-			return double_a;
+			return int_1;
 		}
-		if(1)
+		char controller_2[1];
+		scanf("%1s", controller_2);
+		if( strcmp( controller_2, "3") < 0)
 		{
-			return double_b;
+			return int_2;
 		}
 	}
-	return double_b;
-	short_a = prev_entry(int_a);
-
-	bmfs_table_entry_is_deleted(int_b);
+	return int_2;
+	float_1 = prev_entry(char_1);
 
 }
-void bmfs_table_hide_deleted( int parameter_1)
+void bmfs_table_hide_deleted()
 {
-	float float_a = 0;
-	float float_b = 0;
-	float_a = float_a + float_b;
+	double double_1 = 0;
+	double double_2 = 0;
+	double_1 = log10 ( double_2 ) ;
 }
-void bmfs_table_end( long parameter_1)
+void bmfs_table_end( int parameter_1)
 {
-	double double_a = 0;
-	double double_b = 0;
-	int int_a = 0;
-	double_a = ldexp ( double_b , int_a ) ;
+	double double_1 = 0;
+	double double_2 = 0;
+	double_1 = cos ( double_2 ) ;
 }
-void get_block_size( double parameter_1)
+int get_block_size( unsigned int parameter_1)
 {
+	int int_1 = 0;
+	int int_2 = 0;
 	if(1)
 	{
+		return int_1;
 	}
 	else
 	{
+		return int_2;
 	}
 }
-double to_block_size( short parameter_1,short parameter_2)
+float to_block_size( float parameter_1,double parameter_2)
 {
-	double double_a = 0;
-	double double_b = 0;
-	short short_a = 0;
-	short short_b = 0;
-	double_a = log10 ( double_b ) ;
-	short_b = short_a / short_a;
-	return double_a;
-	get_block_size(double_b);
+	double double_1 = 0;
+	int int_1 = 0;
+	unsigned int unsigned_int_1 = 0;
+	int int_2 = 0;
+	float float_1 = 0;
+	double_1 = asin ( double_1 ) ;
+	int_1 = get_block_size(unsigned_int_1);
 
+	int_1 = int_2;
+	return float_1;
 }
-int bmfs_table_alloc( double parameter_1,unsigned int parameter_2,char parameter_3)
+int bmfs_table_alloc( long parameter_1,long parameter_2,char parameter_3)
 {
-	int int_a = 0;
-	float float_a = 0;
-	float float_b = 0;
-	short short_a = 0;
-	int int_b = 0;
-	float float_c = 0;
-	long long_a = 0;
-	double double_a = 0;
-	double double_b = 0;
-	short short_b = 0;
-	double double_c = 0;
-	int int_c = 0;
-	short short_c = 0;
-	char char_a = 0;
+	int int_1 = 0;
+	double double_1 = 0;
+	double double_2 = 0;
+	int int_2 = 0;
+	int int_3 = 0;
+	short short_1 = 0;
+	float float_1 = 0;
+	char char_1 = 0;
+	char char_2 = 0;
+	double double_3 = 0;
+	int int_4 = 0;
+	float float_2 = 0;
+	double double_4 = 0;
+	int int_5 = 0;
+	unsigned int unsigned_int_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	double double_5 = 0;
+	double double_6 = 0;
 	if(1)
 	{
-		return int_a;
+		return int_1;
 	}
-	float_b = float_a - float_b;
-	bmfs_table_entry_init(short_a);
+	double_1 = floor ( double_2 ) ;
+	int_3 = int_1 - int_2;
+	int_1 = bmfs_table_push(short_1,float_1);
 
-	int_b = int_a;
-	float_b = float_a + float_c;
-	int_b = int_b;
-	bmfs_table_end(long_a);
+	char_1 = char_2;
+	double_3 = ldexp ( double_3 , int_2 ) ;
+	bmfs_table_entry_init(int_1);
 
-	double_a = bmfs_table_previous(double_a);
+	double_3 = ceil ( double_2 ) ;
+	bmfs_table_end(int_4);
 
-	int_b = int_a - int_b;
-	double_b = to_block_size(short_a,short_b);
+	float_2 = float_2 / float_2;
+	float_1 = to_block_size(float_2,double_3);
 
-	double_a = cosh ( double_c ) ;
-	double_b = exp ( double_c ) ;
+	double_1 = atan2 ( double_4 , double_3 ) ;
 	if(1)
 	{
-		bmfs_table_hide_deleted(int_a);
-
-		double_c = sqrt ( double_b ) ;
-	}
-	if(1)
-	{
-		return int_c;
-	}
-	int_a = bmfs_table_push(double_a,short_a);
-
-	short_c = short_c;
-	if(1)
-	{
-		return int_c;
-	}
-	char_a = char_a / char_a;
-	return int_b;
-}
-int bmfs_allocate( double parameter_1,short parameter_2,float parameter_3)
-{
-	int int_a = 0;
-	double double_a = 0;
-	unsigned int unsigned_int_a = 0;
-	char char_a = 0;
-	return int_a;
-	int_a = bmfs_table_alloc(double_a,unsigned_int_a,char_a);
-
-}
-void bmfs_entry_set_type( long parameter_1,long parameter_2)
-{
-	float float_a = 0;
-	float float_b = 0;
-	long long_a = 0;
-	long long_b = 0;
-	double double_a = 0;
-	float_a = float_a / float_b;
-	{
-		float float_a = 0;
-		float float_b = 0;
-		long long_a = 0;
-		long long_b = 0;
-		double double_a = 0;
-		long_a = long_b;
-		double_a = floor ( double_a ) ;
-	}
-}
-void bmfs_entry_init( char parameter_1)
-{
-	double double_a = 0;
-	double double_b = 0;
-	double double_c = 0;
-	double double_d = 0;
-	unsigned int unsigned_int_a = 0;
-	unsigned int unsigned_int_b = 0;
-	double double_e = 0;
-	double double_f = 0;
-	float float_a = 0;
-	for(int looper_a=0; looper_a<4;looper_a++)
-	{
-		double_a = tan ( double_a ) ;
-	}
-	double_b = pow ( double_c , double_a ) ;
-	double_d = tanh ( double_a ) ;
-	unsigned_int_b = unsigned_int_a - unsigned_int_b;
-	double_d = pow ( double_a , double_e ) ;
-	double_f = atan ( double_d ) ;
-	double_e = tanh ( double_a ) ;
-	float_a = float_a - float_a;
-	double_a = sinh ( double_e ) ;
-	double_e = cos ( double_d ) ;
-}
-void bmfs_table_set_max_offset( double parameter_1,float parameter_2)
-{
-	double double_a = 0;
-	double double_b = 0;
-	double_a = sqrt ( double_b ) ;
-}
-void bmfs_table_set_min_offset( char parameter_1,long parameter_2)
-{
-	long long_a = 0;
-	long long_b = 0;
-	long_a = long_b;
-}
-void bmfs_table_set_offset( long parameter_1,char parameter_2)
-{
-	double double_a = 0;
-	double_a = asin ( double_a ) ;
-}
-int bmfs_format( int parameter_1,long parameter_2)
-{
-	double double_a = 0;
-	double double_b = 0;
-	int int_a = 0;
-	unsigned int unsigned_int_a = 0;
-	double double_c = 0;
-	char char_a = 0;
-	long long_a = 0;
-	int int_b = 0;
-	long long_b = 0;
-	char char_b = 0;
-	unsigned int unsigned_int_b = 0;
-	unsigned int unsigned_int_c = 0;
-	double double_d = 0;
-	long long_c = 0;
-	long long_d = 0;
-	int int_c = 0;
-	short short_a = 0;
-	float float_a = 0;
-	short short_b = 0;
-	char char_c = 0;
-	char char_d = 0;
-	int int_d = 0;
-	int int_e = 0;
-	double double_e = 0;
-	double double_f = 0;
-	double double_g = 0;
-	float float_b = 0;
-	double_a = fabs ( double_b ) ;
-	int_a = bmfs_table_save_all(unsigned_int_a);
-
-	double_b = fmod ( double_c , double_c ) ;
-	bmfs_table_set_min_offset(char_a,long_a);
-
-	double_c = double_a;
-	int_b = int_b;
-	bmfs_table_set_offset(long_b,char_b);
-
-	unsigned_int_a = unsigned_int_b + unsigned_int_c;
-	double_c = double_d;
-	int_b = bmfs_header_write(long_c,long_d);
-
-	unsigned_int_b = unsigned_int_c;
-	int_c = bmfs_allocate(double_a,short_a,float_a);
-
-	short_a = short_a + short_a;
-	short_b = short_a;
-	bmfs_entry_set_type(long_d,long_b);
-
-	int_c = bmfs_disk_seek(unsigned_int_c,short_a,int_a);
-
-	double_c = sinh ( double_a ) ;
-	char_d = char_a * char_c;
-	if(1)
-	{
-		return int_d;
-	}
-	double_b = tan ( double_c ) ;
-	char controller_b[5];
-	scanf("%5s", controller_b);
-	if( controller_b >"W3u%x" )
-	{
-		return int_d;
-	}
-	bmfs_entry_init(char_a);
-
-	double_c = log ( double_c ) ;
-	if(1)
-	{
-		return int_e;
-	}
-	double_e = ldexp ( double_e , int_e ) ;
-	char controller_d[4];
-	scanf("%4s", controller_d);
-	if( controller_d >"NIHx" )
-	{
-		return int_b;
-	}
-	int_d = bmfs_entry_write(double_a,unsigned_int_a);
-
-	double_c = atan ( double_b ) ;
-	double_f = double_c / double_e;
-	double_b = atan2 ( double_e , double_e ) ;
-	if(1)
-	{
-		return int_b;
-	}
-	double_g = atan2 ( double_e , double_a ) ;
-	if(1)
-	{
-		return int_c;
-	}
-	return int_e;
-	bmfs_table_set_max_offset(double_f,float_b);
-
-}
-void bmfs_table_set_block_size( unsigned int parameter_1,int parameter_2)
-{
-	char controller_a[4];
-	scanf("%4s", controller_a);
-	if( controller_a >"t8Gm" )
-	{
-		double double_a = 0;
-		double_a = sqrt ( double_a ) ;
-	}
-}
-void bmfs_set_block_size( double parameter_1,char parameter_2)
-{
-	int int_a = 0;
-	unsigned int unsigned_int_a = 0;
-	long long_a = 0;
-	long long_b = 0;
-	int int_b = 0;
-	char controller_a[1];
-	scanf("%1s", controller_a);
-	if( controller_a <"t" )
-	{
-		int int_a = 0;
-		unsigned int unsigned_int_a = 0;
-		long long_a = 0;
-		long long_b = 0;
-		int int_b = 0;
-		long_a = long_b;
-		int_b = int_a * int_b;
-	}
-	bmfs_table_set_block_size(unsigned_int_a,int_a);
-
-}
-int bmfs_disk_write( double parameter_1,short parameter_2,int parameter_3,long parameter_4)
-{
-	int int_a = 0;
-	char controller_a[3];
-	scanf("%3s", controller_a);
-	if( controller_a >"GD," )
-	{
-		return int_a;
-	}
-	return int_a;
-}
-short bmfs_crc32( float parameter_1,long parameter_2,short parameter_3)
-{
-	unsigned int unsigned_int_a = 0;
-	double double_a = 0;
-	short short_a = 0;
-	double double_b = 0;
-	double double_c = 0;
-	unsigned_int_a = unsigned_int_a + unsigned_int_a;
-	double_a = ceil ( double_a ) ;
-	int looper_a = 0;
-	while(looper_a < 9)
-	{
-		unsigned int unsigned_int_a = 0;
-		double double_a = 0;
-		short short_a = 0;
-		double double_b = 0;
-		double double_c = 0;
-		looper_a += 1;
-		double_b = sqrt ( double_c ) ;
-	}
-	return short_a;
-}
-long bmfs_decode_uint32( unsigned int parameter_1)
-{
-	int int_a = 0;
-	int int_b = 0;
-	double double_a = 0;
-	double double_b = 0;
-	char char_a = 0;
-	unsigned int unsigned_int_a = 0;
-	unsigned int unsigned_int_b = 0;
-	double double_c = 0;
-	long long_a = 0;
-	int_b = int_a / int_a;
-	double_a = log ( double_b ) ;
-	char_a = char_a;
-	double_a = tanh ( double_a ) ;
-	unsigned_int_b = unsigned_int_a - unsigned_int_b;
-	double_a = double_c;
-	return long_a;
-}
-unsigned int bmfs_decode_uint64( double parameter_1)
-{
-	double double_a = 0;
-	int int_a = 0;
-	double double_b = 0;
-	double double_c = 0;
-	long long_a = 0;
-	long long_b = 0;
-	long long_c = 0;
-	unsigned int unsigned_int_a = 0;
-	unsigned int unsigned_int_b = 0;
-	int int_b = 0;
-	double double_d = 0;
-	double double_e = 0;
-	double double_f = 0;
-	unsigned int unsigned_int_c = 0;
-	unsigned int unsigned_int_d = 0;
-	double_a = ldexp ( double_a , int_a ) ;
-	double_b = asin ( double_c ) ;
-	long_b = long_a - long_b;
-	long_a = long_c;
-	unsigned_int_a = unsigned_int_b;
-	int_b = int_a * int_b;
-	double_d = ldexp ( double_e , int_b ) ;
-	int_a = int_a - int_b;
-	double_a = cosh ( double_f ) ;
-	unsigned_int_c = unsigned_int_b;
-	return unsigned_int_d;
-}
-int bmfs_disk_read( long parameter_1,short parameter_3,int parameter_4)
-{
-	int int_a = 0;
-	if(1)
-	{
-		return int_a;
-	}
-	return int_a;
-}
-int bmfs_header_read( double parameter_1,short parameter_2)
-{
-	int int_a = 0;
-	long long_a = 0;
-	short short_a = 0;
-	int int_b = 0;
-	unsigned int unsigned_int_a = 0;
-	double double_a = 0;
-	double double_b = 0;
-	float float_a = 0;
-	float float_b = 0;
-	short short_b = 0;
-	long long_b = 0;
-	double double_c = 0;
-	double double_d = 0;
-	double double_e = 0;
-	char char_a = 0;
-	char char_b = 0;
-	float float_c = 0;
-	float float_d = 0;
-	double double_f = 0;
-	int int_c = 0;
-	int int_d = 0;
-	double double_g = 0;
-	unsigned int unsigned_int_b = 0;
-	int int_e = 0;
-	int_a = bmfs_disk_read(long_a,short_a,int_b);
-
-	long_a = bmfs_decode_uint32(unsigned_int_a);
-
-	double_a = double_b;
-	float_a = float_a / float_b;
-	short_b = bmfs_crc32(float_b,long_b,short_a);
-
-	double_b = pow ( double_c , double_a ) ;
-	char controller_a[3];
-	scanf("%3s", controller_a);
-	if( controller_a >"2b!" )
-	{
-		return int_a;
+		int int_1 = 0;
+		double double_1 = 0;
+		double double_2 = 0;
+		int int_2 = 0;
+		int int_3 = 0;
+		short short_1 = 0;
+		float float_1 = 0;
+		char char_1 = 0;
+		char char_2 = 0;
+		double double_3 = 0;
+		int int_4 = 0;
+		float float_2 = 0;
+		double double_4 = 0;
+		int int_5 = 0;
+		unsigned int unsigned_int_1 = 0;
+		unsigned int unsigned_int_2 = 0;
+		double double_5 = 0;
+		double double_6 = 0;
+		double_5 = tanh ( double_6 ) ;
 	}
 	if(1)
 	{
-		return int_b;
+		return int_1;
 	}
-	double_a = ceil ( double_a ) ;
-	double_b = log ( double_d ) ;
-	double_d = pow ( double_b , double_c ) ;
-	float_a = float_b;
-	long_a = long_a;
-	double_e = ceil ( double_a ) ;
-	char_a = char_a + char_b;
-	double_c = tanh ( double_b ) ;
-	float_b = float_c + float_d;
-	double_a = fmod ( double_d , double_c ) ;
-	char_a = char_a / char_b;
-	long_b = long_b;
-	double_a = double_b * double_b;
-	double_d = fabs ( double_a ) ;
-	double_a = ldexp ( double_f , int_a ) ;
-	int_c = int_d;
-	double_g = cosh ( double_e ) ;
-	double_d = double_b + double_d;
-	unsigned_int_a = bmfs_decode_uint64(double_a);
+	int_5 = bmfs_table_previous();
 
-	unsigned_int_b = unsigned_int_b;
-	double_f = asin ( double_c ) ;
+	unsigned_int_1 = unsigned_int_2;
 	if(1)
 	{
-		return int_d;
+		return int_4;
 	}
-	return int_e;
+	bmfs_table_hide_deleted();
+
+	double_2 = sinh ( double_1 ) ;
+	return int_4;
 }
-int bmfs_disk_seek( unsigned int parameter_1,short parameter_2,int parameter_3)
+int bmfs_allocate( long parameter_1,unsigned int parameter_2,unsigned int parameter_3)
 {
-	int int_a = 0;
-	int int_b = 0;
-	char controller_a[3];
-	scanf("%3s", controller_a);
-	if( controller_a >"F7 " )
+	int int_1 = 0;
+	long long_1 = 0;
+	long long_2 = 0;
+	char char_1 = 0;
+	return int_1;
+	int_1 = bmfs_table_alloc(long_1,long_2,char_1);
+
+}
+void bmfs_entry_set_type( char parameter_1,short parameter_2)
+{
+	double double_1 = 0;
+	double double_2 = 0;
+	double double_3 = 0;
+	double_1 = tanh ( double_1 ) ;
 	{
-		return int_a;
+		double double_1 = 0;
+		double double_2 = 0;
+		double double_3 = 0;
+		double_2 = log ( double_1 ) ;
+		double_1 = log ( double_3 ) ;
 	}
-	return int_b;
+}
+void bmfs_entry_init( double parameter_1)
+{
+	double double_1 = 0;
+	double double_2 = 0;
+	char char_1 = 0;
+	double double_3 = 0;
+	unsigned int unsigned_int_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	for(int looper_1=0; looper_1<5;looper_1++)
+	{
+		double_1 = floor ( double_1 ) ;
+	}
+	double_2 = sinh ( double_2 ) ;
+	char_1 = char_1 / char_1;
+	double_3 = atan ( double_2 ) ;
+	double_3 = asin ( double_1 ) ;
+	double_3 = cos ( double_3 ) ;
+	double_2 = double_1;
+	unsigned_int_2 = unsigned_int_1 / unsigned_int_1;
+	double_3 = log10 ( double_1 ) ;
+	double_2 = tanh ( double_3 ) ;
+}
+void bmfs_table_set_max_offset( unsigned int parameter_1,int parameter_2)
+{
+	double double_1 = 0;
+	double double_2 = 0;
+	double_1 = log ( double_2 ) ;
+}
+void bmfs_table_set_min_offset( short parameter_1,short parameter_2)
+{
+	int int_1 = 0;
+	int int_2 = 0;
+	int_2 = int_1 - int_1;
+}
+void bmfs_table_set_offset( long parameter_1,short parameter_2)
+{
+	double double_1 = 0;
+	double double_2 = 0;
+	double_1 = tanh ( double_2 ) ;
+}
+int bmfs_format( char parameter_1,long parameter_2)
+{
+	long long_1 = 0;
+	long long_2 = 0;
+	long long_3 = 0;
+	unsigned int unsigned_int_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	short short_1 = 0;
+	char char_1 = 0;
+	char char_2 = 0;
+	int int_1 = 0;
+	unsigned int unsigned_int_3 = 0;
+	short short_2 = 0;
+	double double_1 = 0;
+	double double_2 = 0;
+	int int_2 = 0;
+	double double_3 = 0;
+	unsigned int unsigned_int_4 = 0;
+	double double_4 = 0;
+	unsigned int unsigned_int_5 = 0;
+	double double_5 = 0;
+	int int_3 = 0;
+	float float_1 = 0;
+	int int_4 = 0;
+	int int_5 = 0;
+	char char_3 = 0;
+	long_3 = long_1 - long_2;
+	unsigned_int_2 = unsigned_int_1 - unsigned_int_1;
+	bmfs_table_set_min_offset(short_1,short_1);
+
+	char_1 = char_2;
+	int_1 = bmfs_table_save_all(long_3);
+
+	int_1 = bmfs_header_write(unsigned_int_3,short_2);
+
+	double_2 = double_1 * double_2;
+	int_1 = bmfs_disk_seek(long_2,double_2,int_2);
+
+	int_1 = bmfs_entry_write(unsigned_int_3,int_2);
+
+	double_3 = log10 ( double_1 ) ;
+	bmfs_table_set_offset(long_3,short_2);
+
+	int_1 = int_2 + int_1;
+	int_2 = bmfs_allocate(long_3,unsigned_int_2,unsigned_int_3);
+
+	double_3 = log10 ( double_1 ) ;
+	unsigned_int_4 = unsigned_int_2 / unsigned_int_4;
+	double_2 = atan ( double_2 ) ;
+	double_2 = sqrt ( double_4 ) ;
+	unsigned_int_5 = unsigned_int_4 - unsigned_int_3;
+	char controller_1[1];
+	scanf("%1s", controller_1);
+	if( strcmp( controller_1, "M") < 0)
+	{
+		return int_2;
+	}
+	double_1 = ldexp ( double_5 , int_3 ) ;
+	char controller_2[5];
+	scanf("%5s", controller_2);
+	if( strcmp( controller_2, "/1x]&") < 0)
+	{
+		return int_3;
+	}
+	double_5 = double_4;
+	char controller_3[2];
+	scanf("%2s", controller_3);
+	if( strcmp( controller_3, "TK") < 0)
+	{
+		return int_1;
+	}
+	float_1 = float_1 * float_1;
+	if(1)
+	{
+		return int_4;
+	}
+	bmfs_table_set_max_offset(unsigned_int_3,int_3);
+
+	double_5 = atan2 ( double_1 , double_2 ) ;
+	bmfs_entry_init(double_1);
+
+	double_3 = cosh ( double_4 ) ;
+	double_2 = atan ( double_1 ) ;
+	char controller_5[4];
+	scanf("%4s", controller_5);
+	if( strcmp( controller_5, "}hBf") > 0)
+	{
+		return int_1;
+	}
+	double_1 = double_3 / double_4;
+	if(1)
+	{
+		return int_3;
+	}
+	return int_5;
+	bmfs_entry_set_type(char_3,short_2);
+
+}
+void bmfs_table_set_block_size( unsigned int parameter_1,float parameter_2)
+{
+	if(1)
+	{
+		double double_1 = 0;
+		double double_2 = 0;
+		double_1 = sinh ( double_2 ) ;
+	}
+}
+void bmfs_set_block_size( char parameter_1,short parameter_2)
+{
+	unsigned int unsigned_int_1 = 0;
+	float float_1 = 0;
+	char char_1 = 0;
+	char char_2 = 0;
+	char char_3 = 0;
+	float float_2 = 0;
+	float float_3 = 0;
+	if(1)
+	{
+		unsigned int unsigned_int_1 = 0;
+		float float_1 = 0;
+		char char_1 = 0;
+		char char_2 = 0;
+		char char_3 = 0;
+		float float_2 = 0;
+		float float_3 = 0;
+		bmfs_table_set_block_size(unsigned_int_1,float_1);
+
+		char_3 = char_1 / char_2;
+		float_1 = float_2 - float_3;
+	}
+}
+int bmfs_disk_write( short parameter_1,unsigned int parameter_2,int parameter_3,unsigned int parameter_4)
+{
+	int int_1 = 0;
+	if(1)
+	{
+		return int_1;
+	}
+	return int_1;
+}
+short bmfs_crc32( char parameter_1,char parameter_2,double parameter_3)
+{
+	double double_1 = 0;
+	double double_2 = 0;
+	int int_1 = 0;
+	short short_1 = 0;
+	double double_3 = 0;
+	double_1 = log10 ( double_2 ) ;
+	int_1 = int_1;
+	int looper_1 = 0;
+	while(looper_1 < 10)
+	{
+		double double_1 = 0;
+		double double_2 = 0;
+		int int_1 = 0;
+		short short_1 = 0;
+		double double_3 = 0;
+		looper_1 += 1;
+		double_2 = atan ( double_3 ) ;
+	}
+	return short_1;
+}
+unsigned int bmfs_decode_uint32( short parameter_1)
+{
+	double double_1 = 0;
+	double double_2 = 0;
+	double double_3 = 0;
+	unsigned int unsigned_int_1 = 0;
+	double_1 = fmod ( double_2 , double_1 ) ;
+	double_2 = sinh ( double_2 ) ;
+	double_2 = atan ( double_2 ) ;
+	double_1 = exp ( double_1 ) ;
+	double_1 = sinh ( double_1 ) ;
+	double_3 = log10 ( double_1 ) ;
+	return unsigned_int_1;
+}
+char bmfs_decode_uint64( int parameter_1)
+{
+	double double_1 = 0;
+	char char_1 = 0;
+	char char_2 = 0;
+	char char_3 = 0;
+	long long_1 = 0;
+	double double_2 = 0;
+	double double_3 = 0;
+	int int_1 = 0;
+	double_1 = atan ( double_1 ) ;
+	char_3 = char_1 / char_2;
+	long_1 = long_1;
+	double_1 = ceil ( double_1 ) ;
+	double_1 = cosh ( double_2 ) ;
+	double_3 = atan ( double_3 ) ;
+	double_2 = sqrt ( double_2 ) ;
+	double_3 = fabs ( double_3 ) ;
+	double_3 = fmod ( double_1 , double_3 ) ;
+	double_3 = ldexp ( double_2 , int_1 ) ;
+	return char_1;
+}
+int bmfs_disk_read( double parameter_1,long parameter_3,double parameter_4)
+{
+	int int_1 = 0;
+	int int_2 = 0;
+	if(1)
+	{
+		return int_1;
+	}
+	return int_2;
+}
+int bmfs_header_read( long parameter_1,double parameter_2)
+{
+	double double_1 = 0;
+	double double_2 = 0;
+	double double_3 = 0;
+	int int_1 = 0;
+	int int_2 = 0;
+	long long_1 = 0;
+	double double_4 = 0;
+	double double_5 = 0;
+	long long_2 = 0;
+	float float_1 = 0;
+	long long_3 = 0;
+	short short_1 = 0;
+	char char_1 = 0;
+	double double_6 = 0;
+	int int_3 = 0;
+	int int_4 = 0;
+	char char_2 = 0;
+	unsigned int unsigned_int_1 = 0;
+	double double_7 = 0;
+	int int_5 = 0;
+	double_1 = acos ( double_1 ) ;
+	double_2 = log10 ( double_1 ) ;
+	double_1 = double_3;
+	if(1)
+	{
+		return int_1;
+	}
+	if(1)
+	{
+		return int_2;
+	}
+	long_1 = long_1;
+	double_2 = double_4;
+	double_4 = exp ( double_1 ) ;
+	int_1 = bmfs_disk_read(double_5,long_2,double_1);
+
+	float_1 = float_1;
+	long_2 = long_3 + long_3;
+	double_4 = double_2;
+	short_1 = bmfs_crc32(char_1,char_1,double_6);
+
+	int_3 = int_2 + int_1;
+	double_5 = tanh ( double_3 ) ;
+	int_4 = int_1 / int_2;
+	double_3 = ceil ( double_2 ) ;
+	double_6 = atan2 ( double_1 , double_2 ) ;
+	char_2 = bmfs_decode_uint64(int_4);
+
+	double_5 = pow ( double_6 , double_5 ) ;
+	double_3 = tanh ( double_3 ) ;
+	unsigned_int_1 = bmfs_decode_uint32(short_1);
+
+	double_1 = pow ( double_4 , double_5 ) ;
+	double_3 = tanh ( double_3 ) ;
+	double_6 = double_4 - double_2;
+	double_5 = double_1;
+	double_5 = pow ( double_4 , double_4 ) ;
+	double_5 = log10 ( double_5 ) ;
+	double_3 = floor ( double_7 ) ;
+	char controller_3[1];
+	scanf("%1s", controller_3);
+	if( strcmp( controller_3, "p") < 0)
+	{
+		return int_5;
+	}
+	return int_4;
+}
+int bmfs_disk_seek( long parameter_1,double parameter_2,int parameter_3)
+{
+	int int_1 = 0;
+	char controller_1[1];
+	scanf("%1s", controller_1);
+	if( strcmp( controller_1, "C") > 0)
+	{
+		return int_1;
+	}
+	return int_1;
 }
 int bmfs_check_signature( unsigned int parameter_1)
 {
-	int int_a = 0;
-	int int_b = 0;
-	unsigned int unsigned_int_a = 0;
-	short short_a = 0;
-	int int_c = 0;
-	double double_a = 0;
-	double double_b = 0;
-	unsigned int unsigned_int_b = 0;
-	double double_c = 0;
-	double double_d = 0;
-	int int_d = 0;
-	short short_b = 0;
+	int int_1 = 0;
+	unsigned int unsigned_int_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	long long_1 = 0;
+	double double_1 = 0;
+	long long_2 = 0;
+	double double_2 = 0;
+	int int_2 = 0;
+	long long_3 = 0;
+	long long_4 = 0;
+	int int_3 = 0;
+	char controller_1[5];
+	scanf("%5s", controller_1);
+	if( strcmp( controller_1, "L*gYq") > 0)
+	{
+		return int_1;
+	}
+	unsigned_int_1 = unsigned_int_1 * unsigned_int_2;
 	if(1)
 	{
-		return int_a;
+		return int_1;
 	}
-	int_b = bmfs_disk_seek(unsigned_int_a,short_a,int_c);
+	int_1 = bmfs_header_read(long_1,double_1);
 
-	double_a = log10 ( double_b ) ;
-	if(1)
-	{
-		return int_a;
-	}
-	unsigned_int_a = unsigned_int_b + unsigned_int_a;
-	unsigned_int_b = unsigned_int_b - unsigned_int_b;
-	double_c = fabs ( double_d ) ;
-	char controller_c[4];
-	scanf("%4s", controller_c);
-	if( strcmp( controller_c, "7M>K")==0)
-	{
-		return int_d;
-	}
-	if(1)
-	{
-		return int_d;
-	}
-	return int_a;
-	bmfs_header_init(short_b);
+	long_2 = long_2;
+	double_1 = tanh ( double_2 ) ;
+	int_2 = bmfs_disk_seek(long_3,double_1,int_2);
 
-	int_c = bmfs_header_read(double_a,short_b);
+	long_4 = long_3 / long_3;
+	char controller_3[5];
+	scanf("%5s", controller_3);
+	if( strcmp( controller_3, "b>V[=") < 0)
+	{
+		return int_2;
+	}
+	if(1)
+	{
+		return int_1;
+	}
+	return int_3;
+	bmfs_header_init();
 
 }
-short cmd_format( int parameter_1,int parameter_2,char parameter_3)
+long cmd_format( long parameter_1,int parameter_2,long parameter_3)
 {
-	float float_a = 0;
-	int int_a = 0;
-	int int_b = 0;
-	int int_c = 0;
-	unsigned int unsigned_int_a = 0;
-	unsigned int unsigned_int_b = 0;
-	char char_a = 0;
-	char char_b = 0;
-	short short_a = 0;
-	long long_a = 0;
-	double double_a = 0;
-	double double_b = 0;
-	double double_c = 0;
-	short short_b = 0;
-	short short_c = 0;
-	double double_d = 0;
-	long long_b = 0;
-	char char_c = 0;
-	float float_b = 0;
-	double double_e = 0;
-	short short_d = 0;
-	double double_f = 0;
-	short short_e = 0;
-	unsigned int unsigned_int_c = 0;
-	short short_f = 0;
-	int int_d = 0;
-	double double_g = 0;
-	short short_g = 0;
-	double double_h = 0;
-	short short_h = 0;
-	float float_c = 0;
-	float float_d = 0;
-	float_a = float_a + float_a;
-	int_c = int_a * int_b;
-	unsigned_int_b = unsigned_int_a / unsigned_int_a;
-	char_a = char_a / char_b;
+	int int_1 = 0;
+	char char_1 = 0;
+	long long_1 = 0;
+	int int_2 = 0;
+	double double_1 = 0;
+	double double_2 = 0;
+	unsigned int unsigned_int_1 = 0;
+	double double_3 = 0;
+	long long_2 = 0;
+	long long_3 = 0;
+	double double_4 = 0;
+	char char_2 = 0;
+	long long_4 = 0;
+	double double_5 = 0;
+	double double_6 = 0;
+	unsigned int unsigned_int_2 = 0;
+	char char_3 = 0;
+	long long_5 = 0;
+	long long_6 = 0;
+	long long_7 = 0;
+	int int_3 = 0;
+	short short_1 = 0;
+	unsigned int unsigned_int_3 = 0;
+	char char_4 = 0;
+	unsigned int unsigned_int_4 = 0;
+	short short_2 = 0;
+	short short_3 = 0;
+	double double_7 = 0;
+	double double_8 = 0;
+	float float_1 = 0;
+	long long_9 = 0;
+	long long_10 = 0;
+	long long_8 = 0;
+	int_1 = bmfs_size_parse(char_1,int_1);
+
+	long_1 = long_1 / long_1;
+	int_2 = bmfs_disk_seek(long_1,double_1,int_1);
+
+	double_1 = double_1;
+	double_2 = ceil ( double_2 ) ;
+	double_2 = cos ( double_1 ) ;
 	if(1)
 	{
-		short_a = short_a;
-		return short_a;
+		int_1 = bmfs_check_signature(unsigned_int_1);
+
+		double_1 = double_2 + double_3;
+		return long_2;
 	}
 	if(1)
 	{
-		int_a = bmfs_format(int_a,long_a);
-
-		double_a = double_b;
-		return short_a;
+		double_1 = double_3 * double_3;
+		return long_3;
 	}
-	int looper_a = 0;
-	while(looper_a < 9)
+	int looper_1 = 0;
+	while(looper_1 < 8)
 	{
-		looper_a += 1;
+		looper_1 += 1;
 		if(1)
 		{
-			double_c = sqrt ( double_a ) ;
-		}
-		char controller_d[3];
-		scanf("%3s", controller_d);
-		if( controller_d <";|3" )
-		{
-			if(1)
-			{
-				unsigned_int_b = unsigned_int_a;
-				return short_b;
-			}
-			if(1)
-			{
-				double_c = atan ( double_a ) ;
-				return short_c;
-			}
-			double_c = log10 ( double_d ) ;
+			double_1 = sqrt ( double_4 ) ;
 		}
 		if(1)
 		{
-			float float_a = 0;
-			int int_a = 0;
-			int int_b = 0;
-			int int_c = 0;
-			unsigned int unsigned_int_a = 0;
-			unsigned int unsigned_int_b = 0;
-			char char_a = 0;
-			char char_b = 0;
-			short short_a = 0;
-			long long_a = 0;
-			double double_a = 0;
-			double double_b = 0;
-			double double_c = 0;
-			short short_b = 0;
-			short short_c = 0;
-			double double_d = 0;
-			long long_b = 0;
-			char char_c = 0;
-			float float_b = 0;
-			double double_e = 0;
-			short short_d = 0;
-			double double_f = 0;
-			short short_e = 0;
-			unsigned int unsigned_int_c = 0;
-			short short_f = 0;
-			int int_d = 0;
-			double double_g = 0;
-			short short_g = 0;
-			double double_h = 0;
-			short short_h = 0;
-			float float_c = 0;
-			float float_d = 0;
 			if(1)
 			{
-				double_c = atan2 ( double_c , double_c ) ;
-				return short_a;
-			}
-			if(1)
-			{
-				double_c = is_opt(long_b,char_c,float_b);
+				int_1 = bmfs_format(char_2,long_2);
 
-				double_e = sqrt ( double_e ) ;
-				return short_d;
+				double_1 = cosh ( double_1 ) ;
+				return long_1;
 			}
-			float_c = float_b;
+			if(1)
+			{
+				double_3 = sqrt ( double_3 ) ;
+				return long_4;
+			}
+			int_2 = int_2 / int_2;
 		}
 		if(1)
 		{
-			int_b = bmfs_disk_write(double_d,short_a,int_c,long_b);
-
-			double_e = sinh ( double_f ) ;
+			if(1)
+			{
+				double_5 = double_5 - double_6;
+				return long_2;
+			}
+			if(1)
+			{
+				unsigned_int_1 = unsigned_int_2;
+				return long_3;
+			}
+			double_3 = floor ( double_5 ) ;
+		}
+		if(1)
+		{
+			char_3 = char_1 * char_1;
 		}
 		else
 		{
-			double_d = double_e;
-			return short_b;
+			double_3 = floor ( double_4 ) ;
+			return long_5;
 		}
-		double_f = sinh ( double_d ) ;
+		long_6 = long_7;
 	}
-	char_c = char_b + char_a;
-	if(1)
-	{
-		int_b = int_a - int_a;
-		return short_e;
-	}
-	if(1)
-	{
-		unsigned_int_a = unsigned_int_a;
-		return short_e;
-	}
-	int_b = bmfs_size_bytes(short_a,unsigned_int_c);
+	int_3 = bmfs_disk_write(short_1,unsigned_int_3,int_2,unsigned_int_2);
 
-	int_a = bmfs_check_signature(unsigned_int_c);
-
-	short_b = short_c * short_f;
+	double_6 = ldexp ( double_2 , int_2 ) ;
 	if(1)
 	{
-		double_e = pow ( double_a , double_a ) ;
-		return short_b;
+		double_1 = tan ( double_4 ) ;
+		return long_4;
 	}
 	if(1)
 	{
-		int_d = bmfs_size_parse(double_e,short_e);
+		char_4 = is_opt(unsigned_int_4,char_1,short_2);
 
-		bmfs_set_block_size(double_g,char_a);
+		short_3 = short_3 + short_2;
+		return long_6;
+	}
+	bmfs_set_block_size(char_2,short_3);
 
-		double_a = double_b;
-		return short_a;
+	double_6 = log ( double_2 ) ;
+	char controller_13[3];
+	scanf("%3s", controller_13);
+	if( strcmp( controller_13, "]w&") < 0)
+	{
+		double_6 = atan ( double_7 ) ;
+		return long_7;
 	}
 	if(1)
 	{
-		float float_a = 0;
-		int int_a = 0;
-		int int_b = 0;
-		int int_c = 0;
-		unsigned int unsigned_int_a = 0;
-		unsigned int unsigned_int_b = 0;
-		char char_a = 0;
-		char char_b = 0;
-		short short_a = 0;
-		long long_a = 0;
-		double double_a = 0;
-		double double_b = 0;
-		double double_c = 0;
-		short short_b = 0;
-		short short_c = 0;
-		double double_d = 0;
-		long long_b = 0;
-		char char_c = 0;
-		float float_b = 0;
-		double double_e = 0;
-		short short_d = 0;
-		double double_f = 0;
-		short short_e = 0;
-		unsigned int unsigned_int_c = 0;
-		short short_f = 0;
-		int int_d = 0;
-		double double_g = 0;
-		short short_g = 0;
-		double double_h = 0;
-		short short_h = 0;
-		float float_c = 0;
-		float float_d = 0;
-		float_a = float_d;
-		return short_f;
+		double_2 = fmod ( double_7 , double_5 ) ;
+		return long_1;
 	}
-	double_e = log ( double_e ) ;
 	if(1)
 	{
-		double_g = atan2 ( double_e , double_g ) ;
-		double_e = fmod ( double_a , double_e ) ;
-		return short_g;
+		double_6 = floor ( double_8 ) ;
+		return long_7;
 	}
-	double_e = pow ( double_f , double_f ) ;
-	char controller_q[4];
-	scanf("%4s", controller_q);
-	if( controller_q <"$G_X" )
-	{
-		return short_b;
-	}
-	double_b = double_a - double_h;
+	double_5 = log10 ( double_3 ) ;
 	if(1)
 	{
-		return short_c;
+		int int_1 = 0;
+		char char_1 = 0;
+		long long_1 = 0;
+		int int_2 = 0;
+		double double_1 = 0;
+		double double_2 = 0;
+		unsigned int unsigned_int_1 = 0;
+		double double_3 = 0;
+		long long_2 = 0;
+		long long_3 = 0;
+		double double_4 = 0;
+		char char_2 = 0;
+		long long_4 = 0;
+		double double_5 = 0;
+		double double_6 = 0;
+		unsigned int unsigned_int_2 = 0;
+		char char_3 = 0;
+		long long_5 = 0;
+		long long_6 = 0;
+		long long_7 = 0;
+		int int_3 = 0;
+		short short_1 = 0;
+		unsigned int unsigned_int_3 = 0;
+		char char_4 = 0;
+		unsigned int unsigned_int_4 = 0;
+		short short_2 = 0;
+		short short_3 = 0;
+		double double_7 = 0;
+		double double_8 = 0;
+		float float_1 = 0;
+		long long_9 = 0;
+		long long_10 = 0;
+		long long_8 = 0;
+		long_3 = long_8;
+		double_6 = tan ( double_8 ) ;
+		return long_3;
 	}
-	int_d = int_d;
-	double_g = asin ( double_e ) ;
+	double_6 = double_2;
 	if(1)
 	{
-		return short_c;
+		return long_5;
 	}
-	return short_h;
-	int_c = bmfs_disk_seek(unsigned_int_c,short_b,int_b);
-
-}
-void bmfs_table_set_disk( unsigned int parameter_1,short parameter_2)
-{
-	char controller_a[3];
-	scanf("%3s", controller_a);
-	if( controller_a >"E~y" )
+	float_1 = float_1;
+	char controller_18[1];
+	scanf("%1s", controller_18);
+	if( strcmp( controller_18, "n") < 0)
 	{
-		double double_a = 0;
-		double_a = tanh ( double_a ) ;
+		return long_9;
 	}
-}
-void bmfs_set_disk( short parameter_1,char parameter_2)
-{
-	unsigned int unsigned_int_a = 0;
-	short short_a = 0;
-	double double_a = 0;
-	unsigned int unsigned_int_b = 0;
+	int_1 = bmfs_size_bytes(char_3,float_1);
+
+	double_4 = cosh ( double_3 ) ;
+	double_2 = acos ( double_1 ) ;
 	if(1)
 	{
-		unsigned int unsigned_int_a = 0;
-		short short_a = 0;
-		double double_a = 0;
-		unsigned int unsigned_int_b = 0;
-		double_a = fmod ( double_a , double_a ) ;
-		unsigned_int_b = unsigned_int_a / unsigned_int_a;
+		return long_10;
 	}
-	bmfs_table_set_disk(unsigned_int_a,short_a);
-
+	return long_1;
 }
-void bmfs_table_set_host( float parameter_1,double parameter_2)
+void bmfs_table_set_disk( double parameter_1,short parameter_2)
 {
-	double double_a = 0;
-	int int_a = 0;
-	long long_a = 0;
-	double double_b = 0;
-	int int_b = 0;
-	int int_c = 0;
-	char controller_a[2];
-	scanf("%2s", controller_a);
-	if( controller_a >"Fm" )
+	if(1)
 	{
-		double_a = log10 ( double_a ) ;
+		double double_1 = 0;
+		double_1 = fabs ( double_1 ) ;
 	}
-	bmfs_host_done(int_a,long_a);
-
-	double_a = sinh ( double_b ) ;
-	int_c = int_a * int_b;
 }
-void bmfs_host_done( int parameter_1,long parameter_2)
+void bmfs_set_disk( char parameter_1,float parameter_2)
 {
-	char controller_a[3];
-	scanf("%3s", controller_a);
-	if( controller_a <"Da$" )
+	double double_1 = 0;
+	short short_1 = 0;
+	double double_2 = 0;
+	char char_1 = 0;
+	char char_2 = 0;
+	char char_3 = 0;
+	if(1)
 	{
+		double double_1 = 0;
+		short short_1 = 0;
+		double double_2 = 0;
+		char char_1 = 0;
+		char char_2 = 0;
+		char char_3 = 0;
+		bmfs_table_set_disk(double_1,short_1);
+
+		double_2 = log ( double_1 ) ;
+		char_3 = char_1 - char_2;
 	}
 }
-void bmfs_set_host( long parameter_1,long parameter_2)
+void bmfs_table_set_host( long parameter_1,int parameter_2)
 {
-	float float_a = 0;
-	double double_a = 0;
-	int int_a = 0;
-	long long_a = 0;
-	double double_c = 0;
-	double double_d = 0;
-	double double_e = 0;
-	unsigned int unsigned_int_a = 0;
-	unsigned int unsigned_int_b = 0;
-	double double_b = 0;
-	char controller_a[3];
-	scanf("%3s", controller_a);
-	if( controller_a <"r;L" )
+	double double_1 = 0;
+	double double_2 = 0;
+	float float_1 = 0;
+	float float_2 = 0;
+	double double_3 = 0;
+	long long_1 = 0;
+	char controller_1[5];
+	scanf("%5s", controller_1);
+	if( strcmp( controller_1, "I(b@v") == 0)
 	{
-		float float_a = 0;
-		double double_a = 0;
-		int int_a = 0;
-		long long_a = 0;
-		double double_c = 0;
-		double double_d = 0;
-		double double_e = 0;
-		unsigned int unsigned_int_a = 0;
-		unsigned int unsigned_int_b = 0;
-		double double_b = 0;
-		bmfs_table_set_host(float_a,double_a);
-
-		double_a = asin ( double_b ) ;
+		double double_1 = 0;
+		double double_2 = 0;
+		float float_1 = 0;
+		float float_2 = 0;
+		double double_3 = 0;
+		long long_1 = 0;
+		long_1 = long_1 - long_1;
 	}
-	bmfs_host_done(int_a,long_a);
+	double_1 = double_1 / double_2;
+	bmfs_host_done(float_1,float_2);
 
-	double_c = double_d;
-	double_e = double_c * double_a;
-	unsigned_int_a = unsigned_int_b;
+	double_3 = exp ( double_1 ) ;
 }
-void bmfs_table_entry_init( short parameter_1)
+void bmfs_host_done( float parameter_1,float parameter_2)
 {
-	unsigned int unsigned_int_a = 0;
-	unsigned int unsigned_int_b = 0;
-	double double_a = 0;
-	int int_a = 0;
-	double double_b = 0;
-	unsigned_int_a = unsigned_int_a - unsigned_int_b;
-	double_a = ldexp ( double_a , int_a ) ;
-	double_a = cosh ( double_a ) ;
-	double_b = sinh ( double_a ) ;
-}
-void bmfs_table_init( int parameter_1)
-{
-	long long_a = 0;
-	long long_b = 0;
-	double double_a = 0;
-	double double_b = 0;
-	double double_c = 0;
-	char char_a = 0;
-	char char_b = 0;
-	double double_d = 0;
-	unsigned int unsigned_int_a = 0;
-	unsigned int unsigned_int_b = 0;
-	double double_e = 0;
-	unsigned int unsigned_int_c = 0;
-	short short_a = 0;
-	long_a = long_b;
-	double_c = double_a - double_b;
-	char_b = char_a - char_b;
-	double_c = atan ( double_a ) ;
-	double_d = ceil ( double_d ) ;
-	unsigned_int_a = unsigned_int_b;
-	double_d = double_e;
-	unsigned_int_c = unsigned_int_b - unsigned_int_a;
-	double_b = cos ( double_c ) ;
-	double_c = double_c;
-	bmfs_table_entry_init(short_a);
-
-}
-void bmfs_header_init( short parameter_1)
-{
-	double double_a = 0;
-	double double_b = 0;
-	unsigned int unsigned_int_a = 0;
-	unsigned int unsigned_int_b = 0;
-	int int_a = 0;
-	double double_c = 0;
-	int int_b = 0;
-	int int_c = 0;
-	double double_d = 0;
-	double double_e = 0;
-	double_a = sqrt ( double_a ) ;
-	double_a = double_a;
-	double_a = floor ( double_b ) ;
-	double_a = cosh ( double_a ) ;
-	unsigned_int_a = unsigned_int_a;
-	unsigned_int_b = unsigned_int_a;
-	int_a = int_a;
-	double_b = fmod ( double_a , double_a ) ;
-	double_b = asin ( double_c ) ;
-	double_a = floor ( double_a ) ;
-	double_a = double_a;
-	int_b = int_c;
-	double_e = double_d - double_d;
-	double_d = log10 ( double_b ) ;
-	double_b = ldexp ( double_d , int_c ) ;
-	unsigned_int_a = unsigned_int_a;
-	double_a = fabs ( double_d ) ;
-	double_e = log10 ( double_c ) ;
-}
-void bmfs_init( double parameter_1)
-{
-	unsigned int unsigned_int_a = 0;
-	double double_a = 0;
-	double double_b = 0;
-	double double_c = 0;
-	int int_a = 0;
-	double double_d = 0;
-	double double_e = 0;
-	long long_a = 0;
-	long long_b = 0;
-	short short_a = 0;
-	unsigned_int_a = unsigned_int_a + unsigned_int_a;
-	double_a = asin ( double_a ) ;
-	double_c = double_a + double_b;
-	bmfs_table_init(int_a);
-
-	double_d = fmod ( double_e , double_c ) ;
-	double_d = fabs ( double_b ) ;
-	long_a = long_b;
-	bmfs_header_init(short_a);
-
-	double_a = double_e - double_a;
-}
-void bmfs_filedisk_set_offset( int parameter_1,double parameter_2)
-{
-	double double_a = 0;
-	double double_b = 0;
-	double_a = log10 ( double_b ) ;
-}
-void bmfs_strerror( int parameter_1)
-{
+	char controller_1[1];
+	scanf("%1s", controller_1);
+	if( strcmp( controller_1, "7") < 0)
 	{
 	}
 }
-int bmfs_filedisk_open( unsigned int parameter_1,long parameter_2,float parameter_3)
+void bmfs_set_host( char parameter_1,long parameter_2)
 {
-	double double_a = 0;
-	double double_b = 0;
-	int int_a = 0;
-	double double_c = 0;
-	int int_b = 0;
-	long long_a = 0;
-	double_b = double_a / double_a;
-	char controller_a[1];
-	scanf("%1s", controller_a);
-	if( strcmp( controller_a, "e")==0)
+	long long_1 = 0;
+	int int_1 = 0;
+	float float_1 = 0;
+	double double_2 = 0;
+	double double_3 = 0;
+	double double_4 = 0;
+	double double_5 = 0;
+	double double_1 = 0;
+	char controller_1[1];
+	scanf("%1s", controller_1);
+	if( strcmp( controller_1, "~") < 0)
 	{
-		return int_a;
+		long long_1 = 0;
+		int int_1 = 0;
+		float float_1 = 0;
+		double double_2 = 0;
+		double double_3 = 0;
+		double double_4 = 0;
+		double double_5 = 0;
+		double double_1 = 0;
+		bmfs_table_set_host(long_1,int_1);
+
+		double_1 = floor ( double_1 ) ;
 	}
-	char controller_b[5];
-	scanf("%5s", controller_b);
-	if( controller_b <")Q  z" )
-	{
-		double_a = double_c;
-	}
-	double_c = tan ( double_b ) ;
-	return int_b;
-	long_a = to_bmfs_errno(int_a);
+	bmfs_host_done(float_1,float_1);
+
+	double_2 = ldexp ( double_3 , int_1 ) ;
+	double_3 = pow ( double_3 , double_4 ) ;
+	double_5 = floor ( double_4 ) ;
+}
+void bmfs_table_entry_init( int parameter_1)
+{
+	double double_1 = 0;
+	double double_2 = 0;
+	double double_3 = 0;
+	double double_4 = 0;
+	double_1 = double_2;
+	double_3 = double_3 + double_1;
+	double_3 = asin ( double_3 ) ;
+	double_4 = sqrt ( double_1 ) ;
+}
+void bmfs_table_init( short parameter_1)
+{
+	double double_1 = 0;
+	double double_2 = 0;
+	int int_1 = 0;
+	short short_1 = 0;
+	short short_2 = 0;
+	unsigned int unsigned_int_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	unsigned int unsigned_int_3 = 0;
+	long long_1 = 0;
+	long long_2 = 0;
+	int int_2 = 0;
+	double double_3 = 0;
+	char char_1 = 0;
+	char char_2 = 0;
+	double_1 = tanh ( double_2 ) ;
+	bmfs_table_entry_init(int_1);
+
+	short_1 = short_2;
+	unsigned_int_3 = unsigned_int_1 / unsigned_int_2;
+	long_1 = long_1 / long_2;
+	unsigned_int_3 = unsigned_int_3 / unsigned_int_1;
+	int_2 = int_2;
+	double_2 = fabs ( double_3 ) ;
+	char_2 = char_1 * char_2;
+	double_1 = log ( double_3 ) ;
+	double_3 = log ( double_2 ) ;
+}
+void bmfs_header_init()
+{
+	double double_1 = 0;
+	int int_1 = 0;
+	double double_2 = 0;
+	double double_3 = 0;
+	char char_1 = 0;
+	char char_2 = 0;
+	short short_1 = 0;
+	short short_2 = 0;
+	unsigned int unsigned_int_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	double double_4 = 0;
+	long long_1 = 0;
+	long long_2 = 0;
+	long long_3 = 0;
+	double double_5 = 0;
+	double double_6 = 0;
+	int int_2 = 0;
+	double double_7 = 0;
+	double double_8 = 0;
+	double double_9 = 0;
+	double_1 = ldexp ( double_1 , int_1 ) ;
+	double_1 = atan ( double_2 ) ;
+	double_3 = sqrt ( double_3 ) ;
+	char_1 = char_2;
+	short_1 = short_2;
+	unsigned_int_1 = unsigned_int_1 + unsigned_int_2;
+	double_4 = double_4;
+	long_1 = long_2;
+	long_1 = long_1;
+	long_3 = long_3;
+	double_1 = tanh ( double_5 ) ;
+	double_6 = double_2 * double_6;
+	double_2 = atan ( double_1 ) ;
+	double_6 = ldexp ( double_2 , int_2 ) ;
+	double_3 = log10 ( double_1 ) ;
+	double_8 = double_7 * double_2;
+	double_4 = sqrt ( double_6 ) ;
+	double_4 = fmod ( double_7 , double_9 ) ;
+}
+void bmfs_init()
+{
+	unsigned int unsigned_int_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	unsigned int unsigned_int_3 = 0;
+	double double_1 = 0;
+	double double_2 = 0;
+	double double_3 = 0;
+	unsigned int unsigned_int_4 = 0;
+	double double_4 = 0;
+	short short_1 = 0;
+	unsigned_int_3 = unsigned_int_1 + unsigned_int_2;
+	double_1 = atan ( double_2 ) ;
+	double_1 = log ( double_3 ) ;
+	bmfs_header_init();
+
+	double_3 = pow ( double_3 , double_3 ) ;
+	double_1 = floor ( double_1 ) ;
+	unsigned_int_3 = unsigned_int_4;
+	double_4 = double_4;
+	bmfs_table_init(short_1);
 
 }
-int bmfs_filedisk_write(unsigned int parameter_2,char parameter_3,int parameter_4)
+void bmfs_filedisk_set_offset( short parameter_1,double parameter_2)
 {
-	int int_a = 0;
-	unsigned int unsigned_int_a = 0;
-	double double_a = 0;
-	double double_b = 0;
-	int int_b = 0;
-	double double_c = 0;
-	if(1)
-	{
-		return int_a;
-	}
-	unsigned_int_a = unsigned_int_a;
-	if(1)
-	{
-		return int_a;
-	}
-	double_a = floor ( double_b ) ;
-	if(1)
-	{
-		int int_a = 0;
-		unsigned int unsigned_int_a = 0;
-		double double_a = 0;
-		double double_b = 0;
-		int int_b = 0;
-		double double_c = 0;
-		double_a = double_c * double_c;
-	}
-	return int_b;
+	long long_1 = 0;
+	long long_2 = 0;
+	long_1 = long_1 - long_2;
 }
-float bmfs_filedisk_read(unsigned int parameter_3,int parameter_4)
+float bmfs_strerror( int parameter_1)
 {
-	float float_a = 0;
-	double double_a = 0;
-	float float_b = 0;
-	long long_a = 0;
-	long long_b = 0;
-	double double_b = 0;
-	double double_c = 0;
-	if(1)
+	float float_1 = 0;
+	float float_2 = 0;
+	float float_3 = 0;
 	{
-		return float_a;
+		return float_1;
+		return float_1;
+		return float_1;
+		return float_2;
+		return float_1;
+		return float_1;
+		return float_2;
+		return float_2;
+		return float_1;
+		return float_1;
+		return float_2;
+		return float_2;
 	}
-	double_a = double_a;
-	char controller_b[4];
-	scanf("%4s", controller_b);
-	if( controller_b >"y[s>" )
-	{
-		return float_b;
-	}
-	long_b = long_a * long_b;
-	if(1)
-	{
-		float float_a = 0;
-		double double_a = 0;
-		float float_b = 0;
-		long long_a = 0;
-		long long_b = 0;
-		double double_b = 0;
-		double double_c = 0;
-		double_b = atan2 ( double_b , double_c ) ;
-	}
-	return float_b;
+	return float_3;
 }
-double bmfs_filedisk_tell(double parameter_2)
+int bmfs_filedisk_open( float parameter_1,char parameter_2,short parameter_3)
 {
-	double double_a = 0;
-	unsigned int unsigned_int_a = 0;
-	unsigned int unsigned_int_b = 0;
-	unsigned int unsigned_int_c = 0;
-	double double_b = 0;
-	double double_c = 0;
-	long long_a = 0;
-	int int_a = 0;
-	double double_d = 0;
-	double double_e = 0;
-	long long_b = 0;
+	double double_1 = 0;
+	double double_2 = 0;
+	int int_1 = 0;
+	int int_4 = 0;
+	char char_1 = 0;
+	short short_1 = 0;
+	int int_2 = 0;
+	int int_3 = 0;
+	double_1 = double_2;
 	if(1)
 	{
-		return double_a;
-	}
-	unsigned_int_c = unsigned_int_a - unsigned_int_b;
-	if(1)
-	{
-		return double_b;
-	}
-	double_c = sinh ( double_c ) ;
-	if(1)
-	{
-		double_a = sqrt ( double_a ) ;
+		return int_1;
 	}
 	if(1)
 	{
-		return double_a;
+		double double_1 = 0;
+		double double_2 = 0;
+		int int_1 = 0;
+		int int_4 = 0;
+		char char_1 = 0;
+		short short_1 = 0;
+		int int_2 = 0;
+		int int_3 = 0;
+		int_4 = int_2 - int_3;
 	}
-	long_a = to_bmfs_errno(int_a);
+	char_1 = to_bmfs_errno(int_4);
 
-	double_c = atan2 ( double_a , double_a ) ;
+	short_1 = short_1;
+	return int_4;
+}
+short bmfs_filedisk_write(int parameter_2,long parameter_3,float parameter_4)
+{
+	short short_1 = 0;
+	double double_1 = 0;
+	short short_2 = 0;
+	double double_2 = 0;
+	short short_3 = 0;
 	if(1)
 	{
-		return double_a;
+		return short_1;
+	}
+	double_1 = floor ( double_1 ) ;
+	char controller_2[1];
+	scanf("%1s", controller_2);
+	if( strcmp( controller_2, "_") > 0)
+	{
+		return short_2;
+	}
+	double_2 = tan ( double_1 ) ;
+	if(1)
+	{
+		double_1 = asin ( double_2 ) ;
+	}
+	return short_3;
+}
+long bmfs_filedisk_read(char parameter_3,int parameter_4)
+{
+	long long_1 = 0;
+	double double_1 = 0;
+	unsigned int unsigned_int_1 = 0;
+	int int_1 = 0;
+	int int_2 = 0;
+	if(1)
+	{
+		return long_1;
+	}
+	double_1 = exp ( double_1 ) ;
+	char controller_2[1];
+	scanf("%1s", controller_2);
+	if( strcmp( controller_2, "X") > 0)
+	{
+		return long_1;
+	}
+	unsigned_int_1 = unsigned_int_1;
+	if(1)
+	{
+		long long_1 = 0;
+		double double_1 = 0;
+		unsigned int unsigned_int_1 = 0;
+		int int_1 = 0;
+		int int_2 = 0;
+		int_1 = int_1 - int_2;
+	}
+	return long_1;
+}
+char bmfs_filedisk_tell(char parameter_2)
+{
+	char char_1 = 0;
+	long long_1 = 0;
+	char char_2 = 0;
+	float float_1 = 0;
+	float float_2 = 0;
+	double double_1 = 0;
+	double double_2 = 0;
+	char char_3 = 0;
+	char char_5 = 0;
+	unsigned int unsigned_int_3 = 0;
+	int int_1 = 0;
+	unsigned int unsigned_int_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	char char_4 = 0;
+	int int_2 = 0;
+	char controller_1[3];
+	scanf("%3s", controller_1);
+	if( strcmp( controller_1, "NZW") < 0)
+	{
+		return char_1;
+	}
+	long_1 = long_1;
+	if(1)
+	{
+		return char_2;
+	}
+	float_1 = float_2;
+	if(1)
+	{
+		char char_1 = 0;
+		long long_1 = 0;
+		char char_2 = 0;
+		float float_1 = 0;
+		float float_2 = 0;
+		double double_1 = 0;
+		double double_2 = 0;
+		char char_3 = 0;
+		char char_5 = 0;
+		unsigned int unsigned_int_3 = 0;
+		int int_1 = 0;
+		unsigned int unsigned_int_1 = 0;
+		unsigned int unsigned_int_2 = 0;
+		char char_4 = 0;
+		int int_2 = 0;
+		unsigned_int_1 = unsigned_int_2;
+	}
+	if(1)
+	{
+		return char_2;
+	}
+	double_1 = cos ( double_2 ) ;
+	if(1)
+	{
+		return char_2;
 	}
 	else
 	{
-		double double_a = 0;
-		unsigned int unsigned_int_a = 0;
-		unsigned int unsigned_int_b = 0;
-		unsigned int unsigned_int_c = 0;
-		double double_b = 0;
-		double double_c = 0;
-		long long_a = 0;
-		int int_a = 0;
-		double double_d = 0;
-		double double_e = 0;
-		long long_b = 0;
-		double_d = atan2 ( double_c , double_e ) ;
+		char char_1 = 0;
+		long long_1 = 0;
+		char char_2 = 0;
+		float float_1 = 0;
+		float float_2 = 0;
+		double double_1 = 0;
+		double double_2 = 0;
+		char char_3 = 0;
+		char char_5 = 0;
+		unsigned int unsigned_int_3 = 0;
+		int int_1 = 0;
+		unsigned int unsigned_int_1 = 0;
+		unsigned int unsigned_int_2 = 0;
+		char char_4 = 0;
+		int int_2 = 0;
+		char_3 = char_4;
 	}
 	if(1)
 	{
-		return double_d;
+		return char_5;
 	}
-	double_d = atan ( double_b ) ;
-	if(1)
+	unsigned_int_3 = unsigned_int_3;
+	char controller_7[3];
+	scanf("%3s", controller_7);
+	if( strcmp( controller_7, "8XW") > 0)
 	{
-		double double_a = 0;
-		unsigned int unsigned_int_a = 0;
-		unsigned int unsigned_int_b = 0;
-		unsigned int unsigned_int_c = 0;
-		double double_b = 0;
-		double double_c = 0;
-		long long_a = 0;
-		int int_a = 0;
-		double double_d = 0;
-		double double_e = 0;
-		long long_b = 0;
-		long_a = long_b;
-	}
-	return double_b;
-}
-long to_bmfs_errno( int parameter_1)
-{
-	long long_a = 0;
-	long long_b = 0;
-	long long_c = 0;
-	long long_d = 0;
-	long long_e = 0;
-	{
-		return long_a;
-		return long_b;
-		return long_a;
-		return long_c;
-		return long_d;
-		return long_e;
-		return long_a;
-		return long_a;
-		return long_d;
-		return long_d;
-		return long_a;
-	}
-}
-float bmfs_filedisk_seek(unsigned int parameter_2,int parameter_3)
-{
-	float float_a = 0;
-	double double_a = 0;
-	double double_b = 0;
-	long long_a = 0;
-	int int_a = 0;
-	float float_b = 0;
-	if(1)
-	{
-		return float_a;
-	}
-	double_a = acos ( double_b ) ;
-	if(1)
-	{
-		return float_a;
-	}
-	if(1)
-	{
-		double_b = log10 ( double_a ) ;
-		double_a = tanh ( double_b ) ;
-	}
-	if(1)
-	{
-		long_a = to_bmfs_errno(int_a);
+		char char_1 = 0;
+		long long_1 = 0;
+		char char_2 = 0;
+		float float_1 = 0;
+		float float_2 = 0;
+		double double_1 = 0;
+		double double_2 = 0;
+		char char_3 = 0;
+		char char_5 = 0;
+		unsigned int unsigned_int_3 = 0;
+		int int_1 = 0;
+		unsigned int unsigned_int_1 = 0;
+		unsigned int unsigned_int_2 = 0;
+		char char_4 = 0;
+		int int_2 = 0;
+		char_2 = to_bmfs_errno(int_1);
 
-		double_b = cos ( double_b ) ;
+		int_1 = int_2;
+	}
+	return char_3;
+}
+char to_bmfs_errno( int parameter_1)
+{
+	char char_1 = 0;
+	char char_2 = 0;
+	char char_3 = 0;
+	{
+		return char_1;
+		return char_2;
+		return char_2;
+		return char_1;
+		return char_2;
+		return char_1;
+		return char_3;
+		return char_1;
+		return char_3;
+		return char_3;
+		return char_2;
+	}
+}
+long bmfs_filedisk_seek(long parameter_2,int parameter_3)
+{
+	long long_1 = 0;
+	double double_1 = 0;
+	char char_1 = 0;
+	int int_1 = 0;
+	unsigned int unsigned_int_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	long long_2 = 0;
+	double double_2 = 0;
+	unsigned int unsigned_int_3 = 0;
+	if(1)
+	{
+		return long_1;
+	}
+	double_1 = tanh ( double_1 ) ;
+	if(1)
+	{
+		return long_1;
+	}
+	if(1)
+	{
+		long long_1 = 0;
+		double double_1 = 0;
+		char char_1 = 0;
+		int int_1 = 0;
+		unsigned int unsigned_int_1 = 0;
+		unsigned int unsigned_int_2 = 0;
+		long long_2 = 0;
+		double double_2 = 0;
+		unsigned int unsigned_int_3 = 0;
+		double_2 = tanh ( double_1 ) ;
+		char_1 = to_bmfs_errno(int_1);
+
+		unsigned_int_2 = unsigned_int_1 * unsigned_int_2;
+	}
+	if(1)
+	{
+		long long_1 = 0;
+		double double_1 = 0;
+		char char_1 = 0;
+		int int_1 = 0;
+		unsigned int unsigned_int_1 = 0;
+		unsigned int unsigned_int_2 = 0;
+		long long_2 = 0;
+		double double_2 = 0;
+		unsigned int unsigned_int_3 = 0;
+		unsigned_int_2 = unsigned_int_3 - unsigned_int_1;
 	}
 	else
 	{
-		return float_a;
+		return long_1;
 	}
 	if(1)
 	{
-		char controller_f[3];
-		scanf("%3s", controller_f);
-		if( controller_f <"-!q" )
+		if(1)
 		{
-			return float_b;
+			return long_1;
 		}
 	}
 	if(1)
 	{
-		return float_b;
+		return long_2;
 	}
 	else
 	{
 		if(1)
 		{
-			return float_b;
+			return long_2;
 		}
 	}
-	return float_b;
+	return long_1;
 }
-void bmfs_disk_init( int parameter_1)
+void bmfs_disk_init( unsigned int parameter_1)
 {
-	unsigned int unsigned_int_a = 0;
-	unsigned int unsigned_int_b = 0;
-	unsigned int unsigned_int_c = 0;
-	double double_a = 0;
-	double double_b = 0;
-	long long_a = 0;
-	int int_a = 0;
-	int int_b = 0;
-	unsigned_int_c = unsigned_int_a + unsigned_int_b;
-	double_a = tan ( double_b ) ;
-	double_a = log10 ( double_b ) ;
-	long_a = long_a;
-	int_a = int_b;
+	int int_1 = 0;
+	int int_2 = 0;
+	double double_1 = 0;
+	double double_2 = 0;
+	int_1 = int_2;
+	double_1 = log10 ( double_1 ) ;
+	double_1 = floor ( double_1 ) ;
+	double_2 = atan ( double_2 ) ;
+	double_1 = double_1 / double_1;
 }
-void bmfs_filedisk_init( short parameter_1)
+void bmfs_filedisk_init( double parameter_1)
 {
-	float float_a = 0;
-	unsigned int unsigned_int_a = 0;
-	int int_a = 0;
-	int int_b = 0;
-	char char_a = 0;
-	char char_b = 0;
-	short short_a = 0;
-	int int_c = 0;
-	double double_a = 0;
-	long long_a = 0;
-	double double_b = 0;
-	int int_d = 0;
-	int int_e = 0;
-	float_a = bmfs_filedisk_seek(unsigned_int_a,int_a);
+	short short_1 = 0;
+	int int_1 = 0;
+	long long_1 = 0;
+	float float_1 = 0;
+	double double_1 = 0;
+	double double_2 = 0;
+	short short_2 = 0;
+	char char_1 = 0;
+	char char_2 = 0;
+	int int_2 = 0;
+	long long_2 = 0;
+	double double_3 = 0;
+	unsigned int unsigned_int_1 = 0;
+	long long_3 = 0;
+	int int_3 = 0;
+	short_1 = bmfs_filedisk_write(int_1,long_1,float_1);
 
-	int_a = int_b + int_b;
-	bmfs_disk_init(int_a);
+	double_1 = pow ( double_2 , double_1 ) ;
+	short_2 = short_2;
+	char_1 = bmfs_filedisk_tell(char_2);
 
-	char_b = char_a + char_a;
-	short_a = short_a;
-	float_a = bmfs_filedisk_read(unsigned_int_a,int_c);
+	int_2 = int_1 / int_1;
+	double_1 = double_1;
+	double_2 = double_2 - double_1;
+	double_2 = exp ( double_2 ) ;
+	long_2 = bmfs_filedisk_read(char_1,int_2);
 
-	short_a = short_a;
-	double_a = double_a / double_a;
-	long_a = long_a;
-	double_b = atan ( double_b ) ;
-	double_a = bmfs_filedisk_tell(double_b);
+	double_1 = ceil ( double_3 ) ;
+	bmfs_disk_init(unsigned_int_1);
 
-	double_b = tan ( double_a ) ;
-	int_d = bmfs_filedisk_write(unsigned_int_a,char_a,int_e);
+	double_2 = atan ( double_2 ) ;
+	long_3 = bmfs_filedisk_seek(long_3,int_3);
 
 }
-double file_exists( short parameter_1)
+char file_exists( unsigned int parameter_1)
 {
-	double double_a = 0;
-	double double_b = 0;
-	short short_a = 0;
-	double_a = double_a - double_a;
-	char controller_a[4];
-	scanf("%4s", controller_a);
-	if(remainder_check(controller_a,100,4))
+	double double_1 = 0;
+	char char_1 = 0;
+	char char_2 = 0;
+	double_1 = fabs ( double_1 ) ;
+	if(1)
 	{
-		return double_b;
+		return char_1;
 	}
 	else
 	{
-		double double_a = 0;
-		double double_b = 0;
-		short short_a = 0;
-		short_a = short_a + short_a;
-		return double_b;
+		double double_1 = 0;
+		char char_1 = 0;
+		char char_2 = 0;
+		char_1 = char_2;
+		return char_1;
 	}
 }
-float print_version()
+double print_version()
 {
-	int int_a = 0;
-	int_a = int_a;
+	double double_1 = 0;
+	double double_2 = 0;
+	double_1 = double_2;
 }
-int print_usage( long parameter_1)
+unsigned int print_usage( unsigned int parameter_1)
 {
-	double double_a = 0;
-	double double_b = 0;
-	double double_c = 0;
-	double double_d = 0;
-	unsigned int unsigned_int_a = 0;
-	unsigned int unsigned_int_b = 0;
-	double double_e = 0;
-	double double_f = 0;
-	int int_a = 0;
-	int int_b = 0;
-	int int_c = 0;
-	unsigned int unsigned_int_c = 0;
-	unsigned int unsigned_int_d = 0;
-	long long_a = 0;
-	long long_b = 0;
-	double double_g = 0;
-	double double_h = 0;
-	float float_a = 0;
-	int int_d = 0;
-	int int_e = 0;
-	double double_i = 0;
-	double_a = sqrt ( double_b ) ;
-	double_c = tan ( double_b ) ;
-	double_c = tanh ( double_b ) ;
-	double_d = tanh ( double_a ) ;
-	double_d = sinh ( double_b ) ;
-	unsigned_int_b = unsigned_int_a / unsigned_int_a;
-	double_a = fabs ( double_e ) ;
-	double_d = acos ( double_d ) ;
-	unsigned_int_b = unsigned_int_a + unsigned_int_b;
-	double_e = acos ( double_f ) ;
-	int_c = int_a / int_b;
-	unsigned_int_d = unsigned_int_c * unsigned_int_a;
-	long_b = long_a * long_a;
-	double_g = atan ( double_h ) ;
-	long_a = long_a + long_a;
-	double_b = double_g + double_c;
-	float_a = float_a;
-	int_e = int_d - int_d;
-	double_f = asin ( double_g ) ;
-	double_f = ldexp ( double_a , int_a ) ;
-	double_h = floor ( double_h ) ;
-	double_e = tanh ( double_c ) ;
-	double_h = log10 ( double_i ) ;
-	double_b = cosh ( double_h ) ;
+	int int_1 = 0;
+	int int_2 = 0;
+	double double_1 = 0;
+	double double_2 = 0;
+	double double_3 = 0;
+	float float_1 = 0;
+	long long_1 = 0;
+	long long_2 = 0;
+	short short_1 = 0;
+	double double_4 = 0;
+	float float_2 = 0;
+	float float_3 = 0;
+	long long_3 = 0;
+	long long_4 = 0;
+	int int_3 = 0;
+	int int_4 = 0;
+	unsigned int unsigned_int_1 = 0;
+	double double_5 = 0;
+	short short_2 = 0;
+	int_1 = int_2;
+	double_1 = atan2 ( double_2 , double_3 ) ;
+	float_1 = float_1;
+	long_2 = long_1 - long_2;
+	short_1 = short_1;
+	double_3 = atan2 ( double_4 , double_1 ) ;
+	double_3 = double_1;
+	double_3 = asin ( double_3 ) ;
+	float_3 = float_2 + float_1;
+	double_2 = sinh ( double_1 ) ;
+	long_4 = long_3 * long_3;
+	double_1 = ceil ( double_1 ) ;
+	double_4 = double_3;
+	int_3 = int_3 - int_4;
+	unsigned_int_1 = unsigned_int_1;
+	long_2 = long_3;
+	double_5 = log ( double_4 ) ;
+	short_2 = short_1 / short_2;
+	double_2 = acos ( double_4 ) ;
+	double_2 = cos ( double_4 ) ;
+	int_3 = int_3;
+	double_2 = asin ( double_1 ) ;
+	double_2 = atan2 ( double_1 , double_4 ) ;
+	double_3 = cos ( double_3 ) ;
 }
-void print_help( float parameter_1,int parameter_2,float parameter_3)
+long print_help( char parameter_1,int parameter_2,short parameter_3)
 {
-	double double_a = 0;
-	int int_a = 0;
-	long long_a = 0;
-	char char_a = 0;
-	double double_b = 0;
-	short short_a = 0;
-	short short_b = 0;
-	double double_c = 0;
-	double double_d = 0;
-	unsigned int unsigned_int_a = 0;
-	unsigned int unsigned_int_b = 0;
-	unsigned int unsigned_int_c = 0;
-	float float_a = 0;
-	float float_b = 0;
-	float float_c = 0;
-	double double_e = 0;
-	char char_b = 0;
-	double double_f = 0;
-	double double_g = 0;
-	double double_h = 0;
-	double double_i = 0;
-	short short_c = 0;
-	double double_j = 0;
-	double double_k = 0;
-	char controller_a[3];
-	scanf("%3s", controller_a);
-	if( controller_a <"xdx" )
+	unsigned int unsigned_int_1 = 0;
+	long long_1 = 0;
+	double double_1 = 0;
+	double double_2 = 0;
+	unsigned int unsigned_int_2 = 0;
+	unsigned int unsigned_int_4 = 0;
+	int int_2 = 0;
+	double double_3 = 0;
+	double double_4 = 0;
+	double double_5 = 0;
+	double double_6 = 0;
+	unsigned int unsigned_int_3 = 0;
+	unsigned int unsigned_int_5 = 0;
+	short short_1 = 0;
+	double double_7 = 0;
+	short short_2 = 0;
+	int int_1 = 0;
+	short short_3 = 0;
+	int int_3 = 0;
+	double double_8 = 0;
+	short short_4 = 0;
+	double double_9 = 0;
+	float float_1 = 0;
+	unsigned int unsigned_int_6 = 0;
+	if(1)
 	{
-		double double_a = 0;
-		int int_a = 0;
-		long long_a = 0;
-		char char_a = 0;
-		double double_b = 0;
-		short short_a = 0;
-		short short_b = 0;
-		double double_c = 0;
-		double double_d = 0;
-		unsigned int unsigned_int_a = 0;
-		unsigned int unsigned_int_b = 0;
-		unsigned int unsigned_int_c = 0;
-		float float_a = 0;
-		float float_b = 0;
-		float float_c = 0;
-		double double_e = 0;
-		char char_b = 0;
-		double double_f = 0;
-		double double_g = 0;
-		double double_h = 0;
-		double double_i = 0;
-		short short_c = 0;
-		double double_j = 0;
-		double double_k = 0;
-		char_a = char_a;
+		unsigned_int_1 = unsigned_int_1;
+		return long_1;
 	}
-	double_a = sinh ( double_a ) ;
+	double_1 = asin ( double_2 ) ;
 	{
-		double double_a = 0;
-		int int_a = 0;
-		long long_a = 0;
-		char char_a = 0;
-		double double_b = 0;
-		short short_a = 0;
-		short short_b = 0;
-		double double_c = 0;
-		double double_d = 0;
-		unsigned int unsigned_int_a = 0;
-		unsigned int unsigned_int_b = 0;
-		unsigned int unsigned_int_c = 0;
-		float float_a = 0;
-		float float_b = 0;
-		float float_c = 0;
-		double double_e = 0;
-		char char_b = 0;
-		double double_f = 0;
-		double double_g = 0;
-		double double_h = 0;
-		double double_i = 0;
-		short short_c = 0;
-		double double_j = 0;
-		double double_k = 0;
-		double_b = acos ( double_b ) ;
-		short_b = short_a - short_b;
-		double_a = asin ( double_a ) ;
-		double_c = double_a;
-		double_a = ceil ( double_d ) ;
-		unsigned_int_c = unsigned_int_a / unsigned_int_b;
-		float_a = float_b;
-		double_b = ceil ( double_a ) ;
-		unsigned_int_b = unsigned_int_c;
-		double_a = ceil ( double_c ) ;
-		float_a = float_c;
-		double_c = cosh ( double_e ) ;
-		char_b = char_b;
-		double_b = double_c + double_a;
-		double_f = ceil ( double_e ) ;
-		double_g = cosh ( double_h ) ;
-		double_g = tan ( double_c ) ;
-		double_f = atan ( double_c ) ;
-		double_g = ldexp ( double_b , int_a ) ;
-		double_b = tan ( double_h ) ;
-		double_f = cos ( double_a ) ;
-		double_a = floor ( double_i ) ;
-		long_a = command_parse(long_a);
+		unsigned int unsigned_int_1 = 0;
+		long long_1 = 0;
+		double double_1 = 0;
+		double double_2 = 0;
+		unsigned int unsigned_int_2 = 0;
+		unsigned int unsigned_int_4 = 0;
+		int int_2 = 0;
+		double double_3 = 0;
+		double double_4 = 0;
+		double double_5 = 0;
+		double double_6 = 0;
+		unsigned int unsigned_int_3 = 0;
+		unsigned int unsigned_int_5 = 0;
+		short short_1 = 0;
+		double double_7 = 0;
+		short short_2 = 0;
+		int int_1 = 0;
+		short short_3 = 0;
+		int int_3 = 0;
+		double double_8 = 0;
+		short short_4 = 0;
+		double double_9 = 0;
+		float float_1 = 0;
+		unsigned int unsigned_int_6 = 0;
+		double_3 = acos ( double_2 ) ;
+		double_3 = log ( double_4 ) ;
+		double_1 = atan ( double_2 ) ;
+		double_1 = log10 ( double_2 ) ;
+		unsigned_int_2 = print_usage(unsigned_int_1);
 
-		short_c = short_c / short_b;
-		double_c = log10 ( double_a ) ;
-		double_b = cos ( double_d ) ;
-		int_a = print_usage(long_a);
+		double_3 = pow ( double_5 , double_3 ) ;
+		double_6 = asin ( double_1 ) ;
+		double_6 = log ( double_2 ) ;
+		unsigned_int_2 = unsigned_int_2 / unsigned_int_3;
+		unsigned_int_5 = unsigned_int_4 - unsigned_int_3;
+		short_1 = short_1 - short_1;
+		double_4 = atan2 ( double_7 , double_7 ) ;
+		double_6 = double_7 + double_5;
+		short_2 = short_2;
+		int_2 = int_1 + int_1;
+		short_1 = short_3 * short_1;
+		int_2 = command_parse(unsigned_int_4);
 
-		double_j = fabs ( double_f ) ;
-		double_c = floor ( double_b ) ;
-		double_f = double_b + double_k;
+		int_2 = int_3;
+		double_8 = log10 ( double_1 ) ;
+		double_3 = fabs ( double_6 ) ;
+		double_3 = log10 ( double_4 ) ;
+		short_4 = short_4 - short_4;
+		short_3 = short_1 - short_1;
+		double_9 = acos ( double_4 ) ;
+		double_1 = double_3 + double_3;
+		int_3 = int_2 - int_2;
+		double_7 = pow ( double_8 , double_1 ) ;
+		float_1 = float_1;
+		double_8 = sqrt ( double_5 ) ;
+		unsigned_int_5 = unsigned_int_6 - unsigned_int_3;
 	}
 }
-long command_parse( long parameter_1)
+int command_parse( unsigned int parameter_1)
 {
-	long long_a = 0;
-	long long_b = 0;
-	long long_c = 0;
-	long long_d = 0;
-	long long_e = 0;
-	long long_f = 0;
-	long long_g = 0;
-	long long_h = 0;
-	char controller_a[4];
-	scanf("%4s", controller_a);
-	if( controller_a >"UJ*9" )
+	int int_1 = 0;
+	int int_2 = 0;
+	int int_3 = 0;
+	int int_4 = 0;
+	int int_5 = 0;
+	int int_6 = 0;
+	if(1)
 	{
-		return long_a;
+		return int_1;
 	}
 	if(1)
 	{
-		return long_b;
+		return int_2;
 	}
 	if(1)
 	{
-		return long_c;
+		return int_2;
 	}
 	if(1)
 	{
-		return long_c;
+		return int_3;
 	}
 	if(1)
 	{
-		return long_d;
+		return int_4;
+	}
+	char controller_6[3];
+	scanf("%3s", controller_6);
+	if( strcmp( controller_6, "w7L") < 0)
+	{
+		return int_4;
 	}
 	if(1)
 	{
-		return long_c;
+		return int_1;
 	}
 	if(1)
 	{
-		return long_d;
+		return int_3;
 	}
 	if(1)
 	{
-		return long_e;
+		return int_3;
 	}
 	if(1)
 	{
-		return long_f;
+		return int_5;
 	}
 	if(1)
 	{
-		return long_g;
+		return int_4;
 	}
 	if(1)
 	{
-		return long_f;
+		return int_1;
 	}
 	if(1)
 	{
-		return long_d;
+		return int_6;
 	}
 	if(1)
 	{
-		return long_d;
+		return int_5;
 	}
-	if(1)
-	{
-		return long_h;
-	}
-	return long_a;
+	return int_2;
 }
-int bmfs_size_bytes( short parameter_1,unsigned int parameter_2)
+int bmfs_size_bytes( char parameter_1,float parameter_2)
 {
-	int int_a = 0;
-	double double_a = 0;
-	double double_b = 0;
-	int int_c = 0;
-	double double_c = 0;
-	int int_b = 0;
-	char char_a = 0;
-	char char_b = 0;
-	short short_a = 0;
-	short short_b = 0;
-	unsigned int unsigned_int_a = 0;
-	unsigned int unsigned_int_b = 0;
-	double double_d = 0;
+	int int_1 = 0;
+	double double_1 = 0;
+	double double_2 = 0;
+	double double_4 = 0;
+	unsigned int unsigned_int_1 = 0;
+	double double_3 = 0;
+	int int_2 = 0;
+	double double_5 = 0;
+	short short_1 = 0;
+	short short_2 = 0;
+	char char_1 = 0;
+	char char_2 = 0;
+	char char_3 = 0;
 	if(1)
 	{
-		return int_a;
-	}
-	if(1)
-	{
-		int int_a = 0;
-		double double_a = 0;
-		double double_b = 0;
-		int int_c = 0;
-		double double_c = 0;
-		int int_b = 0;
-		char char_a = 0;
-		char char_b = 0;
-		short short_a = 0;
-		short short_b = 0;
-		unsigned int unsigned_int_a = 0;
-		unsigned int unsigned_int_b = 0;
-		double double_d = 0;
-		int_b = int_a - int_a;
-	}
-	char controller_c[3];
-	scanf("%3s", controller_c);
-	if( controller_c >"1aj" )
-	{
-		int int_a = 0;
-		double double_a = 0;
-		double double_b = 0;
-		int int_c = 0;
-		double double_c = 0;
-		int int_b = 0;
-		char char_a = 0;
-		char char_b = 0;
-		short short_a = 0;
-		short short_b = 0;
-		unsigned int unsigned_int_a = 0;
-		unsigned int unsigned_int_b = 0;
-		double double_d = 0;
-		char_b = char_a * char_a;
+		return int_1;
 	}
 	if(1)
 	{
-		double_a = tanh ( double_b ) ;
-	}
-	char controller_e[3];
-	scanf("%3s", controller_e);
-	if( controller_e >"hY." )
-	{
-		double_a = ldexp ( double_a , int_c ) ;
+		double_1 = acos ( double_2 ) ;
 	}
 	if(1)
 	{
-		int int_a = 0;
-		double double_a = 0;
-		double double_b = 0;
-		int int_c = 0;
-		double double_c = 0;
-		int int_b = 0;
-		char char_a = 0;
-		char char_b = 0;
-		short short_a = 0;
-		short short_b = 0;
-		unsigned int unsigned_int_a = 0;
-		unsigned int unsigned_int_b = 0;
-		double double_d = 0;
-		short_a = short_b;
+		int int_1 = 0;
+		double double_1 = 0;
+		double double_2 = 0;
+		double double_4 = 0;
+		unsigned int unsigned_int_1 = 0;
+		double double_3 = 0;
+		int int_2 = 0;
+		double double_5 = 0;
+		short short_1 = 0;
+		short short_2 = 0;
+		char char_1 = 0;
+		char char_2 = 0;
+		char char_3 = 0;
+		double_3 = ldexp ( double_3 , int_2 ) ;
 	}
 	if(1)
 	{
-		double_c = ldexp ( double_b , int_c ) ;
+		double_4 = sinh ( double_2 ) ;
 	}
 	if(1)
 	{
-		double_c = double_a - double_c;
+		unsigned_int_1 = unsigned_int_1;
 	}
 	if(1)
 	{
-		int int_a = 0;
-		double double_a = 0;
-		double double_b = 0;
-		int int_c = 0;
-		double double_c = 0;
-		int int_b = 0;
-		char char_a = 0;
-		char char_b = 0;
-		short short_a = 0;
-		short short_b = 0;
-		unsigned int unsigned_int_a = 0;
-		unsigned int unsigned_int_b = 0;
-		double double_d = 0;
-		unsigned_int_a = unsigned_int_a * unsigned_int_b;
+		double_2 = acos ( double_1 ) ;
 	}
-	char controller_j[1];
-	scanf("%1s", controller_j);
-	if( controller_j <"R" )
+	if(1)
 	{
-		int int_a = 0;
-		double double_a = 0;
-		double double_b = 0;
-		int int_c = 0;
-		double double_c = 0;
-		int int_b = 0;
-		char char_a = 0;
-		char char_b = 0;
-		short short_a = 0;
-		short short_b = 0;
-		unsigned int unsigned_int_a = 0;
-		unsigned int unsigned_int_b = 0;
-		double double_d = 0;
-		double_a = ceil ( double_d ) ;
+		int int_1 = 0;
+		double double_1 = 0;
+		double double_2 = 0;
+		double double_4 = 0;
+		unsigned int unsigned_int_1 = 0;
+		double double_3 = 0;
+		int int_2 = 0;
+		double double_5 = 0;
+		short short_1 = 0;
+		short short_2 = 0;
+		char char_1 = 0;
+		char char_2 = 0;
+		char char_3 = 0;
+		double_4 = sinh ( double_5 ) ;
 	}
-	return int_a;
+	if(1)
+	{
+		int int_1 = 0;
+		double double_1 = 0;
+		double double_2 = 0;
+		double double_4 = 0;
+		unsigned int unsigned_int_1 = 0;
+		double double_3 = 0;
+		int int_2 = 0;
+		double double_5 = 0;
+		short short_1 = 0;
+		short short_2 = 0;
+		char char_1 = 0;
+		char char_2 = 0;
+		char char_3 = 0;
+		short_2 = short_1 * short_1;
+	}
+	if(1)
+	{
+		unsigned_int_1 = unsigned_int_1 / unsigned_int_1;
+	}
+	if(1)
+	{
+		int int_1 = 0;
+		double double_1 = 0;
+		double double_2 = 0;
+		double double_4 = 0;
+		unsigned int unsigned_int_1 = 0;
+		double double_3 = 0;
+		int int_2 = 0;
+		double double_5 = 0;
+		short short_1 = 0;
+		short short_2 = 0;
+		char char_1 = 0;
+		char char_2 = 0;
+		char char_3 = 0;
+		char_3 = char_1 + char_2;
+	}
+	return int_1;
 }
-short to_type( short parameter_1,int parameter_2)
+void to_type( char parameter_1,float parameter_2)
 {
-	double double_a = 0;
-	short short_a = 0;
-	int int_a = 0;
-	int int_b = 0;
-	unsigned int unsigned_int_a = 0;
-	short short_b = 0;
-	double double_b = 0;
-	short short_c = 0;
-	double double_c = 0;
-	short short_d = 0;
-	double double_d = 0;
-	double double_e = 0;
-	double double_f = 0;
-	short short_e = 0;
-	unsigned int unsigned_int_b = 0;
-	unsigned int unsigned_int_c = 0;
+	int int_3 = 0;
+	double double_1 = 0;
+	double double_2 = 0;
+	double double_3 = 0;
+	unsigned int unsigned_int_1 = 0;
+	int int_1 = 0;
+	int int_2 = 0;
+	double double_4 = 0;
+	unsigned int unsigned_int_2 = 0;
+	double double_5 = 0;
+	unsigned int unsigned_int_3 = 0;
+	int int_4 = 0;
+	short short_1 = 0;
+	short short_2 = 0;
+	short short_3 = 0;
 	if(1)
 	{
-		double_a = floor ( double_a ) ;
-		return short_a;
-	}
-	if(1)
-	{
-		int_a = int_a - int_b;
-		return short_a;
-	}
-	if(1)
-	{
-		unsigned_int_a = unsigned_int_a - unsigned_int_a;
-		return short_b;
-	}
-	if(1)
-	{
-		double_b = sqrt ( double_b ) ;
-		return short_c;
-	}
-	if(1)
-	{
-		double_c = double_b;
-		return short_b;
+		int int_3 = 0;
+		double double_1 = 0;
+		double double_2 = 0;
+		double double_3 = 0;
+		unsigned int unsigned_int_1 = 0;
+		int int_1 = 0;
+		int int_2 = 0;
+		double double_4 = 0;
+		unsigned int unsigned_int_2 = 0;
+		double double_5 = 0;
+		unsigned int unsigned_int_3 = 0;
+		int int_4 = 0;
+		short short_1 = 0;
+		short short_2 = 0;
+		short short_3 = 0;
+		int_3 = int_1 * int_2;
 	}
 	if(1)
 	{
-		double_a = pow ( double_c , double_b ) ;
-		return short_d;
+		int_3 = int_3;
 	}
 	if(1)
 	{
-		int_a = int_b / int_a;
-		return short_b;
+		double_1 = fmod ( double_2 , double_2 ) ;
 	}
 	if(1)
 	{
-		double_a = atan ( double_a ) ;
-		return short_b;
+		double_1 = atan2 ( double_1 , double_3 ) ;
 	}
 	if(1)
 	{
-		double_d = pow ( double_e , double_f ) ;
-		return short_d;
+		double_2 = double_2 * double_1;
 	}
 	if(1)
 	{
-		double_e = log ( double_b ) ;
-		return short_a;
-	}
-	char controller_k[3];
-	scanf("%3s", controller_k);
-	if( controller_k <"E3R" )
-	{
-		double_a = tanh ( double_f ) ;
-		return short_c;
-	}
-	if(1)
-	{
-		double_e = log ( double_b ) ;
-		return short_c;
-	}
-	if(1)
-	{
-		double double_a = 0;
-		short short_a = 0;
-		int int_a = 0;
-		int int_b = 0;
-		unsigned int unsigned_int_a = 0;
-		short short_b = 0;
-		double double_b = 0;
-		short short_c = 0;
-		double double_c = 0;
-		short short_d = 0;
-		double double_d = 0;
-		double double_e = 0;
-		double double_f = 0;
-		short short_e = 0;
-		unsigned int unsigned_int_b = 0;
-		unsigned int unsigned_int_c = 0;
-		unsigned_int_a = unsigned_int_b * unsigned_int_c;
-		return short_b;
+		int int_3 = 0;
+		double double_1 = 0;
+		double double_2 = 0;
+		double double_3 = 0;
+		unsigned int unsigned_int_1 = 0;
+		int int_1 = 0;
+		int int_2 = 0;
+		double double_4 = 0;
+		unsigned int unsigned_int_2 = 0;
+		double double_5 = 0;
+		unsigned int unsigned_int_3 = 0;
+		int int_4 = 0;
+		short short_1 = 0;
+		short short_2 = 0;
+		short short_3 = 0;
+		double_1 = double_4;
 	}
 	if(1)
 	{
-		double_b = log ( double_d ) ;
-		return short_e;
+		int int_3 = 0;
+		double double_1 = 0;
+		double double_2 = 0;
+		double double_3 = 0;
+		unsigned int unsigned_int_1 = 0;
+		int int_1 = 0;
+		int int_2 = 0;
+		double double_4 = 0;
+		unsigned int unsigned_int_2 = 0;
+		double double_5 = 0;
+		unsigned int unsigned_int_3 = 0;
+		int int_4 = 0;
+		short short_1 = 0;
+		short short_2 = 0;
+		short short_3 = 0;
+		unsigned_int_1 = unsigned_int_2;
 	}
-	return short_c;
+	if(1)
+	{
+		double_2 = fabs ( double_1 ) ;
+	}
+	if(1)
+	{
+		int int_3 = 0;
+		double double_1 = 0;
+		double double_2 = 0;
+		double double_3 = 0;
+		unsigned int unsigned_int_1 = 0;
+		int int_1 = 0;
+		int int_2 = 0;
+		double double_4 = 0;
+		unsigned int unsigned_int_2 = 0;
+		double double_5 = 0;
+		unsigned int unsigned_int_3 = 0;
+		int int_4 = 0;
+		short short_1 = 0;
+		short short_2 = 0;
+		short short_3 = 0;
+		double_5 = atan ( double_2 ) ;
+	}
+	if(1)
+	{
+		int int_3 = 0;
+		double double_1 = 0;
+		double double_2 = 0;
+		double double_3 = 0;
+		unsigned int unsigned_int_1 = 0;
+		int int_1 = 0;
+		int int_2 = 0;
+		double double_4 = 0;
+		unsigned int unsigned_int_2 = 0;
+		double double_5 = 0;
+		unsigned int unsigned_int_3 = 0;
+		int int_4 = 0;
+		short short_1 = 0;
+		short short_2 = 0;
+		short short_3 = 0;
+		unsigned_int_1 = unsigned_int_3;
+	}
+	if(1)
+	{
+		int int_3 = 0;
+		double double_1 = 0;
+		double double_2 = 0;
+		double double_3 = 0;
+		unsigned int unsigned_int_1 = 0;
+		int int_1 = 0;
+		int int_2 = 0;
+		double double_4 = 0;
+		unsigned int unsigned_int_2 = 0;
+		double double_5 = 0;
+		unsigned int unsigned_int_3 = 0;
+		int int_4 = 0;
+		short short_1 = 0;
+		short short_2 = 0;
+		short short_3 = 0;
+		int_4 = int_3;
+	}
+	if(1)
+	{
+		int int_3 = 0;
+		double double_1 = 0;
+		double double_2 = 0;
+		double double_3 = 0;
+		unsigned int unsigned_int_1 = 0;
+		int int_1 = 0;
+		int int_2 = 0;
+		double double_4 = 0;
+		unsigned int unsigned_int_2 = 0;
+		double double_5 = 0;
+		unsigned int unsigned_int_3 = 0;
+		int int_4 = 0;
+		short short_1 = 0;
+		short short_2 = 0;
+		short short_3 = 0;
+		short_3 = short_1 + short_2;
+	}
+	if(1)
+	{
+		double_2 = cos ( double_3 ) ;
+	}
+	if(1)
+	{
+		double_3 = exp ( double_2 ) ;
+	}
 }
-int bmfs_size_parse( double parameter_1,short parameter_2)
+int bmfs_size_parse( char parameter_1,int parameter_2)
 {
-	int int_a = 0;
-	double double_a = 0;
-	double double_e = 0;
-	double double_f = 0;
-	double double_g = 0;
-	int int_b = 0;
-	short short_a = 0;
-	double double_b = 0;
-	double double_c = 0;
-	double double_d = 0;
-	char controller_a[2];
-	scanf("%2s", controller_a);
-	if( controller_a <"!," )
+	int int_1 = 0;
+	double double_1 = 0;
+	double double_2 = 0;
+	double double_3 = 0;
+	char char_1 = 0;
+	float float_1 = 0;
+	short short_1 = 0;
+	short short_2 = 0;
+	short short_3 = 0;
+	int int_2 = 0;
+	double double_4 = 0;
+	int int_3 = 0;
+	unsigned int unsigned_int_1 = 0;
+	unsigned int unsigned_int_2 = 0;
+	char char_2 = 0;
+	char controller_1[3];
+	scanf("%3s", controller_1);
+	if( strcmp( controller_1, "t(T") < 0)
 	{
-		return int_a;
+		return int_1;
 	}
-	double_a = ceil ( double_a ) ;
-	int looper_a = 0;
-	while(looper_a < 4)
+	double_1 = tan ( double_2 ) ;
+	int looper_1 = 0;
+	while(looper_1 < 4)
 	{
-		int int_a = 0;
-		double double_a = 0;
-		double double_e = 0;
-		double double_f = 0;
-		double double_g = 0;
-		int int_b = 0;
-		short short_a = 0;
-		double double_b = 0;
-		double double_c = 0;
-		double double_d = 0;
-		looper_a += 1;
-		double_b = floor ( double_c ) ;
-		if(1)
+		int int_1 = 0;
+		double double_1 = 0;
+		double double_2 = 0;
+		double double_3 = 0;
+		char char_1 = 0;
+		float float_1 = 0;
+		short short_1 = 0;
+		short short_2 = 0;
+		short short_3 = 0;
+		int int_2 = 0;
+		double double_4 = 0;
+		int int_3 = 0;
+		unsigned int unsigned_int_1 = 0;
+		unsigned int unsigned_int_2 = 0;
+		char char_2 = 0;
+		looper_1 += 1;
+		double_3 = ldexp ( double_2 , int_1 ) ;
+		char controller_2[5];
+		scanf("%5s", controller_2);
+		if( strcmp( controller_2, "8Zy1l") > 0)
 		{
 		}
-		double_d = cosh ( double_b ) ;
-		double_e = exp ( double_b ) ;
-		double_e = double_a;
-	}
-	double_a = double_f / double_f;
-	if(1)
-	{
-		return int_a;
-	}
-	double_g = tanh ( double_e ) ;
-	return int_b;
-	short_a = to_type(short_a,int_a);
+		unsigned_int_2 = unsigned_int_1 * unsigned_int_1;
+		to_type(char_1,float_1);
 
+		char_2 = char_1 * char_1;
+		short_2 = short_1 + short_2;
+	}
+	short_2 = short_1 * short_3;
+	char controller_3[5];
+	scanf("%5s", controller_3);
+	if( strcmp( controller_3, "&NI>T") < 0)
+	{
+		return int_2;
+	}
+	double_4 = atan2 ( double_3 , double_4 ) ;
+	return int_3;
 }
-double is_opt( long parameter_1,char parameter_2,float parameter_3)
+char is_opt( unsigned int parameter_1,char parameter_2,short parameter_3)
 {
-	double double_a = 0;
-	double double_b = 0;
-	char controller_a[2];
-	scanf("%2s", controller_a);
-	if( controller_a >";S" )
+	char char_1 = 0;
+	char char_2 = 0;
+	char char_3 = 0;
+	char char_4 = 0;
+	char controller_1[4];
+	scanf("%4s", controller_1);
+	if( strcmp( controller_1, "NR,r") > 0)
 	{
-		return double_a;
+		return char_1;
+	}
+	char controller_2[5];
+	scanf("%5s", controller_2);
+	if( strcmp( controller_2, "uq;Pl") > 0)
+	{
+		return char_2;
 	}
 	if(1)
 	{
-		return double_a;
+		return char_3;
 	}
-	if(1)
-	{
-		return double_b;
-	}
-	return double_b;
+	return char_4;
 }
 int main(int argc, const char **argv)
 {
-	int uni_para =334;
-	long long_a = 0;
-	double double_a = 0;
-	double double_b = 0;
-	short short_a = 0;
-	int int_a = 0;
-	unsigned int unsigned_int_a = 0;
-	short short_b = 0;
-	unsigned int unsigned_int_b = 0;
-	unsigned int unsigned_int_c = 0;
-	unsigned int unsigned_int_d = 0;
-	int int_b = 0;
-	double double_c = 0;
-	int int_c = 0;
-	int int_d = 0;
-	int int_e = 0;
-	double double_d = 0;
-	double double_e = 0;
-	short short_c = 0;
-	int int_f = 0;
-	int int_g = 0;
-	float float_b = 0;
-	unsigned int unsigned_int_e = 0;
-	float float_c = 0;
-	float float_d = 0;
-	float float_e = 0;
-	double double_f = 0;
-	double double_g = 0;
-	short short_d = 0;
-	double double_h = 0;
-	short short_e = 0;
-	char char_a = 0;
-	char char_b = 0;
-	float float_a = 0;
-	long long_b = 0;
-	long long_c = 0;
-	long long_d = 0;
-	short short_f = 0;
-	long_a = long_a;
-	double_a = double_a;
-	double_a = log10 ( double_b ) ;
-	for(int looper_a=0; looper_a<1;looper_a++)
+	int uni_para =232;
+	double double_1 = 0;
+	double double_2 = 0;
+	double double_3 = 0;
+	char char_1 = 0;
+	char char_2 = 0;
+	unsigned int unsigned_int_1 = 0;
+	int int_1 = 0;
+	float float_1 = 0;
+	double double_4 = 0;
+	double double_5 = 0;
+	double double_6 = 0;
+	long long_1 = 0;
+	int int_2 = 0;
+	unsigned int unsigned_int_2 = 0;
+	int int_3 = 0;
+	float float_2 = 0;
+	double double_7 = 0;
+	unsigned int unsigned_int_3 = 0;
+	double double_8 = 0;
+	short short_1 = 0;
+	short short_2 = 0;
+	double double_9 = 0;
+	float float_3 = 0;
+	float float_4 = 0;
+	int int_4 = 0;
+	unsigned int unsigned_int_4 = 0;
+	int int_5 = 0;
+	char char_3 = 0;
+	char char_4 = 0;
+	double double_10 = 0;
+	int int_6 = 0;
+	long long_2 = 0;
+	long long_3 = 0;
+	long long_4 = 0;
+	unsigned int unsigned_int_5 = 0;
+	double double_11 = 0;
+	double double_12 = 0;
+	double double_13 = 0;
+	unsigned int unsigned_int_6 = 0;
+	double double_14 = 0;
+	double_1 = atan ( double_1 ) ;
+	double_2 = double_3;
+	char_1 = char_1 - char_2;
+	for(int looper_1=0; looper_1<1;looper_1++)
 	{
 		if(1)
 		{
 		}
-		char controller4vul_a[3];
-		scanf("%3s", controller4vul_a);
-		if(remainder_check(controller4vul_a,100,3))
+		char controller4vul_1[4];
+		scanf("%4s", controller4vul_1);
+		if( strcmp( controller4vul_1, "}$XS") < 0)
 		{
-			char controller4vul_b[2];
-			scanf("%2s", controller4vul_b);
-			if( strcmp( controller4vul_b, ",7")==0)
+			char controller4vul_2[4];
+			scanf("%4s", controller4vul_2);
+			if( strcmp( controller4vul_2, "TAGB") < 0)
 			{
-				double_b = cmd_mv(short_a,int_a,unsigned_int_a,uni_para);
+				double_2 = cmd_ls(unsigned_int_1,int_1,float_1,uni_para);
 
-				short_b = short_a;
-				return int_a;
+				double_1 = ceil ( double_4 ) ;
+				return int_1;
 			}
-			unsigned_int_b = unsigned_int_b * unsigned_int_a;
+			double_5 = atan2 ( double_1 , double_1 ) ;
 		}
 		if(1)
 		{
 			if(1)
 			{
-				unsigned_int_a = unsigned_int_c * unsigned_int_d;
-				return int_b;
+				double_4 = ceil ( double_4 ) ;
+				return int_1;
 			}
-			double_c = cos ( double_c ) ;
+			double_5 = sqrt ( double_5 ) ;
 		}
 		else
 		{
-			double_c = tanh ( double_a ) ;
-			int_d = int_b - int_c;
-			return int_e;
+			double double_1 = 0;
+			double double_2 = 0;
+			double double_3 = 0;
+			char char_1 = 0;
+			char char_2 = 0;
+			unsigned int unsigned_int_1 = 0;
+			int int_1 = 0;
+			float float_1 = 0;
+			double double_4 = 0;
+			double double_5 = 0;
+			double double_6 = 0;
+			long long_1 = 0;
+			int int_2 = 0;
+			unsigned int unsigned_int_2 = 0;
+			int int_3 = 0;
+			float float_2 = 0;
+			double double_7 = 0;
+			unsigned int unsigned_int_3 = 0;
+			double double_8 = 0;
+			short short_1 = 0;
+			short short_2 = 0;
+			double double_9 = 0;
+			float float_3 = 0;
+			float float_4 = 0;
+			int int_4 = 0;
+			unsigned int unsigned_int_4 = 0;
+			int int_5 = 0;
+			char char_3 = 0;
+			char char_4 = 0;
+			double double_10 = 0;
+			int int_6 = 0;
+			long long_2 = 0;
+			long long_3 = 0;
+			long long_4 = 0;
+			unsigned int unsigned_int_5 = 0;
+			double double_11 = 0;
+			double double_12 = 0;
+			double double_13 = 0;
+			unsigned int unsigned_int_6 = 0;
+			double double_14 = 0;
+			double_5 = pow ( double_2 , double_6 ) ;
+			long_1 = long_2;
+			return int_2;
 		}
 	}
-	double_b = sinh ( double_b ) ;
+	double_1 = cosh ( double_6 ) ;
 	if(1)
 	{
-		double_d = log ( double_b ) ;
-		return int_a;
+		double_2 = exp ( double_4 ) ;
+		return int_2;
 	}
-	double_b = fabs ( double_d ) ;
-	char controller_d[3];
-	scanf("%3s", controller_d);
-	if( controller_d <"P8h" )
-	{
-		long long_a = 0;
-		double double_a = 0;
-		double double_b = 0;
-		short short_a = 0;
-		int int_a = 0;
-		unsigned int unsigned_int_a = 0;
-		short short_b = 0;
-		unsigned int unsigned_int_b = 0;
-		unsigned int unsigned_int_c = 0;
-		unsigned int unsigned_int_d = 0;
-		int int_b = 0;
-		double double_c = 0;
-		int int_c = 0;
-		int int_d = 0;
-		int int_e = 0;
-		double double_d = 0;
-		double double_e = 0;
-		short short_c = 0;
-		int int_f = 0;
-		int int_g = 0;
-		float float_b = 0;
-		unsigned int unsigned_int_e = 0;
-		float float_c = 0;
-		float float_d = 0;
-		float float_e = 0;
-		double double_f = 0;
-		double double_g = 0;
-		short short_d = 0;
-		double double_h = 0;
-		short short_e = 0;
-		char char_a = 0;
-		char char_b = 0;
-		float float_a = 0;
-		long long_b = 0;
-		long long_c = 0;
-		long long_d = 0;
-		short short_f = 0;
-		char_a = char_b;
-		return int_e;
-	}
-	double_b = atan ( double_e ) ;
-	{
-		short_c = short_c;
-		double_e = sinh ( double_e ) ;
-		return int_f;
-		unsigned_int_d = unsigned_int_d;
-		return int_f;
-		return int_a;
-		return int_g;
-	}
-	unsigned_int_c = unsigned_int_a;
-	double_c = log ( double_e ) ;
+	unsigned_int_2 = unsigned_int_1;
 	if(1)
 	{
-		long long_a = 0;
-		double double_a = 0;
-		double double_b = 0;
-		short short_a = 0;
-		int int_a = 0;
-		unsigned int unsigned_int_a = 0;
-		short short_b = 0;
-		unsigned int unsigned_int_b = 0;
-		unsigned int unsigned_int_c = 0;
-		unsigned int unsigned_int_d = 0;
-		int int_b = 0;
-		double double_c = 0;
-		int int_c = 0;
-		int int_d = 0;
-		int int_e = 0;
-		double double_d = 0;
-		double double_e = 0;
-		short short_c = 0;
-		int int_f = 0;
-		int int_g = 0;
-		float float_b = 0;
-		unsigned int unsigned_int_e = 0;
-		float float_c = 0;
-		float float_d = 0;
-		float float_e = 0;
-		double double_f = 0;
-		double double_g = 0;
-		short short_d = 0;
-		double double_h = 0;
-		short short_e = 0;
-		char char_a = 0;
-		char char_b = 0;
-		float float_a = 0;
-		long long_b = 0;
-		long long_c = 0;
-		long long_d = 0;
-		short short_f = 0;
-		float_a = float_b;
+		double_5 = sinh ( double_6 ) ;
+		return int_3;
 	}
-	double_b = log ( double_e ) ;
-	unsigned_int_e = unsigned_int_c - unsigned_int_d;
-	double_c = tanh ( double_e ) ;
+	float_2 = float_2;
+	{
+		double_4 = ldexp ( double_7 , int_1 ) ;
+		unsigned_int_1 = unsigned_int_2;
+		return int_1;
+		unsigned_int_3 = unsigned_int_1;
+		return int_1;
+		return int_2;
+		return int_2;
+	}
+	double_6 = atan2 ( double_8 , double_2 ) ;
+	short_2 = short_1 + short_2;
 	if(1)
 	{
-		long long_a = 0;
-		double double_a = 0;
-		double double_b = 0;
-		short short_a = 0;
-		int int_a = 0;
-		unsigned int unsigned_int_a = 0;
-		short short_b = 0;
-		unsigned int unsigned_int_b = 0;
-		unsigned int unsigned_int_c = 0;
-		unsigned int unsigned_int_d = 0;
-		int int_b = 0;
-		double double_c = 0;
-		int int_c = 0;
-		int int_d = 0;
-		int int_e = 0;
-		double double_d = 0;
-		double double_e = 0;
-		short short_c = 0;
-		int int_f = 0;
-		int int_g = 0;
-		float float_b = 0;
-		unsigned int unsigned_int_e = 0;
-		float float_c = 0;
-		float float_d = 0;
-		float float_e = 0;
-		double double_f = 0;
-		double double_g = 0;
-		short short_d = 0;
-		double double_h = 0;
-		short short_e = 0;
-		char char_a = 0;
-		char char_b = 0;
-		float float_a = 0;
-		long long_b = 0;
-		long long_c = 0;
-		long long_d = 0;
-		short short_f = 0;
-		float_c = float_d;
-		long_b = long_a;
-		return int_d;
+		double_9 = atan ( double_2 ) ;
 	}
-	int_e = int_b / int_c;
-	short_c = short_b + short_b;
-	float_d = float_e;
-	double_e = fabs ( double_d ) ;
-	int_d = int_g;
+	double_7 = ceil ( double_6 ) ;
+	double_2 = sqrt ( double_1 ) ;
+	int_3 = int_1 / int_3;
 	if(1)
 	{
-		long long_a = 0;
-		double double_a = 0;
-		double double_b = 0;
-		short short_a = 0;
-		int int_a = 0;
-		unsigned int unsigned_int_a = 0;
-		short short_b = 0;
-		unsigned int unsigned_int_b = 0;
-		unsigned int unsigned_int_c = 0;
-		unsigned int unsigned_int_d = 0;
-		int int_b = 0;
-		double double_c = 0;
-		int int_c = 0;
-		int int_d = 0;
-		int int_e = 0;
-		double double_d = 0;
-		double double_e = 0;
-		short short_c = 0;
-		int int_f = 0;
-		int int_g = 0;
-		float float_b = 0;
-		unsigned int unsigned_int_e = 0;
-		float float_c = 0;
-		float float_d = 0;
-		float float_e = 0;
-		double double_f = 0;
-		double double_g = 0;
-		short short_d = 0;
-		double double_h = 0;
-		short short_e = 0;
-		char char_a = 0;
-		char char_b = 0;
-		float float_a = 0;
-		long long_b = 0;
-		long long_c = 0;
-		long long_d = 0;
-		short short_f = 0;
-		float_c = float_b / float_e;
+		double_2 = floor ( double_2 ) ;
+		float_3 = float_1;
+		return int_2;
+	}
+	int_2 = int_3 / int_2;
+	double_5 = atan2 ( double_9 , double_4 ) ;
+	float_3 = float_4 / float_2;
+	int_3 = int_3 - int_3;
+	int_4 = int_2 + int_2;
+	if(1)
+	{
+		double double_1 = 0;
+		double double_2 = 0;
+		double double_3 = 0;
+		char char_1 = 0;
+		char char_2 = 0;
+		unsigned int unsigned_int_1 = 0;
+		int int_1 = 0;
+		float float_1 = 0;
+		double double_4 = 0;
+		double double_5 = 0;
+		double double_6 = 0;
+		long long_1 = 0;
+		int int_2 = 0;
+		unsigned int unsigned_int_2 = 0;
+		int int_3 = 0;
+		float float_2 = 0;
+		double double_7 = 0;
+		unsigned int unsigned_int_3 = 0;
+		double double_8 = 0;
+		short short_1 = 0;
+		short short_2 = 0;
+		double double_9 = 0;
+		float float_3 = 0;
+		float float_4 = 0;
+		int int_4 = 0;
+		unsigned int unsigned_int_4 = 0;
+		int int_5 = 0;
+		char char_3 = 0;
+		char char_4 = 0;
+		double double_10 = 0;
+		int int_6 = 0;
+		long long_2 = 0;
+		long long_3 = 0;
+		long long_4 = 0;
+		unsigned int unsigned_int_5 = 0;
+		double double_11 = 0;
+		double double_12 = 0;
+		double double_13 = 0;
+		unsigned int unsigned_int_6 = 0;
+		double double_14 = 0;
+		int_4 = int_1;
 		if(1)
 		{
-			unsigned_int_b = unsigned_int_e;
-			return int_g;
+			double double_1 = 0;
+			double double_2 = 0;
+			double double_3 = 0;
+			char char_1 = 0;
+			char char_2 = 0;
+			unsigned int unsigned_int_1 = 0;
+			int int_1 = 0;
+			float float_1 = 0;
+			double double_4 = 0;
+			double double_5 = 0;
+			double double_6 = 0;
+			long long_1 = 0;
+			int int_2 = 0;
+			unsigned int unsigned_int_2 = 0;
+			int int_3 = 0;
+			float float_2 = 0;
+			double double_7 = 0;
+			unsigned int unsigned_int_3 = 0;
+			double double_8 = 0;
+			short short_1 = 0;
+			short short_2 = 0;
+			double double_9 = 0;
+			float float_3 = 0;
+			float float_4 = 0;
+			int int_4 = 0;
+			unsigned int unsigned_int_4 = 0;
+			int int_5 = 0;
+			char char_3 = 0;
+			char char_4 = 0;
+			double double_10 = 0;
+			int int_6 = 0;
+			long long_2 = 0;
+			long long_3 = 0;
+			long long_4 = 0;
+			unsigned int unsigned_int_5 = 0;
+			double double_11 = 0;
+			double double_12 = 0;
+			double double_13 = 0;
+			unsigned int unsigned_int_6 = 0;
+			double double_14 = 0;
+			unsigned_int_5 = unsigned_int_4 / unsigned_int_3;
+			return int_3;
 		}
-		long_c = long_d;
-		double_c = floor ( double_e ) ;
-		if(1)
+		int_1 = int_3 + int_1;
+		long_1 = long_3 - long_4;
+		char controller_9[3];
+		scanf("%3s", controller_9);
+		if( strcmp( controller_9, "&oF") < 0)
 		{
-			return int_f;
+			return int_2;
 		}
-		return int_a;
+		return int_1;
 	}
-	float_d = float_d;
+	double_6 = pow ( double_5 , double_6 ) ;
 	if(1)
 	{
-		short_b = short_a * short_a;
-		double_a = atan2 ( double_a , double_c ) ;
-		return int_c;
+		double_1 = double_3 + double_1;
+		double_7 = fabs ( double_3 ) ;
+		return int_5;
 	}
-	double_d = tanh ( double_f ) ;
+	char_3 = char_4;
 	if(1)
 	{
-		double_b = sqrt ( double_a ) ;
-		double_d = atan2 ( double_e , double_f ) ;
-		double_g = ceil ( double_a ) ;
-		return int_a;
+		float_1 = float_1;
+		double_6 = floor ( double_4 ) ;
+		double_6 = double_5;
+		return int_1;
 	}
 	{
-		long long_a = 0;
-		double double_a = 0;
-		double double_b = 0;
-		short short_a = 0;
-		int int_a = 0;
-		unsigned int unsigned_int_a = 0;
-		short short_b = 0;
-		unsigned int unsigned_int_b = 0;
-		unsigned int unsigned_int_c = 0;
-		unsigned int unsigned_int_d = 0;
-		int int_b = 0;
-		double double_c = 0;
-		int int_c = 0;
-		int int_d = 0;
-		int int_e = 0;
-		double double_d = 0;
-		double double_e = 0;
-		short short_c = 0;
-		int int_f = 0;
-		int int_g = 0;
-		float float_b = 0;
-		unsigned int unsigned_int_e = 0;
-		float float_c = 0;
-		float float_d = 0;
-		float float_e = 0;
-		double double_f = 0;
-		double double_g = 0;
-		short short_d = 0;
-		double double_h = 0;
-		short short_e = 0;
-		char char_a = 0;
-		char char_b = 0;
-		float float_a = 0;
-		long long_b = 0;
-		long long_c = 0;
-		long long_d = 0;
-		short short_f = 0;
-		short_d = short_b - short_c;
-		double_c = ldexp ( double_a , int_d ) ;
-		double_g = tanh ( double_h ) ;
-		double_a = fabs ( double_c ) ;
-		short_b = short_e;
-		double_e = asin ( double_g ) ;
-		unsigned_int_b = unsigned_int_d;
-		short_f = short_e;
-		double_a = ceil ( double_e ) ;
-		float_e = float_e + float_d;
-		unsigned_int_a = unsigned_int_b / unsigned_int_b;
-		double_d = ldexp ( double_b , int_e ) ;
-		return int_b;
+		double double_1 = 0;
+		double double_2 = 0;
+		double double_3 = 0;
+		char char_1 = 0;
+		char char_2 = 0;
+		unsigned int unsigned_int_1 = 0;
+		int int_1 = 0;
+		float float_1 = 0;
+		double double_4 = 0;
+		double double_5 = 0;
+		double double_6 = 0;
+		long long_1 = 0;
+		int int_2 = 0;
+		unsigned int unsigned_int_2 = 0;
+		int int_3 = 0;
+		float float_2 = 0;
+		double double_7 = 0;
+		unsigned int unsigned_int_3 = 0;
+		double double_8 = 0;
+		short short_1 = 0;
+		short short_2 = 0;
+		double double_9 = 0;
+		float float_3 = 0;
+		float float_4 = 0;
+		int int_4 = 0;
+		unsigned int unsigned_int_4 = 0;
+		int int_5 = 0;
+		char char_3 = 0;
+		char char_4 = 0;
+		double double_10 = 0;
+		int int_6 = 0;
+		long long_2 = 0;
+		long long_3 = 0;
+		long long_4 = 0;
+		unsigned int unsigned_int_5 = 0;
+		double double_11 = 0;
+		double double_12 = 0;
+		double double_13 = 0;
+		unsigned int unsigned_int_6 = 0;
+		double double_14 = 0;
+		float_2 = float_4;
+		double_8 = atan2 ( double_2 , double_3 ) ;
+		double_8 = atan ( double_7 ) ;
+		double_7 = sinh ( double_5 ) ;
+		double_3 = fmod ( double_2 , double_8 ) ;
+		double_5 = exp ( double_3 ) ;
+		int_2 = int_3 * int_5;
+		unsigned_int_3 = unsigned_int_1;
+		double_9 = atan2 ( double_2 , double_10 ) ;
+		double_2 = log ( double_11 ) ;
+		double_1 = log ( double_8 ) ;
+		int_2 = int_5 - int_5;
+		return int_3;
 	}
-	double_h = double_a * double_g;
+	short_1 = short_1 - short_1;
 	if(1)
 	{
-		double_b = atan2 ( double_e , double_c ) ;
-		unsigned_int_c = unsigned_int_a * unsigned_int_e;
-		double_d = sinh ( double_a ) ;
-		return int_b;
+		double double_1 = 0;
+		double double_2 = 0;
+		double double_3 = 0;
+		char char_1 = 0;
+		char char_2 = 0;
+		unsigned int unsigned_int_1 = 0;
+		int int_1 = 0;
+		float float_1 = 0;
+		double double_4 = 0;
+		double double_5 = 0;
+		double double_6 = 0;
+		long long_1 = 0;
+		int int_2 = 0;
+		unsigned int unsigned_int_2 = 0;
+		int int_3 = 0;
+		float float_2 = 0;
+		double double_7 = 0;
+		unsigned int unsigned_int_3 = 0;
+		double double_8 = 0;
+		short short_1 = 0;
+		short short_2 = 0;
+		double double_9 = 0;
+		float float_3 = 0;
+		float float_4 = 0;
+		int int_4 = 0;
+		unsigned int unsigned_int_4 = 0;
+		int int_5 = 0;
+		char char_3 = 0;
+		char char_4 = 0;
+		double double_10 = 0;
+		int int_6 = 0;
+		long long_2 = 0;
+		long long_3 = 0;
+		long long_4 = 0;
+		unsigned int unsigned_int_5 = 0;
+		double double_11 = 0;
+		double double_12 = 0;
+		double double_13 = 0;
+		unsigned int unsigned_int_6 = 0;
+		double double_14 = 0;
+		double_12 = cosh ( double_13 ) ;
+		unsigned_int_1 = unsigned_int_4 / unsigned_int_6;
+		double_10 = ldexp ( double_14 , int_4 ) ;
+		return int_6;
 	}
-	short_b = short_d - short_e;
+	double_7 = double_6;
 	if(1)
 	{
-		return int_e;
+		return int_5;
 	}
-	return int_d;
+	return int_1;
 }

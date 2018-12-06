@@ -1,33 +1,33 @@
 ===================== vulnerability track  =============================
 
 The function name:  main
-   if(remainder_check(controller4vul_a,100,3))
-   if( strcmp( controller4vul_b, ",7"))
-   call cmd_mv
+   if( strcmp( controller4vul_1, "}$XS") < 0)
+   if( strcmp( controller4vul_2, "TAGB") < 0)
+   call cmd_ls
 
-The function name:  cmd_mv
-   call bmfs_rename
-
-The function name:  bmfs_rename
-   if( controller4vul_c >"EI&" )
-   if( strcmp( controller4vul_d, "<"))
+The function name:  cmd_ls
+   if( strcmp( controller4vul_3, "Xa-/") < 0)
+   if( strcmp( controller4vul_4, "F{") < 0)
    call bmfs_open_dir
 
 The function name:  bmfs_open_dir
-   if( strcmp( controller4vul_e, "=0Z%"))
+   if( strcmp( controller4vul_5, "2k") > 0)
    call open_dir
 
 The function name:  open_dir
-   if(remainder_check(controller4vul_f,100,2))
-   if( controller4vul_g >"GL}" )
-   call find_entry
+   if( strcmp( controller4vul_6, ",F-7d") < 0)
+   call find_dir
 
-The function name:  find_entry
-   if( strcmp( controller4vul_h, "NMu-"))
+The function name:  find_dir
+   if( strcmp( controller4vul_7, "-fZ/=") < 0)
+   call bmfs_dir_import
+
+The function name:  bmfs_dir_import
+   if( strcmp( controller4vul_8, "5[_S8") > 0)
    call bmfs_entry_read
 
 The function name:  bmfs_entry_read
-   if( strcmp( controller4vul_i, "mMYx"))
+   if( strcmp( controller4vul_9, "zej") < 0)
    call bmfs_disk_tell
 
 The function name:  bmfs_disk_tell
@@ -38,7 +38,7 @@ The function name:  bmfs_disk_tell
 
 ================= ulit parameters ======================
 
-unique_magic_number = 334
+unique_magic_number = 232
 vulnerability_name = CWE-761
 
 ================= ulit parameters ends ======================
@@ -47,13 +47,13 @@ vulnerability_name = CWE-761
 
 dataflow_parameter_input_number = 10
 
-dataflow_parameter_magic_number = 0.8
+dataflow_parameter_magic_number = 0
 dataflow_parameter_magic_number_length_min = 1
 dataflow_parameter_magic_number_length_max = 5
 
 dataflow_parameter_checksum_type = 1
 dataflow_parameter_checksum_div = 100
-dataflow_parameter_checksum = 0.2
+dataflow_parameter_checksum = 0
 
 ================= dataflow parameters ends ======================
 
@@ -66,11 +66,11 @@ environment_parameter_loop_times_max = 10
 
 environment_parameter_magic_number_length_min = 1
 environment_parameter_magic_number_length_max = 5
-environment_parameter_magic_number = 8
+environment_parameter_magic_number = 1
 
 environment_parameter_checksum_type = 1
 environment_parameter_checksum_div = 100
-environment_parameter_checksum_number = 2
+environment_parameter_checksum_number = 0
 
 environment_paramenter_loop_time = 5
 
