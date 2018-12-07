@@ -255,7 +255,7 @@ void lcd_init( unsigned int parameter_1,int uni_para)
 	char_1 = char_1 / char_1;
 	char_1 = char_2;
 	double_6 = atan ( double_3 ) ;
-	else
+	
 	{
 		double double_1 = 0;
 		double double_2 = 0;
@@ -300,7 +300,7 @@ void lcd_init( unsigned int parameter_1,int uni_para)
 	}
 	double_1 = double_3 / double_9;
 	double_10 = asin ( double_7 ) ;
-	else
+	
 	{
 		double_2 = ceil ( double_3 ) ;
 	}
