@@ -1,12 +1,12 @@
 ===================== vulnerability track  =============================
 
 The function name:  main
-   if( strcmp( controller4vul_1, "1YoKW") < 0)
-   call lcd_gotoxy
+   if( strcmp( controller4vul_1, "x8") > 0)
+   call lcd_init
 
-The function name:  lcd_gotoxy
-   if( strcmp( controller4vul_2, "`gzV}") < 0)
-   if( strcmp( controller4vul_3, "*{U") > 0)
+The function name:  lcd_init
+   if( strcmp( controller4vul_2, "#p") < 0)
+   if( strcmp( controller4vul_3, "V*}") < 0)
    Vulnerability
 
 
@@ -14,7 +14,7 @@ The function name:  lcd_gotoxy
 
 ================= ulit parameters ======================
 
-unique_magic_number = 307
+unique_magic_number = 72
 vulnerability_name = CWE-761
 
 ================= ulit parameters ends ======================
