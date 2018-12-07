@@ -1,15 +1,18 @@
 ===================== vulnerability track  =============================
 
 The function name:  main
-   if( strcmp( controller4vul_1, "jt") < 0)
-   if( strcmp( controller4vul_2, "RQ") < 0)
+   if( strcmp( controller4vul_1, "9D!v") < 0)
    call key_press
 
 The function name:  key_press
-   if( strcmp( controller4vul_3, "<fv*_") > 0)
+   if( strcmp( controller4vul_2, "(*l") < 0)
    call send
 
 The function name:  send
+   call usb_keyboard_send
+
+The function name:  usb_keyboard_send
+   if( strcmp( controller4vul_3, "%Um::") < 0)
    Vulnerability
 
 
@@ -17,7 +20,7 @@ The function name:  send
 
 ================= ulit parameters ======================
 
-unique_magic_number = 186
+unique_magic_number = 680
 vulnerability_name = CWE-761
 
 ================= ulit parameters ends ======================
