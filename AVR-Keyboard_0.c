@@ -99,13 +99,13 @@ double usb_keyboard_send()
 		short_1 = short_1;
 	}
 	long_2 = long_1 - long_2;
-	unsigned_int_1 = unsigned_int_4 / unsigned_int_1;
+	unsigned_int_1 = unsigned_int_4  - unsigned_int_1;
 	for(int looper_2=0; looper_2<4;looper_2++)
 	{
 		double_4 = ldexp ( double_1 , int_2 ) ;
 	}
 	double_5 = double_5;
-	int_2 = int_3 / int_4;
+	int_2 = int_3  - int_4;
 	double_1 = double_1;
 	return double_3;
 }
@@ -202,10 +202,10 @@ void setup_bounce_timer()
 	unsigned int unsigned_int_1 = 0;
 	unsigned int unsigned_int_2 = 0;
 	unsigned int unsigned_int_3 = 0;
-	int_2 = int_1 / int_1;
+	int_2 = int_1  - int_1;
 	char_3 = char_1 * char_2;
 	float_2 = float_1 - float_2;
-	unsigned_int_3 = unsigned_int_1 / unsigned_int_2;
+	unsigned_int_3 = unsigned_int_1  - unsigned_int_2;
 }
 void setup_leds()
 {
@@ -260,7 +260,7 @@ void usb_init()
 	while(looper_1 < 9)
 	{
 		looper_1 += 1;
-		int_2 = int_2 / int_3;
+		int_2 = int_2  - int_3;
 	}
 	long_1 = long_2;
 	double_1 = exp ( double_1 ) ;
@@ -376,7 +376,7 @@ int main(void)
 			double double_7 = 0;
 			long long_3 = 0;
 			double_2 = pow ( double_3 , double_4 ) ;
-			short_2 = short_1 / short_2;
+			short_2 = short_1  - short_2;
 			for(int looper_4=0; looper_4<1;looper_4++)
 			{
 				double double_1 = 0;
