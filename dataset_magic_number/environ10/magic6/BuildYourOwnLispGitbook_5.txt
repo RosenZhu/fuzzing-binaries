@@ -1,0 +1,72 @@
+===================== vulnerability track  =============================
+
+The function name:  main
+   if( strcmp( controller4vul_51, "#") < 0)
+   if( strcmp( controller4vul_52, "zwGj") < 0)
+   call builtin_load
+
+The function name:  builtin_load
+   if( strcmp( controller4vul_53, "Uf8{*") == 0)
+   if( strcmp( controller4vul_54, "jIl") == 0)
+   call lval_eval
+
+The function name:  lval_eval
+   if( strcmp( controller4vul_55, "ftNx") == 0)
+   call lval_eval_sexpr
+
+The function name:  lval_eval_sexpr
+   if( strcmp( controller4vul_56, "P6T5M") == 0)
+   call lval_call
+
+The function name:  lval_call
+   if( strcmp( controller4vul_57, "Jr]u") == 0)
+   if( strcmp( controller4vul_58, "|5 x") < 0)
+   call lenv_put
+
+The function name:  lenv_put
+   if( strcmp( controller4vul_59, "yBX") > 0)
+   call lval_copy
+
+The function name:  lval_copy
+   if( strcmp( controller4vul_60, "rQt") == 0)
+   Vulnerability
+
+
+===================== vulnerability track Ends =============================
+
+================= ulit parameters ======================
+
+unique_magic_number = 278
+vulnerability_name = CWE-761
+
+================= ulit parameters ends ======================
+
+================= dataflow parameters ======================
+
+dataflow_parameter_input_number = 10
+
+dataflow_parameter_magic_number = 6
+dataflow_parameter_magic_number_length_min = 1
+dataflow_parameter_magic_number_length_max = 5
+
+dataflow_parameter_checksum_type = 1
+dataflow_parameter_checksum_div = 100
+dataflow_parameter_checksum = 0
+
+================= dataflow parameters ends ======================
+
+================= environment parameters ======================
+
+environment_parameter_branches = 10
+
+environment_parameter_magic_number_length_min = 1
+environment_parameter_magic_number_length_max = 5
+environment_parameter_magic_number = 10
+
+environment_parameter_checksum_type = 1
+environment_parameter_checksum_div = 100
+environment_parameter_checksum_number = 0
+
+environment_paramenter_loop_time = 1
+
+================= environment parameters ends ======================

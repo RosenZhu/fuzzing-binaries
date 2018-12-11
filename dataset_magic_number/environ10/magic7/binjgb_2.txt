@@ -1,0 +1,84 @@
+===================== vulnerability track  =============================
+
+The function name:  main
+   call emulator_new
+
+The function name:  emulator_new
+   call init_emulator
+
+The function name:  init_emulator
+   call write_io
+
+The function name:  write_io
+   if( strcmp( controller4vul_61, "2[FjF") == 0)
+   if( strcmp( controller4vul_62, "|-:~D") == 0)
+   if( strcmp( controller4vul_63, "v=") == 0)
+   call dma_synchronize
+
+The function name:  dma_synchronize
+   if( strcmp( controller4vul_64, "T#Btq") == 0)
+   if( strcmp( controller4vul_65, "03R!F") == 0)
+   call read_u8_pair
+
+The function name:  read_u8_pair
+   if( strcmp( controller4vul_66, "p:r") < 0)
+   call read_wave_ram
+
+The function name:  read_wave_ram
+   if( strcmp( controller4vul_67, "2") > 0)
+   if( strcmp( controller4vul_68, "3se~~") > 0)
+   call apu_synchronize
+
+The function name:  apu_synchronize
+   if( strcmp( controller4vul_69, "o") == 0)
+   call apu_update
+
+The function name:  apu_update
+   call update_sweep
+
+The function name:  update_sweep
+   if( strcmp( controller4vul_70, "W95R") == 0)
+   call write_square_wave_period
+
+The function name:  write_square_wave_period
+   Vulnerability
+
+
+===================== vulnerability track Ends =============================
+
+================= ulit parameters ======================
+
+unique_magic_number = 278
+vulnerability_name = CWE-761
+
+================= ulit parameters ends ======================
+
+================= dataflow parameters ======================
+
+dataflow_parameter_input_number = 10
+
+dataflow_parameter_magic_number = 7
+dataflow_parameter_magic_number_length_min = 1
+dataflow_parameter_magic_number_length_max = 5
+
+dataflow_parameter_checksum_type = 1
+dataflow_parameter_checksum_div = 100
+dataflow_parameter_checksum = 0
+
+================= dataflow parameters ends ======================
+
+================= environment parameters ======================
+
+environment_parameter_branches = 10
+
+environment_parameter_magic_number_length_min = 1
+environment_parameter_magic_number_length_max = 5
+environment_parameter_magic_number = 10
+
+environment_parameter_checksum_type = 1
+environment_parameter_checksum_div = 100
+environment_parameter_checksum_number = 0
+
+environment_paramenter_loop_time = 1
+
+================= environment parameters ends ======================

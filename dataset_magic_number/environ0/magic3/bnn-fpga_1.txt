@@ -1,0 +1,69 @@
+===================== vulnerability track  =============================
+
+The function name:  main
+   if( strcmp( controller4vul_21, "Y") > 0)
+   if( strcmp( controller4vul_22, "BN=h") == 0)
+   call do_extract_onefile
+
+The function name:  do_extract_onefile
+   if( strcmp( controller4vul_23, "(|") < 0)
+   call unzLocateFile
+
+The function name:  unzLocateFile
+   if( strcmp( controller4vul_24, "fSz$") == 0)
+   call unzGoToFirstFile2
+
+The function name:  unzGoToFirstFile2
+   if( strcmp( controller4vul_25, "{7CvU") > 0)
+   call unz64local_GetCurrentFileInfoInternal
+
+The function name:  unz64local_GetCurrentFileInfoInternal
+   if( strcmp( controller4vul_26, "o$") > 0)
+   if( strcmp( controller4vul_27, "4") > 0)
+   if( strcmp( controller4vul_28, "znK)") > 0)
+   if( strcmp( controller4vul_29, "Q2") < 0)
+   call unz64local_DosDateToTmuDate
+
+The function name:  unz64local_DosDateToTmuDate
+   if( strcmp( controller4vul_30, "1(& ") == 0)
+   Vulnerability
+
+
+===================== vulnerability track Ends =============================
+
+================= ulit parameters ======================
+
+unique_magic_number = 299
+vulnerability_name = CWE-761
+
+================= ulit parameters ends ======================
+
+================= dataflow parameters ======================
+
+dataflow_parameter_input_number = 10
+
+dataflow_parameter_magic_number = 3
+dataflow_parameter_magic_number_length_min = 1
+dataflow_parameter_magic_number_length_max = 5
+
+dataflow_parameter_checksum_type = 1
+dataflow_parameter_checksum_div = 100
+dataflow_parameter_checksum = 0
+
+================= dataflow parameters ends ======================
+
+================= environment parameters ======================
+
+environment_parameter_branches = 10
+
+environment_parameter_magic_number_length_min = 1
+environment_parameter_magic_number_length_max = 5
+environment_parameter_magic_number = 0
+
+environment_parameter_checksum_type = 1
+environment_parameter_checksum_div = 100
+environment_parameter_checksum_number = 0
+
+environment_paramenter_loop_time = 1
+
+================= environment parameters ends ======================
