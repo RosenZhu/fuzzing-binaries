@@ -1,0 +1,127 @@
+===================== vulnerability track  =============================
+
+The function name:  main
+   if( strcmp( controller4vul_24, "I7") < 0)
+   call v_authenticate
+
+The function name:  v_authenticate
+   if( strcmp( controller4vul_25, "Q") > 0)
+   call v_chime_connection_authenticate
+
+The function name:  v_chime_connection_authenticate
+   if( strcmp( controller4vul_26, "/") > 0)
+   call v_amazon_send_credentials
+
+The function name:  v_amazon_send_credentials
+   if( strcmp( controller4vul_27, "G!") < 0)
+   call v_amazon_signin_result_cb
+
+The function name:  v_amazon_signin_result_cb
+   if( strcmp( controller4vul_28, "`") > 0)
+   if( strcmp( controller4vul_29, "=") > 0)
+   call v_session_token_cb
+
+The function name:  v_session_token_cb
+   if( strcmp( controller4vul_30, "QI") < 0)
+   call v_chime_connection_connect
+
+The function name:  v_chime_connection_connect
+   if( strcmp( controller4vul_31, "g") > 0)
+   call v_chime_connection_signin
+
+The function name:  v_chime_connection_signin
+   if( strcmp( controller4vul_32, "~3") < 0)
+   call v_signin_page_cb
+
+The function name:  v_signin_page_cb
+   if( strcmp( controller4vul_33, "Z") > 0)
+   call v_fail_bad_response
+
+The function name:  v_fail_bad_response
+   call v_fail
+
+The function name:  v_fail
+   call v_chime_connection_fail_error
+
+The function name:  v_chime_connection_fail_error
+   call v_chime_connection_disconnect
+
+The function name:  v_chime_connection_disconnect
+   if( strcmp( controller4vul_34, "vA") < 0)
+   call v_chime_destroy_meetings
+
+The function name:  v_chime_destroy_meetings
+   if( strcmp( controller4vul_35, "RU") > 0)
+   call v_joinable_meetings_jugg_cb
+
+The function name:  v_joinable_meetings_jugg_cb
+   if( strcmp( controller4vul_36, "u0") > 0)
+   call v_chime_connection_parse_meeting
+
+The function name:  v_chime_connection_parse_meeting
+   if( strcmp( controller4vul_37, "r") < 0)
+   if( strcmp( controller4vul_38, "_V") < 0)
+   call v_chime_connection_parse_contact
+
+The function name:  v_chime_connection_parse_contact
+   if( strcmp( controller4vul_39, ";C") > 0)
+   call v_find_or_create_contact
+
+The function name:  v_find_or_create_contact
+   if( strcmp( controller4vul_40, "P") > 0)
+   call v_subscribe_contact
+
+The function name:  v_subscribe_contact
+   if( strcmp( controller4vul_41, "S") < 0)
+   call v_fetch_presences
+
+The function name:  v_fetch_presences
+   call v_presence_cb
+
+The function name:  v_presence_cb
+   if( strcmp( controller4vul_42, "S") < 0)
+   call v_set_contact_presence
+
+The function name:  v_set_contact_presence
+   if( strcmp( controller4vul_43, "_b") > 0)
+   Vulnerability
+
+
+===================== vulnerability track Ends =============================
+
+================= ulit parameters ======================
+
+unique_magic_number = 436
+vulnerability_name = CWE-761
+
+================= ulit parameters ends ======================
+
+================= dataflow parameters ======================
+
+dataflow_parameter_input_number = 20
+
+dataflow_parameter_magic_number = 0
+dataflow_parameter_magic_number_length_min = 1
+dataflow_parameter_magic_number_length_max = 2
+
+dataflow_parameter_checksum_type = 1
+dataflow_parameter_checksum_div = 100
+dataflow_parameter_checksum = 0
+
+================= dataflow parameters ends ======================
+
+================= environment parameters ======================
+
+environment_parameter_branches = 30
+
+environment_parameter_magic_number_length_min = 1
+environment_parameter_magic_number_length_max = 2
+environment_parameter_magic_number = 3
+
+environment_parameter_checksum_type = 1
+environment_parameter_checksum_div = 100
+environment_parameter_checksum_number = 1
+
+environment_paramenter_loop_time = 1
+
+================= environment parameters ends ======================
