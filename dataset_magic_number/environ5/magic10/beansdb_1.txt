@@ -1,0 +1,72 @@
+===================== vulnerability track  =============================
+
+The function name:  main
+   if( strcmp( controller4vul_84, ";eFm") == 0)
+   if( strcmp( controller4vul_85, "]?") == 0)
+   if( strcmp( controller4vul_86, "^") == 0)
+   call hs_open
+
+The function name:  hs_open
+   if( strcmp( controller4vul_87, "FR") == 0)
+   if( strcmp( controller4vul_88, "(K$") == 0)
+   call bc_scan
+
+The function name:  bc_scan
+   if( strcmp( controller4vul_89, "(DcC") == 0)
+   if( strcmp( controller4vul_90, "F]MP+") == 0)
+   call scanDataFile
+
+The function name:  scanDataFile
+   call ht_remove2
+
+The function name:  ht_remove2
+   if( strcmp( controller4vul_91, "#>v!k") == 0)
+   call remove_item
+
+The function name:  remove_item
+   if( strcmp( controller4vul_92, ">") == 0)
+   if( strcmp( controller4vul_93, "y") == 0)
+   call get_child
+
+The function name:  get_child
+   Vulnerability
+
+
+===================== vulnerability track Ends =============================
+
+================= ulit parameters ======================
+
+unique_magic_number = 233
+vulnerability_name = CWE-761
+
+================= ulit parameters ends ======================
+
+================= dataflow parameters ======================
+
+dataflow_parameter_input_number = 10
+
+dataflow_parameter_magic_number = 10
+dataflow_parameter_magic_number_length_min = 1
+dataflow_parameter_magic_number_length_max = 5
+
+dataflow_parameter_checksum_type = 1
+dataflow_parameter_checksum_div = 100
+dataflow_parameter_checksum = 0
+
+================= dataflow parameters ends ======================
+
+================= environment parameters ======================
+
+environment_parameter_branches = 10
+
+environment_parameter_magic_number_length_min = 1
+environment_parameter_magic_number_length_max = 5
+environment_parameter_magic_number = 5
+
+environment_parameter_checksum_type = 1
+environment_parameter_checksum_div = 100
+environment_parameter_checksum_number = 0
+
+environment_paramenter_loop_time = 1
+
+================= environment parameters ends ======================

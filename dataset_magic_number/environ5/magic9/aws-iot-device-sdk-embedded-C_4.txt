@@ -1,0 +1,75 @@
+===================== vulnerability track  =============================
+
+The function name:  main
+   if( strcmp( controller4vul_74, "<c") == 0)
+   call aws_iot_mqtt_yield
+
+The function name:  aws_iot_mqtt_yield
+   if( strcmp( controller4vul_75, "4CmvS") == 0)
+   if( strcmp( controller4vul_76, "H") == 0)
+   call _aws_iot_mqtt_internal_yield
+
+The function name:  _aws_iot_mqtt_internal_yield
+   if( strcmp( controller4vul_77, ";") == 0)
+   if( strcmp( controller4vul_78, "<0(") == 0)
+   if( strcmp( controller4vul_79, "cq^7H") == 0)
+   call _aws_iot_mqtt_handle_disconnect
+
+The function name:  _aws_iot_mqtt_handle_disconnect
+   if( strcmp( controller4vul_80, ",J") == 0)
+   call aws_iot_mqtt_disconnect
+
+The function name:  aws_iot_mqtt_disconnect
+   if( strcmp( controller4vul_81, "L9.,U") > 0)
+   call _aws_iot_mqtt_internal_disconnect
+
+The function name:  _aws_iot_mqtt_internal_disconnect
+   if( strcmp( controller4vul_82, "j") == 0)
+   call aws_iot_mqtt_internal_serialize_zero
+
+The function name:  aws_iot_mqtt_internal_serialize_zero
+   if( strcmp( controller4vul_83, "@") == 0)
+   call aws_iot_mqtt_internal_write_len_to_buffer
+
+The function name:  aws_iot_mqtt_internal_write_len_to_buffer
+   Vulnerability
+
+
+===================== vulnerability track Ends =============================
+
+================= ulit parameters ======================
+
+unique_magic_number = 233
+vulnerability_name = CWE-761
+
+================= ulit parameters ends ======================
+
+================= dataflow parameters ======================
+
+dataflow_parameter_input_number = 10
+
+dataflow_parameter_magic_number = 9
+dataflow_parameter_magic_number_length_min = 1
+dataflow_parameter_magic_number_length_max = 5
+
+dataflow_parameter_checksum_type = 1
+dataflow_parameter_checksum_div = 100
+dataflow_parameter_checksum = 0
+
+================= dataflow parameters ends ======================
+
+================= environment parameters ======================
+
+environment_parameter_branches = 10
+
+environment_parameter_magic_number_length_min = 1
+environment_parameter_magic_number_length_max = 5
+environment_parameter_magic_number = 5
+
+environment_parameter_checksum_type = 1
+environment_parameter_checksum_div = 100
+environment_parameter_checksum_number = 0
+
+environment_paramenter_loop_time = 1
+
+================= environment parameters ends ======================

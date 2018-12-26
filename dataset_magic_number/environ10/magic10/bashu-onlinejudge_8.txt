@@ -1,0 +1,75 @@
+===================== vulnerability track  =============================
+
+The function name:  main
+   if( strcmp( controller4vul_91, "_>dAB") == 0)
+   if( strcmp( controller4vul_92, "TSv$") == 0)
+   call start_http_interface
+
+The function name:  start_http_interface
+   if( strcmp( controller4vul_93, ".G") == 0)
+   call server_handler
+
+The function name:  server_handler
+   if( strcmp( controller4vul_94, "Vls1") == 0)
+   if( strcmp( controller4vul_95, "J]-2") == 0)
+   call JUDGE_start_rejudge
+
+The function name:  JUDGE_start_rejudge
+   if( strcmp( controller4vul_96, "gWWHg") == 0)
+   call get_solution_list
+
+The function name:  get_solution_list
+   if( strcmp( controller4vul_97, " ^@") == 0)
+   call Check_mysql_connection
+
+The function name:  Check_mysql_connection
+   if( strcmp( controller4vul_98, "W[7qM") == 0)
+   if( strcmp( controller4vul_99, "L") == 0)
+   call init_mysql_con
+
+The function name:  init_mysql_con
+   if( strcmp( controller4vul_100, "fBy") == 0)
+   call mysql_set_character_set
+
+The function name:  mysql_set_character_set
+   Vulnerability
+
+
+===================== vulnerability track Ends =============================
+
+================= ulit parameters ======================
+
+unique_magic_number = 278
+vulnerability_name = CWE-761
+
+================= ulit parameters ends ======================
+
+================= dataflow parameters ======================
+
+dataflow_parameter_input_number = 10
+
+dataflow_parameter_magic_number = 10
+dataflow_parameter_magic_number_length_min = 1
+dataflow_parameter_magic_number_length_max = 5
+
+dataflow_parameter_checksum_type = 1
+dataflow_parameter_checksum_div = 100
+dataflow_parameter_checksum = 0
+
+================= dataflow parameters ends ======================
+
+================= environment parameters ======================
+
+environment_parameter_branches = 10
+
+environment_parameter_magic_number_length_min = 1
+environment_parameter_magic_number_length_max = 5
+environment_parameter_magic_number = 10
+
+environment_parameter_checksum_type = 1
+environment_parameter_checksum_div = 100
+environment_parameter_checksum_number = 0
+
+environment_paramenter_loop_time = 1
+
+================= environment parameters ends ======================

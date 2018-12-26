@@ -1,0 +1,66 @@
+===================== vulnerability track  =============================
+
+The function name:  main
+   if( strcmp( controller4vul_41, ".") < 0)
+   call pinMode
+
+The function name:  pinMode
+   if( strcmp( controller4vul_42, "Rm)W") == 0)
+   if( strcmp( controller4vul_43, "A|?^D") > 0)
+   if( strcmp( controller4vul_44, "F_Ikx") == 0)
+   call softPwmStop
+
+The function name:  softPwmStop
+   if( strcmp( controller4vul_45, "`Z`,&") == 0)
+   call digitalWrite
+
+The function name:  digitalWrite
+   if( strcmp( controller4vul_46, "sSM") < 0)
+   if( strcmp( controller4vul_47, "^{Wd") > 0)
+   if( strcmp( controller4vul_48, "#+") > 0)
+   call wiringPiFindNode
+
+The function name:  wiringPiFindNode
+   if( strcmp( controller4vul_49, "el*") == 0)
+   if( strcmp( controller4vul_50, "jZ") == 0)
+   Vulnerability
+
+
+===================== vulnerability track Ends =============================
+
+================= ulit parameters ======================
+
+unique_magic_number = 278
+vulnerability_name = CWE-761
+
+================= ulit parameters ends ======================
+
+================= dataflow parameters ======================
+
+dataflow_parameter_input_number = 10
+
+dataflow_parameter_magic_number = 5
+dataflow_parameter_magic_number_length_min = 1
+dataflow_parameter_magic_number_length_max = 5
+
+dataflow_parameter_checksum_type = 1
+dataflow_parameter_checksum_div = 100
+dataflow_parameter_checksum = 0
+
+================= dataflow parameters ends ======================
+
+================= environment parameters ======================
+
+environment_parameter_branches = 10
+
+environment_parameter_magic_number_length_min = 1
+environment_parameter_magic_number_length_max = 5
+environment_parameter_magic_number = 10
+
+environment_parameter_checksum_type = 1
+environment_parameter_checksum_div = 100
+environment_parameter_checksum_number = 0
+
+environment_paramenter_loop_time = 1
+
+================= environment parameters ends ======================
