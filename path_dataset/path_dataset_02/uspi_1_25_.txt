@@ -1,0 +1,150 @@
+===================== vulnerability track  =============================
+
+The function name:  main
+   if( strcmp( controller4vul_301, "ss") > 0)
+   call v_USPiInitialize
+
+The function name:  v_USPiInitialize
+   if( strcmp( controller4vul_302, "g") > 0)
+   call v_DWHCIDeviceInitialize
+
+The function name:  v_DWHCIDeviceInitialize
+   if( strcmp( controller4vul_303, "R") < 0)
+   call v_DWHCIRootPortInitialize
+
+The function name:  v_DWHCIRootPortInitialize
+   if( strcmp( controller4vul_304, "6B") > 0)
+   if( strcmp( controller4vul_305, "Y#") > 0)
+   call v_USBDeviceFactoryGetDevice
+
+The function name:  v_USBDeviceFactoryGetDevice
+   if( strcmp( controller4vul_306, "3") > 0)
+   call v_GetDevice
+
+The function name:  v_GetDevice
+   if( strcmp( controller4vul_307, ">v") > 0)
+   call v_LAN7800Device
+
+The function name:  v_LAN7800Device
+   call v_LAN7800DeviceConfigure
+
+The function name:  v_LAN7800DeviceConfigure
+   call v_LAN7800DeviceInitPHY
+
+The function name:  v_LAN7800DeviceInitPHY
+   if( strcmp( controller4vul_308, "Q") > 0)
+   call v_LAN7800DevicePHYRead
+
+The function name:  v_LAN7800DevicePHYRead
+   if( strcmp( controller4vul_309, "0") < 0)
+   call v_LAN7800DeviceWriteReg
+
+The function name:  v_LAN7800DeviceWriteReg
+   if( strcmp( controller4vul_310, "g_") > 0)
+   call v_DWHCIDeviceControlMessage
+
+The function name:  v_DWHCIDeviceControlMessage
+   if( strcmp( controller4vul_311, "8") < 0)
+   call v_DWHCIDeviceSubmitBlockingRequest
+
+The function name:  v_DWHCIDeviceSubmitBlockingRequest
+   if( strcmp( controller4vul_312, "E]") < 0)
+   call v_DWHCIDeviceTransferStage
+
+The function name:  v_DWHCIDeviceTransferStage
+   call v_DWHCIDeviceTransferStageAsync
+
+The function name:  v_DWHCIDeviceTransferStageAsync
+   if( strcmp( controller4vul_313, ">") > 0)
+   if( strcmp( controller4vul_314, "S") > 0)
+   call v_DWHCITransferStageData
+
+The function name:  v_DWHCITransferStageData
+   call v_DWHCIFrameSchedulerNonPeriodic
+
+The function name:  v_DWHCIFrameSchedulerNonPeriodic
+   call v_DWHCIFrameSchedulerNonPeriodicTransactionComplete
+
+The function name:  v_DWHCIFrameSchedulerNonPeriodicTransactionComplete
+   if( strcmp( controller4vul_315, "1") < 0)
+   if( strcmp( controller4vul_316, "n") < 0)
+   call v_LogWrite
+
+The function name:  v_LogWrite
+   call v_LoggerWriteV
+
+The function name:  v_LoggerWriteV
+   call v_LoggerWrite2
+
+The function name:  v_LoggerWrite2
+   call v_ScreenDeviceWrite
+
+The function name:  v_ScreenDeviceWrite
+   if( strcmp( controller4vul_317, "*6") > 0)
+   call v_ScreenDeviceWrite2
+
+The function name:  v_ScreenDeviceWrite2
+   if( strcmp( controller4vul_318, "J") > 0)
+   if( strcmp( controller4vul_319, "&") < 0)
+   call v_ScreenDeviceTabulator
+
+The function name:  v_ScreenDeviceTabulator
+   if( strcmp( controller4vul_320, ":(") > 0)
+   call v_ScreenDeviceNewLine
+
+The function name:  v_ScreenDeviceNewLine
+   call v_ScreenDeviceCursorDown
+
+The function name:  v_ScreenDeviceCursorDown
+   if( strcmp( controller4vul_321, "YK") < 0)
+   call v_ScreenDeviceScroll
+
+The function name:  v_ScreenDeviceScroll
+   if( strcmp( controller4vul_322, "7") < 0)
+   if( strcmp( controller4vul_323, ".") < 0)
+   call v_memcpyblk
+
+The function name:  v_memcpyblk
+   if( strcmp( controller4vul_324, "Z{") > 0)
+   if( strcmp( controller4vul_325, "M") > 0)
+   Vulnerability
+
+
+===================== vulnerability track Ends =============================
+
+================= ulit parameters ======================
+
+unique_magic_number = 480
+vulnerability_name = CWE-761
+
+================= ulit parameters ends ======================
+
+================= dataflow parameters ======================
+
+dataflow_parameter_input_number = 25
+
+dataflow_parameter_magic_number = 0
+dataflow_parameter_magic_number_length_min = 1
+dataflow_parameter_magic_number_length_max = 2
+
+dataflow_parameter_checksum_type = 1
+dataflow_parameter_checksum_div = 100
+dataflow_parameter_checksum = 0
+
+================= dataflow parameters ends ======================
+
+================= environment parameters ======================
+
+environment_parameter_branches = 30
+
+environment_parameter_magic_number_length_min = 1
+environment_parameter_magic_number_length_max = 2
+environment_parameter_magic_number = 3
+
+environment_parameter_checksum_type = 1
+environment_parameter_checksum_div = 100
+environment_parameter_checksum_number = 1
+
+environment_paramenter_loop_time = 1
+
+================= environment parameters ends ======================

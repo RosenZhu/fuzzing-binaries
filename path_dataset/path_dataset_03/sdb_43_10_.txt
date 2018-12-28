@@ -1,0 +1,66 @@
+===================== vulnerability track  =============================
+
+The function name:  main
+   if( strcmp( controller4vul_612, ":e") < 0)
+   call v_sdb_new
+
+The function name:  v_sdb_new
+   if( strcmp( controller4vul_613, "V") < 0)
+   if( strcmp( controller4vul_614, ".") > 0)
+   if( strcmp( controller4vul_615, "zq") > 0)
+   call v_sdb_open
+
+The function name:  v_sdb_open
+   if( strcmp( controller4vul_616, "/:") > 0)
+   if( strcmp( controller4vul_617, "sv") > 0)
+   call v_cdb_init
+
+The function name:  v_cdb_init
+   if( strcmp( controller4vul_618, "3&") < 0)
+   if( strcmp( controller4vul_619, "_") < 0)
+   if( strcmp( controller4vul_620, "_ ") < 0)
+   call v_free
+
+The function name:  v_free
+   if( strcmp( controller4vul_621, "86") > 0)
+   Vulnerability
+
+
+===================== vulnerability track Ends =============================
+
+================= ulit parameters ======================
+
+unique_magic_number = 387
+vulnerability_name = CWE-761
+
+================= ulit parameters ends ======================
+
+================= dataflow parameters ======================
+
+dataflow_parameter_input_number = 10
+
+dataflow_parameter_magic_number = 0
+dataflow_parameter_magic_number_length_min = 1
+dataflow_parameter_magic_number_length_max = 2
+
+dataflow_parameter_checksum_type = 1
+dataflow_parameter_checksum_div = 100
+dataflow_parameter_checksum = 0
+
+================= dataflow parameters ends ======================
+
+================= environment parameters ======================
+
+environment_parameter_branches = 30
+
+environment_parameter_magic_number_length_min = 1
+environment_parameter_magic_number_length_max = 2
+environment_parameter_magic_number = 3
+
+environment_parameter_checksum_type = 1
+environment_parameter_checksum_div = 100
+environment_parameter_checksum_number = 1
+
+environment_paramenter_loop_time = 1
+
+================= environment parameters ends ======================

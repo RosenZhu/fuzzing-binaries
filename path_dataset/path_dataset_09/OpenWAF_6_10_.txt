@@ -1,0 +1,96 @@
+===================== vulnerability track  =============================
+
+The function name:  main
+   if( strcmp( controller4vul_2255, "p^") < 0)
+   call v_read_file
+
+The function name:  v_read_file
+   call v_libinjection_xss
+
+The function name:  v_libinjection_xss
+   if( strcmp( controller4vul_2256, "5") > 0)
+   call v_libinjection_is_xss
+
+The function name:  v_libinjection_is_xss
+   call v_libinjection_h5_init
+
+The function name:  v_libinjection_h5_init
+   call v_h5_state_data
+
+The function name:  v_h5_state_data
+   if( strcmp( controller4vul_2257, "RX") > 0)
+   if( strcmp( controller4vul_2258, "+$") < 0)
+   call v_h5_state_tag_open
+
+The function name:  v_h5_state_tag_open
+   if( strcmp( controller4vul_2259, "W&") > 0)
+   if( strcmp( controller4vul_2260, "W") < 0)
+   call v_h5_state_end_tag_open
+
+The function name:  v_h5_state_end_tag_open
+   if( strcmp( controller4vul_2261, "5") < 0)
+   call v_h5_state_tag_name
+
+The function name:  v_h5_state_tag_name
+   if( strcmp( controller4vul_2262, "+d") > 0)
+   call v_h5_state_before_attribute_name
+
+The function name:  v_h5_state_before_attribute_name
+   call v_h5_state_attribute_name
+
+The function name:  v_h5_state_attribute_name
+   call v_h5_state_before_attribute_value
+
+The function name:  v_h5_state_before_attribute_value
+   if( strcmp( controller4vul_2263, "X") > 0)
+   call v_h5_state_attribute_value_back_quote
+
+The function name:  v_h5_state_attribute_value_back_quote
+   call v_h5_state_attribute_value_quote
+
+The function name:  v_h5_state_attribute_value_quote
+   if( strcmp( controller4vul_2264, "A$") < 0)
+   call v_h5_state_eof
+
+The function name:  v_h5_state_eof
+   Vulnerability
+
+
+===================== vulnerability track Ends =============================
+
+================= ulit parameters ======================
+
+unique_magic_number = 149
+vulnerability_name = CWE-761
+
+================= ulit parameters ends ======================
+
+================= dataflow parameters ======================
+
+dataflow_parameter_input_number = 10
+
+dataflow_parameter_magic_number = 0
+dataflow_parameter_magic_number_length_min = 1
+dataflow_parameter_magic_number_length_max = 2
+
+dataflow_parameter_checksum_type = 1
+dataflow_parameter_checksum_div = 100
+dataflow_parameter_checksum = 0
+
+================= dataflow parameters ends ======================
+
+================= environment parameters ======================
+
+environment_parameter_branches = 30
+
+environment_parameter_magic_number_length_min = 1
+environment_parameter_magic_number_length_max = 2
+environment_parameter_magic_number = 3
+
+environment_parameter_checksum_type = 1
+environment_parameter_checksum_div = 100
+environment_parameter_checksum_number = 1
+
+environment_paramenter_loop_time = 1
+
+================= environment parameters ends ======================

@@ -1,0 +1,133 @@
+===================== vulnerability track  =============================
+
+The function name:  main
+   if( strcmp( controller4vul_99, "@b") < 0)
+   if( strcmp( controller4vul_100, "m4") > 0)
+   call v_vedis_open
+
+The function name:  v_vedis_open
+   if( strcmp( controller4vul_101, "N") < 0)
+   if( strcmp( controller4vul_102, "K-") > 0)
+   if( strcmp( controller4vul_103, "d") > 0)
+   call v_vedisInitDatabase
+
+The function name:  v_vedisInitDatabase
+   if( strcmp( controller4vul_104, "9") > 0)
+   call v_vedisPagerOpen
+
+The function name:  v_vedisPagerOpen
+   if( strcmp( controller4vul_105, "@^") < 0)
+   if( strcmp( controller4vul_106, "JM") > 0)
+   call v_vedisPagerRegisterKvEngine
+
+The function name:  v_vedisPagerRegisterKvEngine
+   if( strcmp( controller4vul_107, "|8") < 0)
+   if( strcmp( controller4vul_108, ".") > 0)
+   call v_pager_kv_io_init
+
+The function name:  v_pager_kv_io_init
+   call v_vedisKvIopageWrite
+
+The function name:  v_vedisKvIopageWrite
+   if( strcmp( controller4vul_109, "q.") > 0)
+   call v_vedisPageWrite
+
+The function name:  v_vedisPageWrite
+   if( strcmp( controller4vul_110, ",D") > 0)
+   if( strcmp( controller4vul_111, "A") > 0)
+   call v_vedisPagerBegin
+
+The function name:  v_vedisPagerBegin
+   if( strcmp( controller4vul_112, "x") < 0)
+   if( strcmp( controller4vul_113, "f ") < 0)
+   if( strcmp( controller4vul_114, "/") > 0)
+   call v_pager_shared_lock
+
+The function name:  v_pager_shared_lock
+   if( strcmp( controller4vul_115, "-") < 0)
+   if( strcmp( controller4vul_116, "!v") > 0)
+   if( strcmp( controller4vul_117, "oD") < 0)
+   if( strcmp( controller4vul_118, "P7") > 0)
+   if( strcmp( controller4vul_119, "0") > 0)
+   call v_vedisExportBuiltinVfs
+
+The function name:  v_vedisExportBuiltinVfs
+   call v_unixFullPathname
+
+The function name:  v_unixFullPathname
+   if( strcmp( controller4vul_120, ":") > 0)
+   if( strcmp( controller4vul_121, "WH") > 0)
+   call v_SyBufferFormat
+
+The function name:  v_SyBufferFormat
+   if( strcmp( controller4vul_122, "W") > 0)
+   if( strcmp( controller4vul_123, "{") > 0)
+   call v_FormatMount
+
+The function name:  v_FormatMount
+   if( strcmp( controller4vul_124, "S") > 0)
+   if( strcmp( controller4vul_125, "R2") < 0)
+   call v_FormatConsumer
+
+The function name:  v_FormatConsumer
+   call v_SyBlobAppend
+
+The function name:  v_SyBlobAppend
+   if( strcmp( controller4vul_126, "U+") < 0)
+   call v_BlobPrepareGrow
+
+The function name:  v_BlobPrepareGrow
+   if( strcmp( controller4vul_127, ")H") > 0)
+   if( strcmp( controller4vul_128, ":@") > 0)
+   if( strcmp( controller4vul_129, "O") < 0)
+   call v_SyMemBackendDup
+
+The function name:  v_SyMemBackendDup
+   if( strcmp( controller4vul_130, "eE") < 0)
+   if( strcmp( controller4vul_131, "Y") < 0)
+   call v_SyMemBackendAlloc
+
+The function name:  v_SyMemBackendAlloc
+   if( strcmp( controller4vul_132, "#") < 0)
+   if( strcmp( controller4vul_133, "u") > 0)
+   Vulnerability
+
+
+===================== vulnerability track Ends =============================
+
+================= ulit parameters ======================
+
+unique_magic_number = 997
+vulnerability_name = CWE-761
+
+================= ulit parameters ends ======================
+
+================= dataflow parameters ======================
+
+dataflow_parameter_input_number = 35
+
+dataflow_parameter_magic_number = 0
+dataflow_parameter_magic_number_length_min = 1
+dataflow_parameter_magic_number_length_max = 2
+
+dataflow_parameter_checksum_type = 1
+dataflow_parameter_checksum_div = 100
+dataflow_parameter_checksum = 0
+
+================= dataflow parameters ends ======================
+
+================= environment parameters ======================
+
+environment_parameter_branches = 30
+
+environment_parameter_magic_number_length_min = 1
+environment_parameter_magic_number_length_max = 2
+environment_parameter_magic_number = 3
+
+environment_parameter_checksum_type = 1
+environment_parameter_checksum_div = 100
+environment_parameter_checksum_number = 1
+
+environment_paramenter_loop_time = 1
+
+================= environment parameters ends ======================

@@ -1,0 +1,86 @@
+===================== vulnerability track  =============================
+
+The function name:  main
+   if( strcmp( controller4vul_266, "<W") < 0)
+   call v_ProcessModels
+
+The function name:  v_ProcessModels
+   if( strcmp( controller4vul_267, "wz") < 0)
+   call v_ProcessWorldModel
+
+The function name:  v_ProcessWorldModel
+   if( strcmp( controller4vul_268, "uW") < 0)
+   if( strcmp( controller4vul_269, "UK") > 0)
+   call v_ProcessBlock_Thread
+
+The function name:  v_ProcessBlock_Thread
+   if( strcmp( controller4vul_270, "]2") < 0)
+   call v_ChopBrushes
+
+The function name:  v_ChopBrushes
+   if( strcmp( controller4vul_271, "q") < 0)
+   if( strcmp( controller4vul_272, "aP") > 0)
+   call v_SubtractBrush
+
+The function name:  v_SubtractBrush
+   if( strcmp( controller4vul_273, "=") > 0)
+   call v_SplitBrush2
+
+The function name:  v_SplitBrush2
+   if( strcmp( controller4vul_274, "q") > 0)
+   if( strcmp( controller4vul_275, "5&") > 0)
+   call v_SplitBrush
+
+The function name:  v_SplitBrush
+   if( strcmp( controller4vul_276, "{") > 0)
+   if( strcmp( controller4vul_277, "9P") < 0)
+   call v_ChopWindingInPlace
+
+The function name:  v_ChopWindingInPlace
+   if( strcmp( controller4vul_278, "0") < 0)
+   call v_AllocWinding
+
+The function name:  v_AllocWinding
+   if( strcmp( controller4vul_279, "?") < 0)
+   if( strcmp( controller4vul_280, "Y") > 0)
+   Vulnerability
+
+
+===================== vulnerability track Ends =============================
+
+================= ulit parameters ======================
+
+unique_magic_number = 480
+vulnerability_name = CWE-761
+
+================= ulit parameters ends ======================
+
+================= dataflow parameters ======================
+
+dataflow_parameter_input_number = 15
+
+dataflow_parameter_magic_number = 0
+dataflow_parameter_magic_number_length_min = 1
+dataflow_parameter_magic_number_length_max = 2
+
+dataflow_parameter_checksum_type = 1
+dataflow_parameter_checksum_div = 100
+dataflow_parameter_checksum = 0
+
+================= dataflow parameters ends ======================
+
+================= environment parameters ======================
+
+environment_parameter_branches = 30
+
+environment_parameter_magic_number_length_min = 1
+environment_parameter_magic_number_length_max = 2
+environment_parameter_magic_number = 3
+
+environment_parameter_checksum_type = 1
+environment_parameter_checksum_div = 100
+environment_parameter_checksum_number = 1
+
+environment_paramenter_loop_time = 1
+
+================= environment parameters ends ======================

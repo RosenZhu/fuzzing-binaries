@@ -1,0 +1,95 @@
+===================== vulnerability track  =============================
+
+The function name:  main
+   if( strcmp( controller4vul_657, "e{") > 0)
+   call v_command_align
+
+The function name:  v_command_align
+   if( strcmp( controller4vul_658, ")") < 0)
+   if( strcmp( controller4vul_659, "Y$") > 0)
+   if( strcmp( controller4vul_660, "u") > 0)
+   call v_process
+
+The function name:  v_process
+   if( strcmp( controller4vul_661, "N") < 0)
+   if( strcmp( controller4vul_662, "zi") > 0)
+   if( strcmp( controller4vul_663, "?") < 0)
+   call v_mem_process_seqs
+
+The function name:  v_mem_process_seqs
+   if( strcmp( controller4vul_664, "9") < 0)
+   if( strcmp( controller4vul_665, "g") < 0)
+   call v_worker2
+
+The function name:  v_worker2
+   if( strcmp( controller4vul_666, "A#") < 0)
+   if( strcmp( controller4vul_667, "q") > 0)
+   call v_mem_sam_pe
+
+The function name:  v_mem_sam_pe
+
+The function name:  v_mem_matesw
+   if( strcmp( controller4vul_668, "_") > 0)
+   if( strcmp( controller4vul_669, "Am") > 0)
+   if( strcmp( controller4vul_670, "(X") < 0)
+   call v_mem_sort_dedup_patch
+
+The function name:  v_mem_sort_dedup_patch
+   if( strcmp( controller4vul_671, "t") < 0)
+   if( strcmp( controller4vul_672, "c") < 0)
+   call v_mem_patch_reg
+
+The function name:  v_mem_patch_reg
+   if( strcmp( controller4vul_673, "z!") > 0)
+   if( strcmp( controller4vul_674, "{W") < 0)
+   call v_bwa_gen_cigar2
+
+The function name:  v_bwa_gen_cigar2
+   if( strcmp( controller4vul_675, "re") < 0)
+   if( strcmp( controller4vul_676, "?/") < 0)
+   if( strcmp( controller4vul_677, "Y") < 0)
+   call v_kputc
+
+The function name:  v_kputc
+   if( strcmp( controller4vul_678, "z") < 0)
+   Vulnerability
+
+
+===================== vulnerability track Ends =============================
+
+================= ulit parameters ======================
+
+unique_magic_number = 387
+vulnerability_name = CWE-761
+
+================= ulit parameters ends ======================
+
+================= dataflow parameters ======================
+
+dataflow_parameter_input_number = 25
+
+dataflow_parameter_magic_number = 0
+dataflow_parameter_magic_number_length_min = 1
+dataflow_parameter_magic_number_length_max = 2
+
+dataflow_parameter_checksum_type = 1
+dataflow_parameter_checksum_div = 100
+dataflow_parameter_checksum = 0
+
+================= dataflow parameters ends ======================
+
+================= environment parameters ======================
+
+environment_parameter_branches = 30
+
+environment_parameter_magic_number_length_min = 1
+environment_parameter_magic_number_length_max = 2
+environment_parameter_magic_number = 3
+
+environment_parameter_checksum_type = 1
+environment_parameter_checksum_div = 100
+environment_parameter_checksum_number = 1
+
+environment_paramenter_loop_time = 1
+
+================= environment parameters ends ======================

@@ -1,0 +1,116 @@
+===================== vulnerability track  =============================
+
+The function name:  main
+   if( strcmp( controller4vul_1479, "A") < 0)
+   if( strcmp( controller4vul_1480, "u@") < 0)
+   if( strcmp( controller4vul_1481, "(p") > 0)
+   if( strcmp( controller4vul_1482, "K") > 0)
+   if( strcmp( controller4vul_1483, "M") < 0)
+   call v_start_classifier
+
+The function name:  v_start_classifier
+   if( strcmp( controller4vul_1484, "ro") < 0)
+   call v_ce_start
+
+The function name:  v_ce_start
+   if( strcmp( controller4vul_1485, ";") > 0)
+   call v_classification_worker_func
+
+The function name:  v_classification_worker_func
+   if( strcmp( controller4vul_1486, ">") > 0)
+   call v_run_classifcation_job
+
+The function name:  v_run_classifcation_job
+   if( strcmp( controller4vul_1487, "0r") < 0)
+   call v_get_tagger
+
+The function name:  v_get_tagger
+   if( strcmp( controller4vul_1488, "L") < 0)
+   if( strcmp( controller4vul_1489, "@") > 0)
+   if( strcmp( controller4vul_1490, "yf") > 0)
+   if( strcmp( controller4vul_1491, "z") < 0)
+   call v_fetch_or_update_tagger
+
+The function name:  v_fetch_or_update_tagger
+   if( strcmp( controller4vul_1492, "Ww") > 0)
+   if( strcmp( controller4vul_1493, "8") > 0)
+   call v_fetch_tagger
+
+The function name:  v_fetch_tagger
+   if( strcmp( controller4vul_1494, "vI") < 0)
+   if( strcmp( controller4vul_1495, ".Y") > 0)
+   if( strcmp( controller4vul_1496, "o?") < 0)
+   if( strcmp( controller4vul_1497, "-") < 0)
+   call v_build_tagger
+
+The function name:  v_build_tagger
+   if( strcmp( controller4vul_1498, "Xf") < 0)
+   if( strcmp( controller4vul_1499, "C") < 0)
+   if( strcmp( controller4vul_1500, "X+") > 0)
+   call v_add_missing_entries_from_array
+
+The function name:  v_add_missing_entries_from_array
+   if( strcmp( controller4vul_1501, ")") > 0)
+   call v_item_cache_add_entry
+
+The function name:  v_item_cache_add_entry
+   if( strcmp( controller4vul_1502, ":(") < 0)
+   call v_atom_tokenize
+
+The function name:  v_atom_tokenize
+   if( strcmp( controller4vul_1503, "#") < 0)
+   if( strcmp( controller4vul_1504, "3i") < 0)
+   if( strcmp( controller4vul_1505, "9C") > 0)
+   call v_html_tokenize_into_features
+
+The function name:  v_html_tokenize_into_features
+   if( strcmp( controller4vul_1506, "B") < 0)
+   call v_tokenize_text
+
+The function name:  v_tokenize_text
+   if( strcmp( controller4vul_1507, "&N") > 0)
+   if( strcmp( controller4vul_1508, "N") > 0)
+   call v_foldcase
+
+The function name:  v_foldcase
+   Vulnerability
+
+
+===================== vulnerability track Ends =============================
+
+================= ulit parameters ======================
+
+unique_magic_number = 447
+vulnerability_name = CWE-761
+
+================= ulit parameters ends ======================
+
+================= dataflow parameters ======================
+
+dataflow_parameter_input_number = 30
+
+dataflow_parameter_magic_number = 0
+dataflow_parameter_magic_number_length_min = 1
+dataflow_parameter_magic_number_length_max = 2
+
+dataflow_parameter_checksum_type = 1
+dataflow_parameter_checksum_div = 100
+dataflow_parameter_checksum = 0
+
+================= dataflow parameters ends ======================
+
+================= environment parameters ======================
+
+environment_parameter_branches = 30
+
+environment_parameter_magic_number_length_min = 1
+environment_parameter_magic_number_length_max = 2
+environment_parameter_magic_number = 3
+
+environment_parameter_checksum_type = 1
+environment_parameter_checksum_div = 100
+environment_parameter_checksum_number = 1
+
+environment_paramenter_loop_time = 1
+
+================= environment parameters ends ======================

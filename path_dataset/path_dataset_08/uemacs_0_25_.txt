@@ -1,0 +1,120 @@
+===================== vulnerability track  =============================
+
+The function name:  main
+   call v_startup
+
+The function name:  v_startup
+   if( strcmp( controller4vul_2036, ",") > 0)
+   call v_dofile
+
+The function name:  v_dofile
+   if( strcmp( controller4vul_2037, "?8") < 0)
+   call v_readin
+
+The function name:  v_readin
+   call v_execute
+
+The function name:  v_execute
+   if( strcmp( controller4vul_2038, "b") < 0)
+   call v_filesave
+
+The function name:  v_filesave
+   if( strcmp( controller4vul_2039, "on") < 0)
+   if( strcmp( controller4vul_2040, "h") < 0)
+   call v_writeout
+
+The function name:  v_writeout
+   if( strcmp( controller4vul_2041, "bt") < 0)
+   if( strcmp( controller4vul_2042, "bP") < 0)
+   if( strcmp( controller4vul_2043, "rE") < 0)
+   call v_resetkey
+
+The function name:  v_resetkey
+   if( strcmp( controller4vul_2044, "u") > 0)
+   if( strcmp( controller4vul_2045, "IO") < 0)
+   call v_set_encryption_key
+
+The function name:  v_set_encryption_key
+   if( strcmp( controller4vul_2046, "q") < 0)
+   call v_mlreply
+
+The function name:  v_mlreply
+   call v_nextarg
+
+The function name:  v_nextarg
+   if( strcmp( controller4vul_2047, "r") < 0)
+   call v_getstring
+
+The function name:  v_getstring
+   call v_get1key
+
+The function name:  v_get1key
+   if( strcmp( controller4vul_2048, "O-") < 0)
+   if( strcmp( controller4vul_2049, "F>") < 0)
+   call v_tgetc
+
+The function name:  v_tgetc
+   if( strcmp( controller4vul_2050, "p*") > 0)
+   if( strcmp( controller4vul_2051, ":") < 0)
+   if( strcmp( controller4vul_2052, "6b") < 0)
+   call v_update
+
+The function name:  v_update
+   if( strcmp( controller4vul_2053, "D#") > 0)
+   if( strcmp( controller4vul_2054, "xN") < 0)
+   call v_upddex
+
+The function name:  v_upddex
+   if( strcmp( controller4vul_2055, ">") < 0)
+   call v_show_line
+
+The function name:  v_show_line
+   if( strcmp( controller4vul_2056, ";") > 0)
+   if( strcmp( controller4vul_2057, "}2") > 0)
+   if( strcmp( controller4vul_2058, "RE") < 0)
+   call v_utf8_to_unicode
+
+The function name:  v_utf8_to_unicode
+   if( strcmp( controller4vul_2059, "0") < 0)
+   if( strcmp( controller4vul_2060, "6J") > 0)
+   Vulnerability
+
+
+===================== vulnerability track Ends =============================
+
+================= ulit parameters ======================
+
+unique_magic_number = 985
+vulnerability_name = CWE-761
+
+================= ulit parameters ends ======================
+
+================= dataflow parameters ======================
+
+dataflow_parameter_input_number = 25
+
+dataflow_parameter_magic_number = 0
+dataflow_parameter_magic_number_length_min = 1
+dataflow_parameter_magic_number_length_max = 2
+
+dataflow_parameter_checksum_type = 1
+dataflow_parameter_checksum_div = 100
+dataflow_parameter_checksum = 0
+
+================= dataflow parameters ends ======================
+
+================= environment parameters ======================
+
+environment_parameter_branches = 30
+
+environment_parameter_magic_number_length_min = 1
+environment_parameter_magic_number_length_max = 2
+environment_parameter_magic_number = 3
+
+environment_parameter_checksum_type = 1
+environment_parameter_checksum_div = 100
+environment_parameter_checksum_number = 1
+
+environment_paramenter_loop_time = 1
+
+================= environment parameters ends ======================

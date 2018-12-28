@@ -1,0 +1,138 @@
+===================== vulnerability track  =============================
+
+The function name:  main
+   if( strcmp( controller4vul_1282, "<#") > 0)
+   if( strcmp( controller4vul_1283, "m") > 0)
+   call v_vedis_open
+
+The function name:  v_vedis_open
+   if( strcmp( controller4vul_1284, "s") < 0)
+   if( strcmp( controller4vul_1285, "TG") > 0)
+   if( strcmp( controller4vul_1286, "iJ") < 0)
+   call v_vedisInitDatabase
+
+The function name:  v_vedisInitDatabase
+   if( strcmp( controller4vul_1287, "$o") < 0)
+   call v_vedisPagerOpen
+
+The function name:  v_vedisPagerOpen
+   if( strcmp( controller4vul_1288, "qD") > 0)
+   if( strcmp( controller4vul_1289, "=") < 0)
+   call v_vedisPagerRegisterKvEngine
+
+The function name:  v_vedisPagerRegisterKvEngine
+   if( strcmp( controller4vul_1290, "pI") < 0)
+   if( strcmp( controller4vul_1291, "Wc") < 0)
+   call v_pager_kv_io_init
+
+The function name:  v_pager_kv_io_init
+   call v_vedisKvIopageWrite
+
+The function name:  v_vedisKvIopageWrite
+   if( strcmp( controller4vul_1292, "P") < 0)
+   call v_vedisPageWrite
+
+The function name:  v_vedisPageWrite
+   if( strcmp( controller4vul_1293, "(") > 0)
+   if( strcmp( controller4vul_1294, "Z") > 0)
+   call v_vedisPagerBegin
+
+The function name:  v_vedisPagerBegin
+   if( strcmp( controller4vul_1295, "zt") < 0)
+   if( strcmp( controller4vul_1296, "G") > 0)
+   if( strcmp( controller4vul_1297, "F") < 0)
+   call v_pager_shared_lock
+
+The function name:  v_pager_shared_lock
+   if( strcmp( controller4vul_1298, "Mr") > 0)
+   if( strcmp( controller4vul_1299, "k") > 0)
+   if( strcmp( controller4vul_1300, "P") > 0)
+   if( strcmp( controller4vul_1301, "m") > 0)
+   if( strcmp( controller4vul_1302, ".!") > 0)
+   if( strcmp( controller4vul_1303, "4") > 0)
+   call v_pager_journal_rollback
+
+The function name:  v_pager_journal_rollback
+   if( strcmp( controller4vul_1304, "6") > 0)
+   if( strcmp( controller4vul_1305, "a") < 0)
+   call v_pager_has_hot_journal
+
+The function name:  v_pager_has_hot_journal
+   if( strcmp( controller4vul_1306, "rA") < 0)
+   if( strcmp( controller4vul_1307, "I") < 0)
+   if( strcmp( controller4vul_1308, "8c") > 0)
+   if( strcmp( controller4vul_1309, ":") > 0)
+   if( strcmp( controller4vul_1310, "Fg") > 0)
+   call v_pager_lock_db
+
+The function name:  v_pager_lock_db
+   if( strcmp( controller4vul_1311, "E") > 0)
+   if( strcmp( controller4vul_1312, "Ed") > 0)
+   call v_vedisGenError
+
+The function name:  v_vedisGenError
+   call v_SyBlobAppend
+
+The function name:  v_SyBlobAppend
+   if( strcmp( controller4vul_1313, "3@") < 0)
+   call v_BlobPrepareGrow
+
+The function name:  v_BlobPrepareGrow
+   if( strcmp( controller4vul_1314, "!G") > 0)
+   if( strcmp( controller4vul_1315, "1") < 0)
+   if( strcmp( controller4vul_1316, "t") > 0)
+   call v_SyMemBackendDup
+
+The function name:  v_SyMemBackendDup
+   if( strcmp( controller4vul_1317, "3") > 0)
+   if( strcmp( controller4vul_1318, "J6") < 0)
+   call v_SyMemBackendAlloc
+
+The function name:  v_SyMemBackendAlloc
+   if( strcmp( controller4vul_1319, "Qm") > 0)
+   if( strcmp( controller4vul_1320, "O") < 0)
+   call v_MemBackendAlloc
+
+The function name:  v_MemBackendAlloc
+   if( strcmp( controller4vul_1321, "eD") > 0)
+   Vulnerability
+
+
+===================== vulnerability track Ends =============================
+
+================= ulit parameters ======================
+
+unique_magic_number = 893
+vulnerability_name = CWE-761
+
+================= ulit parameters ends ======================
+
+================= dataflow parameters ======================
+
+dataflow_parameter_input_number = 40
+
+dataflow_parameter_magic_number = 0
+dataflow_parameter_magic_number_length_min = 1
+dataflow_parameter_magic_number_length_max = 2
+
+dataflow_parameter_checksum_type = 1
+dataflow_parameter_checksum_div = 100
+dataflow_parameter_checksum = 0
+
+================= dataflow parameters ends ======================
+
+================= environment parameters ======================
+
+environment_parameter_branches = 30
+
+environment_parameter_magic_number_length_min = 1
+environment_parameter_magic_number_length_max = 2
+environment_parameter_magic_number = 3
+
+environment_parameter_checksum_type = 1
+environment_parameter_checksum_div = 100
+environment_parameter_checksum_number = 1
+
+environment_paramenter_loop_time = 1
+
+================= environment parameters ends ======================

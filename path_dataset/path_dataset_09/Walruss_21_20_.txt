@@ -1,0 +1,130 @@
+===================== vulnerability track  =============================
+
+The function name:  main
+   if( strcmp( controller4vul_2280, "k") < 0)
+   if( strcmp( controller4vul_2281, "<") < 0)
+   call v_def
+
+The function name:  v_def
+   if( strcmp( controller4vul_2282, "S") < 0)
+   call v_in
+
+The function name:  v_in
+   if( strcmp( controller4vul_2283, "!") > 0)
+   if( strcmp( controller4vul_2284, "62") < 0)
+   call v_read
+
+The function name:  v_read
+   call v_gzread
+
+The function name:  v_gzread
+   if( strcmp( controller4vul_2285, "O") > 0)
+   call v_gz_read
+
+The function name:  v_gz_read
+   if( strcmp( controller4vul_2286, "V2") > 0)
+   call v_gz_skip
+
+The function name:  v_gz_skip
+   if( strcmp( controller4vul_2287, "^") > 0)
+   call v_gz_fetch
+
+The function name:  v_gz_fetch
+   if( strcmp( controller4vul_2288, "EV") < 0)
+   if( strcmp( controller4vul_2289, "7.") < 0)
+   call v_gz_decomp
+
+The function name:  v_gz_decomp
+   if( strcmp( controller4vul_2290, "q,") > 0)
+   call v_inflate
+
+The function name:  v_inflate
+   call v_out
+
+The function name:  v_out
+   if( strcmp( controller4vul_2291, "P") < 0)
+   call v_write
+
+The function name:  v_write
+   call v_gzwrite
+
+The function name:  v_gzwrite
+   call v_gz_write
+
+The function name:  v_gz_write
+   call v_gz_zero
+
+The function name:  v_gz_zero
+   if( strcmp( controller4vul_2292, "l") > 0)
+   call v_gz_comp
+
+The function name:  v_gz_comp
+   call v_deflateReset
+
+The function name:  v_deflateReset
+   call v_deflateResetKeep
+
+The function name:  v_deflateResetKeep
+   call v__tr_init
+
+The function name:  v__tr_init
+   if( strcmp( controller4vul_2293, "e ") > 0)
+   call v_tr_static_init
+
+The function name:  v_tr_static_init
+   if( strcmp( controller4vul_2294, "]?") < 0)
+   call v_gen_codes
+
+The function name:  v_gen_codes
+   if( strcmp( controller4vul_2295, "FI") > 0)
+   call v_bits
+
+The function name:  v_bits
+   if( strcmp( controller4vul_2296, "g") < 0)
+   call v_int
+
+The function name:  v_int
+   if( strcmp( controller4vul_2297, "B") < 0)
+   if( strcmp( controller4vul_2298, "yL") > 0)
+   if( strcmp( controller4vul_2299, "x)") < 0)
+   Vulnerability
+
+
+===================== vulnerability track Ends =============================
+
+================= ulit parameters ======================
+
+unique_magic_number = 149
+vulnerability_name = CWE-761
+
+================= ulit parameters ends ======================
+
+================= dataflow parameters ======================
+
+dataflow_parameter_input_number = 20
+
+dataflow_parameter_magic_number = 0
+dataflow_parameter_magic_number_length_min = 1
+dataflow_parameter_magic_number_length_max = 2
+
+dataflow_parameter_checksum_type = 1
+dataflow_parameter_checksum_div = 100
+dataflow_parameter_checksum = 0
+
+================= dataflow parameters ends ======================
+
+================= environment parameters ======================
+
+environment_parameter_branches = 30
+
+environment_parameter_magic_number_length_min = 1
+environment_parameter_magic_number_length_max = 2
+environment_parameter_magic_number = 3
+
+environment_parameter_checksum_type = 1
+environment_parameter_checksum_div = 100
+environment_parameter_checksum_number = 1
+
+environment_paramenter_loop_time = 1
+
+================= environment parameters ends ======================

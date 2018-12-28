@@ -1,0 +1,92 @@
+===================== vulnerability track  =============================
+
+The function name:  main
+   call v_swe_set_ephe_path
+
+The function name:  v_swe_set_ephe_path
+   if( strcmp( controller4vul_1462, "h") > 0)
+   if( strcmp( controller4vul_1463, "!") > 0)
+   if( strcmp( controller4vul_1464, "fx") < 0)
+   call v_swe_calc
+
+The function name:  v_swe_calc
+
+The function name:  v_swecalc
+   call v_app_pos_etc_plan_osc
+
+The function name:  v_app_pos_etc_plan_osc
+
+The function name:  v_app_pos_rest
+   if( strcmp( controller4vul_1465, "x") < 0)
+   if( strcmp( controller4vul_1466, "O8") > 0)
+   if( strcmp( controller4vul_1467, "c:") > 0)
+   call v_swe_get_ayanamsa_ex
+
+The function name:  v_swe_get_ayanamsa_ex
+   if( strcmp( controller4vul_1468, "cJ") > 0)
+   if( strcmp( controller4vul_1469, "RF") > 0)
+   call v_swe_fixstar
+
+The function name:  v_swe_fixstar
+   call v_main_planet
+
+The function name:  v_main_planet
+   if( strcmp( controller4vul_1470, "qw") < 0)
+   if( strcmp( controller4vul_1471, "D.") > 0)
+   if( strcmp( controller4vul_1472, "K#") < 0)
+   call v_app_pos_etc_plan
+
+The function name:  v_app_pos_etc_plan
+   if( strcmp( controller4vul_1473, "5") < 0)
+   if( strcmp( controller4vul_1474, "mx") < 0)
+   if( strcmp( controller4vul_1475, "0") > 0)
+   call v_swi_moshplan
+
+The function name:  v_swi_moshplan
+   if( strcmp( controller4vul_1476, "o9") < 0)
+   if( strcmp( controller4vul_1477, "@") > 0)
+   if( strcmp( controller4vul_1478, "}F") > 0)
+   call v_embofs_mosh
+
+The function name:  v_embofs_mosh
+   Vulnerability
+
+
+===================== vulnerability track Ends =============================
+
+================= ulit parameters ======================
+
+unique_magic_number = 447
+vulnerability_name = CWE-761
+
+================= ulit parameters ends ======================
+
+================= dataflow parameters ======================
+
+dataflow_parameter_input_number = 25
+
+dataflow_parameter_magic_number = 0
+dataflow_parameter_magic_number_length_min = 1
+dataflow_parameter_magic_number_length_max = 2
+
+dataflow_parameter_checksum_type = 1
+dataflow_parameter_checksum_div = 100
+dataflow_parameter_checksum = 0
+
+================= dataflow parameters ends ======================
+
+================= environment parameters ======================
+
+environment_parameter_branches = 30
+
+environment_parameter_magic_number_length_min = 1
+environment_parameter_magic_number_length_max = 2
+environment_parameter_magic_number = 3
+
+environment_parameter_checksum_type = 1
+environment_parameter_checksum_div = 100
+environment_parameter_checksum_number = 1
+
+environment_paramenter_loop_time = 1
+
+================= environment parameters ends ======================
