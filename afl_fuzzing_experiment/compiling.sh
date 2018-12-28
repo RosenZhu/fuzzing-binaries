@@ -1,5 +1,4 @@
 #!/bin/bash
-
 python ./node1/scripts/auto_compiling.py
 python ./node2/scripts/auto_compiling.py
 python ./node3/scripts/auto_compiling.py
