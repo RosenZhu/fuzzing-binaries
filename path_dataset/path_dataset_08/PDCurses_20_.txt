@@ -1,0 +1,133 @@
+===================== vulnerability track  =============================
+
+The function name:  main
+   if( strcmp( controller4vul_2016, "+0") < 0)
+   call v_initscr
+
+The function name:  v_initscr
+   call v_Xinitscr
+
+The function name:  v_Xinitscr
+   if( strcmp( controller4vul_2017, "4^") < 0)
+   call v_PDC_scr_open
+
+The function name:  v_PDC_scr_open
+   if( strcmp( controller4vul_2018, "Y") < 0)
+   call v_PDC_color_content
+
+The function name:  v_PDC_color_content
+   call v_XCursesInstructAndWait
+
+The function name:  v_XCursesInstructAndWait
+   if( strcmp( controller4vul_2019, "1") > 0)
+   call v_XCursesInstruct
+
+The function name:  v_XCursesInstruct
+   if( strcmp( controller4vul_2020, "*") > 0)
+   call v_XCursesExitCursesProcess
+
+The function name:  v_XCursesExitCursesProcess
+   call v_endwin
+
+The function name:  v_endwin
+   call v_PDC_scr_close
+
+The function name:  v_PDC_scr_close
+   if( strcmp( controller4vul_2021, ">") < 0)
+   if( strcmp( controller4vul_2022, "b") > 0)
+   call v_reset_shell_mode
+
+The function name:  v_reset_shell_mode
+   call v__restore_mode
+
+The function name:  v__restore_mode
+   call v_resize_term
+
+The function name:  v_resize_term
+   if( strcmp( controller4vul_2023, "Vt") < 0)
+   if( strcmp( controller4vul_2024, "ao") > 0)
+   call v_PDC_slk_initialize
+
+The function name:  v_PDC_slk_initialize
+   if( strcmp( controller4vul_2025, "S") < 0)
+   if( strcmp( controller4vul_2026, "=") < 0)
+   call v_newwin
+
+The function name:  v_newwin
+   if( strcmp( controller4vul_2027, "aW") < 0)
+   call v_werase
+
+The function name:  v_werase
+   if( strcmp( controller4vul_2028, "c") > 0)
+   call v_wclrtobot
+
+The function name:  v_wclrtobot
+   if( strcmp( controller4vul_2029, "0") > 0)
+   call v_wclrtoeol
+
+The function name:  v_wclrtoeol
+   call v_PDC_sync
+
+The function name:  v_PDC_sync
+   if( strcmp( controller4vul_2030, "h") < 0)
+   call v_wrefresh
+
+The function name:  v_wrefresh
+   if( strcmp( controller4vul_2031, "3n") > 0)
+   call v_doupdate
+
+The function name:  v_doupdate
+   call v_PDC_transform_line
+
+The function name:  v_PDC_transform_line
+   call v__set_attr
+
+The function name:  v__set_attr
+   if( strcmp( controller4vul_2032, "?") < 0)
+   if( strcmp( controller4vul_2033, "m") > 0)
+   if( strcmp( controller4vul_2034, "3") > 0)
+   if( strcmp( controller4vul_2035, "m") > 0)
+   call v_PDC_pair_content
+
+The function name:  v_PDC_pair_content
+   Vulnerability
+
+
+===================== vulnerability track Ends =============================
+
+================= ulit parameters ======================
+
+unique_magic_number = 985
+vulnerability_name = CWE-761
+
+================= ulit parameters ends ======================
+
+================= dataflow parameters ======================
+
+dataflow_parameter_input_number = 20
+
+dataflow_parameter_magic_number = 0
+dataflow_parameter_magic_number_length_min = 1
+dataflow_parameter_magic_number_length_max = 2
+
+dataflow_parameter_checksum_type = 1
+dataflow_parameter_checksum_div = 100
+dataflow_parameter_checksum = 0
+
+================= dataflow parameters ends ======================
+
+================= environment parameters ======================
+
+environment_parameter_branches = 30
+
+environment_parameter_magic_number_length_min = 1
+environment_parameter_magic_number_length_max = 2
+environment_parameter_magic_number = 3
+
+environment_parameter_checksum_type = 1
+environment_parameter_checksum_div = 100
+environment_parameter_checksum_number = 1
+
+environment_paramenter_loop_time = 1
+
+================= environment parameters ends ======================

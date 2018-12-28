@@ -1,0 +1,128 @@
+===================== vulnerability track  =============================
+
+The function name:  main
+   if( strcmp( controller4vul_1746, "hr") > 0)
+   call v_rasqal_query_prepare
+
+The function name:  v_rasqal_query_prepare
+   if( strcmp( controller4vul_1747, "0") > 0)
+   if( strcmp( controller4vul_1748, "JJ") > 0)
+   call v_rasqal_query_prepare_common
+
+The function name:  v_rasqal_query_prepare_common
+   if( strcmp( controller4vul_1749, "X") > 0)
+   call v_rasqal_query_fold_expressions
+
+The function name:  v_rasqal_query_fold_expressions
+   if( strcmp( controller4vul_1750, "#>") > 0)
+   call v_rasqal_graph_pattern_fold_expressions
+
+The function name:  v_rasqal_graph_pattern_fold_expressions
+   if( strcmp( controller4vul_1751, "A") < 0)
+   call v_rasqal_query_expression_fold
+
+The function name:  v_rasqal_query_expression_fold
+   call v_rasqal_expression_foreach_fold
+
+The function name:  v_rasqal_expression_foreach_fold
+   if( strcmp( controller4vul_1752, "Gv") > 0)
+   call v_rasqal_expression_evaluate2
+
+The function name:  v_rasqal_expression_evaluate2
+   if( strcmp( controller4vul_1753, "H") < 0)
+   if( strcmp( controller4vul_1754, "=") < 0)
+   call v_rasqal_expression_evaluate_in_set
+
+The function name:  v_rasqal_expression_evaluate_in_set
+   if( strcmp( controller4vul_1755, "+]") > 0)
+   call v_rasqal_literal_equals_flags
+
+The function name:  v_rasqal_literal_equals_flags
+   if( strcmp( controller4vul_1756, "o") < 0)
+   if( strcmp( controller4vul_1757, "EH") > 0)
+   if( strcmp( controller4vul_1758, "s") < 0)
+   if( strcmp( controller4vul_1759, "1") > 0)
+   call v_rasqal_new_literal_from_promotion
+
+The function name:  v_rasqal_new_literal_from_promotion
+   if( strcmp( controller4vul_1760, "dS") < 0)
+   if( strcmp( controller4vul_1761, "w") > 0)
+   if( strcmp( controller4vul_1762, "&K") > 0)
+   if( strcmp( controller4vul_1763, ";") > 0)
+   call v_rasqal_new_string_literal
+
+The function name:  v_rasqal_new_string_literal
+   call v_rasqal_new_string_literal_common
+
+The function name:  v_rasqal_new_string_literal_common
+   if( strcmp( controller4vul_1764, "p") > 0)
+   if( strcmp( controller4vul_1765, "?>") < 0)
+   if( strcmp( controller4vul_1766, "wI") < 0)
+   call v_rasqal_literal_string_to_native
+
+The function name:  v_rasqal_literal_string_to_native
+   if( strcmp( controller4vul_1767, "x") < 0)
+   call v_rasqal_literal_set_typed_value
+
+The function name:  v_rasqal_literal_set_typed_value
+   if( strcmp( controller4vul_1768, "e") > 0)
+   if( strcmp( controller4vul_1769, "eH") > 0)
+   call v_rasqal_new_xsd_date
+
+The function name:  v_rasqal_new_xsd_date
+   if( strcmp( controller4vul_1770, "0j") > 0)
+   call v_rasqal_xsd_datetime_normalize
+
+The function name:  v_rasqal_xsd_datetime_normalize
+   if( strcmp( controller4vul_1771, ":?") > 0)
+   if( strcmp( controller4vul_1772, "S2") > 0)
+   call v_rasqal_xsd_datetime_get_as_unixtime
+
+The function name:  v_rasqal_xsd_datetime_get_as_unixtime
+   if( strcmp( controller4vul_1773, ",$") > 0)
+   call v_rasqal_timegm
+
+The function name:  v_rasqal_timegm
+   if( strcmp( controller4vul_1774, "3X") > 0)
+   if( strcmp( controller4vul_1775, "_H") < 0)
+   Vulnerability
+
+
+===================== vulnerability track Ends =============================
+
+================= ulit parameters ======================
+
+unique_magic_number = 273
+vulnerability_name = CWE-761
+
+================= ulit parameters ends ======================
+
+================= dataflow parameters ======================
+
+dataflow_parameter_input_number = 30
+
+dataflow_parameter_magic_number = 0
+dataflow_parameter_magic_number_length_min = 1
+dataflow_parameter_magic_number_length_max = 2
+
+dataflow_parameter_checksum_type = 1
+dataflow_parameter_checksum_div = 100
+dataflow_parameter_checksum = 0
+
+================= dataflow parameters ends ======================
+
+================= environment parameters ======================
+
+environment_parameter_branches = 30
+
+environment_parameter_magic_number_length_min = 1
+environment_parameter_magic_number_length_max = 2
+environment_parameter_magic_number = 3
+
+environment_parameter_checksum_type = 1
+environment_parameter_checksum_div = 100
+environment_parameter_checksum_number = 1
+
+environment_paramenter_loop_time = 1
+
+================= environment parameters ends ======================

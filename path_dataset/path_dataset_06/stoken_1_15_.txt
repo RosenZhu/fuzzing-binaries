@@ -1,0 +1,95 @@
+===================== vulnerability track  =============================
+
+The function name:  main
+   if( strcmp( controller4vul_1427, "V@") < 0)
+   if( strcmp( controller4vul_1428, "BU") > 0)
+   call v_common_init
+
+The function name:  v_common_init
+   if( strcmp( controller4vul_1429, "/1") > 0)
+   call v___stoken_parse_and_decode_token
+
+The function name:  v___stoken_parse_and_decode_token
+   if( strcmp( controller4vul_1430, "X") < 0)
+   call v_sdtid_decode
+
+The function name:  v_sdtid_decode
+   call v_decode_one
+
+The function name:  v_decode_one
+   if( strcmp( controller4vul_1431, "o") > 0)
+   call v_decode_fields
+
+The function name:  v_decode_fields
+   if( strcmp( controller4vul_1432, "d") < 0)
+   call v_sdtid_decrypt
+
+The function name:  v_sdtid_decrypt
+   if( strcmp( controller4vul_1433, "9.") < 0)
+   call v_generate_all_keys
+
+The function name:  v_generate_all_keys
+   if( strcmp( controller4vul_1434, "*W") < 0)
+   call v_str_or_warn
+
+The function name:  v_str_or_warn
+   if( strcmp( controller4vul_1435, "q5") < 0)
+   call v_lookup_string
+
+The function name:  v_lookup_string
+   if( strcmp( controller4vul_1436, "o[") > 0)
+   if( strcmp( controller4vul_1437, "|") > 0)
+   call v_lookup_common
+
+The function name:  v_lookup_common
+   if( strcmp( controller4vul_1438, "IO") < 0)
+   call v___lookup_common
+
+The function name:  v___lookup_common
+   if( strcmp( controller4vul_1439, "h2") > 0)
+   if( strcmp( controller4vul_1440, "g[") < 0)
+   call v_xmlnode_is_named
+
+The function name:  v_xmlnode_is_named
+   if( strcmp( controller4vul_1441, "d") > 0)
+   Vulnerability
+
+
+===================== vulnerability track Ends =============================
+
+================= ulit parameters ======================
+
+unique_magic_number = 447
+vulnerability_name = CWE-761
+
+================= ulit parameters ends ======================
+
+================= dataflow parameters ======================
+
+dataflow_parameter_input_number = 15
+
+dataflow_parameter_magic_number = 0
+dataflow_parameter_magic_number_length_min = 1
+dataflow_parameter_magic_number_length_max = 2
+
+dataflow_parameter_checksum_type = 1
+dataflow_parameter_checksum_div = 100
+dataflow_parameter_checksum = 0
+
+================= dataflow parameters ends ======================
+
+================= environment parameters ======================
+
+environment_parameter_branches = 30
+
+environment_parameter_magic_number_length_min = 1
+environment_parameter_magic_number_length_max = 2
+environment_parameter_magic_number = 3
+
+environment_parameter_checksum_type = 1
+environment_parameter_checksum_div = 100
+environment_parameter_checksum_number = 1
+
+environment_paramenter_loop_time = 1
+
+================= environment parameters ends ======================

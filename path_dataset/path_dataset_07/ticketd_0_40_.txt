@@ -1,0 +1,147 @@
+===================== vulnerability track  =============================
+
+The function name:  main
+   if( strcmp( controller4vul_1811, "x1") > 0)
+   if( strcmp( controller4vul_1812, "2&") > 0)
+   if( strcmp( controller4vul_1813, "uG") > 0)
+   call v___connect_to_peer_at_host
+
+The function name:  v___connect_to_peer_at_host
+   call v___connect_to_peer
+
+The function name:  v___connect_to_peer
+   if( strcmp( controller4vul_1814, "g") < 0)
+   call v___on_connection_accepted_by_peer
+
+The function name:  v___on_connection_accepted_by_peer
+   if( strcmp( controller4vul_1815, "^h") < 0)
+   call v___peer_read_cb
+
+The function name:  v___peer_read_cb
+   if( strcmp( controller4vul_1816, "h&") > 0)
+   call v___deserialize_and_handle_msg
+
+The function name:  v___deserialize_and_handle_msg
+   if( strcmp( controller4vul_1817, "<") < 0)
+   call v___drop_db
+
+The function name:  v___drop_db
+   call v_mdb_drop_dbs
+
+The function name:  v_mdb_drop_dbs
+   if( strcmp( controller4vul_1818, "LP") > 0)
+   call v_mdb_txn_commit
+
+The function name:  v_mdb_txn_commit
+   if( strcmp( controller4vul_1819, " :") < 0)
+   if( strcmp( controller4vul_1820, "f)") > 0)
+   if( strcmp( controller4vul_1821, "_s") < 0)
+   call v_mdb_freelist_save
+
+The function name:  v_mdb_freelist_save
+   call v_mdb_cursor_del
+
+The function name:  v_mdb_cursor_del
+   if( strcmp( controller4vul_1822, ")8") < 0)
+   if( strcmp( controller4vul_1823, "/") > 0)
+   if( strcmp( controller4vul_1824, "(<") < 0)
+   if( strcmp( controller4vul_1825, "fQ") > 0)
+   if( strcmp( controller4vul_1826, "6_") > 0)
+   call v_mdb_cursor_del0
+
+The function name:  v_mdb_cursor_del0
+   if( strcmp( controller4vul_1827, "d") < 0)
+   if( strcmp( controller4vul_1828, "q") > 0)
+   if( strcmp( controller4vul_1829, "*,") > 0)
+   if( strcmp( controller4vul_1830, "^Z") > 0)
+   call v_mdb_rebalance
+
+The function name:  v_mdb_rebalance
+   if( strcmp( controller4vul_1831, "(-") > 0)
+   if( strcmp( controller4vul_1832, "j") < 0)
+   call v_mdb_page_merge
+
+The function name:  v_mdb_page_merge
+   if( strcmp( controller4vul_1833, "@") < 0)
+   if( strcmp( controller4vul_1834, "i") < 0)
+   if( strcmp( controller4vul_1835, "t") > 0)
+   call v_mdb_page_touch
+
+The function name:  v_mdb_page_touch
+   if( strcmp( controller4vul_1836, "e") < 0)
+   if( strcmp( controller4vul_1837, "J2") < 0)
+   if( strcmp( controller4vul_1838, "pC") < 0)
+   call v_mdb_page_alloc
+
+The function name:  v_mdb_page_alloc
+   call v_mdb_cursor_get
+
+The function name:  v_mdb_cursor_get
+   if( strcmp( controller4vul_1839, "7V") > 0)
+   if( strcmp( controller4vul_1840, "E") < 0)
+   if( strcmp( controller4vul_1841, "T") > 0)
+   call v_mdb_cursor_prev
+
+The function name:  v_mdb_cursor_prev
+   if( strcmp( controller4vul_1842, "E") > 0)
+   if( strcmp( controller4vul_1843, "y/") < 0)
+   if( strcmp( controller4vul_1844, "e") < 0)
+   call v_mdb_cursor_last
+
+The function name:  v_mdb_cursor_last
+   if( strcmp( controller4vul_1845, "0m") > 0)
+   if( strcmp( controller4vul_1846, "O^") < 0)
+   if( strcmp( controller4vul_1847, "`c") > 0)
+   call v_mdb_node_read
+
+The function name:  v_mdb_node_read
+   if( strcmp( controller4vul_1848, "V") < 0)
+   call v_mdb_page_get
+
+The function name:  v_mdb_page_get
+   if( strcmp( controller4vul_1849, "0{") < 0)
+   call v_mdb_midl_search
+
+The function name:  v_mdb_midl_search
+   if( strcmp( controller4vul_1850, "Tn") < 0)
+   Vulnerability
+
+
+===================== vulnerability track Ends =============================
+
+================= ulit parameters ======================
+
+unique_magic_number = 273
+vulnerability_name = CWE-761
+
+================= ulit parameters ends ======================
+
+================= dataflow parameters ======================
+
+dataflow_parameter_input_number = 40
+
+dataflow_parameter_magic_number = 0
+dataflow_parameter_magic_number_length_min = 1
+dataflow_parameter_magic_number_length_max = 2
+
+dataflow_parameter_checksum_type = 1
+dataflow_parameter_checksum_div = 100
+dataflow_parameter_checksum = 0
+
+================= dataflow parameters ends ======================
+
+================= environment parameters ======================
+
+environment_parameter_branches = 30
+
+environment_parameter_magic_number_length_min = 1
+environment_parameter_magic_number_length_max = 2
+environment_parameter_magic_number = 3
+
+environment_parameter_checksum_type = 1
+environment_parameter_checksum_div = 100
+environment_parameter_checksum_number = 1
+
+environment_paramenter_loop_time = 1
+
+================= environment parameters ends ======================

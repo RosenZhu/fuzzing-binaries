@@ -1,0 +1,115 @@
+===================== vulnerability track  =============================
+
+The function name:  main
+   if( strcmp( controller4vul_2625, "[") > 0)
+   call v_consoleTestsuite
+
+The function name:  v_consoleTestsuite
+   if( strcmp( controller4vul_2626, "2") < 0)
+   call v_consoleTestsuitePeerTestsuite
+
+The function name:  v_consoleTestsuitePeerTestsuite
+   call v_peermgtTestsuite
+
+The function name:  v_peermgtTestsuite
+   if( strcmp( controller4vul_2627, "r") < 0)
+   call v_peermgtTestsuitePrepare
+
+The function name:  v_peermgtTestsuitePrepare
+   if( strcmp( controller4vul_2628, "#^") < 0)
+   call v_peermgtTestsuiteRun
+
+The function name:  v_peermgtTestsuiteRun
+   call v_peermgtDecodePacket
+
+The function name:  v_peermgtDecodePacket
+   call v_peermgtDecodePacketRecursive
+
+The function name:  v_peermgtDecodePacketRecursive
+   if( strcmp( controller4vul_2629, "=") > 0)
+   if( strcmp( controller4vul_2630, "Q") < 0)
+   if( strcmp( controller4vul_2631, "4I") < 0)
+   if( strcmp( controller4vul_2632, "&") < 0)
+   if( strcmp( controller4vul_2633, "DI") > 0)
+   if( strcmp( controller4vul_2634, "?!") < 0)
+   if( strcmp( controller4vul_2635, "is") < 0)
+   if( strcmp( controller4vul_2636, ">Y") > 0)
+   if( strcmp( controller4vul_2637, "B") < 0)
+   call v_peermgtDecodePacketAuth
+
+The function name:  v_peermgtDecodePacketAuth
+   if( strcmp( controller4vul_2638, "Y") < 0)
+   if( strcmp( controller4vul_2639, "Rr") > 0)
+   if( strcmp( controller4vul_2640, "kA") > 0)
+   if( strcmp( controller4vul_2641, "pU") > 0)
+   call v_authmgtDecodeMsg
+
+The function name:  v_authmgtDecodeMsg
+   if( strcmp( controller4vul_2642, "2") < 0)
+   if( strcmp( controller4vul_2643, "D") < 0)
+   if( strcmp( controller4vul_2644, "vo") > 0)
+   if( strcmp( controller4vul_2645, "M`") < 0)
+   if( strcmp( controller4vul_2646, "H") < 0)
+   if( strcmp( controller4vul_2647, "U") > 0)
+   call v_authDecodeMsg
+
+The function name:  v_authDecodeMsg
+   if( strcmp( controller4vul_2648, "0G") < 0)
+   call v_authDecodeS2
+
+The function name:  v_authDecodeS2
+   if( strcmp( controller4vul_2649, "4D") > 0)
+   if( strcmp( controller4vul_2650, "6") < 0)
+   if( strcmp( controller4vul_2651, "@") < 0)
+   if( strcmp( controller4vul_2652, "=w") < 0)
+   if( strcmp( controller4vul_2653, "w") > 0)
+   if( strcmp( controller4vul_2654, "e") < 0)
+   if( strcmp( controller4vul_2655, "a") < 0)
+   if( strcmp( controller4vul_2656, "]") > 0)
+   if( strcmp( controller4vul_2657, "gM") > 0)
+   if( strcmp( controller4vul_2658, "7") < 0)
+   call v_cryptoDec
+
+The function name:  v_cryptoDec
+   if( strcmp( controller4vul_2659, "0L") > 0)
+   Vulnerability
+
+
+===================== vulnerability track Ends =============================
+
+================= ulit parameters ======================
+
+unique_magic_number = 949
+vulnerability_name = CWE-761
+
+================= ulit parameters ends ======================
+
+================= dataflow parameters ======================
+
+dataflow_parameter_input_number = 35
+
+dataflow_parameter_magic_number = 0
+dataflow_parameter_magic_number_length_min = 1
+dataflow_parameter_magic_number_length_max = 2
+
+dataflow_parameter_checksum_type = 1
+dataflow_parameter_checksum_div = 100
+dataflow_parameter_checksum = 0
+
+================= dataflow parameters ends ======================
+
+================= environment parameters ======================
+
+environment_parameter_branches = 30
+
+environment_parameter_magic_number_length_min = 1
+environment_parameter_magic_number_length_max = 2
+environment_parameter_magic_number = 3
+
+environment_parameter_checksum_type = 1
+environment_parameter_checksum_div = 100
+environment_parameter_checksum_number = 1
+
+environment_paramenter_loop_time = 1
+
+================= environment parameters ends ======================

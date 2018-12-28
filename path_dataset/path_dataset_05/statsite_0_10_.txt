@@ -1,0 +1,90 @@
+===================== vulnerability track  =============================
+
+The function name:  main
+   call v_srunner_run_all
+
+The function name:  v_srunner_run_all
+   call v_srunner_run
+
+The function name:  v_srunner_run
+   if( strcmp( controller4vul_1147, "}@") < 0)
+   call v_srunner_run_init
+
+The function name:  v_srunner_run_init
+   call v_srunner_init_logging
+
+The function name:  v_srunner_init_logging
+   if( strcmp( controller4vul_1148, "C") < 0)
+   call v_stdout_lfun
+
+The function name:  v_stdout_lfun
+   if( strcmp( controller4vul_1149, "}") < 0)
+   call v_srunner_fprint
+
+The function name:  v_srunner_fprint
+   if( strcmp( controller4vul_1150, "`1") < 0)
+   call v_srunner_fprint_results
+
+The function name:  v_srunner_fprint_results
+   if( strcmp( controller4vul_1151, "@") < 0)
+   if( strcmp( controller4vul_1152, "G") < 0)
+   call v_tr_fprint
+
+The function name:  v_tr_fprint
+   if( strcmp( controller4vul_1153, "y") < 0)
+   call v_tr_str
+
+The function name:  v_tr_str
+   call v_ck_strdup_printf
+
+The function name:  v_ck_strdup_printf
+   if( strcmp( controller4vul_1154, "M") < 0)
+   call v_erealloc
+
+The function name:  v_erealloc
+   if( strcmp( controller4vul_1155, "=S") < 0)
+   call v_eprintf
+
+The function name:  v_eprintf
+   if( strcmp( controller4vul_1156, "}}") < 0)
+   Vulnerability
+
+
+===================== vulnerability track Ends =============================
+
+================= ulit parameters ======================
+
+unique_magic_number = 893
+vulnerability_name = CWE-761
+
+================= ulit parameters ends ======================
+
+================= dataflow parameters ======================
+
+dataflow_parameter_input_number = 10
+
+dataflow_parameter_magic_number = 0
+dataflow_parameter_magic_number_length_min = 1
+dataflow_parameter_magic_number_length_max = 2
+
+dataflow_parameter_checksum_type = 1
+dataflow_parameter_checksum_div = 100
+dataflow_parameter_checksum = 0
+
+================= dataflow parameters ends ======================
+
+================= environment parameters ======================
+
+environment_parameter_branches = 30
+
+environment_parameter_magic_number_length_min = 1
+environment_parameter_magic_number_length_max = 2
+environment_parameter_magic_number = 3
+
+environment_parameter_checksum_type = 1
+environment_parameter_checksum_div = 100
+environment_parameter_checksum_number = 1
+
+environment_paramenter_loop_time = 1
+
+================= environment parameters ends ======================
