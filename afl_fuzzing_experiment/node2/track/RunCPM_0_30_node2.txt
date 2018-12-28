@@ -1,0 +1,149 @@
+===================== vulnerability track  =============================
+
+The function name:  main
+   if( strcmp( controller4vul_326, "c") < 0)
+   call v_pmain
+
+The function name:  v_pmain
+   if( strcmp( controller4vul_327, "2:") > 0)
+   if( strcmp( controller4vul_328, "s") < 0)
+   call v_runargs
+
+The function name:  v_runargs
+   if( strcmp( controller4vul_329, "70") > 0)
+   if( strcmp( controller4vul_330, "r$") > 0)
+   call v_dolibrary
+
+The function name:  v_dolibrary
+   if( strcmp( controller4vul_331, "jm") < 0)
+   call v_docall
+
+The function name:  v_docall
+   call v_msghandler
+
+The function name:  v_msghandler
+   if( strcmp( controller4vul_332, "),") > 0)
+   if( strcmp( controller4vul_333, "S") > 0)
+   call v_luaL_traceback
+
+The function name:  v_luaL_traceback
+   if( strcmp( controller4vul_334, "cm") > 0)
+   call v_luaL_checkstack
+
+The function name:  v_luaL_checkstack
+   if( strcmp( controller4vul_335, "s") < 0)
+   if( strcmp( controller4vul_336, "9") > 0)
+   call v_luaL_error
+
+The function name:  v_luaL_error
+   call v_luaL_where
+
+The function name:  v_luaL_where
+   if( strcmp( controller4vul_337, "u2") > 0)
+   if( strcmp( controller4vul_338, "s$") > 0)
+   call v_lua_getinfo
+
+The function name:  v_lua_getinfo
+   if( strcmp( controller4vul_339, "}B") < 0)
+   call v_collectvalidlines
+
+The function name:  v_collectvalidlines
+   if( strcmp( controller4vul_340, "5X") > 0)
+   call v_luaH_new
+
+The function name:  v_luaH_new
+   call v_setnodevector
+
+The function name:  v_setnodevector
+   if( strcmp( controller4vul_341, "Bb") < 0)
+   if( strcmp( controller4vul_342, "1") > 0)
+   call v_luaG_runerror
+
+The function name:  v_luaG_runerror
+   if( strcmp( controller4vul_343, "f") < 0)
+   call v_luaG_errormsg
+
+The function name:  v_luaG_errormsg
+   if( strcmp( controller4vul_344, "&(") > 0)
+   call v_luaD_callnoyield
+
+The function name:  v_luaD_callnoyield
+   call v_luaD_call
+
+The function name:  v_luaD_call
+   if( strcmp( controller4vul_345, "m") > 0)
+   call v_luaV_execute
+
+The function name:  v_luaV_execute
+   call v_luaV_lessequal
+
+The function name:  v_luaV_lessequal
+   if( strcmp( controller4vul_346, "3$") > 0)
+   if( strcmp( controller4vul_347, "k") > 0)
+   call v_luaG_ordererror
+
+The function name:  v_luaG_ordererror
+   if( strcmp( controller4vul_348, "6#") < 0)
+   call v_luaT_objtypename
+
+The function name:  v_luaT_objtypename
+   if( strcmp( controller4vul_349, "^") > 0)
+   if( strcmp( controller4vul_350, "A") < 0)
+   call v_luaS_new
+
+The function name:  v_luaS_new
+   if( strcmp( controller4vul_351, "D") > 0)
+   call v_luaS_newlstr
+
+The function name:  v_luaS_newlstr
+   if( strcmp( controller4vul_352, "?") < 0)
+   if( strcmp( controller4vul_353, "E") < 0)
+   call v_internshrstr
+
+The function name:  v_internshrstr
+   if( strcmp( controller4vul_354, "N") > 0)
+   if( strcmp( controller4vul_355, "]T") < 0)
+   call v_luaS_hash
+
+The function name:  v_luaS_hash
+   Vulnerability
+
+
+===================== vulnerability track Ends =============================
+
+================= ulit parameters ======================
+
+unique_magic_number = 480
+vulnerability_name = CWE-761
+
+================= ulit parameters ends ======================
+
+================= dataflow parameters ======================
+
+dataflow_parameter_input_number = 30
+
+dataflow_parameter_magic_number = 0
+dataflow_parameter_magic_number_length_min = 1
+dataflow_parameter_magic_number_length_max = 2
+
+dataflow_parameter_checksum_type = 1
+dataflow_parameter_checksum_div = 100
+dataflow_parameter_checksum = 0
+
+================= dataflow parameters ends ======================
+
+================= environment parameters ======================
+
+environment_parameter_branches = 30
+
+environment_parameter_magic_number_length_min = 1
+environment_parameter_magic_number_length_max = 2
+environment_parameter_magic_number = 3
+
+environment_parameter_checksum_type = 1
+environment_parameter_checksum_div = 100
+environment_parameter_checksum_number = 1
+
+environment_paramenter_loop_time = 1
+
+================= environment parameters ends ======================

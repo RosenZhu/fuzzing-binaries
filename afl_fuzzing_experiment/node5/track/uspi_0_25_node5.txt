@@ -1,0 +1,135 @@
+===================== vulnerability track  =============================
+
+The function name:  main
+   if( strcmp( controller4vul_1192, "?") > 0)
+   call v_USPiInitialize
+
+The function name:  v_USPiInitialize
+   if( strcmp( controller4vul_1193, "d") > 0)
+   call v_DWHCIDeviceInitialize
+
+The function name:  v_DWHCIDeviceInitialize
+   if( strcmp( controller4vul_1194, "fo") > 0)
+   call v_DWHCIRootPortInitialize
+
+The function name:  v_DWHCIRootPortInitialize
+   if( strcmp( controller4vul_1195, "u$") < 0)
+   if( strcmp( controller4vul_1196, "xe") < 0)
+   call v_USBDeviceFactoryGetDevice
+
+The function name:  v_USBDeviceFactoryGetDevice
+   if( strcmp( controller4vul_1197, "]-") > 0)
+   call v_GetDevice
+
+The function name:  v_GetDevice
+   if( strcmp( controller4vul_1198, "un") < 0)
+   call v_USBKeyboardDevice
+
+The function name:  v_USBKeyboardDevice
+   call v_USBKeyboardDeviceConfigure
+
+The function name:  v_USBKeyboardDeviceConfigure
+   if( strcmp( controller4vul_1199, "n") < 0)
+   call v_USBDeviceConfigure
+
+The function name:  v_USBDeviceConfigure
+   if( strcmp( controller4vul_1200, "o.") > 0)
+   call v_DWHCIDeviceSetConfiguration
+
+The function name:  v_DWHCIDeviceSetConfiguration
+   if( strcmp( controller4vul_1201, "Gk") < 0)
+   call v_DWHCIDeviceControlMessage
+
+The function name:  v_DWHCIDeviceControlMessage
+   if( strcmp( controller4vul_1202, "+") < 0)
+   call v_DWHCIDeviceSubmitBlockingRequest
+
+The function name:  v_DWHCIDeviceSubmitBlockingRequest
+   if( strcmp( controller4vul_1203, "<") > 0)
+   if( strcmp( controller4vul_1204, "7G") < 0)
+   if( strcmp( controller4vul_1205, "Ua") < 0)
+   if( strcmp( controller4vul_1206, "2)") < 0)
+   call v_DWHCIDeviceTransferStage
+
+The function name:  v_DWHCIDeviceTransferStage
+   if( strcmp( controller4vul_1207, "s") < 0)
+   call v_DWHCIDeviceTransferStageAsync
+
+The function name:  v_DWHCIDeviceTransferStageAsync
+   if( strcmp( controller4vul_1208, "u") > 0)
+   if( strcmp( controller4vul_1209, "6") < 0)
+   call v_DWHCITransferStageData
+
+The function name:  v_DWHCITransferStageData
+   if( strcmp( controller4vul_1210, ":") > 0)
+   if( strcmp( controller4vul_1211, "en") > 0)
+   if( strcmp( controller4vul_1212, "c{") < 0)
+   call v_DWHCIFrameSchedulerPeriodic
+
+The function name:  v_DWHCIFrameSchedulerPeriodic
+   call v_DWHCIFrameSchedulerPeriodicTransactionComplete
+
+The function name:  v_DWHCIFrameSchedulerPeriodicTransactionComplete
+   if( strcmp( controller4vul_1213, "z") > 0)
+   if( strcmp( controller4vul_1214, "7j") < 0)
+   call v_LogWrite
+
+The function name:  v_LogWrite
+   call v_LoggerWriteV
+
+The function name:  v_LoggerWriteV
+   call v_LoggerWrite2
+
+The function name:  v_LoggerWrite2
+   call v_ScreenDeviceWrite
+
+The function name:  v_ScreenDeviceWrite
+   call v_ScreenDeviceWrite2
+
+The function name:  v_ScreenDeviceWrite2
+   if( strcmp( controller4vul_1215, "YJ") > 0)
+   call v_ScreenDeviceDisplayChar
+
+The function name:  v_ScreenDeviceDisplayChar
+   if( strcmp( controller4vul_1216, "(") < 0)
+   Vulnerability
+
+
+===================== vulnerability track Ends =============================
+
+================= ulit parameters ======================
+
+unique_magic_number = 893
+vulnerability_name = CWE-761
+
+================= ulit parameters ends ======================
+
+================= dataflow parameters ======================
+
+dataflow_parameter_input_number = 25
+
+dataflow_parameter_magic_number = 0
+dataflow_parameter_magic_number_length_min = 1
+dataflow_parameter_magic_number_length_max = 2
+
+dataflow_parameter_checksum_type = 1
+dataflow_parameter_checksum_div = 100
+dataflow_parameter_checksum = 0
+
+================= dataflow parameters ends ======================
+
+================= environment parameters ======================
+
+environment_parameter_branches = 30
+
+environment_parameter_magic_number_length_min = 1
+environment_parameter_magic_number_length_max = 2
+environment_parameter_magic_number = 3
+
+environment_parameter_checksum_type = 1
+environment_parameter_checksum_div = 100
+environment_parameter_checksum_number = 1
+
+environment_paramenter_loop_time = 1
+
+================= environment parameters ends ======================

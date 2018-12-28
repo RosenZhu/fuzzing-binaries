@@ -1,0 +1,143 @@
+===================== vulnerability track  =============================
+
+The function name:  main
+   if( strcmp( controller4vul_947, ">") < 0)
+   if( strcmp( controller4vul_948, "NT") > 0)
+   call v_termpty_handle_buf
+
+The function name:  v_termpty_handle_buf
+   if( strcmp( controller4vul_949, "m") < 0)
+   call v_termpty_handle_seq
+
+The function name:  v_termpty_handle_seq
+   call v__handle_esc
+
+The function name:  v__handle_esc
+   if( strcmp( controller4vul_950, "?C") < 0)
+   if( strcmp( controller4vul_951, "I") < 0)
+   call v__handle_esc_csi
+
+The function name:  v__handle_esc_csi
+   call v__handle_esc_csi_reset_mode
+
+The function name:  v__handle_esc_csi_reset_mode
+   call v_termpty_clear_screen
+
+The function name:  v_termpty_clear_screen
+   if( strcmp( controller4vul_952, "]y") < 0)
+   call v_termio_content_change
+
+The function name:  v_termio_content_change
+   if( strcmp( controller4vul_953, "<") > 0)
+   call v__remove_links
+
+The function name:  v__remove_links
+   if( strcmp( controller4vul_954, "z9") < 0)
+   call v__update_link
+
+The function name:  v__update_link
+   if( strcmp( controller4vul_955, "0") < 0)
+   if( strcmp( controller4vul_956, "T") < 0)
+   call v__cb_link_down
+
+The function name:  v__cb_link_down
+   if( strcmp( controller4vul_957, "w") > 0)
+   if( strcmp( controller4vul_958, "`") > 0)
+   if( strcmp( controller4vul_959, "]") > 0)
+   call v__cb_ctxp_link_content_copy
+
+The function name:  v__cb_ctxp_link_content_copy
+   call v__take_selection_text
+
+The function name:  v__take_selection_text
+   if( strcmp( controller4vul_960, "+") > 0)
+   call v__lost_selection
+
+The function name:  v__lost_selection
+   if( strcmp( controller4vul_961, "Rr") > 0)
+   if( strcmp( controller4vul_962, "<") < 0)
+   if( strcmp( controller4vul_963, "Cn") < 0)
+   call v__smart_update_queue
+
+The function name:  v__smart_update_queue
+   if( strcmp( controller4vul_964, "*F") > 0)
+   call v__smart_cb_change
+
+The function name:  v__smart_cb_change
+   call v__smart_apply
+
+The function name:  v__smart_apply
+   if( strcmp( controller4vul_965, "Eo") > 0)
+   if( strcmp( controller4vul_966, "<") > 0)
+   if( strcmp( controller4vul_967, "1*") < 0)
+   call v__block_activate
+
+The function name:  v__block_activate
+   if( strcmp( controller4vul_968, ";") > 0)
+   call v__block_media_activate
+
+The function name:  v__block_media_activate
+   if( strcmp( controller4vul_969, ".,") < 0)
+   call v_media_add
+
+The function name:  v_media_add
+   if( strcmp( controller4vul_970, "0?") > 0)
+   if( strcmp( controller4vul_971, "Fw") < 0)
+   call v__url_compl_cb
+
+The function name:  v__url_compl_cb
+   if( strcmp( controller4vul_972, ";q") > 0)
+   call v__type_img_init
+
+The function name:  v__type_img_init
+   call v__type_img_anim_handle
+
+The function name:  v__type_img_anim_handle
+   if( strcmp( controller4vul_973, "Gc") < 0)
+   call v__cb_img_frame
+
+The function name:  v__cb_img_frame
+   if( strcmp( controller4vul_974, "LF") < 0)
+   if( strcmp( controller4vul_975, "@}") > 0)
+   if( strcmp( controller4vul_976, "T") > 0)
+   Vulnerability
+
+
+===================== vulnerability track Ends =============================
+
+================= ulit parameters ======================
+
+unique_magic_number = 495
+vulnerability_name = CWE-761
+
+================= ulit parameters ends ======================
+
+================= dataflow parameters ======================
+
+dataflow_parameter_input_number = 30
+
+dataflow_parameter_magic_number = 0
+dataflow_parameter_magic_number_length_min = 1
+dataflow_parameter_magic_number_length_max = 2
+
+dataflow_parameter_checksum_type = 1
+dataflow_parameter_checksum_div = 100
+dataflow_parameter_checksum = 0
+
+================= dataflow parameters ends ======================
+
+================= environment parameters ======================
+
+environment_parameter_branches = 30
+
+environment_parameter_magic_number_length_min = 1
+environment_parameter_magic_number_length_max = 2
+environment_parameter_magic_number = 3
+
+environment_parameter_checksum_type = 1
+environment_parameter_checksum_div = 100
+environment_parameter_checksum_number = 1
+
+environment_paramenter_loop_time = 1
+
+================= environment parameters ends ======================

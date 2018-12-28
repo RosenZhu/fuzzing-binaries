@@ -1,0 +1,140 @@
+===================== vulnerability track  =============================
+
+The function name:  main
+   if( strcmp( controller4vul_2061, "[-") > 0)
+   if( strcmp( controller4vul_2062, "Ft") > 0)
+   call v_nc_run
+
+The function name:  v_nc_run
+   if( strcmp( controller4vul_2063, "7#") < 0)
+   call v_core_start
+
+The function name:  v_core_start
+   if( strcmp( controller4vul_2064, "6") < 0)
+   call v_core_ctx_create
+
+The function name:  v_core_ctx_create
+   if( strcmp( controller4vul_2065, "s") > 0)
+   call v_proxy_init
+
+The function name:  v_proxy_init
+   if( strcmp( controller4vul_2066, "|y") < 0)
+   call v_proxy_each_init
+
+The function name:  v_proxy_each_init
+   if( strcmp( controller4vul_2067, "_&") > 0)
+   call v_conn_get_proxy
+
+The function name:  v_conn_get_proxy
+   if( strcmp( controller4vul_2068, "q") > 0)
+   call v_proxy_recv
+
+The function name:  v_proxy_recv
+   if( strcmp( controller4vul_2069, " t") < 0)
+   call v_proxy_accept
+
+The function name:  v_proxy_accept
+   if( strcmp( controller4vul_2070, "<") > 0)
+   if( strcmp( controller4vul_2071, "BH") < 0)
+   call v_conn_get_client
+
+The function name:  v_conn_get_client
+   if( strcmp( controller4vul_2072, "w{") < 0)
+   call v_req_recv_done
+
+The function name:  v_req_recv_done
+   if( strcmp( controller4vul_2073, "d") > 0)
+   if( strcmp( controller4vul_2074, "=") > 0)
+   call v_req_forward
+
+The function name:  v_req_forward
+   if( strcmp( controller4vul_2075, "qA") < 0)
+   if( strcmp( controller4vul_2076, "G") < 0)
+   call v_server_pool_conn
+
+The function name:  v_server_pool_conn
+   if( strcmp( controller4vul_2077, "ur") < 0)
+   call v_server_conn
+
+The function name:  v_server_conn
+   if( strcmp( controller4vul_2078, "?") < 0)
+   call v_conn_get_redis
+
+The function name:  v_conn_get_redis
+   if( strcmp( controller4vul_2079, "F") < 0)
+   call v_redis_swallow_msg
+
+The function name:  v_redis_swallow_msg
+   if( strcmp( controller4vul_2080, "|") < 0)
+   if( strcmp( controller4vul_2081, "c") < 0)
+   call v_server_swallow_role_rsp
+
+The function name:  v_server_swallow_role_rsp
+   if( strcmp( controller4vul_2082, "Sh") > 0)
+   if( strcmp( controller4vul_2083, "L") < 0)
+   call v_req_sentinel_send_heartbeat
+
+The function name:  v_req_sentinel_send_heartbeat
+   if( strcmp( controller4vul_2084, "}") < 0)
+   if( strcmp( controller4vul_2085, "E") < 0)
+   call v_msg_get
+
+The function name:  v_msg_get
+   if( strcmp( controller4vul_2086, "B") < 0)
+   if( strcmp( controller4vul_2087, "c") < 0)
+   call v_redis_reply
+
+The function name:  v_redis_reply
+   if( strcmp( controller4vul_2088, "n") < 0)
+   call v_msg_append
+
+The function name:  v_msg_append
+   if( strcmp( controller4vul_2089, "6") < 0)
+   call v_mbuf_copy
+
+The function name:  v_mbuf_copy
+   if( strcmp( controller4vul_2090, "o") < 0)
+   call v_mbuf_full
+
+The function name:  v_mbuf_full
+   Vulnerability
+
+
+===================== vulnerability track Ends =============================
+
+================= ulit parameters ======================
+
+unique_magic_number = 985
+vulnerability_name = CWE-761
+
+================= ulit parameters ends ======================
+
+================= dataflow parameters ======================
+
+dataflow_parameter_input_number = 30
+
+dataflow_parameter_magic_number = 0
+dataflow_parameter_magic_number_length_min = 1
+dataflow_parameter_magic_number_length_max = 2
+
+dataflow_parameter_checksum_type = 1
+dataflow_parameter_checksum_div = 100
+dataflow_parameter_checksum = 0
+
+================= dataflow parameters ends ======================
+
+================= environment parameters ======================
+
+environment_parameter_branches = 30
+
+environment_parameter_magic_number_length_min = 1
+environment_parameter_magic_number_length_max = 2
+environment_parameter_magic_number = 3
+
+environment_parameter_checksum_type = 1
+environment_parameter_checksum_div = 100
+environment_parameter_checksum_number = 1
+
+environment_paramenter_loop_time = 1
+
+================= environment parameters ends ======================

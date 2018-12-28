@@ -1,0 +1,163 @@
+===================== vulnerability track  =============================
+
+The function name:  main
+   if( strcmp( controller4vul_1367, "(.") < 0)
+   if( strcmp( controller4vul_1368, "P") > 0)
+   if( strcmp( controller4vul_1369, "`") > 0)
+   if( strcmp( controller4vul_1370, "W") < 0)
+   call v_termpty_handle_buf
+
+The function name:  v_termpty_handle_buf
+   if( strcmp( controller4vul_1371, "uS") < 0)
+   call v_termpty_handle_seq
+
+The function name:  v_termpty_handle_seq
+   if( strcmp( controller4vul_1372, "Cb") < 0)
+   call v_termpty_text_append
+
+The function name:  v_termpty_text_append
+   if( strcmp( controller4vul_1373, "<") > 0)
+   if( strcmp( controller4vul_1374, "T") > 0)
+   call v_termpty_text_scroll_test
+
+The function name:  v_termpty_text_scroll_test
+   if( strcmp( controller4vul_1375, "h") < 0)
+   if( strcmp( controller4vul_1376, "AS") < 0)
+   call v_termpty_text_scroll
+
+The function name:  v_termpty_text_scroll
+   if( strcmp( controller4vul_1377, "X") > 0)
+   if( strcmp( controller4vul_1378, "y") < 0)
+   call v_termio_scroll
+
+The function name:  v_termio_scroll
+   if( strcmp( controller4vul_1379, "7") < 0)
+   if( strcmp( controller4vul_1380, "n$") > 0)
+   if( strcmp( controller4vul_1381, "9.") > 0)
+   call v__remove_links
+
+The function name:  v__remove_links
+   if( strcmp( controller4vul_1382, "/i") < 0)
+   call v__update_link
+
+The function name:  v__update_link
+   if( strcmp( controller4vul_1383, "73") > 0)
+   if( strcmp( controller4vul_1384, "6]") > 0)
+   call v__cb_link_down
+
+The function name:  v__cb_link_down
+   if( strcmp( controller4vul_1385, "8+") < 0)
+   if( strcmp( controller4vul_1386, "r") > 0)
+   if( strcmp( controller4vul_1387, "_") > 0)
+   call v__cb_ctxp_link_copy
+
+The function name:  v__cb_ctxp_link_copy
+   call v__take_selection_text
+
+The function name:  v__take_selection_text
+   if( strcmp( controller4vul_1388, ":Y") < 0)
+   call v__lost_selection
+
+The function name:  v__lost_selection
+   if( strcmp( controller4vul_1389, "f") < 0)
+   if( strcmp( controller4vul_1390, "B:") < 0)
+   if( strcmp( controller4vul_1391, "j") > 0)
+   call v__smart_update_queue
+
+The function name:  v__smart_update_queue
+   if( strcmp( controller4vul_1392, "o}") > 0)
+   call v__smart_cb_change
+
+The function name:  v__smart_cb_change
+   call v__smart_apply
+
+The function name:  v__smart_apply
+   if( strcmp( controller4vul_1393, "^") < 0)
+   if( strcmp( controller4vul_1394, ":") < 0)
+   if( strcmp( controller4vul_1395, "#") < 0)
+   if( strcmp( controller4vul_1396, "YK") < 0)
+   call v__block_activate
+
+The function name:  v__block_activate
+   if( strcmp( controller4vul_1397, "vq") > 0)
+   call v__block_media_activate
+
+The function name:  v__block_media_activate
+   if( strcmp( controller4vul_1398, "Jl") > 0)
+   call v_media_add
+
+The function name:  v_media_add
+   if( strcmp( controller4vul_1399, "|,") < 0)
+   if( strcmp( controller4vul_1400, "6") < 0)
+   if( strcmp( controller4vul_1401, "SZ") < 0)
+   if( strcmp( controller4vul_1402, "{") > 0)
+   if( strcmp( controller4vul_1403, "^N") < 0)
+   if( strcmp( controller4vul_1404, "ds") > 0)
+   call v__url_compl_cb
+
+The function name:  v__url_compl_cb
+   if( strcmp( controller4vul_1405, "y") < 0)
+   call v__smart_calculate
+
+The function name:  v__smart_calculate
+   if( strcmp( controller4vul_1406, "*") > 0)
+   call v__smooth_handler
+
+The function name:  v__smooth_handler
+   if( strcmp( controller4vul_1407, "Jm") > 0)
+   if( strcmp( controller4vul_1408, "[l") < 0)
+   if( strcmp( controller4vul_1409, "A^") < 0)
+   if( strcmp( controller4vul_1410, "S") > 0)
+   call v__unsmooth_timeout
+
+The function name:  v__unsmooth_timeout
+   if( strcmp( controller4vul_1411, "+,") > 0)
+   if( strcmp( controller4vul_1412, "L") > 0)
+   call v__type_scale_calc
+
+The function name:  v__type_scale_calc
+   if( strcmp( controller4vul_1413, "z") > 0)
+   if( strcmp( controller4vul_1414, "w") > 0)
+   if( strcmp( controller4vul_1415, "h.") < 0)
+   if( strcmp( controller4vul_1416, "8") > 0)
+   Vulnerability
+
+
+===================== vulnerability track Ends =============================
+
+================= ulit parameters ======================
+
+unique_magic_number = 893
+vulnerability_name = CWE-761
+
+================= ulit parameters ends ======================
+
+================= dataflow parameters ======================
+
+dataflow_parameter_input_number = 50
+
+dataflow_parameter_magic_number = 0
+dataflow_parameter_magic_number_length_min = 1
+dataflow_parameter_magic_number_length_max = 2
+
+dataflow_parameter_checksum_type = 1
+dataflow_parameter_checksum_div = 100
+dataflow_parameter_checksum = 0
+
+================= dataflow parameters ends ======================
+
+================= environment parameters ======================
+
+environment_parameter_branches = 30
+
+environment_parameter_magic_number_length_min = 1
+environment_parameter_magic_number_length_max = 2
+environment_parameter_magic_number = 3
+
+environment_parameter_checksum_type = 1
+environment_parameter_checksum_div = 100
+environment_parameter_checksum_number = 1
+
+environment_paramenter_loop_time = 1
+
+================= environment parameters ends ======================
