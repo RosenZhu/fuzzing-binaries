@@ -1,0 +1,118 @@
+===================== vulnerability track  =============================
+
+The function name:  main
+   if( strcmp( controller4vul_1247, "B") > 0)
+   call v_choose_primers
+
+The function name:  v_choose_primers
+   if( strcmp( controller4vul_1248, "tG") > 0)
+   if( strcmp( controller4vul_1249, "o") < 0)
+   if( strcmp( controller4vul_1250, "O") > 0)
+   call v_choose_pair_or_triple
+
+The function name:  v_choose_pair_or_triple
+   if( strcmp( controller4vul_1251, "]") > 0)
+   call v_characterize_pair
+
+The function name:  v_characterize_pair
+   if( strcmp( controller4vul_1252, "h") < 0)
+   if( strcmp( controller4vul_1253, "T") > 0)
+   if( strcmp( controller4vul_1254, "qT") < 0)
+   if( strcmp( controller4vul_1255, "]?") > 0)
+   call v_oligo_template_mispriming
+
+The function name:  v_oligo_template_mispriming
+   if( strcmp( controller4vul_1256, "U") > 0)
+   if( strcmp( controller4vul_1257, "yW") > 0)
+   call v_primer_mispriming_to_template_thermod
+
+The function name:  v_primer_mispriming_to_template_thermod
+   if( strcmp( controller4vul_1258, "g(") < 0)
+   if( strcmp( controller4vul_1259, "S") > 0)
+   if( strcmp( controller4vul_1260, "nG") < 0)
+   call v_align_thermod
+
+The function name:  v_align_thermod
+   if( strcmp( controller4vul_1261, "H") < 0)
+   if( strcmp( controller4vul_1262, "8") < 0)
+   if( strcmp( controller4vul_1263, "?") > 0)
+   call v_thal
+
+The function name:  v_thal
+   if( strcmp( controller4vul_1264, "7G") > 0)
+   if( strcmp( controller4vul_1265, "J") < 0)
+   if( strcmp( controller4vul_1266, "u") < 0)
+   call v_fillMatrix2
+
+The function name:  v_fillMatrix2
+   if( strcmp( controller4vul_1267, "_") > 0)
+   if( strcmp( controller4vul_1268, " ") < 0)
+   if( strcmp( controller4vul_1269, "H") < 0)
+   call v_CBI
+
+The function name:  v_CBI
+   if( strcmp( controller4vul_1270, "*") < 0)
+   if( strcmp( controller4vul_1271, "0") < 0)
+   if( strcmp( controller4vul_1272, "`w") < 0)
+   call v_calc_bulge_internal2
+
+The function name:  v_calc_bulge_internal2
+   if( strcmp( controller4vul_1273, "T6") < 0)
+   if( strcmp( controller4vul_1274, ")") > 0)
+   if( strcmp( controller4vul_1275, "6g") > 0)
+   call v_traceback
+
+The function name:  v_traceback
+   call v_calc_bulge_internal
+
+The function name:  v_calc_bulge_internal
+   if( strcmp( controller4vul_1276, "J9") > 0)
+   if( strcmp( controller4vul_1277, "bN") > 0)
+   if( strcmp( controller4vul_1278, " j") > 0)
+   call v_RSH
+
+The function name:  v_RSH
+   if( strcmp( controller4vul_1279, "tA") > 0)
+   if( strcmp( controller4vul_1280, "1") > 0)
+   if( strcmp( controller4vul_1281, "0^") < 0)
+   Vulnerability
+
+
+===================== vulnerability track Ends =============================
+
+================= ulit parameters ======================
+
+unique_magic_number = 893
+vulnerability_name = CWE-761
+
+================= ulit parameters ends ======================
+
+================= dataflow parameters ======================
+
+dataflow_parameter_input_number = 35
+
+dataflow_parameter_magic_number = 0
+dataflow_parameter_magic_number_length_min = 1
+dataflow_parameter_magic_number_length_max = 2
+
+dataflow_parameter_checksum_type = 1
+dataflow_parameter_checksum_div = 100
+dataflow_parameter_checksum = 0
+
+================= dataflow parameters ends ======================
+
+================= environment parameters ======================
+
+environment_parameter_branches = 30
+
+environment_parameter_magic_number_length_min = 1
+environment_parameter_magic_number_length_max = 2
+environment_parameter_magic_number = 3
+
+environment_parameter_checksum_type = 1
+environment_parameter_checksum_div = 100
+environment_parameter_checksum_number = 1
+
+environment_paramenter_loop_time = 1
+
+================= environment parameters ends ======================

@@ -1,0 +1,115 @@
+===================== vulnerability track  =============================
+
+The function name:  main
+   if( strcmp( controller4vul_26, ")/") > 0)
+   call v_test_invalid_timeout_errors
+
+The function name:  v_test_invalid_timeout_errors
+   call v_redisConnectWithTimeout
+
+The function name:  v_redisConnectWithTimeout
+   if( strcmp( controller4vul_27, "m") < 0)
+   if( strcmp( controller4vul_28, "yg") > 0)
+   call v_redisContextConnectTcp
+
+The function name:  v_redisContextConnectTcp
+   call v__redisContextConnectTcp
+
+The function name:  v__redisContextConnectTcp
+   if( strcmp( controller4vul_29, "X+") < 0)
+   if( strcmp( controller4vul_30, "@") > 0)
+   if( strcmp( controller4vul_31, "s") < 0)
+   call v_connect
+
+The function name:  v_connect
+   if( strcmp( controller4vul_32, "h") < 0)
+   if( strcmp( controller4vul_33, "3") > 0)
+   call v_disconnect
+
+The function name:  v_disconnect
+   if( strcmp( controller4vul_34, "3^") > 0)
+   call v_redisCommand
+
+The function name:  v_redisCommand
+   call v_redisvCommand
+
+The function name:  v_redisvCommand
+   if( strcmp( controller4vul_35, "*!") < 0)
+   call v___redisBlockForReply
+
+The function name:  v___redisBlockForReply
+   if( strcmp( controller4vul_36, "_") > 0)
+   if( strcmp( controller4vul_37, "eF") > 0)
+   call v_redisGetReply
+
+The function name:  v_redisGetReply
+   call v_redisGetReplyFromReader
+
+The function name:  v_redisGetReplyFromReader
+   if( strcmp( controller4vul_38, "KD") > 0)
+   call v_redisReaderGetReply
+
+The function name:  v_redisReaderGetReply
+   call v_processItem
+
+The function name:  v_processItem
+   if( strcmp( controller4vul_39, "Ym") > 0)
+   if( strcmp( controller4vul_40, "D") > 0)
+   call v_processMultiBulkItem
+
+The function name:  v_processMultiBulkItem
+   if( strcmp( controller4vul_41, "^") < 0)
+   if( strcmp( controller4vul_42, "+") > 0)
+   if( strcmp( controller4vul_43, "F:") > 0)
+   call v___redisReaderSetErrorOOM
+
+The function name:  v___redisReaderSetErrorOOM
+   call v___redisReaderSetError
+
+The function name:  v___redisReaderSetError
+   if( strcmp( controller4vul_44, "Q") > 0)
+   call v_sdsfree
+
+The function name:  v_sdsfree
+   if( strcmp( controller4vul_45, "C") > 0)
+   Vulnerability
+
+
+===================== vulnerability track Ends =============================
+
+================= ulit parameters ======================
+
+unique_magic_number = 997
+vulnerability_name = CWE-761
+
+================= ulit parameters ends ======================
+
+================= dataflow parameters ======================
+
+dataflow_parameter_input_number = 20
+
+dataflow_parameter_magic_number = 0
+dataflow_parameter_magic_number_length_min = 1
+dataflow_parameter_magic_number_length_max = 2
+
+dataflow_parameter_checksum_type = 1
+dataflow_parameter_checksum_div = 100
+dataflow_parameter_checksum = 0
+
+================= dataflow parameters ends ======================
+
+================= environment parameters ======================
+
+environment_parameter_branches = 30
+
+environment_parameter_magic_number_length_min = 1
+environment_parameter_magic_number_length_max = 2
+environment_parameter_magic_number = 3
+
+environment_parameter_checksum_type = 1
+environment_parameter_checksum_div = 100
+environment_parameter_checksum_number = 1
+
+environment_paramenter_loop_time = 1
+
+================= environment parameters ends ======================

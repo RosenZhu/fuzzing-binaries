@@ -1,0 +1,66 @@
+===================== vulnerability track  =============================
+
+The function name:  main
+   if( strcmp( controller4vul_1679, "h/") > 0)
+   if( strcmp( controller4vul_1680, "W") > 0)
+   call v_tlog_play
+
+The function name:  v_tlog_play
+   if( strcmp( controller4vul_1681, "s") > 0)
+   if( strcmp( controller4vul_1682, "o") > 0)
+   call v_tlog_play_init
+
+The function name:  v_tlog_play_init
+   if( strcmp( controller4vul_1683, "j") > 0)
+   if( strcmp( controller4vul_1684, "[") < 0)
+   call v_tlog_play_create_log_source
+
+The function name:  v_tlog_play_create_log_source
+   if( strcmp( controller4vul_1685, "A*") < 0)
+   call v_tlog_play_create_json_reader
+
+The function name:  v_tlog_play_create_json_reader
+   if( strcmp( controller4vul_1686, "Ra") < 0)
+   if( strcmp( controller4vul_1687, "a") > 0)
+   if( strcmp( controller4vul_1688, "f") < 0)
+   Vulnerability
+
+
+===================== vulnerability track Ends =============================
+
+================= ulit parameters ======================
+
+unique_magic_number = 273
+vulnerability_name = CWE-761
+
+================= ulit parameters ends ======================
+
+================= dataflow parameters ======================
+
+dataflow_parameter_input_number = 10
+
+dataflow_parameter_magic_number = 0
+dataflow_parameter_magic_number_length_min = 1
+dataflow_parameter_magic_number_length_max = 2
+
+dataflow_parameter_checksum_type = 1
+dataflow_parameter_checksum_div = 100
+dataflow_parameter_checksum = 0
+
+================= dataflow parameters ends ======================
+
+================= environment parameters ======================
+
+environment_parameter_branches = 30
+
+environment_parameter_magic_number_length_min = 1
+environment_parameter_magic_number_length_max = 2
+environment_parameter_magic_number = 3
+
+environment_parameter_checksum_type = 1
+environment_parameter_checksum_div = 100
+environment_parameter_checksum_number = 1
+
+environment_paramenter_loop_time = 1
+
+================= environment parameters ends ======================

@@ -1,0 +1,136 @@
+===================== vulnerability track  =============================
+
+The function name:  main
+   if( strcmp( controller4vul_709, "I/") > 0)
+   if( strcmp( controller4vul_710, "{$") > 0)
+   call v_vedis_open
+
+The function name:  v_vedis_open
+   if( strcmp( controller4vul_711, "`") < 0)
+   if( strcmp( controller4vul_712, "11") < 0)
+   if( strcmp( controller4vul_713, "/") > 0)
+   call v_vedisInitDatabase
+
+The function name:  v_vedisInitDatabase
+   if( strcmp( controller4vul_714, "n5") < 0)
+   call v_vedisPagerOpen
+
+The function name:  v_vedisPagerOpen
+   if( strcmp( controller4vul_715, "-") < 0)
+   if( strcmp( controller4vul_716, "G") < 0)
+   call v_vedisPagerRegisterKvEngine
+
+The function name:  v_vedisPagerRegisterKvEngine
+   if( strcmp( controller4vul_717, "P2") < 0)
+   if( strcmp( controller4vul_718, "i") < 0)
+   call v_pager_kv_io_init
+
+The function name:  v_pager_kv_io_init
+   call v_vedisKvIoNewPage
+
+The function name:  v_vedisKvIoNewPage
+   if( strcmp( controller4vul_719, "57") > 0)
+   call v_vedisPagerAcquire
+
+The function name:  v_vedisPagerAcquire
+   if( strcmp( controller4vul_720, "d") < 0)
+   if( strcmp( controller4vul_721, "n") > 0)
+   call v_pager_shared_lock
+
+The function name:  v_pager_shared_lock
+   if( strcmp( controller4vul_722, "^#") > 0)
+   if( strcmp( controller4vul_723, "N") < 0)
+   if( strcmp( controller4vul_724, "j") > 0)
+   if( strcmp( controller4vul_725, "c") > 0)
+   if( strcmp( controller4vul_726, "9") < 0)
+   call v_pager_journal_rollback
+
+The function name:  v_pager_journal_rollback
+   if( strcmp( controller4vul_727, "SH") > 0)
+   if( strcmp( controller4vul_728, "9") < 0)
+   call v_pager_playback
+
+The function name:  v_pager_playback
+   if( strcmp( controller4vul_729, "=(") < 0)
+   if( strcmp( controller4vul_730, " *") < 0)
+   call v_vedisGenErrorFormat
+
+The function name:  v_vedisGenErrorFormat
+   call v_SyBlobFormatAp
+
+The function name:  v_SyBlobFormatAp
+   if( strcmp( controller4vul_731, "#-") < 0)
+   if( strcmp( controller4vul_732, "J") < 0)
+   call v_FormatMount
+
+The function name:  v_FormatMount
+   if( strcmp( controller4vul_733, "`n") < 0)
+   if( strcmp( controller4vul_734, "NP") > 0)
+   call v_FormatConsumer
+
+The function name:  v_FormatConsumer
+   call v_SyBlobAppend
+
+The function name:  v_SyBlobAppend
+   if( strcmp( controller4vul_735, ")A") > 0)
+   call v_BlobPrepareGrow
+
+The function name:  v_BlobPrepareGrow
+   if( strcmp( controller4vul_736, "3") < 0)
+   if( strcmp( controller4vul_737, "/") > 0)
+   if( strcmp( controller4vul_738, "V") > 0)
+   call v_SyMemBackendRealloc
+
+The function name:  v_SyMemBackendRealloc
+   if( strcmp( controller4vul_739, "w") > 0)
+   if( strcmp( controller4vul_740, "+") > 0)
+   call v_MemBackendRealloc
+
+The function name:  v_MemBackendRealloc
+   if( strcmp( controller4vul_741, "^m") < 0)
+   if( strcmp( controller4vul_742, "}#") < 0)
+   call v_MemBackendAlloc
+
+The function name:  v_MemBackendAlloc
+   if( strcmp( controller4vul_743, "<") > 0)
+   Vulnerability
+
+
+===================== vulnerability track Ends =============================
+
+================= ulit parameters ======================
+
+unique_magic_number = 387
+vulnerability_name = CWE-761
+
+================= ulit parameters ends ======================
+
+================= dataflow parameters ======================
+
+dataflow_parameter_input_number = 35
+
+dataflow_parameter_magic_number = 0
+dataflow_parameter_magic_number_length_min = 1
+dataflow_parameter_magic_number_length_max = 2
+
+dataflow_parameter_checksum_type = 1
+dataflow_parameter_checksum_div = 100
+dataflow_parameter_checksum = 0
+
+================= dataflow parameters ends ======================
+
+================= environment parameters ======================
+
+environment_parameter_branches = 30
+
+environment_parameter_magic_number_length_min = 1
+environment_parameter_magic_number_length_max = 2
+environment_parameter_magic_number = 3
+
+environment_parameter_checksum_type = 1
+environment_parameter_checksum_div = 100
+environment_parameter_checksum_number = 1
+
+environment_paramenter_loop_time = 1
+
+================= environment parameters ends ======================

@@ -1,0 +1,141 @@
+===================== vulnerability track  =============================
+
+The function name:  main
+   if( strcmp( controller4vul_2120, "G") < 0)
+   if( strcmp( controller4vul_2121, "@T") < 0)
+   if( strcmp( controller4vul_2122, "A@") > 0)
+   call v___start_peer_socket
+
+The function name:  v___start_peer_socket
+   if( strcmp( controller4vul_2123, ".T") > 0)
+   call v___on_peer_connection
+
+The function name:  v___on_peer_connection
+   if( strcmp( controller4vul_2124, "TW") < 0)
+   call v___peer_read_cb
+
+The function name:  v___peer_read_cb
+   if( strcmp( controller4vul_2125, "x") > 0)
+   call v___deserialize_and_handle_msg
+
+The function name:  v___deserialize_and_handle_msg
+   if( strcmp( controller4vul_2126, "BF") < 0)
+   if( strcmp( controller4vul_2127, "&") > 0)
+   if( strcmp( controller4vul_2128, "_") > 0)
+   call v___drop_db
+
+The function name:  v___drop_db
+   call v_mdb_drop_dbs
+
+The function name:  v_mdb_drop_dbs
+   if( strcmp( controller4vul_2129, "4") < 0)
+   call v_mdb_txn_commit
+
+The function name:  v_mdb_txn_commit
+   if( strcmp( controller4vul_2130, "wm") > 0)
+   if( strcmp( controller4vul_2131, "i") < 0)
+   if( strcmp( controller4vul_2132, "z+") < 0)
+   call v_mdb_freelist_save
+
+The function name:  v_mdb_freelist_save
+   call v_mdb_cursor_del
+
+The function name:  v_mdb_cursor_del
+   if( strcmp( controller4vul_2133, "pU") > 0)
+   if( strcmp( controller4vul_2134, "#<") < 0)
+   if( strcmp( controller4vul_2135, "4}") > 0)
+   call v_mdb_cursor_del0
+
+The function name:  v_mdb_cursor_del0
+   if( strcmp( controller4vul_2136, "-") < 0)
+   if( strcmp( controller4vul_2137, "?") < 0)
+   if( strcmp( controller4vul_2138, "?0") > 0)
+   if( strcmp( controller4vul_2139, "z5") < 0)
+   call v_mdb_rebalance
+
+The function name:  v_mdb_rebalance
+   if( strcmp( controller4vul_2140, "36") < 0)
+   if( strcmp( controller4vul_2141, ",") < 0)
+   if( strcmp( controller4vul_2142, "a") < 0)
+   call v_mdb_page_merge
+
+The function name:  v_mdb_page_merge
+   if( strcmp( controller4vul_2143, "ed") > 0)
+   if( strcmp( controller4vul_2144, ";[") > 0)
+   if( strcmp( controller4vul_2145, "U") < 0)
+   call v_mdb_page_search_lowest
+
+The function name:  v_mdb_page_search_lowest
+   if( strcmp( controller4vul_2146, "M") < 0)
+   call v_mdb_page_search_root
+
+The function name:  v_mdb_page_search_root
+   if( strcmp( controller4vul_2147, "i}") < 0)
+   call v_mdb_page_touch
+
+The function name:  v_mdb_page_touch
+   if( strcmp( controller4vul_2148, "q") > 0)
+   if( strcmp( controller4vul_2149, "s") < 0)
+   if( strcmp( controller4vul_2150, "0:") < 0)
+   if( strcmp( controller4vul_2151, "@j") < 0)
+   call v_mdb_page_alloc
+
+The function name:  v_mdb_page_alloc
+   call v_mdb_cursor_get
+
+The function name:  v_mdb_cursor_get
+   if( strcmp( controller4vul_2152, "?x") < 0)
+   if( strcmp( controller4vul_2153, "H") > 0)
+   if( strcmp( controller4vul_2154, "9`") > 0)
+   if( strcmp( controller4vul_2155, "u=") < 0)
+   call v_mdb_cursor_last
+
+The function name:  v_mdb_cursor_last
+   if( strcmp( controller4vul_2156, "f") < 0)
+   if( strcmp( controller4vul_2157, "@") < 0)
+   if( strcmp( controller4vul_2158, "W3") < 0)
+   call v_mdb_node_read
+
+The function name:  v_mdb_node_read
+   if( strcmp( controller4vul_2159, "_m") < 0)
+   Vulnerability
+
+
+===================== vulnerability track Ends =============================
+
+================= ulit parameters ======================
+
+unique_magic_number = 985
+vulnerability_name = CWE-761
+
+================= ulit parameters ends ======================
+
+================= dataflow parameters ======================
+
+dataflow_parameter_input_number = 40
+
+dataflow_parameter_magic_number = 0
+dataflow_parameter_magic_number_length_min = 1
+dataflow_parameter_magic_number_length_max = 2
+
+dataflow_parameter_checksum_type = 1
+dataflow_parameter_checksum_div = 100
+dataflow_parameter_checksum = 0
+
+================= dataflow parameters ends ======================
+
+================= environment parameters ======================
+
+environment_parameter_branches = 30
+
+environment_parameter_magic_number_length_min = 1
+environment_parameter_magic_number_length_max = 2
+environment_parameter_magic_number = 3
+
+environment_parameter_checksum_type = 1
+environment_parameter_checksum_div = 100
+environment_parameter_checksum_number = 1
+
+environment_paramenter_loop_time = 1
+
+================= environment parameters ends ======================

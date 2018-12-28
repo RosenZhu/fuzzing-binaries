@@ -1,0 +1,100 @@
+===================== vulnerability track  =============================
+
+The function name:  main
+   if( strcmp( controller4vul_1442, "3_") > 0)
+   if( strcmp( controller4vul_1443, "9u") < 0)
+   call v_rtr_mgr_init
+
+The function name:  v_rtr_mgr_init
+   if( strcmp( controller4vul_1444, ".(") < 0)
+   call v_rtr_mgr_init_sockets
+
+The function name:  v_rtr_mgr_init_sockets
+   if( strcmp( controller4vul_1445, "8y") > 0)
+   call v_rtr_mgr_cb
+
+The function name:  v_rtr_mgr_cb
+   if( strcmp( controller4vul_1446, ",") < 0)
+   call v__rtr_mgr_cb_state_error
+
+The function name:  v__rtr_mgr_cb_state_error
+   if( strcmp( controller4vul_1447, "`") < 0)
+   if( strcmp( controller4vul_1448, "#F") > 0)
+   call v_rtr_mgr_start_sockets
+
+The function name:  v_rtr_mgr_start_sockets
+   if( strcmp( controller4vul_1449, "EU") > 0)
+   call v_rtr_start
+
+The function name:  v_rtr_start
+   if( strcmp( controller4vul_1450, "}") < 0)
+   call v_rtr_fsm_start
+
+The function name:  v_rtr_fsm_start
+   if( strcmp( controller4vul_1451, "G") < 0)
+   if( strcmp( controller4vul_1452, "H<") < 0)
+   if( strcmp( controller4vul_1453, "3s") > 0)
+   call v_rtr_sync
+
+The function name:  v_rtr_sync
+   if( strcmp( controller4vul_1454, " c") < 0)
+   if( strcmp( controller4vul_1455, "Lm") < 0)
+   call v_rtr_sync_receive_and_store_pdus
+
+The function name:  v_rtr_sync_receive_and_store_pdus
+   if( strcmp( controller4vul_1456, "a") > 0)
+   call v_pfx_table_src_remove
+
+The function name:  v_pfx_table_src_remove
+   if( strcmp( controller4vul_1457, "v") < 0)
+   if( strcmp( controller4vul_1458, "@t") > 0)
+   call v_pfx_table_remove_id
+
+The function name:  v_pfx_table_remove_id
+   if( strcmp( controller4vul_1459, ")") > 0)
+   call v_trie_remove
+
+The function name:  v_trie_remove
+   if( strcmp( controller4vul_1460, "$O") < 0)
+   if( strcmp( controller4vul_1461, "s") > 0)
+   Vulnerability
+
+
+===================== vulnerability track Ends =============================
+
+================= ulit parameters ======================
+
+unique_magic_number = 447
+vulnerability_name = CWE-761
+
+================= ulit parameters ends ======================
+
+================= dataflow parameters ======================
+
+dataflow_parameter_input_number = 20
+
+dataflow_parameter_magic_number = 0
+dataflow_parameter_magic_number_length_min = 1
+dataflow_parameter_magic_number_length_max = 2
+
+dataflow_parameter_checksum_type = 1
+dataflow_parameter_checksum_div = 100
+dataflow_parameter_checksum = 0
+
+================= dataflow parameters ends ======================
+
+================= environment parameters ======================
+
+environment_parameter_branches = 30
+
+environment_parameter_magic_number_length_min = 1
+environment_parameter_magic_number_length_max = 2
+environment_parameter_magic_number = 3
+
+environment_parameter_checksum_type = 1
+environment_parameter_checksum_div = 100
+environment_parameter_checksum_number = 1
+
+environment_paramenter_loop_time = 1
+
+================= environment parameters ends ======================

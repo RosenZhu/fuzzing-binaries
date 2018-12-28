@@ -1,0 +1,142 @@
+===================== vulnerability track  =============================
+
+The function name:  main
+   if( strcmp( controller4vul_2550, "U") < 0)
+   call v_pmain
+
+The function name:  v_pmain
+   if( strcmp( controller4vul_2551, "U") > 0)
+   if( strcmp( controller4vul_2552, "I") > 0)
+   call v_combine
+
+The function name:  v_combine
+   if( strcmp( controller4vul_2553, "]z") < 0)
+   if( strcmp( controller4vul_2554, "[") < 0)
+   call v_lua_load
+
+The function name:  v_lua_load
+   if( strcmp( controller4vul_2555, "HU") < 0)
+   if( strcmp( controller4vul_2556, "Z") > 0)
+   call v_luaD_protectedparser
+
+The function name:  v_luaD_protectedparser
+   call v_f_parser
+
+The function name:  v_f_parser
+   if( strcmp( controller4vul_2557, "cC") > 0)
+   call v_luaY_parser
+
+The function name:  v_luaY_parser
+   call v_mainfunc
+
+The function name:  v_mainfunc
+   call v_statlist
+
+The function name:  v_statlist
+   call v_statement
+
+The function name:  v_statement
+   if( strcmp( controller4vul_2558, "5n") < 0)
+   call v_ifstat
+
+The function name:  v_ifstat
+   call v_test_then_block
+
+The function name:  v_test_then_block
+   if( strcmp( controller4vul_2559, "Wn") < 0)
+   if( strcmp( controller4vul_2560, "{") > 0)
+   call v_expr
+
+The function name:  v_expr
+   call v_subexpr
+
+The function name:  v_subexpr
+   if( strcmp( controller4vul_2561, "s") > 0)
+   call v_luaK_infix
+
+The function name:  v_luaK_infix
+   if( strcmp( controller4vul_2562, "1") < 0)
+   call v_luaK_exp2RK
+
+The function name:  v_luaK_exp2RK
+   if( strcmp( controller4vul_2563, "D") < 0)
+   call v_luaK_exp2val
+
+The function name:  v_luaK_exp2val
+   if( strcmp( controller4vul_2564, "E") > 0)
+   call v_luaK_exp2anyreg
+
+The function name:  v_luaK_exp2anyreg
+   if( strcmp( controller4vul_2565, "z3") > 0)
+   if( strcmp( controller4vul_2566, "z") < 0)
+   call v_luaK_exp2nextreg
+
+The function name:  v_luaK_exp2nextreg
+   call v_exp2reg
+
+The function name:  v_exp2reg
+   if( strcmp( controller4vul_2567, "}<") > 0)
+   call v_luaK_jump
+
+The function name:  v_luaK_jump
+   call v_luaK_concat
+
+The function name:  v_luaK_concat
+   call v_fixjump
+
+The function name:  v_fixjump
+   if( strcmp( controller4vul_2568, "*") > 0)
+   call v_luaX_syntaxerror
+
+The function name:  v_luaX_syntaxerror
+   call v_lexerror
+
+The function name:  v_lexerror
+   call v_txtToken
+
+The function name:  v_txtToken
+   call v_save
+
+The function name:  v_save
+   if( strcmp( controller4vul_2569, "H;") < 0)
+   Vulnerability
+
+
+===================== vulnerability track Ends =============================
+
+================= ulit parameters ======================
+
+unique_magic_number = 949
+vulnerability_name = CWE-761
+
+================= ulit parameters ends ======================
+
+================= dataflow parameters ======================
+
+dataflow_parameter_input_number = 20
+
+dataflow_parameter_magic_number = 0
+dataflow_parameter_magic_number_length_min = 1
+dataflow_parameter_magic_number_length_max = 2
+
+dataflow_parameter_checksum_type = 1
+dataflow_parameter_checksum_div = 100
+dataflow_parameter_checksum = 0
+
+================= dataflow parameters ends ======================
+
+================= environment parameters ======================
+
+environment_parameter_branches = 30
+
+environment_parameter_magic_number_length_min = 1
+environment_parameter_magic_number_length_max = 2
+environment_parameter_magic_number = 3
+
+environment_parameter_checksum_type = 1
+environment_parameter_checksum_div = 100
+environment_parameter_checksum_number = 1
+
+environment_paramenter_loop_time = 1
+
+================= environment parameters ends ======================
